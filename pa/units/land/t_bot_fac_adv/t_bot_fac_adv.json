@@ -1,7 +1,7 @@
 {
     "si_name": "t_bot_fac_adv",
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Advanced Bot Factory",
+    "unit_name": "Advanced Robotics Factory",
     "display_name": "!LOC:Advanced Bot Factory",
     "description": "!LOC:Advanced Manufacturing - Builds basic and advanced Crawlers.",
     "max_health": 20000,

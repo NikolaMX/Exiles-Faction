@@ -222,13 +222,13 @@
 
 
 
-    "/pa/units/addon/r_mine/r_mine.json",
+
     "/pa/units/addon/r_radar/r_radar.json",
     "/pa/units/addon/r_teleporter/r_teleporter.json",
-    "/pa/units/addon/r_turret_1/r_turret_1.json",
+ 
     "/pa/units/addon/r_umbrella/r_umbrella.json",
-    "/pa/units/addon/r_wall/r_wall.json",
-    "/pa/units/addon/r_air_defense/r_air_defense.json",
+ 
+  
     "/pa/units/addon/r_artillery/r_artillery.json",
     "/pa/units/addon/t_delta_v_engine/t_delta_v_engine.json",
     "/pa/units/addon/t_control_module/t_control_module.json",

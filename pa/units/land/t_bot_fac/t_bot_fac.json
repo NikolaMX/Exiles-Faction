@@ -1,7 +1,7 @@
 {
     "si_name": "t_bot_fac",
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Bot Factory",
+    "unit_name": "Robotics Factory",
     "display_name": "!LOC:Bot Factory",
     "description": "!LOC:Basic Manufacturing - Builds basic Bots.",
     "max_health": 6000,

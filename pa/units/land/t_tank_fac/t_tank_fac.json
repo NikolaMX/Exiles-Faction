@@ -36,7 +36,7 @@
       "/pa/effects/specs/scorch_b_01.json"
     ]
   },
-  "description": "Manufacturing: builds tanks.",
+  "description": "Manufacturing: builds basic tanks.",
   "display_name": "Tank factory",
   "factory_cooldown_time": 3,
   "fx_offsets": [

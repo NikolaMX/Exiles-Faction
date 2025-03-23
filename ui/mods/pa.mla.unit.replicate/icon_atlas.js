@@ -4,15 +4,15 @@ var paeiouIcons = [
     "replicate_commander_1",
     "union_formidable",
 
-    "r_wall",
+
     "r_umbrella",
-    "r_turret_1",
+
     "r_teleporter",
     "t_delta_v_engine",
     "t_control_module",
     "r_radar",
-    "r_mine",
-    "r_air_defense",
+
+   
     "t_arta",
     "r_artillery",
     "r_artillery_big",
