@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "unit_name": "Ambush Turret",
+    "unit_name": "Ambush Turret (Deployed)",
     "si_name": "ambush_twr",
-    "display_name": "!LOC:Ambush Turret",
+    "display_name": "!LOC:Ambush Turret (Deployed)",
     "description": "!LOC:Remains hidden until evemies get close.",
     "max_health": 1500,
     "build_metal_cost": 225,

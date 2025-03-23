@@ -166,6 +166,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
+    "UNITTYPE_Offense",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Recon",
     "UNITTYPE_Radar",
