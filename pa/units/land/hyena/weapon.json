@@ -1,0 +1,29 @@
+{
+  "ammo_id": "/pa/units/PAEIOU/crawler/t1/saboteur/ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "firing_arc_pitch": 45,
+  "firing_arc_yaw": 45,
+  "idle_aim_delay": 0,
+  "max_range": 75,
+  "pitch_range": 45,
+  "pitch_rate": 1440,
+  "rate_of_fire": 7,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 1440,
+  "target_priorities": [
+    "Economy",
+    "Structure & SurfaceDefense",
+    "Structure & Defense",
+    "Structure - Wall",
+    "Wall",
+    "Mobile & Heavy",
+    "Commander",
+    "Mobile - Air"
+  ]
+}

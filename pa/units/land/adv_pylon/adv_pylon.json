@@ -1,0 +1,95 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "si_name": "adv_pylon",
+    "unit_name": "Advanced Reactor",
+    "display_name": "!LOC:Advanced Reactor",
+    "description": "!LOC:Advanced Economy - Produces energy. Use alt-fire to overcharge (20x production rate, self-destruct after 10 seconds with a massive explosion)",
+    "max_health": 6600,
+    "build_metal_cost": 3000,
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "production": {
+        "energy": 4350
+    },
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Custom6"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "command_caps": [
+		"ORDER_FireSecondaryWeapon"
+	],
+    "tools": [
+		{
+			"spec_id": "/pa/units/land/adv_pylon/overcharge.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root",
+			"secondary_weapon": true,
+			"show_range": false
+		}
+	],
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/adv_pylon/adv_reactor.papa",
+            "animations": {
+                "idle": "/pa/units/land/adv_pylon/adv_reactor_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "fx_offsets": [],
+    "headlights": [],
+    "lamps": [],
+    "selection_icon": {
+        "diameter": 34.0
+    },
+    "mesh_bounds": [
+        20,
+        20,
+        35
+    ],
+    "placement_size": [
+        30,
+        30
+    ],
+    "TEMP_texelinfo": 32.6108
+}

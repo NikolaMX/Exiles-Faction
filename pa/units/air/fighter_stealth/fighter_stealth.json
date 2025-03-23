@@ -1,0 +1,184 @@
+{
+  "TEMP_texelinfo": 6.1803,
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "description": "!LOC:Stealth Fighter - Slow. Radar stealthy. Can only shoot forwards. Only attacks air targets",
+  "display_name": "Kikimora",
+  "build_metal_cost": 275,
+  "max_health": 200,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital",
+      "effect_scale": 1.75
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_scale": 0.75
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_fire4",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        -45,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_fire5",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        25,
+        45
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_fire6",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        25,
+        -45
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_fire1",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "bone": "bone_fire2",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        -30,
+        90
+      ]
+    },
+    {
+      "bone": "bone_fire3",
+      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        -30,
+        -90
+      ]
+    }
+  ],
+  "guard_layer": "WL_Air",
+  "guard_radius": 120,
+  "influence_radius": 10,
+  "mesh_bounds": [
+    6,
+    10,
+    3
+  ],
+  "selection_icon": {
+    "diameter": 16.0
+  },
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/air/fighter_stealth/orbital_missileX.papa"
+  },
+  "selection_response": {
+    "cue": "/SE/Selection/air/fighter"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 50,
+    "move_speed": 45,
+    "turn_speed": 80,
+    "dodge_radius": 30,
+    "dodge_multiplier": 0.5,
+    "aggressive_distance": 75.0,
+    "aggressive_behavior": "circle",
+    "aggressive_height": 100.0,
+    "wobble_factor": 0.05,
+    "wobble_speed": 0.1,
+    "bank_factor": 1
+  },
+  "physics": {
+    "gravity_scalar": 1,
+    "push_class": 1,
+    "radius": 1.75
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Custom6",
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

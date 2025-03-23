@@ -1,0 +1,143 @@
+{
+  "display_name": "!LOC:Fabrication Flyer",
+  "description": "!LOC:Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.",
+  "TEMP_texelinfo": 7.11877,
+  "attachable": {
+    "offsets": {
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/fab_air_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving_laterally",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fabber"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 2000,
+  "buildable_types": "(Land & Structure & Advanced | FabAdvBuild | FabBuild | Titan & Air) & Custom6",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "socket_fab",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "socket_thruster_1",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "socket_thruster_2",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "socket_thruster_3",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "socket_thruster_4",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "socket_thrusterRearRight",
+      "filename": "/pa/units/air/t_air_fab_adv/fighter_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "socket_thrusterRearLeft",
+      "filename": "/pa/units/air/t_air_fab_adv/fighter_jets.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 300,
+  "mesh_bounds": [7, 7, 4],
+  "model": {
+    "animations": {},
+    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_anim_tree.json",
+    "filename": "/pa/units/air/t_air_fab_adv/nl_fabrication_aircraft.papa"
+  },
+  "navigation": {
+    "acceleration": 30,
+    "aggressive_behavior": "circle",
+    "brake": 30,
+    "circle_max_time": 3,
+    "circle_min_time": 1,
+    "move_speed": 30,
+    "turn_speed": 180
+  },
+  "physics": {
+    "radius": 4
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -15
+  },
+  "tools": [
+    {
+      "aim_bone": "turret",
+      "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom6"
+  ]
+}

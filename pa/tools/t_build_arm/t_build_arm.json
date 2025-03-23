@@ -1,0 +1,30 @@
+{
+  "assist_layers": [
+    "WL_AnyHorizontalGroundOrWaterSurface",
+    "WL_Air",
+    "WL_Underwater"
+  ],
+  "construction_demand": {
+    "energy": 0,
+    "metal": 0
+  },
+  "max_range": 45,
+  "pitch_range": 90,
+  "pitch_rate": 50,
+  "reclaim_layers": [
+    "WL_AnyHorizontalGroundOrWaterSurface",
+    "WL_Air",
+    "WL_Seafloor",
+    "WL_LandVertical",
+    "WL_Underwater"
+  ],
+  "reclaim_types": [
+    "Unit",
+    "Wreckage",
+    "Feature"
+  ],
+  "tool_type": "TOOL_BuildArm",
+  "yaw_range": 180,
+  "yaw_rate": 50,
+  "can_only_assist_with_buildable_items": true
+}

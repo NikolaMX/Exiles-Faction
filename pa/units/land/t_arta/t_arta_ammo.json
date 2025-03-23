@@ -1,0 +1,42 @@
+{
+    "burn_damage": 10,
+    "burn_duration": 1,
+    "burn_radius": 10,
+    "damage": 250,
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/bomb_bot_plasma",
+            "effect_spec": "/pa/effects/specs/imp_pbomb.pfx"
+        },
+        "spawned": {
+            "audio_cue": "/SE/Weapons/structure/base_fire_laser"
+        }
+    },
+    "full_damage_splash_radius": 7,
+    "fx_trail": {
+        "filename": "/pa/units/land/t_arta/proj_pbomb.pfx"
+    },
+    
+    "lifetime": 3,
+    "max_velocity": 10000,
+    "splash_damage": 100,
+    "splash_radius": 10,
+    "turn_rate": 3,
+    "ammo_type": "AMMO_Projectile",
+    "flight_layer": "Air",
+    "flight_type": "Ballistic",
+    "initial_velocity": 1,
+    "model": {
+        "filename": ""
+    },
+    "physics": {
+        "add_to_spatial_db": true,
+        "allow_underground": true,
+        "gravity_scalar": 10,
+        "push_class": 1,
+        "radius": 1,
+        "type": "Projectile"
+    },
+    "spawn_layers": "WL_Air",
+    "splash_damages_allies": false
+}

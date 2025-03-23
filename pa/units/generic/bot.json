@@ -1,0 +1,38 @@
+{
+  "base_spec": "/pa/units/generic/bot_.json",
+  "guard_radius": 120,
+  "max_health": 40,
+  "navigation": {
+    "acceleration": 200,
+    "brake": 200,
+    "move_speed": 20,
+    "turn_speed": 720
+  },
+  "physics": {
+    "push_class": 4
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 20,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 20,
+          "shape": "capsule"
+        }
+      ]
+    }
+  }
+}

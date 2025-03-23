@@ -1,0 +1,130 @@
+{
+    "si_name": "strat_bomber",
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Vulture",
+    "description": "!LOC:Strategic Bomber - Extremly fast and radar stealth with high damage. Attacks land, sea and undersea targets.",
+    "max_health": 1500,
+    "build_metal_cost": 2400,
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Air",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Important"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 120,
+    "navigation": {
+        "ignore_overshoot": true,
+        "type": "air",
+        "acceleration": 100,
+        "brake": 50,
+        "move_speed": 100,
+        "turn_speed": 70,
+        "dodge_radius": 0,
+        "dodge_multiplier": 0.0,
+        "aggressive_distance": 300.0,
+        "aggressive_height": 100.0,
+        "wobble_factor": 0.05,
+        "wobble_speed": 0.1,
+        "vertical_speed": 40,
+        "hover_time": -1.0
+    },
+    "physics": {
+        "radius": 9,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 0.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/strat_bomber/a_shrike.papa",
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/air/strat_bomber/strat_bomber_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/bomber_T2_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "fx_offsets": [
+        {
+			"type": "moving_forward",
+			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
+			"bone": "socket_left_thruster",
+			"offset": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
+			"bone": "socket_right_thruster",
+			"offset": [
+				0,
+				0,
+				0
+			]
+		}
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_bomber_T2_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/bomber_T2"
+        }
+    },
+    "selection_icon": {
+        "diameter": 32.0
+    },
+    "TEMP_texelinfo": 11.3221,
+    "mesh_bounds": [
+        23,
+        9.5,
+        4.8
+    ]
+}

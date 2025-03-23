@@ -1,0 +1,148 @@
+{
+    "si_name": "tin_ded",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "display_name": "Tin but dead",
+    "description": "!LOC:What is dead may never die",
+    "max_health": 10,
+    "build_metal_cost": 150,
+    "wreckage_health_frac": 0,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.5
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Custom6",
+        "UNITTYPE_SelfDestruct"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "acceleration": 50,
+        "brake": -1,
+        "move_speed": 0,
+        "turn_speed": 720
+    },
+    "physics": {
+        "type": "Structure",
+        "radius": 0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false,
+        "collide_with_types": [
+            "Projectile"
+        ]
+    },
+    "recon": {
+        "observable": {
+      "layer": "mine"
+    },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 15
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 15
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/tin/model.papa",
+        "animations": {
+            "idle": "/pa/units/land/tin/dead/anim_idle.papa"
+        },
+        "animtree": "/pa/units/land/tin/anim_tree.json",
+        "walk_speed": 5
+    },
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon"
+      ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/tin/dead/tin_ded_death_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+          }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/assault_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/assault_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/assault"
+        }
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0.2,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                65.0,
+                0.0
+            ],
+            "near_width": 2.0,
+            "near_height": 2.0,
+            "near_distance": 1.2,
+            "far_distance": 20.0,
+            "color": [
+                0.9,
+                0.92,
+                1.0
+            ],
+            "intensity": 1.4,
+            "bone": "bone_turret"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 10.0
+    },
+    "mesh_bounds": [
+        4,
+        4,
+        4
+    ],
+    "TEMP_texelinfo": 4.07719
+}

@@ -1,0 +1,17 @@
+{
+  "base_spec": "/pa/units/generic/veh_.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Veh_small"
+    }
+  },
+  "max_health": 100,
+  "navigation": {
+    "acceleration": 150,
+    "brake": 150,
+    "move_speed": 15
+  },
+  "physics": {
+    "push_class": 4
+  }
+}

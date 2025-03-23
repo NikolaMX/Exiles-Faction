@@ -1,0 +1,29 @@
+{
+  "base_spec": "/pa/tools/base_turret/base_turret.json",
+  "ammo_id": "/pa/units/land/tank_gattling/tank_gattling_ammo.json",
+  "rate_of_fire": 5,
+  "idle_aim_delay": 0,
+  "max_range": 95,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 360,
+  "pitch_range": 65,
+  "auto_attack": true,
+  "firing_standard_deviation": 1,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Bot",
+    "Mobile",
+    "Defense",
+    "Naval",
+    "Mobile & Air",
+    "Structure - Wall",
+    "Wall"
+  ]
+}

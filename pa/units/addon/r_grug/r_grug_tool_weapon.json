@@ -1,0 +1,14 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/addon/r_grug/r_grug_ammo.json",
+  "rate_of_fire": 1,
+  "idle_aim_delay": 3,
+  "max_range": 75,
+  "yaw_rate": 180,
+  "pitch_rate": 110,
+  "yaw_range": 360,
+  "pitch_range": 40,
+  "spread_fire": true,
+  "auto_attack": true,
+  "target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"]
+}

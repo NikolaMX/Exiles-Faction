@@ -1,0 +1,17 @@
+{
+    "blend_root": {
+        "type": "bind_pose"
+    },
+    "skeleton_controls": [
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret",
+            "rotation_axis": "z"
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch",
+            "rotation_axis": "x"
+        }
+    ]
+}

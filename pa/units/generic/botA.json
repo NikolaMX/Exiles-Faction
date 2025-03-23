@@ -1,0 +1,13 @@
+{
+  "base_spec": "/pa/units/generic/bot.json",
+  "guard_radius": 150,
+  "max_health": 80,
+  "navigation": {
+    "acceleration": 200,
+    "brake": 200,
+    "move_speed": 20
+  },
+  "physics": {
+    "push_class": 5
+  }
+}

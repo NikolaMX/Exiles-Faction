@@ -1,0 +1,68 @@
+{
+    "display_name": "!LOC:NK-6 Anti-Air Missile",
+    "description": "!LOC:Anti-Air missile. Huge damage to a single target.",
+    "si_name": "air_defense_complex_adv_ammo",
+    "has_notifications": true,
+    "ammo_type": "Projectile",
+    "build_metal_cost": 2000,
+    "flight_type": "Staged",
+    "damage": 2000,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "initial_velocity": 10.0,
+    "max_velocity": 300.0,
+    "turn_rate": 360,
+    "lifetime": 5,
+    "show_strategic_icon": true,
+    "spawn_layers": "WL_Air",
+    "influence_radius": 120,
+    "model": {
+        "filename": "/pa/units/air/missile_anti_nuke/missile_anti_nuke.papa"
+    },
+    "collision_check": "enemies",
+    "collision_response": "impact",
+    "physics": {
+        "radius": 5,
+        "gravity_scalar": 3,
+        "ignore_gravity": true,
+        "add_to_spatial_db": true,
+        "allow_underground": true
+    },
+    "fx_trail": {
+        "filename": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo_trail.pfx",
+        "offset": [
+            0.0,
+            4.6,
+            0.0
+        ]
+    },
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/missile_antinuke",
+            "effect_spec": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo_explosion.pfx",
+            "effect_world_aligned": false
+        }
+    },
+    "audio_loop": "/SE/Movement/missile/anti_nuke_missile_fly_loop",
+    "stages": [
+        {
+            "ignores_gravity": true,
+            "ignores_LOS": true,
+            "stage_duration": 100,
+            "stage_turn_rate": 180,
+            "rotates_to_velocity": true
+        },
+        {
+            "ignores_gravity": true,
+            "ignores_LOS": false,
+            "stage_duration": 0,
+            "stage_turn_rate": 720,
+            "rotates_to_velocity": true
+        }
+    ],
+    "recon": {
+        "observable": {
+            "ignore_radar": false
+        }
+    }
+}

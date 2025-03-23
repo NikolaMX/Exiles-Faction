@@ -1,0 +1,12 @@
+{
+	"tool_type": "TOOL_Weapon",
+	"ammo_id": "/pa/units/land/pylon/overcharged/self_destruct_ammo.json",
+	"ammo_source": "time",
+	"damage": 0,
+	"ammo_capacity": 60,
+	"ammo_demand": 1,
+	"ammo_per_shot": 60,
+	"self_destruct": true,
+	"start_fully_charged": false,
+	"auto_fire_when_charged": true
+}

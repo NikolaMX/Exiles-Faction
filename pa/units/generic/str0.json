@@ -1,0 +1,8 @@
+{
+  "base_spec": "/pa/units/generic/str_.json",
+  "events": {
+    "died": {
+      "audio_cue": ""
+    }
+  }
+}

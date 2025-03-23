@@ -1,0 +1,172 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Horseshoe",
+    "si_name": "t_transport",
+    "description": "!LOC:Sturdy Air Transport - Load a land unit to transport for snipes or expansions. Moves slower than most air, but can brake quickly and has more health.",
+    "max_health": 120,
+    "build_metal_cost": 100,
+    "usable": true,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Air",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Transport",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "child_attached": {
+            "audio_cue": "/SE/Movement/air/transport_load"
+        },
+        "child_detached": {
+            "audio_cue": "/SE/Movement/air/transport_unload"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_transport_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/transport"
+        }
+    },
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Assist",
+        "ORDER_Load",
+        "ORDER_Unload",
+        "ORDER_SpecialMove"
+    ],
+    "useable": {
+        "type": "transport",
+        "range": 20
+    },
+    "transporter": {
+        "capacity": 1,
+        "transportable_unit_types": "Mobile & Land - Commander",
+        "transporter_attach_bone": "bone_payload",
+        "transportable_attach_offset": "head"
+    },
+    "navigation": {
+        "type": "air",
+        "acceleration": 15,
+        "brake": 100,
+        "move_speed": 60,
+        "turn_speed": 120,
+        "vertical_speed": 100,
+        "hover_time": -1.0
+    },
+    "physics": {
+        "radius": 5,
+        "gravity_scalar": 0.001
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/t_transport/horseshoe.papa",
+        "animations": {
+            "fly": "/pa/units/air/t_transport/horseshoe_anim_fly.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/transport_anim_tree.json"
+    },
+    "TEMP_texelinfo": 10.4837,
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "bone_leftWing",
+            "offset": [
+                0,
+                -0.7,
+                -2.5
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "bone_rightWing",
+            "offset": [
+                0,
+                -0.7,
+                -2.5
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "bone_leftWing",
+            "offset": [
+                0,
+                0.7,
+                -2.5
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "bone_rightWing",
+            "offset": [
+                0,
+                0.7,
+                -2.5
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 20.0
+    },
+    "mesh_bounds": [
+        11,
+        15,
+        4
+    ]
+}

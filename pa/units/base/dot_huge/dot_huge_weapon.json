@@ -1,0 +1,25 @@
+{	"ammo_id": "/pa/units/base/dot_huge/dot_huge_ammo.json",
+	"auto_attack": true,
+    "firing_arc_pitch": 360,
+    "firing_arc_yaw": 360,
+    "idle_aim_delay": 0,
+    "max_range": 15,
+    "no_busy_auto_attack": false,
+	"auto_fire_when_charged": true,
+    "pitch_range": 0,
+    "pitch_rate": 0,
+    "rate_of_fire": 1,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface"
+    ],
+    "tool_type": "TOOL_Weapon",
+    "yaw_range": 0,
+    "yaw_rate": 0,
+	"ammo_capacity": 1,
+  "ammo_demand": 0,
+  "ammo_per_shot": 1,
+  "ammo_source": "time",
+"start_fully_charged": true
+
+  }

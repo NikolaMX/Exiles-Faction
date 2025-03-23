@@ -1,0 +1,53 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "idle"
+      },
+      "dead": {
+        "type": "idle"
+      },
+      "ghost": {
+        "type": "idle"
+      },
+      "living": {
+        "node_idle": {
+          "anim_name": "idle",
+          "type": "playback"
+        },
+        "node_walk": {
+          "anim_name": "walk",
+          "type": "playback"
+        },
+        "type": "walk"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "turret01",
+      "type": "procedural_aim",
+      "weapon_index": 1
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "pitch01",
+      "type": "procedural_aim",
+      "weapon_index": 1
+    },
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "turret02",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "pitch02",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "burn_damage": 24,
+  "burn_duration": 1,
+  "burn_radius": 1,
+  "collision_check": "target",
+  "damage": 240,
+  "events": {
+    "spawned": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire"
+    }
+  },
+  "fx_beam_spec": "/pa/units/land/lightning/proj_lightning.pfx",
+  "fx_collision_spec": "/pa/units/land/lightning/hit.pfx",
+  "ammo_type": "AMMO_Beam",
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  }
+}

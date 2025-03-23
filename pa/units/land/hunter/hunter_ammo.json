@@ -1,0 +1,37 @@
+{
+    "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+    "damage": 0,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "full_damage_splash_radius": 0,
+    "splash_damages_allies": false,
+    "initial_velocity": 200.0,
+    "max_velocity": 200.0,
+    "lifetime": 10,
+    "fx_trail": {
+        "filename": "/pa/effects/specs/shell_artillery_small_proj_trail.pfx",
+        "offset": [
+            0.0,
+            1.0,
+            0.0
+        ]
+    },
+        "physics": {
+            "radius": 1,
+            "gravity_scalar": 20,
+            "add_to_spatial_db": false,
+            "allow_underground": true
+        },
+    "model": {
+        "filename": "/pa/units/air/shell/shell.papa"
+    },
+    "events": {
+      "died": {
+        "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+        "effect_spec": "/pa/units/base/dot_1/acid_puddle.pfx",
+        "effect_scale": 0.5
+      }
+    },
+    "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
+    "spawn_unit_on_death": "/pa/units/base/dot_1/dot_1.json"
+}

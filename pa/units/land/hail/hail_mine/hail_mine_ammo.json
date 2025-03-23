@@ -1,0 +1,14 @@
+{
+    "base_spec": "/pa/ammo/mine_pbaoe/mine_pbaoe.json",
+    "ammo_type": "PBAOE",
+    "damage": 300,
+    "splash_radius": 10,
+    "splash_damages_allies": false,
+    "damage_volume": {
+        "initial_radius": 15.0
+    },
+    "sim_fire_effect": "/pa/units/land/land_mine/land_mine_ammo_explosion_ent.json",
+    "impact_decals": [
+        "/pa/effects/specs/scorch_b_01.json"
+    ]
+}

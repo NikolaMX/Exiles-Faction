@@ -1,0 +1,86 @@
+{
+	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"display_name": "Anti Ballistics",
+	"description": "Intercepts large artillery shells and tactical missiles. Does not intercept strategic missiles.",
+	"max_health": 1000,
+	"build_metal_cost": 1000,
+	"atrophy_rate": 20,
+	"atrophy_cool_down": 15,
+	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+	"area_build_separation": 0,
+	"unit_types": [
+		"UNITTYPE_Custom6",
+		"UNITTYPE_Structure",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Land",
+		"UNITTYPE_Defense",
+		"UNITTYPE_FabAdvBuild",
+		"UNITTYPE_CombatFabAdvBuild"
+	],
+	"command_caps": [
+		"ORDER_Attack"
+	],
+	"guard_layer": "WL_Air",
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 155
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 155
+				}
+			]
+		}
+	},
+	"model": [
+		{
+			"layer": "WL_LandHorizontal",
+			"filename": "/pa/units/land/anti_ballistics/anti_ballistics.papa",
+			"animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+			"skirt_decal": "/pa/effects/specs/skirt_defense.json"
+		},
+		{
+			"layer": "WL_WaterSurface",
+			"filename": "/pa/units/land/anti_ballistics/anti_ballistics.papa",
+			"animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
+		}
+	],
+	"nearby_target_tick_update_interval": 2,
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/anti_ballistics/anti_ballistics_tool_weapon.json",
+			"aim_bone": "bone_pitch",
+			"fire_event": "fired",
+			"muzzle_bone": "bone_muzzle"
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/structure_small"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+			"effect_spec": "/pa/units/land/anti_ballistics/anti_ballistics_beam_flash.pfx bone_muzzle"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/structure_small",
+			"effect_scale": 0.5
+		}
+	},
+	"selection_icon": {
+		"diameter": 12.0
+	},
+	"mesh_bounds": [
+		5,
+		5,
+		9
+	],
+	"TEMP_texelinfo": 9.4493
+}

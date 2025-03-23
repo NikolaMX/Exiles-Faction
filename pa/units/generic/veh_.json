@@ -1,0 +1,67 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/exp_size1.pfx"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "guard_radius": 150,
+  "navigation": {
+    "acceleration": 120,
+    "brake": 120,
+    "move_speed": 12,
+    "turn_speed": 180,
+    "type": "land-small"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 20,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 20,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "strategic_icon_priority": 7,
+  "transportable": {
+    "size": 1
+  }
+}

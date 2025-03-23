@@ -1,0 +1,26 @@
+{
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "ammo_id": "/pa/units/addon/extra/replicate_commander_1_ammo.json",
+  "rate_of_fire": 1.6,
+  "idle_aim_delay": 1.0,
+  "max_range": 100,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 180,
+  "pitch_range": 90,
+  "auto_attack": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Air",
+    "WL_Underwater"
+  ],
+  "target_priorities": [
+    "Mobile - Air",
+    "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Structure - Wall",
+    "Mobile & Air",
+    "Wall"
+  ]
+}

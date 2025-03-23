@@ -1,0 +1,116 @@
+{
+    "si_name": "cruiser",
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Barracuda",
+    "description": "!LOC:Submarine - High damage. Cannot be targeted by cannons. Attacks sea and undersea targets.",
+    "max_health": 700,
+    "build_metal_cost": 500,
+    "spawn_layers": "WL_Underwater",
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Sub",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "guard_layer": "WL_AnyWater",
+    "navigation": {
+        "type": "underwater",
+        "acceleration": 40,
+        "brake": 120,
+        "move_speed": 12,
+        "turn_speed": 60,
+        "turn_accel": 20,
+        "dodge_radius": 10,
+        "dodge_multiplier": 1.0,
+        "wobble_factor": 0.0,
+        "wobble_speed": 0.0
+    },
+    "physics": {
+        "underwater": true,
+        "shape": "sphere",
+        "radius": 6
+    },
+    "recon": {
+        "observable": {
+            "layer": "underwater",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/cruiser/cruiser.papa",
+        "animations": {
+            "move": "/pa/units/sea/cruiser/cruiser_anim_move.papa"
+        },
+        "animtree": "/pa/units/sea/cruiser/cruiser_anim_tree.json",
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/cruiser/cruiser_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": [
+                "socket_muzzle01",
+                "socket_muzzle02"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01",
+            "effect_scale": 5.0
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea_sub",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx",
+            "effect_scale": 1.5
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/attack_sub_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 24.0
+    },
+    "TEMP_texelinfo": 8.37977,
+    "mesh_bounds": [
+        4,
+        15,
+        4
+    ]
+}

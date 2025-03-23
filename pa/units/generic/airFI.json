@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/units/generic/airF.json",
+  "guard_radius": 250,
+  "navigation": {
+    "acceleration": 240,
+    "brake": 240,
+    "move_speed": 120,
+    "turn_speed": 60,
+    "type": "air",
+    "vertical_speed": 400
+  }
+}

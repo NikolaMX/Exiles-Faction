@@ -1,0 +1,135 @@
+{
+    "display_name": "!LOC:Lamp",
+    "description": "!LOC:Lamp. Attracts moth.",
+    "TEMP_texelinfo": 1.0,
+    "armor_type": "AT_Structure",
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/bot/T2_fab"
+        },
+        "loops": {
+            "move": {
+                "flag": "vel_changed",
+                "cue": "/SE/Movement/bot/assault_loop",
+                "should_stop_func": "is_not_moving",
+                "should_start_func": "is_moving"
+            }
+        }
+    },
+    "build_metal_cost": 1,
+    "command_caps": [],
+    "model": {
+        "filename": "/pa/units/land/land_mine/land_mine.papa"
+    },
+    "fx_offsets": [
+        {
+            "orientation": [
+                90,
+                0,
+                0
+            ],
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "type": "phasing",
+            "offset": [
+                0,
+                0,
+                5
+            ]
+        }
+    ],
+    "guard_radius": 50,
+    "lod_hide_pixelsize": 32.0,
+    "max_health": 1,
+    "navigation": {
+        "type": "air",
+        "acceleration": 0,
+        "brake": 0,
+        "move_speed": 0,
+        "turn_speed": 0,
+        "dodge_radius": 1,
+        "dodge_multiplier": 0.0,
+        "aggressive_distance": 50.0,
+        "aggressive_Height": 1.0,
+        "aggressive_behavior": "line",
+        "wobble_factor": 0.0,
+        "wobble_speed": 1.0,
+        "hover_time": 5.0,
+        "park_stamp": {
+            "shape": "sphere",
+            "cost": 10,
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "simple"
+                }
+            ]
+        }
+    },
+    "physics": {
+        "add_to_spatial_db": false,
+        "radius": 0,
+        "air_friction": 1.0
+    },
+    "recon": {
+        "observable": {
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "uses_energy": false,
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "mine",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "strategic_icon_priority": 3,
+    "unit_types": [
+        "UNITTYPE_Hover",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild"
+    ],
+    "wreckage_health_frac": 0,
+    "structure": {
+        "cost_stamp": {}
+    },
+    "tools": [
+        {
+            "muzzle_bone": "bone_root",
+            "spec_id": "/pa/units/base/flare/flare_sd_Weapon.json",
+            "aim_bone": "bone_root"
+        }
+    ]
+}

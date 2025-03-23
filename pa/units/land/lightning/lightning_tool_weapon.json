@@ -1,0 +1,32 @@
+{
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/lightning/lightning_ammo.json",
+      "layer": "WL_LandHorizontal"
+    }
+  ],
+  "idle_aim_delay": 3,
+  "rate_of_fire": 0.25,
+  "max_range": 95,
+  "target_priorities": [
+    "Mobile & Bot - Heavy",
+    "Mobile & Tank - Heavy",
+    "Mobile & Naval - Heavy",
+    "Mobile & Heavy",
+    "Structure - Wall",
+    "Wall"
+  ],
+  "auto_attack": true,
+  "firing_arc_pitch": 15,
+  "firing_arc_yaw": 15,
+  "pitch_range": 89.9,
+  "pitch_rate": 120,
+  "spread_fire": false,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 120
+}

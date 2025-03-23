@@ -1,0 +1,263 @@
+{
+    "si_name": "roamer",
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Crocodile",
+    "description": "!LOC:Hover Tank Destroyer - Fast. Fragile. Can cross water and lava. Only shoots forward. Attacks land and sea targets.",
+    "max_health": 120,
+    "build_metal_cost": 200,
+    "armor_type": "AT_Hover",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                2.7
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Hover",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "hover",
+        "acceleration": 140,
+        "brake": 140,
+        "move_speed": 14,
+        "turn_speed": 90
+    },
+    "physics": {
+        "radius": 3,
+        "air_friction": 0.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/roamer/new_textures/arc_cannon.papa",
+        "animations": {
+            "hover": "/pa/units/land/roamer/asim_arc_cannon_anim_hover.papa"
+        },
+        "animtree": "/pa/units/land/roamer/tank_hover_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/roamer/roamer_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": "bone_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+            "effect_spec": "/pa/units/land/roamer/roamer_muzzle_flash.pfx bone_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/roamer/laser.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                2
+            ],
+            "orientation": [
+                0,
+                0,
+                -135
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/roamer/laser.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                2
+            ],
+            "orientation": [
+                0,
+                0,
+                -45
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                -2.86,
+                -1.9,
+                0.96
+            ],
+            "orientation": [
+                0,
+                0,
+                -202.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                2.86,
+                -1.9,
+                0.96
+            ],
+            "orientation": [
+                0,
+                0,
+                22.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                2.13,
+                2.14,
+                2.22
+            ],
+            "orientation": [
+                0,
+                0,
+                -15
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                -2.13,
+                2.14,
+                2.22
+            ],
+            "orientation": [
+                0,
+                0,
+                195
+            ]
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_hover_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_hover"
+        }
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                1.8,
+                -2,
+                1.0
+            ],
+            "orientation": [
+                30.0,
+                65.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 10.0,
+            "near_distance": 3.0,
+            "far_distance": 50.0,
+            "color": [
+                2,
+                0.5,
+                0.5
+            ],
+            "intensity": 10
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -1.8,
+                -2,
+                1.0
+            ],
+            "orientation": [
+                -30.0,
+                65.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 10.0,
+            "near_distance": 3.0,
+            "far_distance": 50.0,
+            "color": [
+                2,
+                0.5,
+                0.5
+            ],
+            "intensity": 10
+        }
+    ],
+    "selection_icon": {
+        "diameter": 13.0
+    },
+    "mesh_bounds": [
+        4.93769,
+        6.4,
+        2.6835
+    ],
+    "TEMP_texelinfo": 5.84968
+}

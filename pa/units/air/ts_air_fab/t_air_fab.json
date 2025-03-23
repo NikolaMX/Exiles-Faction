@@ -1,0 +1,222 @@
+{
+    "si_name": "ts_air_fab",
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "unit_name": "Gargoyle",
+    "display_name": "!LOC:Gargoyle",
+    "description": "!LOC:Shotgun Gunship - Cheap. Slow. Durable. Attacks land and sea targets.",
+    "max_health": 400,
+    "build_metal_cost": 600,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                4
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Gunship",
+        "UNITTYPE_Air",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "command_caps": [
+        "ORDER_Attack",
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "air",
+        "acceleration": 35,
+        "brake": 35,
+        "move_speed": 45,
+        "turn_speed": 180,
+        "circle_min_time": 1,
+        "circle_max_time": 3,
+        "aggressive_behavior": "circle"
+    },
+    "physics": {
+        "gravity_scalar": 1,
+        "radius": 4
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/ts_air_fab/t_air_fab.papa",
+        "animtree": "/pa/anim/anim_trees/fabrication_aircraft_anim_tree.json",
+        "animations": {
+            "fly": "/pa/units/air/ts_air_fab/t_air_fab_anim_fly.papa"
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/air/ts_air_fab/t_air_fab_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "projectiles_per_fire": 12,
+            "muzzle_bone": [
+                "bone_muzzle.r",
+                "bone_muzzle.l",
+                "bone_muzzle.r",
+                "bone_muzzle.l",
+                "bone_muzzle.r",
+                "bone_muzzle.l",
+                "bone_muzzle.r",
+                "bone_muzzle.l",
+                "bone_muzzle.r",
+                "bone_muzzle.l",
+                "bone_muzzle.r",
+                "bone_muzzle.l"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/gunship_fire",
+            "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx bone_muzzle.r /pa/units/air/gunship/gunship_muzzle_flash.pfx bone_muzzle.l"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+            "effect_scale": 0.6
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/air/fab_air_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/fabber"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_muzzle.r",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_muzzle.l",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_leftWing",
+            "offset": [
+                2.7,
+                -0,
+                -1.2
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_rightWing",
+            "offset": [
+                -2.7,
+                -0,
+                -1.2
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                0,
+                4,
+                -1
+            ],
+            "orientation": [
+                0,
+                55,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 16.0
+    },
+    "mesh_bounds": [
+        9.8,
+        5.58409,
+        3.74006
+    ],
+    "TEMP_texelinfo": 7.11877
+}

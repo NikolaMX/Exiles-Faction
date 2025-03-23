@@ -1,0 +1,144 @@
+{
+"si_name": "t_air_fac",
+  "TEMP_texelinfo": 45,
+  "area_build_separation": 3,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_air",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "base_spec": "/pa/units/air/air_factory/air_factory.json",
+  "buildable_types": "Air & Basic & FactoryBuild & Custom6",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "death": {
+    "decals": [
+      "/pa/effects/specs/scorch_c_01.json"
+    ]
+  },
+  "description": "Builds basic air units.",
+  "display_name": "Air factory",
+  "factory_cooldown_time": 2,
+  "fx_offsets": [
+    {
+      "bone": "muzzle01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "muzzle02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "platform",
+      "filename": "/pa/units/air/t_air_fac/Afac22_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "platform",
+      "filename": "/pa/units/air/t_air_fac/Afac22_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
+  "max_health": 6000,
+  "mesh_bounds": [
+    32,
+    32,
+    22
+  ],
+  "model": [
+    {
+      "animations": {
+        "build_end": "/pa/units/air/t_air_fac/Afac22_anim_end.papa",
+        "build_loop": "/pa/units/air/t_air_fac/Afac22_anim_build.papa",
+        "build_start": "/pa/units/air/t_air_fac/Afac22_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/air/t_air_fac/Afac22.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_airfac.json"
+    },
+    {
+      "animations": {
+        "build_end": "/pa/units/air/t_air_fac/Afac22_anim_end.papa",
+        "build_loop": "/pa/units/air/t_air_fac/Afac22_anim_build.papa",
+        "build_start": "/pa/units/air/t_air_fac/Afac22_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/air/t_air_fac/sea/Afac22.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "placement_size": [
+    40,
+    40
+  ],
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ]
+  ],
+  "unit_types": [
+    "UNITTYPE_Important",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Air",
+    "UNITTYPE_Structure",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Custom6"
+  ],
+  "wait_to_rolloff_time": 0
+}

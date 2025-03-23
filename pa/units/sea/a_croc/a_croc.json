@@ -1,0 +1,101 @@
+{
+    "si_name": "a_croc",
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Croc",
+    "description": "!LOC:Laser Frigate - Durable. Rapid-fire. Attacks land and sea targets.",
+    "max_health": 800,
+    "build_metal_cost": 475,
+    "spawn_layers": "WL_WaterSurface",
+    "mesh_bounds": [
+        6,
+        15,
+        8
+    ],
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "deepwater",
+        "acceleration": 30,
+        "brake": 90,
+        "move_speed": 14,
+        "turn_speed": 60,
+        "turn_accel": 30
+    },
+    "physics": {
+        "shape": "sphere",
+        "radius": 3
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 180
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 180
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/a_croc/a_croc.papa",
+        "animtree": "/pa/units/sea/a_croc/a_croc_anim_tree.json"
+    },
+    "nearby_target_tick_update_interval": 3,
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/a_croc/a_croc_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "fire_event": "fired0",
+            "muzzle_bone": "muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle",
+            "effect_scale": 0.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea_large",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+            "effect_scale": 0.7
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/frigate_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/sea/frigate/frigate_wake.pfx"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 23.0
+    },
+    "TEMP_texelinfo": 19.1546
+}

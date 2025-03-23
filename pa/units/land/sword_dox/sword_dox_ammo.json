@@ -1,0 +1,19 @@
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 200,
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "initial_velocity": 130.0,
+  "max_velocity": 130.0,
+  "lifetime": 0.3,
+  "model": null,
+  "fx_trail": {
+    "filename": "/pa/units/land/sword_dox/assault_bot_ammo_trail.pfx"
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_bullet",
+      "effect_spec": "/pa/units/land/assault_bot/assault_bot_muzzle_flash.pfx"
+    }
+  }
+}

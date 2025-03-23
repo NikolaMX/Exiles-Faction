@@ -1,0 +1,138 @@
+{
+  "si_name": "t_tank_fac_adv",
+  "TEMP_texelinfo": 65,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_bot",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "max_health": 20000,
+  "build_metal_cost": 3600,
+  "base_spec": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json",
+  "buildable_types": "Mobile & Tank & FactoryBuild & Custom6",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "death": {
+    "decals": [
+      "/pa/effects/specs/scorch_c_01.json"
+    ]
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/t_tank_fac_adv/t_tank_fac_adv_build_arm.json",
+      "aim_bone": "bone_root"
+    }
+  ],
+  "description": "Manufacturing: builds advanced tanks.",
+  "display_name": "Advanced Tank factory",
+  "factory_cooldown_time": 3,
+  "fx_offsets": [
+    {
+      "bone": "armD01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "armD02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "armD03",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "armD04",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    }
+  ],
+  "headlights": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 30,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 2,
+      "near_distance": 10,
+      "near_height": 20,
+      "near_width": 20,
+      "offset": [
+        0,
+        0,
+        20
+      ]
+    }
+  ],
+  "model": {
+    "animations": {
+      "build_end": "/pa/units/land/t_tank_fac_adv/Bfac23_anim_end.papa",
+      "build_loop": "/pa/units/land/t_tank_fac_adv/Bfac23_anim_build.papa",
+      "build_start": "/pa/units/land/t_tank_fac_adv/Bfac23_anim_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+    "filename": "/pa/units/land/t_tank_fac_adv/Bfac23.papa",
+    "skirt_decal": "/pa/effects/specs/skirt_02.json"
+  },
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "spawn_layers": "WL_LandHorizontal",
+  "unit_types": [
+    "UNITTYPE_Custom6",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Land",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 0
+}

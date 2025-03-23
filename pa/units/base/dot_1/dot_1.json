@@ -1,0 +1,87 @@
+{
+    "display_name": "acid",
+    "unit_name": "acid",
+    "description": "damage over time unit",
+    "TEMP_texelinfo": 2.37699,
+    "si_name":"empty",
+    "build_metal_cost": 0.01,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/barrier"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/barrier"
+      }
+    },
+    "max_health": 100,
+    "mesh_bounds": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "model": [
+      {
+        "filename": "/pa/units/base/stun/empty_model.papa"
+      }
+    ],
+    "physics": {
+      "type": "Structure",
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+      "shape": "Box",
+      "radius": 0,
+      "allow_pushing": false,
+      "push_sideways": false,
+      "allow_underground": false,
+      "collide_with_types": [
+        "Projectile"
+      ]
+    },
+    "recon": {
+        "observable": {
+            "ignore_radar": true,
+            "ignore_sight": true,
+            "layer": "surface_and_air"
+          },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 15
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 15
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 1.0
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "strategic_icon_priority": 3,
+    "tools": [
+      {
+        "spec_id": "/pa/units/base/dot_1/dot_1_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/base/dot_1/dot_1_death_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Land",
+      "UNITTYPE_Naval",
+      "UNITTYPE_Defense",
+      "UNITTYPE_NoBuild"
+    ],
+    "wreckage_health_frac": 0.0
+  }

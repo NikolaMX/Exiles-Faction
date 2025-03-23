@@ -1,0 +1,30 @@
+{
+	"identifier": "pa.mla.unit.replicate.LOCAL_NEW_FAC",
+	"display_name": "Exiles Faction WIP",
+	"description": "Tiha Faction WIP.",
+	"author": "borrowed from a bunch of people",
+	"signature": "not yet implemented",
+	"forum": "",
+	"priority": 100,
+	"icon": "https://raw.githubusercontent.com/BotWhan/Replicate-Faction/main/icon.png",
+	"titansOnly": true,
+	"category": [
+	 "titans",
+   	 "in-game",
+   	 "server",
+  	 "unit",
+   	 "expansion"
+	],
+	"scenes": {
+		"shared_build": [
+			"coui://ui/mods/pa.mla.unit.replicate/shared_build.js"
+		],
+		"icon_atlas": [
+			"coui://ui/mods/pa.mla.unit.replicate/icon_atlas.js"
+		]
+	},
+	"context": "server",
+	"date": "2024-07-22",
+	"build": "120799",
+	"version": "0.5"
+}

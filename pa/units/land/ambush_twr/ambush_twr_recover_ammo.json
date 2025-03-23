@@ -1,0 +1,20 @@
+{
+  "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
+  "armor_damage_map": {
+    "AT_Air": 0.0,
+    "AT_Orbital": 0.0,
+    "AT_Commander": 0.0
+  },
+  "damage": 0,
+  "damage_volume": {
+    "burnable_remove_radius": 0,
+    "delay": 0,
+    "initial_radius": 0.0,
+    "radius_accel": 0.0,
+    "radius_velocity": 0.0
+  },
+  "full_damage_splash_radius": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0,
+  "spawn_unit_on_death": "/pa/units/land/ambush_twr/hid/ambush_twr_hid.json"
+}

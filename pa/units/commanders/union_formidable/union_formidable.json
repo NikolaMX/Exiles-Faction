@@ -1,0 +1,297 @@
+{
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "display_name": "Formidable Commander",
+    "si_name": "replicate_commander_1",
+    "description": "Basic Tiha Commander.",
+    "model": {
+        "filename": "/pa/units/commanders/union_formidable/formidable.papa",
+        "animations": {
+            "death01": "/pa/units/commanders/union_formidable/formidable.papa",
+            "walk": "/pa/units/commanders/union_formidable/formidable_run.papa",
+            "idle": "/pa/units/commanders/union_formidable/formidable_idle.papa",
+            "walk_stop": "/pa/units/commanders/union_formidable/formidable_stop.papa",
+            "aim_up": "/pa/units/commanders/union_formidable/formidable.papa",
+            "aim_down": "/pa/units/commanders/union_formidable/formidable.papa"
+        },
+        "animtree": "/pa/units/commanders/union_formidable/union_formidable_comm_anim_tree.json",
+        "walk_speed": 3.5
+    },
+    "strategic_icon_priority": 0,
+    "max_health": 15000,
+    "build_metal_cost": 8000,
+    "buildable_types": "CmdBuild & Custom6",
+    "show_in_orbital_layer": true,
+    "armor_type": "AT_Commander",
+    "wreckage_health_frac": 1,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                10
+            ]
+        }
+    },
+    "production": {
+        "energy": 2000,
+        "metal": 20
+    },
+    "storage": {
+        "energy": 45000,
+        "metal": 2500
+    },
+    "unit_types": [
+        "UNITTYPE_Commander",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Attack",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "navigation": {
+        "type": "amphibious",
+        "acceleration": 60,
+        "brake": -1,
+        "move_speed": 12,
+        "turn_speed": 180,
+        "turn_in_place": true,
+        "park_stamp": {
+            "shape": "sphere",
+            "cost": 20,
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "simple"
+                }
+            ]
+        }
+    },
+    "physics": {
+        "radius": 9,
+        "sync_radius_to_extents": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "celestial",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 1
+                }
+            ]
+        }
+    },
+    "teleportable": {},
+    "tools": [
+        {
+            "spec_id": "/pa/units/addon/extra/replicate_commander_1_build_arm.json",
+            "aim_bone": "bone_turret"
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "primary_weapon": true
+        },
+        {
+            "spec_id": "/pa/tools/uber_cannon/uber_cannon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "secondary_weapon": true
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "primary_weapon": false,
+            "show_range": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "primary_weapon": false,
+            "show_range": false
+        }
+    ],
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json",
+        "air_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe_air.json",
+        "air_height_threshold": 50
+    },
+    "events": {
+        "fired": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_right_muzzle"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "socket_left"
+        }
+    ],
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -5,
+                1.2
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_turret",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -5,
+                1.2
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                0,
+                -2,
+                5
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0,
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                2.2,
+                -3,
+                5
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                5,
+                -7,
+                0
+            ],
+            "radius": 6.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_pitch"
+        }
+    ],
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Commander_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/commander/Commander_move_loop_tank",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            },
+            "selection_response": {
+                "cue": "/SE/Selection/commander"
+            },
+            "sing_selection_response": {
+                "cue": "/SE/UI/plus/sing"
+            }
+        },
+        "selection_icon": {
+            "diameter": 6
+        },
+        "mesh_bounds": [
+            12,
+            12,
+            12
+        ]
+    },
+    "catalog_object_name": "TankAeson",
+    "client": {
+        "ui": {
+            "image": "/pa/units/commanders/union_formidable/img_union_formidable.png",
+            "thumb_image": "/pa/units/commanders/union_formidable//img_union_formidable_thumb.png",
+            "profile_image": "/pa/units/commanders/union_formidable/profile_union_formidable.png"
+        }
+    }
+}

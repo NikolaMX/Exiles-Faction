@@ -1,0 +1,235 @@
+{
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "Cyclops",
+  "description": "Anti-Heavy Bot. Long Range. High damage. Durable. Amphibious.",
+  "max_health": 3000,
+  "build_metal_cost": 3000,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom6",
+    "UNITTYPE_Bot",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Custom6",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Important",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Amphibious"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "has_death_effects": true,
+  "atrophy_rate": 200.0,
+  "atrophy_cool_down": 10.0,
+  "transportable": {
+    "size": 1
+  },
+  "guard_layer": "WL_AnySurface",
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 12,
+    "brake": 12,
+    "move_speed": 13,
+    "turn_speed": 90,
+    "group_preference": "back"
+  },
+  "physics": {
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/land/tripod/tripod.papa",
+    "animations": {
+      "deploy": "/pa/units/land/tripod/tripod_anim_deploy.papa",
+      "build": "/pa/units/land/tripod/tripod_anim_build.papa",
+      "death01": "/pa/units/land/assault_bot_adv/assault_bot_adv_anim_death01.papa",
+      "walk": "/pa/units/land/tripod/tripod_anim_walk.papa",
+      "idle": "/pa/units/land/tripod/tripod_anim_idle.papa",
+      "death": "/pa/units/land/tripod/tripod_anim_death.papa",
+      "dead": "/pa/units/land/tripod/tripod_anim_dead.papa"
+    },
+    "animtree": "/pa/units/land/tripod/tripod_anim_tree.json",
+    "walk_speed": 5
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/tripod/tripod_tool_weapon.json",
+      "aim_bone": "bone_turret",
+      "record_index": 0,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_muzzle"
+      ]
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": ""
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire",
+      "effect_spec": "/pa/units/land/tripod/tripod_muzzle_flash.pfx socket_muzzle"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx",
+      "effect_scale": 3
+    }
+  },
+  "selection_icon": {
+    "diameter": 15.0
+  },
+  "TEMP_texelinfo": 6.39639,
+  "mesh_bounds": [
+    6,
+    8,
+    16
+  ],
+  "fx_offsets": [
+    {
+      "type": "phasing",
+      "filename": "/pa/effects/mini_tp.pfx",
+      "bone": "bone_root",
+      "offset": [
+          0,
+          0,
+          5
+      ],
+      "orientation": [
+          0,
+          0,
+          0
+      ]
+  },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_point_on.pfx",
+      "bone": "bone_reactor_left",
+      "offset": [0, 0, 0]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_point_on.pfx",
+      "bone": "bone_reactor_right",
+      "offset": [0, 0, 0]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_effect_1.pfx",
+      "bone": "bone_reactor_left"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_effect_1.pfx",
+      "bone": "bone_reactor_right"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_door_still.pfx",
+      "bone": "bone_door_left"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/tripod_door_still.pfx",
+      "bone": "bone_door_right"
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/tripod/cubes.pfx",
+      "bone": "socket_tactical"
+    }
+  ],
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_solar_drone_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/titan/bot"
+    }
+  },
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        0.0,
+        -1.7,
+        1.9
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "near_width": 5.0,
+      "near_height": 5.0,
+      "near_distance": 3.0,
+      "far_distance": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        0.8
+      ],
+      "intensity": 8.0,
+      "bone": "bone_spine",
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "offset": [
+        0.0,
+        -2,
+        0
+      ],
+      "radius": 4.0,
+      "color": [
+        1.0,
+        1.0,
+        0.6
+      ],
+      "intensity": 4.0,
+      "bone": "socket_muzzle"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "auto_reclaim": true,
+    "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+    "can_only_assist_with_buildable_items": true,
+    "construction_demand": {
+        "energy": 400,
+        "metal": 20
+    },
+    "max_range": 75,
+    "pitch_rate": 1440,
+    "yaw_rate": 1440,
+    "yaw_range": 180,
+    "pitch_range": 45,
+    "reclaim_layers": [
+        "WL_AnyLayer"
+    ],
+    "reclaim_types": [
+        "Wreckage",
+        "Unit",
+        "Feature"
+    ]
+}

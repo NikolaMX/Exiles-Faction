@@ -1,0 +1,63 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "bind_pose"
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret",
+                "rotation_axis": "z"
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch",
+                "rotation_axis": "x"
+            }
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_left_upper_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.7
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_right_upper_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.7
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_left_lower_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.7
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_right_lower_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.7
+        }
+    ]
+}

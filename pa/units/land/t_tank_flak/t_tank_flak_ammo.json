@@ -1,0 +1,31 @@
+{
+  "base_spec": "/pa/ammo/base_ammo/base_ammo.json",
+  "damage": 15,
+  "full_damage_splash_radius": 0,
+  "lifetime": 1,
+  "splash_damage": 10,
+  "splash_radius": 15,
+  "flight_type": "Direct",
+  "turn_rate": 0,
+  "model": {
+    "filename": ""
+  },
+  "fx_trail": {
+    "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_artillery",
+      "effect_spec": "/pa/units/land/t_tank_flak/default_proj_flak_explosion.pfx",
+      "effect_scale": 0.75
+    }
+  },
+
+  "initial_velocity": 300,
+  "max_velocity": 300
+}

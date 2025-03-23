@@ -1,0 +1,110 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "unit_name": "Trapper",
+    "si_name": "hunter",
+    "display_name": "!LOC:Trapper",
+    "description": "!LOC:Artillery Crawler - Deals damage over time",
+    "max_health": 85,
+    "build_metal_cost": 105,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                2.7
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 13,
+        "turn_speed": 120
+    },
+    "physics": {
+        "radius": 4
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/hunter/hunter.papa",
+        "animtree": "/pa/units/land/hunter/hunter_anim_tree.json",
+        "animations": {
+            "idle": "/pa/units/land/hunter/hunter_idle.papa",
+            "walk": "/pa/units/land/hunter/hunter_run.papa"
+        },
+        "walk_speed": 5,
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/hunter/hunter_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_light_fire",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/assault_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/assault"
+        }
+    },
+    "headlights": [],
+    "selection_icon": {
+        "diameter": 11.0
+    },
+    "mesh_bounds": [
+        5,
+        5.4,
+        4
+    ],
+    "TEMP_texelinfo": 5.84968
+}

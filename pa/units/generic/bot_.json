@@ -1,0 +1,37 @@
+{
+  "armor_type": "AT_Bot",
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_scale": 0.5,
+      "effect_spec": "/pa/effects/specs/exp_size1.pfx"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "strategic_icon_priority": 7,
+  "transportable": {
+    "size": 1
+  }
+}

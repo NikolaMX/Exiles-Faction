@@ -1,0 +1,141 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Basic Storage",
+    "si_name": "t_power_storage",
+    "display_name": "!LOC:Energy Storage",
+    "description": "!LOC:Storage - Increases maximum power storage capacity.",
+    "max_health": 2000,
+    "build_metal_cost": 600,
+    "atrophy_rate": 7.5,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "storage": {
+        "energy": 400000
+    },
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Custom6"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/land/t_power_storage/basic_storage.papa",
+            "animations": {
+                "idle": "/pa/units/land/t_power_storage/basic_storage_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/metal"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.8
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/metal"
+        }
+    },
+    "headlights": [],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -6.8,
+                7.15
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "intensity": 3.0
+        },
+        {
+            "offset": [
+                0.0,
+                0.1,
+                0
+            ],
+            "radius": 5.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0,
+            "bone": "bone_spinner"
+        },
+        {
+            "offset": [
+                2.77,
+                4.9,
+                0.0
+            ],
+            "radius": 5.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0,
+            "bone": "bone_spinner"
+        },
+        {
+            "offset": [
+                -2.77,
+                4.9,
+                0.0
+            ],
+            "radius": 5.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0,
+            "bone": "bone_spinner"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 20
+    },
+    "mesh_bounds": [
+        10,
+        10,
+        15
+    ],
+    "placement_size": [
+        15,
+        15
+    ],
+    "TEMP_texelinfo": 21.4256
+}

@@ -1,0 +1,25 @@
+{
+	"blend_root": {
+		"type": "bind_pose"
+	},
+	"skeleton_controls": [
+		{
+			"type": "fader",
+			"lerp_func": "is_active",
+			"child": {
+				"type": "procedural_aim",
+				"rotation_bone": "bone_turret",
+				"rotation_axis": "z"
+			}
+		},
+		{
+			"type": "fader",
+			"lerp_func": "is_active",
+			"child": {
+				"type": "procedural_aim",
+				"rotation_bone": "bone_pitch",
+				"rotation_axis": "x"
+			}
+		}
+	]
+}

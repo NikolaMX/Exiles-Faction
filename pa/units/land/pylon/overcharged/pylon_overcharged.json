@@ -1,0 +1,86 @@
+{
+	"base_spec": "/pa/units/land/pylon/pylon.json",
+	"display_name": "Overcharged Energy Pylon",
+	"description": "!LOC:Basic Economy - Produces energy. BUT NOT FOR LONG",
+	"max_health": 500,
+	"build_metal_cost": 150,
+	"atrophy_rate": 7.5,
+	"atrophy_cool_down": 15.0,
+	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+	"area_build_type": "Line",
+	"wreckage_health_frac": 0.0,
+	"production": {
+		"energy": 1800
+	},
+
+	"model": [
+		{
+			"filename": "/pa/units/land/pylon/a_energy_plant.papa",
+			"animations": {
+				"idle": "/pa/units/land/pylon/overcharged/a_energy_plant_overcharged_anim_work.papa"
+			},
+			"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+			"skirt_decal": "/pa/effects/specs/skirt_energy.json"
+		}
+	],
+
+	"unit_types": [
+		"UNITTYPE_Structure",
+		"UNITTYPE_EnergyProduction",
+		"UNITTYPE_Basic",
+		"UNITTYPE_CmdBuild",
+		"UNITTYPE_FabBuild",
+		"UNITTYPE_Economy",
+		"UNITTYPE_Custom6",
+		"UNITTYPE_NoBuild"
+	],
+	"command_caps": [],
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/pylon/overcharged/self_destruct_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root"
+		}
+	],
+	"fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/units/land/energy_plant/energy_plant_idle.pfx",
+			"offset": [
+				0,
+				0,
+				5
+			]
+		},
+		{
+			"type": "idle",
+            "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
+            "bone": "socket_ring_center",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+		},
+		{
+			"type": "idle",
+            "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
+            "bone": "socket_ring_center",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+		},
+		{
+			"type": "idle",
+            "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
+            "bone": "socket_ring_center",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+		}
+	]
+}

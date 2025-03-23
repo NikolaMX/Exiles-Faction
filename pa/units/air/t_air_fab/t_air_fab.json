@@ -1,0 +1,100 @@
+{
+  "si_name":"t_air_fab",
+  "TEMP_texelinfo": 7,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  "base_spec": "/pa/units/air/fabrication_aircraft/fabrication_aircraft.json",
+  "build_metal_cost": 200,
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced - Orbital | FabBuild) & Custom6 - Custom7",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "description": "Tech 2 fabricator: wired to build structures.",
+  "display_name": "Tech 2 fabrication aircraft",
+  "fx_offsets": [
+    {
+      "bone": "muzzle01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "muzzle02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "engine01",
+      "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+      "orientation": [
+        0,
+        90,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "engine02",
+      "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+      "orientation": [
+        0,
+        90,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "engine03",
+      "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "max_health": 100,
+  "mesh_bounds": [
+    6,
+    6.8,
+    3
+  ],
+  "model": {
+    "animations": {
+      "fly": "/pa/units/air/t_air_fab/Afab21_anim_fly.papa"
+    },
+    "animtree": "/pa/units/air/t_air_fab/airfab.json",
+    "filename": "/pa/units/air/t_air_fab/Afab22.papa"
+  },
+  "navigation": {
+    "acceleration": 25,
+    "brake": 25,
+    "move_speed": 50
+  },
+  "physics": {
+    "radius": 4
+  },
+  "tools": [
+    {
+      "aim_bone": "turret00",
+      "spec_id": "/pa/units/air/t_air_fab/t_air_fab_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Custom6"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/sea_scout_ship_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/generic/nav_.json",
+  "events": {
+    "died": {
+      "effect_scale": 0.8,
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    }
+  },
+  "guard_radius": 150,
+  "max_health": 100,
+  "navigation": {
+    "acceleration": 5,
+    "brake": 5,
+    "move_speed": 15,
+    "park_stamp_cost": 10,
+    "park_stamp_type": "box",
+    "turn_speed": 90,
+    "type": "deepwater"
+  },
+  "physics": {
+    "push_class": 8
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 120,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 24,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 24,
+          "shape": "capsule"
+        }
+      ]
+    }
+  }
+}

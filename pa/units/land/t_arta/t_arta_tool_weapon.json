@@ -1,0 +1,31 @@
+{
+    "ammo_capacity": 500,
+    "ammo_demand": 250,
+    "ammo_id": "/pa/units/land/t_arta/t_arta_ammo.json",
+    "ammo_per_shot": 500,
+    "ammo_source": "energy",
+    "arc_type": "ARC_High",
+    "firing_arc_pitch": 5,
+    "firing_arc_yaw": 5,
+    "firing_standard_deviation": 0,
+    "max_firing_velocity": 200,
+    "max_range": 250,
+    "min_firing_velocity": 10,
+    "rate_of_fire": 0.4,
+    "target_priorities": [
+      "Structure - Wall",
+      "Mobile - Air",
+      "Wall"
+    ],
+    "auto_attack": true,
+    "spread_fire": false,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface"
+    ],
+    "tool_type": "TOOL_Weapon",
+    "yaw_range": 30,
+    "pitch_range": 89.9,
+    "yaw_rate": 30,
+    "pitch_rate": 30
+  }

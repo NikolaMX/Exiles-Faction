@@ -1,0 +1,124 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "!LOC:Stalker",
+    "si_name": "stalker",
+    "description": "!LOC:Cloaked Attack Vehicle - Invisible short-range tank. High damage, long reload.",
+    "max_health": 400,
+    "build_metal_cost": 1000,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                1,
+                4.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Tank",
+        "UNITTYPE_Vehicle",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Custom6"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 150,
+        "brake": 150,
+        "move_speed": 13,
+        "turn_speed": 200
+    },
+    "physics": {
+        "radius": 5
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine"
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/stalker/stalker.papa",
+        "animations": {
+            "run": "/pa/units/land/stalker/stalker_anim_drive.papa"
+        },
+        "walk_speed": 4.5,
+        "animtree": "/pa/units/land/stalker/stalker_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/stalker/stalker_weapon.json",
+            "aim_bone": "bone_pitch",
+            "projectiles_per_fire": 1,
+            "muzzle_bone": [
+                "socket_muzzle"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/land/stalker/muzzle_flash.pfx socket_muzzle",
+            "effect_scale": 2
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/nuke_tank_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/attack_vehicle"
+        }
+    },
+    "selection_icon": {
+        "diameter": 13.0
+    },
+    "headlights": [],
+    "lamps": [],
+    "TEMP_texelinfo": 6.12932,
+    "mesh_bounds": [
+        5,
+        5,
+        3.5
+    ]
+}

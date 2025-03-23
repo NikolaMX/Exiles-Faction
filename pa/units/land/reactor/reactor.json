@@ -1,0 +1,139 @@
+{
+    "base_spec": "/pa/units/base/mobile_structure_base.json",
+    "unit_name": "Repair Station",
+    "si_name": "reactor",
+    "display_name": "!LOC:Repair Station",
+    "description": "!LOC:Slowly heals all nearby units for free. Mobile but very slow",
+    "max_health": 300,
+    "build_metal_cost": 900,
+    "atrophy_rate": 7.5,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "placement_size": [
+        12,
+        12
+    ],
+    "production": {
+        "energy": 600
+    },
+    "unit_types": [
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Custom7"
+    ],
+    "navigation": {
+        "type": "amphibious",
+        "acceleration": 100,
+        "brake": -1,
+        "move_speed": 6,
+        "turn_speed": 100
+    },
+    "fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/units/land/reactor/healing_aura.pfx",
+			"bone": "bone_root"
+		}
+	],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 25
+                },
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/base/regen_1/regen_1_tool.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+
+        }
+    ],
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/reactor/model.papa",
+            "animations": {
+                "idle": "/pa/units/land/reactor/anim_idle.papa",
+                "walk": "/pa/units/land/reactor/anim_run.papa"
+            },
+            "animtree": "/pa/units/land/reactor/anim_tree.json",
+            "walk_speed": 10
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "fired": {
+            "filename": "/pa/units/land/reactor/healing_aura.pfx",
+            "bone": "bone_root",
+            "effect_scale": 1,
+            "audio": "/SE/Construction/Fab_contruction_beam_loop"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        },
+        "headlights": [
+            {
+                "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+                "offset": [
+                    0,
+                    0.0,
+                    3
+                ],
+                "orientation": [
+                    0,
+                    0.0,
+                    0.0
+                ],
+                "near_width": 5.5,
+                "near_height": 5.5,
+                "near_distance": 2.5,
+                "far_distance": 15.0,
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "intensity": 1.0
+            }
+        ]
+    },
+    "selection_icon": {
+        "diameter": 15.0
+    },
+    "mesh_bounds": [
+        12,
+        12,
+        12
+    ],
+    "TEMP_texelinfo": 4.07719,
+    "physics": {
+        "radius": 8,
+        "air_friction": 1.0
+    }
+}

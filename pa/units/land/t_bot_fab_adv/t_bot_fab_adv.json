@@ -1,0 +1,179 @@
+{
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "unit_name": "Adv Fabrication Crawler",
+    "si_name": "t_bot_fab_adv",
+    "display_name": "!LOC:Adv Fabrication Bot",
+    "description": "!LOC:Specialised for Assisting. Builds Adv structures. Slow. Durable. ",
+    "max_health": 300,
+    "build_metal_cost": 1500,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.6
+            ]
+        }
+    },
+    "buildable_types": "(Land & Structure & Advanced | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
+    "unit_types": [
+        "UNITTYPE_Fabber",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "acceleration": 240,
+        "brake": 120,
+        "group_preference": "back",
+        "move_speed": 10,
+        "turn_speed": 360
+      },
+    "physics": {
+        "radius": 2,
+        "allow_pushing": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/t_bot_fab_adv/adv_fab.papa",
+        "animations": {
+            "death01": "/pa/units/land/t_bot_fab_adv/adv_fab.papa",
+            "idle": "/pa/units/land/t_bot_fab_adv/adv_fab_anim_idle.papa",
+            "walk": "/pa/units/land/t_bot_fab_adv/adv_fab_anim_run.papa"
+        },
+        "animtree": "/pa/units/land/t_bot_fab/anim_tree.json",
+        "walk_speed": 7
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/t_bot_fab_adv/adv_build_arm.json",
+            "aim_bone": "socket_aim"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/fab"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 0.8
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_bot_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/bot/fab_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/fab"
+        },
+        "command_response": {
+            "cue": "/SE/Confirmation/bot/fab"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "socket_left_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "socket_right_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 13.0
+    },
+    "TEMP_texelinfo": 5.11028,
+    "mesh_bounds": [
+        4.5,
+        4.5,
+        4.5
+    ]
+}

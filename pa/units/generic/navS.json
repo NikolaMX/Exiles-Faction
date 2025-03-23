@@ -1,0 +1,24 @@
+{
+  "base_spec": "/pa/units/generic/nav_.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Sea_sub"
+    }
+  },
+  "navigation": {
+    "acceleration": 5,
+    "brake": 5,
+    "move_speed": 10,
+    "turn_speed": 60,
+    "type": "underwater"
+  },
+  "physics": {
+    "underwater": true
+  },
+  "recon": {
+    "observable": {
+      "layer": "underwater"
+    }
+  },
+  "spawn_layers": "WL_Underwater"
+}

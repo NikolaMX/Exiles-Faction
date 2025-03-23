@@ -1,0 +1,177 @@
+{
+  "si_name": "t_air_fac_adv",
+  "TEMP_texelinfo": 70,
+  "max_health": 20000,
+  "build_metal_cost": 3600,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_air",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "base_spec": "/pa/units/air/air_factory_adv/air_factory_adv.json",
+  "buildable_types": "Air & FactoryBuild & Custom6",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "description": "Advanced manufacturing - builds basic and advanced air units.",
+  "display_name": "Advanced Air Factory",
+  "factory_cooldown_time": 3,
+  "fx_offsets": [
+    {
+      "bone": "muzzle01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "muzzle02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "muzzle03",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "muzzle04",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "platformA",
+      "filename": "/pa/units/air/t_air_fac_adv/Afac23_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "platformA",
+      "filename": "/pa/units/air/t_air_fac_adv/Afac23_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "platformB",
+      "filename": "/pa/units/air/t_air_fac_adv/Afac23_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "platformB",
+      "filename": "/pa/units/air/t_air_fac_adv/Afac23_platform.pfx",
+      "orientation": [
+        90,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
+  "mesh_bounds": [
+    52,
+    52,
+    25
+  ],
+  "model": [
+    {
+      "animations": {
+        "build_end": "/pa/units/air/t_air_fac_adv/Afac23_anim_end.papa",
+        "build_loop": "/pa/units/air/t_air_fac_adv/Afac23_anim_build.papa",
+        "build_start": "/pa/units/air/t_air_fac_adv/Afac23_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/air/t_air_fac_adv/Afac23.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_air_adv.json"
+    },
+    {
+      "animations": {
+        "build_end": "/pa/units/air/t_air_fac_adv/Afac23_anim_end.papa",
+        "build_loop": "/pa/units/air/t_air_fac_adv/Afac23_anim_build.papa",
+        "build_start": "/pa/units/air/t_air_fac_adv/Afac23_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/air/t_air_fac_adv/sea/Afac23.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "placement_size": [
+    52,
+    52
+  ],
+  "rolloff_dirs": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Air",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 0
+}

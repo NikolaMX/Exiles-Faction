@@ -1,0 +1,107 @@
+{
+  "display_name": "!LOC:NI-2 Chokehold",
+  "description": "!LOC:Area-Denial missile - Creates a corrosive cloud that deals damage over time over a large area",
+  "ammo_type": "Projectile",
+  "audio_loop": "/SE/Movement/missile/nuke_missile_fly_loop",
+  "build_metal_cost": 10000,
+  "burn_damage": 0,
+  "burn_radius": 0,
+  "collision_check": "ground",
+  "cruise_height": 100,
+  "damage": 0,
+  "strategic_icon_priority": 0,
+  "damage_volume": {
+    "initial_radius": 20.0,
+    "radius_velocity": 200.0,
+    "radius_accel": -40.0,
+    "delay": 1.5,
+    "burnable_remove_radius": 0.0
+  },
+  "enable_orbital_shell": true,
+  "events": {
+    "collided": {
+      "audio_cue": "/SE/Impacts/missile_seeking",
+      "effect_spec": "/pa/units/land/missile_facility/imp_ion.pfx",
+      "effect_scale": 1,
+      "effect_world_aligned": false
+    }
+  },
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": "/pa/units/land/missile_facility/large_DOT_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      12.0,
+      0.0
+    ]
+  },
+  "has_notifications": true,
+  "impact_decals": [],
+  "influence_radius": 3200,
+  "initial_velocity": 200.0,
+  "spawn_unit_on_death": "/pa/units/base/dot_huge/dot_huge.json",
+  "spawn_unit_on_death_with_velocity": true,
+  "lifetime": 0,
+  "max_velocity": 55.0,
+  "model": {
+    "filename": "/pa/units/land/missile_facility/missiles/l_nuclear_missile.papa"
+  },
+  "physics": {
+    "radius": 10,
+    "gravity_scalar": 3,
+    "ignore_gravity": true,
+    "add_to_spatial_db": true,
+    "allow_underground": true
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": false
+    }
+  },
+  "show_in_orbital_layer": true,
+  "show_strategic_icon": true,
+  "si_name": "large_DOT_ammo",
+  "signal_type": "nuke",
+  "sim_impact_effect": "",
+  "spawn_layers": "WL_Air",
+  "splash_damage": 0,
+  "splash_damage_orbital": false,
+  "splash_damages_allies": false,
+  "splash_radius": 0,
+  "stages": [
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 600,
+      "stage_turn_rate": 0,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 0,
+      "stage_turn_rate": 90,
+      "stage_change_range": 55,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": false,
+      "ignores_LOS": false,
+      "stage_duration": 5000,
+      "stage_turn_rate": 90,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": false,
+      "ignores_LOS": false,
+      "stage_duration": 5000,
+      "stage_turn_rate": 1080,
+      "rotates_to_velocity": true
+    }
+  ],
+  "turn_rate": 180,
+  "unit_types": [
+    "UNITTYPE_Mobile"
+  ]
+}

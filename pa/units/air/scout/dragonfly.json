@@ -1,0 +1,153 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Dragonfly",
+    "si_name": "t_air_scout",
+    "description": "!LOC:Scout - Fast. Can see far away. Does not attack.",
+    "max_health": 100,
+    "build_metal_cost": 120,
+    "unit_types": [
+        "UNITTYPE_Scout",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Air",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Assist"
+    ],
+    "navigation": {
+        "type": "air",
+        "acceleration": 45,
+        "brake": 90,
+        "move_speed": 110,
+        "turn_speed": 180,
+        "dodge_radius": 10,
+        "dodge_multiplier": 1.0,
+        "wobble_factor": 0.1,
+        "wobble_speed": 0.2
+    },
+    "physics": {
+        "radius": 6,
+        "gravity_scalar": 1
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 220
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 220
+                },
+                {
+                    "channel": "radar",
+                    "uses_energy": false,
+                    "layer": "surface_and_air",
+                    "radius": 300,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "uses_energy": false,
+                    "layer": "underwater",
+                    "radius": 300,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/scout/dragonfly.papa",
+        "animations": {
+            "fly": "/pa/units/air/scout/dragonfly_anim_fly.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/transport_anim_tree.json"
+    },
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/air_scout_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+            "effect_scale": 0.5
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/transport/transport_jets.pfx",
+            "bone": "bone_leftWing",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/transport/transport_jets.pfx",
+            "bone": "bone_rightWing",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/transport/transport_jets.pfx",
+            "bone": "bone_turret",
+            "offset": [
+                0,
+                2,
+                2
+            ]
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_scout_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/air"
+        }
+    },
+    "selection_icon": {
+        "diameter": 17.0
+    },
+    "TEMP_texelinfo": 5.39039,
+    "mesh_bounds": [
+        11.5,
+        8,
+        2
+    ]
+}

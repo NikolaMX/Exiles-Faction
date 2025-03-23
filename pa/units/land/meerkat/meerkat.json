@@ -1,0 +1,174 @@
+{
+  "TEMP_texelinfo": 5,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "transportable": {
+    "size": 1
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_light_laser_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_light_laser"
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 225,
+  "max_health": 125,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "description": "Mobile point defence and radar system. Intercepts bombs. Detects mines and invisible units. Amphibious. Consumes energy",
+  "display_name": "Meerkat",
+  "consumption": {
+    "energy": 150
+  },
+  "selection_icon": {
+    "diameter": 16.0
+  },
+  "energy_efficiency_requirement": 0.9,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100,
+          "uses_energy": true
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
+          "uses_energy": true
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100,
+          "uses_energy": true
+        },
+        {
+          "layer": "underwater",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100,
+          "layer": "mine"
+        }
+      ]
+    }
+  },
+  "headlights": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.4,
+      "near_height": 1.4,
+      "near_width": 1.8,
+      "offset": [
+        2.1,
+        -2.4,
+        1.35
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.4,
+      "near_height": 1.4,
+      "near_width": 1.8,
+      "offset": [
+        -2.1,
+        -2.4,
+        1.35
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    }
+  ],
+  "mesh_bounds": [
+    5.6,
+    5,
+    3
+  ],
+  "model": {
+    "filename": "/pa/units/land/meerkat/Vpd22.papa"
+  },
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 50,
+    "brake": 50,
+    "move_speed": 10,
+    "turn_speed": 90
+  },
+  "physics": {
+    "radius": 4
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/meerkat/meerkat_tool_interception.json",
+      "aim_bone": "muzzle00",
+      "muzzle_bone": "muzzle00"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Recon",
+    "UNITTYPE_Radar",
+    "UNITTYPE_Custom6"
+  ]
+}

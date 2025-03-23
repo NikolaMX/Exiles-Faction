@@ -1,0 +1,94 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Ambush Turret",
+    "si_name": "ambush_twr_hid",
+    "display_name": "!LOC:Ambush Turret",
+    "description": "!LOC:Basic Turret - Remains hidden until an enemy walks in range.",
+    "max_health": 350,
+    "build_metal_cost": 225,
+    "atrophy_rate": 5.0,
+    "atrophy_cool_down": 15.0,
+    "wreckage_health_frac": 0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Land",
+        "UNITTYPE_SurfaceDefense",
+        "UNITTYPE_Defense",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "command_caps": [
+        "ORDER_Attack",
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+    "recon": {
+        "observable": {
+      "layer": "mine"
+    },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/land/ambush_twr/hid/model.papa",
+            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/ambush_twr/hid/ambush_twr_hid_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": [
+                "bone_root"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.55
+        }
+    },
+    "death": {
+        "decals": [
+            "/pa/effects/specs/skirt_defense.json"
+        ]
+    },
+    "selection_icon": {
+        "diameter": 12.0
+    },
+    "mesh_bounds": [
+        6.8,
+        5.76558,
+        14.6
+    ],
+    "area_build_separation": 18,
+    "TEMP_texelinfo": 10.2184
+}

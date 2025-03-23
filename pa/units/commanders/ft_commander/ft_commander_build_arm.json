@@ -1,0 +1,32 @@
+{
+  "auto_reclaim": true,
+  "auto_repair": false,
+  "base_spec": "/pa/tools/engineer_build_arm_adv/engineer_build_arm_adv.json",
+  "can_only_assist_with_buildable_items": true,
+  "construction_demand": {
+    "energy": 800,
+    "metal": 60
+  },
+  "max_range": 75,
+  "pitch_rate": 360,
+  "yaw_rate": 360,
+  "assist_layers": [
+    "WL_AnyHorizontalGroundOrWaterSurface",
+    "WL_Air",
+    "WL_Underwater"
+  ],
+  "pitch_range": 180,
+  "reclaim_layers": [
+    "WL_AnyHorizontalGroundOrWaterSurface",
+    "WL_Air",
+    "WL_Seafloor",
+    "WL_LandVertical",
+    "WL_Underwater"
+  ],
+  "reclaim_types": [
+    "Unit",
+    "Wreckage",
+    "Feature"
+  ],
+  "yaw_range": 180
+}

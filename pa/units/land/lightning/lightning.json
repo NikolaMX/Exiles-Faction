@@ -1,0 +1,182 @@
+{
+  "si_name": "lightning",
+  "TEMP_texelinfo": 5,
+  "description": "Tank equipped with high damage arc thrower. Can shoot through obstacles. Can not be disarmed.",
+  "display_name": "Bolt",
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "build_metal_cost": 175,
+  "max_healt": 200,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_light_laser_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_light_laser"
+    }
+  },
+  "selection_icon": {
+    "diameter": 12.0
+  },
+  "strategic_icon_priority": 3,
+  "base_spec": "/pa/units/generic/veh.json",
+  "navigation": {
+    "type": "land-small",
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "turn_speed": 180
+  },
+  "guard_radius": 50,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx",
+      "effect_scale": 1.2
+    },
+    "fired": {
+      "effect_spec": "/pa/units/air/solar_drone/solar_drone_muzzle_flash.pfx muzzle00",
+      "effect_scale": 5
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/lightning/arcc.pfx",
+      "bone": "bone_recoil",
+      "offset": [
+        0,
+        3,
+        0.5
+      ]
+    },
+    {
+      "type": "phasing",
+      "filename": "/pa/effects/mini_tp.pfx",
+      "bone": "bone_root",
+      "offset": [
+        0,
+        0,
+        5
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "headlights": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 1.2,
+      "near_width": 1.2,
+      "offset": [
+        0.7,
+        -2,
+        1.5
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 1.2,
+      "near_width": 1.2,
+      "offset": [
+        -0.7,
+        -2,
+        1.5
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    }
+  ],
+  "mesh_bounds": [
+    4.6,
+    6,
+    3
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "model": {
+    "animtree": "/pa/units/land/lightning/one_turret.json",
+    "filename": "/pa/units/land/lightning/Vassault21.papa",
+    "animations": {
+      "firing": "/pa/units/land/lightning/Vassault21_anim_fired.papa"
+    }
+  },
+  "physics": {
+    "radius": 4
+  },
+  "scrolling_uv": {
+    "scroll_rate": 0.6,
+    "uv_split": 0.85
+  },
+  "tools": [
+    {
+      "aim_bone": "turret00",
+      "muzzle_bone": "muzzle00",
+      "spec_id": "/pa/units/land/lightning/lightning_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom6"
+  ]
+}

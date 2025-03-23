@@ -1,0 +1,125 @@
+{
+	"si_name": "t_int",
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"display_name": "Needletail",
+	"description": "!LOC:High-Speed Interceptor. Very Durable. Great range, shoots forward only.",
+	"max_health": 500,
+	"build_metal_cost": 800,
+	"guard_layer": "WL_Air",
+	"unit_types": [
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Air",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom6"
+	],
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Assist",
+		"ORDER_Attack"
+	],
+	"navigation": {
+		"type": "air",
+		"acceleration": 90,
+		"brake": 30,
+		"move_speed": 90,
+		"turn_speed": 270,
+		"aggressive_distance": 50.0,
+		"bank_factor": 10,
+		"vertical_speed": 45,
+		"hover_time": -1.0
+	},
+	"physics": {
+		"radius": 6,
+		"gravity_scalar": 1
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 170
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 170
+				}
+			]
+		}
+	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/air/t_int/t_int_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root"
+		}
+	],
+	"model": {
+		"filename": "/pa/units/air/t_int/Abomber22.papa",
+		"arrows": 5
+	},
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/air/air_scout_fire"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+			"effect_scale": 1.2
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/air_scout_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving_laterally",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/air"
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
+			"bone": "engine01",
+			"offset": [
+				0,
+				-2.5,
+				0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
+			"bone": "engine02",
+			"offset": [
+				0,
+				-2.5,
+				0
+			]
+		}
+	],
+	"selection_icon": {
+		"diameter": 16.0
+	},
+	"TEMP_texelinfo": 5.39039,
+	"mesh_bounds": [
+		8,
+		10,
+		4
+	]
+}

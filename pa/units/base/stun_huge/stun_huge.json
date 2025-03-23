@@ -1,0 +1,127 @@
+{
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "stun",
+    "description": "!LOC: minion",
+    "si_name": "empty",
+    "build_metal_cost": 1000,
+    "max_health": 400000,
+    "usable": false,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_Underwater",
+    "armor_type": "AT_Structure",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/base/stun_huge/stun_huge_idle.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Sub",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_NoBuild"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": ""
+        },
+        "fired": {
+            "audio_cue": ""
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/base/stun/none.pfx",
+            "effect_scale": 1.0
+        },
+        "teleported": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/base/stun/none.pfx"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": ""
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/base/stun_huge/stun_huge_tool_weapon.json",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "navigation": {
+        "type": "air",
+        "acceleration": 1000,
+        "brake": -1,
+        "move_speed": 0.01,
+        "turn_speed": 180,
+        "vertical_speed": 0.01,
+        "hover_time": -1.0,
+        "bank_factor": 0,
+        "wobble_factor": 0.1,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0,
+        "add_to_spatial_db": true
+    },
+    "recon": {
+        "observable": {
+            "always_visible": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 0
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/base/stun/empty_model.papa"
+    },
+    "selection_icon": {
+        "diameter": 0
+    },
+    "mesh_bounds": [
+        180,
+        180,
+        25
+    ],
+    "placement_size": [
+        25,
+        25
+    ],
+    "TEMP_texelinfo": 9.4567
+}

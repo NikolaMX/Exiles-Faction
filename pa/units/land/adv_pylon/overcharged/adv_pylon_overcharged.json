@@ -1,0 +1,102 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "si_name": "adv_pylon_overcharged",
+    "unit_name": "Overcharged Advanced Reactor",
+    "display_name": "!LOC:Overcharged Advanced Reactor",
+    "description": "!LOC:Overcharged Advanced Economy - This better be worth it",
+    "max_health": 1000,
+    "build_metal_cost": 300,
+	"wreckage_health_frac": 0,
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "production": {
+        "energy": 87000
+    },
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Custom6",
+		"UNITTYPE_NoBuild"
+    ],
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/adv_pylon/overcharged/self_destruct_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root"
+		}
+	],
+	"death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/adv_pylon/overcharged/death_weapon.json"
+  },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/adv_pylon/adv_reactor.papa",
+            "animations": {
+                "idle": "/pa/units/land/adv_pylon/adv_reactor_overcharged.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/units/land/adv_pylon/overcharged/black_hole_implosion.pfx",
+            "effect_scale": 1.5
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/units/land/adv_pylon/overcharged/warning_aura.pfx",
+			"effect_scale": 4.0,
+			"bone": "bone_root"
+		}
+	],
+    "headlights": [],
+    "lamps": [],
+    "selection_icon": {
+        "diameter": 34.0
+    },
+    "mesh_bounds": [
+        20,
+        20,
+        35
+    ],
+    "placement_size": [
+        30,
+        30
+    ],
+    "TEMP_texelinfo": 32.6108
+}

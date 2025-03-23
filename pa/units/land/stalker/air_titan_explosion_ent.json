@@ -1,0 +1,14 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 15,
+            "ignore_radar": true,
+            "always_visible": true
+        }
+    },
+    "spawn_response": {
+        "audio_cue": "/SE/Impacts/bot_spark_impact",
+            "effect_spec": "/pa/effects/specs/tesla_hit.pfx socket_muzzle_center"
+        }
+}

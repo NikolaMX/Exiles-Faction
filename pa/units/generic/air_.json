@@ -1,0 +1,73 @@
+{
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/air/air"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_Air",
+  "guard_radius": 150,
+  "navigation": {
+    "type": "air",
+    "vertical_speed": 100
+  },
+  "physics": {
+    "air_friction": 1,
+    "allow_pushing": false,
+    "gravity_scalar": 1,
+    "push_class": 10,
+    "push_sideways": false,
+    "radius": 5
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 160,
+          "shape": "sphere"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 32,
+          "shape": "sphere"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 32,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "spawn_layers": "WL_Air",
+  "strategic_icon_priority": 6,
+  "transportable": {
+    "size": 1
+  }
+}

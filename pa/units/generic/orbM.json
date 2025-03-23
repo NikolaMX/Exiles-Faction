@@ -1,0 +1,58 @@
+{
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "gravwell_velocity_multiplier": 10,
+  "guard_layer": "WL_Orbital",
+  "guard_radius": 150,
+  "navigation": {
+    "acceleration": 10,
+    "brake": 10,
+    "hover_time": -1,
+    "move_speed": 10,
+    "turn_speed": 30,
+    "type": "orbital"
+  },
+  "physics": {
+    "gravity_scalar": 0.001,
+    "push_class": 15
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 200,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "system_velocity_multiplier": 10,
+  "transportable": {
+    "size": 10000
+  },
+  "wreckage_health_frac": 0
+}

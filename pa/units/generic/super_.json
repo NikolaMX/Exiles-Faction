@@ -1,0 +1,64 @@
+{
+  "TEMP_texelinfo": 40,
+  "area_build_separation": 0.1,
+  "armor_type": "AT_Structure",
+  "atrophy_cool_down": 30,
+  "atrophy_rate": 100,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 10000,
+  "death": {
+    "decals": [
+      "/pa/effects/specs/scorch_b_01.json"
+    ]
+  },
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/exp_size3.pfx"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "max_health": 10000,
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "dodge_multiplier": 1,
+    "dodge_radius": 15,
+    "move_speed": 10,
+    "turn_in_place": true,
+    "turn_speed": 90,
+    "type": "land-small",
+    "wobble_factor": 0.1,
+    "wobble_speed": 0.2
+  },
+  "physics": {
+    "air_friction": 1,
+    "push_class": 11,
+    "radius": 10
+  },
+  "strategic_icon_priority": 3,
+  "transportable": {
+    "size": 1
+  },
+  "wreckage_health_frac": 1
+}

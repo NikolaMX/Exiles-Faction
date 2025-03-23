@@ -1,0 +1,9 @@
+{
+  "base_spec": "/pa/tools/t_build_arm/t_build_arm.json",
+  "construction_demand": {
+    "energy": 800,
+    "metal": 9
+  },
+  "pitch_rate": 180,
+  "yaw_rate": 180
+}

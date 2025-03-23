@@ -1,0 +1,200 @@
+{
+    "si_name": "t_arta",
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "Folga",
+    "description": "!LOC:Siege artillery - Hold LeftClick when placing to rotate. Medium range. Can shoot only forwar. Attacks land and sea targets.",
+    "max_health": 800,
+    "build_metal_cost": 900,
+    "atrophy_rate": 25,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_separation": 20.0,
+    "area_build_type": "Line",
+    "alt_area_build_type": "Sphere",
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Defense",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Basic"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_AnySurface",
+            "filename": "/pa/units/land/t_arta/t_arta.papa",
+            "animtree": "/pa/units/land/t_arta/one_turret.json",
+            "skirt_decal": "/pa/effects/specs/skirt_artillery_short.json"
+        }
+    ],
+    "nearby_target_tick_update_interval": 15,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/t_arta/t_arta_tool_weapon.json",
+            "aim_bone": "pitch00",
+            "muzzle_bone": "muzzle00"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/artillery_short_fire",
+            "effect_spec": "/pa/units/land/t_arta/t_arta_muzzle.pfx muzzle00 /pa/effects/specs/artillery_muzzle_ground.pfx"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.6
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/artillery"
+        }
+    },
+    "lamps": [
+        {
+            "offset": [
+                0.0,
+                -4.24,
+                1.77
+            ],
+            "radius": 1.75,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0,
+            "bone": "pitch00"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 21.0
+    },
+    "mesh_bounds": [
+        8,
+        10,
+        8.9
+    ],
+    "placement_size": [
+        14,
+        14
+    ],
+    "TEMP_texelinfo": 12.901,
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/t_arta/laser.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                2
+            ],
+            "orientation": [
+                0,
+                0,
+                -60
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/t_arta/laser.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                2
+            ],
+            "orientation": [
+                0,
+                0,
+                -120
+            ]
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"display_name": "Mortar",
+	"description": "!LOC:Artillery Frigate - Long range. Durable. Attacks land and sea targets.",
+	"build_metal_cost": 550,
+	"max_health": 1000,
+	"spawn_layers": "WL_DeepWater",
+	"mesh_bounds": [
+		4,
+		24,
+		7
+	],
+	"unit_types": [
+		"UNITTYPE_Custom6",
+		"UNITTYPE_Naval",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Basic",
+		"UNITTYPE_FactoryBuild"
+	],
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "deepwater",
+		"acceleration": 30,
+		"brake": 90,
+		"move_speed": 11,
+		"turn_speed": 45,
+		"turn_accel": 15,
+		"park_stamp_type": "box",
+		"park_stamp_cost": 20
+	},
+	"physics": {
+		"shape": "sphere",
+		"radius": 3
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 130
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 130
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/sea/a_mortar/a_mortar.papa",
+		"animtree": "/pa/units/sea/a_mortar/a_mortar_anim_tree.json"
+	},
+	"nearby_target_tick_update_interval": 15,
+	"tools": [
+		{
+			"spec_id": "/pa/units/sea/a_mortar/a_mortar_tool_weapon.json",
+			"aim_bone": "bone_turret",
+			"muzzle_bone": "bone_pitch.001"
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea_large",
+			"effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+			"effect_scale": 1
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/sea/destroyer_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/sea/destroyer/destroyer_wake.pfx"
+		}
+	],
+	"selection_icon": {
+		"diameter": 22.0
+	},
+	"TEMP_texelinfo": 22.1895
+}

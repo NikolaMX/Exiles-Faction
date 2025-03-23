@@ -1,0 +1,115 @@
+{
+  "si_name": "t_tank_fab",
+  "TEMP_texelinfo": 6,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/veh/fab_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/fab"
+    }
+  },
+  "base_spec": "/pa/units/land/fabrication_vehicle/fabrication_vehicle.json",
+  "build_metal_cost": 150,
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced - Orbital | FabBuild) & Custom6 - Custom7",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "description": "Basic fabricator - Builds basic structures. Very durable. Can not assist factories or T2 fabs.",
+  "display_name": "Fabrication Vehicle",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "phasing",
+      "filename": "/pa/effects/mini_tp.pfx",
+      "bone": "bone_root",
+      "offset": [
+        0,
+        0,
+        5
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "bone": "muzzle00",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "max_health": 200,
+  "mesh_bounds": [
+    4,
+    5.8,
+    3
+  ],
+  "model": {
+    "animations": {
+      "walk": "/pa/units/land/t_tank_fab/Vfab21_anim_drive.papa"
+    },
+    "animtree": "/pa/units/land/t_tank_fab_adv/one_turret_walk.json",
+    "filename": "/pa/units/land/t_tank_fab/Vfab21.papa"
+  },
+  "navigation": {
+    "acceleration": 240,
+        "brake": 120,
+        "group_preference": "back",
+        "move_speed": 12,
+        "turn_speed": 360
+  },
+  "physics": {
+    "radius": 4
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/t_tank_fab/t_tank_fab_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Land",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Custom6"
+  ]
+}

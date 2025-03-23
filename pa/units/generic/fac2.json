@@ -1,0 +1,43 @@
+{
+  "area_build_separation": 3,
+  "atrophy_rate": 50,
+  "base_spec": "/pa/units/generic/fac_.json",
+  "build_metal_cost": 5000,
+  "events": {
+    "died": {
+      "effect_scale": 2,
+      "effect_spec": "/pa/effects/specs/exp_size3.pfx"
+    }
+  },
+  "max_health": 5000,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 130,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 26,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 26,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/tools/build_arm/tx_factory2.json"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+    "display_name": "Base Mobile Structure",
+    "description": "Base Mobile Structure for Union",
+    "TEMP_texelinfo": 1.0,
+    "armor_type": "AT_Structure",
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/bot/T2_fab"
+        },
+        "loops": {
+            "move": {
+                "flag": "vel_changed",
+                "cue": "/SE/Movement/bot/assault_loop",
+                "should_stop_func": "is_not_moving",
+                "should_start_func": "is_moving"
+            }
+        }
+    },
+    "build_metal_cost": 1,
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist"
+    ],
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_a_01.json"
+        ]
+    },
+    "events": {
+        "teleported": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+        },
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "effect_scale": 1.0,
+            "audio_cue": "/SE/Death/Bot",
+            "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx"
+        }
+    },
+    "fx_offsets": [
+        {
+            "orientation": [
+                90,
+                0,
+                0
+            ],
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "type": "phasing",
+            "offset": [
+                0,
+                0,
+                5
+            ]
+        }
+    ],
+    "guard_radius": 50,
+    "lod_hide_pixelsize": 32.0,
+    "max_health": 1,
+    "navigation": {
+        "wobble_factor": 0.1,
+        "brake": -1,
+        "acceleration": 1,
+        "turn_speed": 1,
+        "move_speed": 1,
+        "wobble_speed": 0.2,
+        "dodge_multiplier": 1.0,
+        "park_stamp": {
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "hover",
+                    "stamp_type": "simple"
+                }
+            ],
+            "shape": "sphere",
+            "cost": 10
+        },
+        "type": "land-small",
+        "dodge_radius": 15
+    },
+    "physics": {
+        "radius": 8,
+        "air_friction": 1.0
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "shape": "capsule",
+                    "radius": 85,
+                    "channel": "sight"
+                },
+                {
+                    "layer": "underwater",
+                    "shape": "capsule",
+                    "radius": 120,
+                    "channel": "sight"
+                }
+            ]
+        }
+    },
+    "strategic_icon_priority": 3,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild"
+    ],
+    "wreckage_health_frac": 1,
+    "structure": {
+        "cost_stamp": {}
+    }
+}

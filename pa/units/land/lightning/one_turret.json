@@ -1,0 +1,148 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "item",
+                        "name": "idle",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving",
+                                    "target": "walking",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving",
+                                    "target": "walking",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "walking",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "walk",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "firing",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "firing",
+                            "looping": false,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving",
+                                    "target": "walking",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving",
+                                    "target": "walking",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ]
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "child": {
+                "rotation_axis": "z",
+                "rotation_bone": "turret00",
+                "type": "procedural_aim"
+            },
+            "lerp_func": "is_active",
+            "type": "fader"
+        },
+        {
+            "child": {
+                "rotation_axis": "x",
+                "rotation_bone": "pitch00",
+                "type": "procedural_aim"
+            },
+            "lerp_func": "is_active",
+            "type": "fader"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil",
+            "recoil_dist": 1.5,
+            "restore_time": 3.9
+        }
+    ]
+}

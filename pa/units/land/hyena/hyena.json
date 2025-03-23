@@ -1,0 +1,171 @@
+{
+    "si_name": "hyena",
+    "display_name": "!LOC:Hyena",
+    "description": "!LOC: Salvage Crawler. Detects Mines. Can block enemy mex. Automatic reclaim. Does not repair automatcally.",
+    "TEMP_texelinfo": 5.11028,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                2.7
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/bot/fab_combat_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/fab_combat"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 200,
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Attack",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/fab"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 1.3
+        }
+    },
+    "max_health": 120,
+    "mesh_bounds": [
+        3.7,
+        4.5,
+        5.5
+    ],
+    "model": {
+        "filename": "/pa/units/land/hyena/model.papa",
+        "animations": {
+            "death01": "/pa/units/land/hyena/sab_pose.papa",
+            "idle": "/pa/units/land/hyena/sab_idle.papa",
+            "walk": "/pa/units/land/hyena/sab_run.papa"
+        },
+        "animtree": "/pa/units/land/hyena/sab_anim_tree.json",
+        "walk_speed": 2.4
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land_small",
+        "acceleration": 120,
+        "brake": -1,
+        "move_speed": 13,
+        "turn_speed": 720,
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 2,
+        "allow_pushing": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 80,
+                    "layer": "surface_and_air"
+                },
+                {
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 80,
+                    "layer": "underwater"
+                },
+                {
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 80,
+                    "layer": "mine"
+                }
+            ]
+        },
+        "observable": {
+            "ignore_radar": true
+        }
+    },
+    "selection_icon": {
+        "diameter": 9.5
+    },
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Scout",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "buildable_types": "CombatFabBuild & Custom6 - Custom7",
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/hyena/fab_tool.json",
+            "aim_bone": "bone_root",
+            "record_index": 0
+        }
+    ],
+    "fx_offsets": [
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+            "bone": "socket_fabber_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

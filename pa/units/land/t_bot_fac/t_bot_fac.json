@@ -1,0 +1,215 @@
+{
+    "si_name": "t_bot_fac",
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Bot Factory",
+    "display_name": "!LOC:Bot Factory",
+    "description": "!LOC:Basic Manufacturing - Builds basic Bots.",
+    "max_health": 6000,
+    "build_metal_cost": 600,
+    "atrophy_rate": 12.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_LandHorizontal",
+    "buildable_types": "(Bot & Mobile & Basic | Bot & Fabber & Basic & Mobile) & FactoryBuild & Custom6 - Custom7",
+    "rolloff_dirs": [
+        [
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0
+        ]
+    ],
+    "wait_to_rolloff_time": 0,
+    "factory_cooldown_time": 3,
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Important"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_FactoryBuild",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Attack",
+        "ORDER_Assist"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "animations": {
+            "build_end": "/pa/units/land/t_bot_fac/Vfac22_anim_end.papa",
+            "build_loop": "/pa/units/land/t_bot_fac/Vfac22_anim_build.papa",
+            "build_start": "/pa/units/land/t_bot_fac/Vfac22_anim_start.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+        "filename": "/pa/units/land/t_bot_fac/Vfac22.papa",
+        "skirt_decal": "/pa/effects/specs/skirt_air.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/t_bot_fac/t_bot_fac_build_arm.json",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "died": {
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_air",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "bone": "bone_armNozzle01",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                1.43,
+                0,
+                -0.453
+            ],
+            "orientation": [
+                0,
+                0,
+                180
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "bone_armNozzle02",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                1.43,
+                0,
+                -0.453
+            ],
+            "orientation": [
+                0,
+                0,
+                180
+            ],
+            "type": "build"
+        }
+    ],
+    "headlights": [
+        {
+            "color": [
+                1.5,
+                1.52,
+                1.6
+            ],
+            "far_distance": 30,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 2,
+            "near_distance": 10,
+            "near_height": 20,
+            "near_width": 20,
+            "offset": [
+                0,
+                0,
+                20
+            ]
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                4.0,
+                -11.1,
+                6.0
+            ],
+            "radius": 8.0,
+            "color": [
+                0.1,
+                1.0,
+                0.1
+            ],
+            "intensity": 2.0
+        },
+        {
+            "offset": [
+                -4.0,
+                -11.1,
+                6.0
+            ],
+            "radius": 8.0,
+            "color": [
+                0.1,
+                1.0,
+                0.1
+            ],
+            "intensity": 2.0
+        },
+        {
+            "offset": [
+                5.0,
+                14.12,
+                4.54
+            ],
+            "radius": 4.0,
+            "color": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "intensity": 2.0
+        }
+    ],
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_c_01.json"
+        ]
+    },
+    "selection_icon": {
+        "diameter": 49.5
+    },
+    "mesh_bounds": [
+        30,
+        30,
+        15
+    ],
+    "placement_size": [
+        40,
+        55
+    ],
+    "area_build_separation": 2,
+    "TEMP_texelinfo": 37.6046,
+    "physics": {
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": [
+        {
+            "layer": "WL_AnyLand",
+            "id": "/pa/units/land/tin/tin_ammo.json"
+        }
+    ],
+    "rate_of_fire": 10,
+    "idle_aim_delay": 0,
+    "max_range": 67.5,
+    "yaw_rate": 720,
+    "pitch_rate": 360,
+    "yaw_range": 180,
+    "pitch_range": 60,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_Seafloor",
+        "WL_WaterSurface"
+    ],
+    "ammo_capacity": 2,
+    "ammo_per_shot": 0.5,
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true,
+    "ammo_source": "time"
+}

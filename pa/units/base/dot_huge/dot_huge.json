@@ -1,0 +1,92 @@
+{
+  "display_name": "Acid Cloud",
+  "unit_name": "Acid Cloud",
+  "description": "damage over time unit",
+  "TEMP_texelinfo": 2.37699,
+  "si_name": "empty",
+  "build_metal_cost": 0.01,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier"
+    }
+  },
+  "max_health": 30000,
+  "mesh_bounds": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "model": [
+    {
+      "filename": "/pa/units/land/missile_facility/missiles/crashed/l_nuclear_missile.papa"
+    }
+  ],
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/base/dot_huge/bug_gas_turret_idle.pfx",
+      "bone": "bone_root"
+    }
+  ],
+  "physics": {
+    "type": "Structure",
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "shape": "Box",
+    "air_friction": 100.0,
+    "allow_pushing": false,
+    "push_sideways": false,
+    "allow_underground": false,
+    "collide_with_types": [
+      "Projectile"
+    ]
+  },
+  "recon": {
+    "observable": {
+      "always_visible": true
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 5
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 5
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 1.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "strategic_icon_priority": 3,
+  "tools": [
+    {
+      "spec_id": "/pa/units/base/dot_huge/dot_huge_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    },
+    {
+      "spec_id": "/pa/units/base/dot_huge/dot_huge_death_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Defense",
+    "UNITTYPE_NoBuild"
+  ],
+  "wreckage_health_frac": 1.0
+}
