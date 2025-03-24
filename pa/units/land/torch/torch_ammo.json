@@ -26,7 +26,7 @@
             "events": {
       "died": {
         "audio_cue": "/SE/Impacts/bot_spark_impact",
-        "effect_spec": "/pa/units/base/stun/bot_freeze_ammo_hit.pfx",
+        "effect_spec": "/pa/units/base/stun_small/bot_freeze_ammo_hit.pfx",
         "effect_scale": 0.25
       }
     },

@@ -1,7 +1,7 @@
 {
     "display_name": "Torch",
     "si_name": "torch",
-    "description": "!LOC:Disarm Artillery - Fires volleys of non-lethal missiles that disarm enemies in an area.",
+    "description": "!LOC:Disarm Artillery - Fires volleys of non-lethal missiles that disarm enemies in a small area.",
     "TEMP_texelinfo": 6.12932,
     "attachable": {
       "offsets": {
@@ -78,20 +78,6 @@
             "channel": "sight",
             "layer": "surface_and_air",
             "radius": 100,
-            "shape": "capsule"
-          },
-          {
-            "channel": "radar",
-            "uses_energy": false,
-            "layer": "surface_and_air",
-            "radius": 200,
-            "shape": "capsule"
-          },
-          {
-            "channel": "radar",
-            "uses_energy": false,
-            "layer": "underwater",
-            "radius": 200,
             "shape": "capsule"
           },
           {
