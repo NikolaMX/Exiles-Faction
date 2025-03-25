@@ -39,7 +39,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx bone_turret"
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",
@@ -54,12 +54,12 @@
     4.7
   ],
   "model": {
-    "filename": "/pa/units/basic_research/minigun_vehicle/warthog.papa",
+    "filename": "/pa/units/land/minigun_vehicle/warthog.papa",
     "animations": {
-      "firing": "/pa/units/basic_research/minigun_vehicle/warthog_spin.papa"
+      "firing": "/pa/units/land/minigun_vehicle/warthog_spin.papa"
     },
     "walk_speed": 12,
-    "animtree": "/pa/units/basic_research/minigun_vehicle/warthog_anim_tree.json"
+    "animtree": "/pa/units/land/minigun_vehicle/warthog_anim_tree.json"
   },
   "navigation": {
     "type": "land-small",
@@ -94,10 +94,10 @@
   },
   "tools": [
     {
-      "spec_id": "/pa/units/basic_research/minigun_vehicle/minigun_vehicle_weapon.json",
-      "aim_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/minigun_vehicle/minigun_vehicle_weapon.json",
+      "aim_bone": "bone_turret",
       "muzzle_bone": [
-        "bone_turret"
+        "socket_muzzle"
       ]
     }
   ],
@@ -105,6 +105,7 @@
     "size": 1
   },
   "unit_types": [
+    "UNITTYPE_Custom6",
     "UNITTYPE_Tank",
     "UNITTYPE_Vehicle",
     "UNITTYPE_Mobile",

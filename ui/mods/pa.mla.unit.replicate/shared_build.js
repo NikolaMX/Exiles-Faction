@@ -70,6 +70,7 @@ var newBuild = {
     "/pa/units/land/t_tank_flak/t_tank_flak.json": ["t_tank", 0, { row: 2, column: 4 }],
     "/pa/units/land/meerkat/meerkat.json": ["t_tank", 0, { row: 2, column: 5 }],
     
+    //"/pa/units/land/minigun_vehicle/minigun_vehicle.json": ["t_tank", 0, { row: 2, column: 6 }],   //Temporarily disabled
 
     "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json": ["t_tank", 0, { row: 1, column: 0 }],
     "/pa/units/land/stalker/stalker.json": ["t_tank", 0, { row: 1, column: 2 }],
@@ -98,6 +99,9 @@ var newBuild = {
     "/pa/units/air/ts_air_fab/t_air_fab.json": ["t_air", 0, { row: 1, column: 3 }],
     "/pa/units/air/strat_bomber/strat_bomber.json": ["t_air", 0, { row: 1, column: 4 }],
     
+
+    // Titans
+    "/pa/units/land/t_chimera/t_chimera.json": ["t_factory", 0, { row: 0, column: 5 }],   
 
 
     //Naval Factory

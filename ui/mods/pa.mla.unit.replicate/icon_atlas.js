@@ -55,8 +55,11 @@ var paeiouIcons = [
     "tank_wheel",
     "roamer",
     "t_tank_flak",
-    "lightning",    //Super unbalanced rn
-    "meerkat",      //Not implemented fully yet
+    "lightning",    
+    "meerkat",      
+
+    "minigun_vehicle",  //Replacement for meerkat
+
     "tank_gattling",
     "hippo",
     "stalker",
@@ -102,6 +105,9 @@ var paeiouIcons = [
     "swordfish",
     "strat_bomber",
     "ts_air_fab",
+
+    //Titans
+    "t_chimera",
 
     //Factories
     "t_naval_fac",

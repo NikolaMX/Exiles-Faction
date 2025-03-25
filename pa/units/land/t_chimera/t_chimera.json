@@ -77,7 +77,7 @@
     "tools": [
         {
             "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
-            "aim_bone": "bone_pitch",
+            "aim_bone": "socket_muzzle",
             "muzzle_bone": "socket_muzzle"
         }
     ],

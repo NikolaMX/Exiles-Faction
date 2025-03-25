@@ -116,6 +116,15 @@
                 "rotation_bone": "bone_turret",
                 "rotation_axis": "z"
             }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "not_being_built",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret",
+                "rotation_axis": "x"
+            }
         }
     ]
 }

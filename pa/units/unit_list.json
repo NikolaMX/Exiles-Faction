@@ -327,12 +327,14 @@
 "/pa/units/land/t_tank_flak/t_tank_flak.json",
 "/pa/units/land/meerkat/meerkat.json",
 
+"/pa/units/land/minigun_vehicle/minigun_vehicle.json",
+
 "/pa/units/land/tank_gattling/tank_gattling.json",
 "/pa/units/land/stalker/stalker.json",
 "/pa/units/land/hail/hail.json",
 "/pa/units/land/hail/hail_mine/hail_mine.json",
 
-
+"/pa/units/land/t_chimera/t_chimera.json",
 
 
 
