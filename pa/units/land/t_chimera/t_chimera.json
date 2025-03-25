@@ -1,0 +1,122 @@
+{
+    "si_name": "t_chimera",
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Chimera",
+    "description": "!LOC:DemiTitan - long range beam weapon.",
+    "max_health": 40000,
+    "build_metal_cost": 15000,
+    "influence_radius": 400,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Titan",
+        "UNITTYPE_Important",
+        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 12,
+        "turn_speed": 25,
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 6
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 300
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 300
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/t_chimera/chimera.papa",
+        "animations": {
+            "idle": "/pa/units/land/t_chimera/chimera_anim_idle.papa",
+            "walk": "/pa/units/land/t_chimera/chimera_anim_run.papa"
+        },
+        "animtree": "/pa/units/land/t_chimera/anim_tree.json",
+        "arrows": 5,
+        "walk_speed": 4
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/Titan_Complete"
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "",
+            "effect_scale": 1.0
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+            "effect_spec": "/pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/titan/bot"
+        }
+    },
+    "selection_icon": {
+        "diameter": 50
+    },
+    "TEMP_texelinfo": 9.31488,
+    "mesh_bounds": [
+        50,
+        50,
+        50
+    ],
+    "headlights": [],
+    "lamps": []
+}
