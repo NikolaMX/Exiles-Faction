@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "display_name": "Horseshoe",
+    "display_name": "STORK",
     "si_name": "t_transport",
     "description": "!LOC:Sturdy Air Transport - Load a land unit to transport for snipes or expansions. Moves slower than most air, but can brake quickly and has more health.",
     "max_health": 120,

@@ -2,7 +2,7 @@
     "si_name": "t_arta",
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "display_name": "Folga",
-    "description": "!LOC:Siege artillery - Hold LeftClick when placing to rotate. Medium range. Can shoot only forwar. Attacks land and sea targets.",
+    "description": "!LOC:Siege artillery - Hold LeftClick when placing to rotate. Medium range. Can shoot only forward. Attacks land and sea targets.",
     "max_health": 800,
     "build_metal_cost": 900,
     "atrophy_rate": 25,

@@ -78,7 +78,7 @@ var newBuild = {
     "/pa/units/land/tank_gattling/tank_gattling.json": ["t_tank", 0, { row: 1, column: 4 }],
     "/pa/units/land/hail/hail.json": ["t_tank", 0, { row: 1, column: 5 }],
 
-    "/pa/units/land/tripod/tripod.json": ["t_bot", 0, { row: 0, column: 3 }],
+   
 
 
     //Air Factory
