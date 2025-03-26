@@ -1,141 +1,141 @@
 {
-	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json", 
-    "display_name": "Ocelot", 
-	"description": "Anti-air Tank: Powerful tank armed with 4 flak cannons. Medium range. Low AoE", 
-	"max_health": 250,
-	"build_metal_cost": 200, 
-	"TEMP_texelinfo": 5.84968, 
-	"attachable": {
-		"offsets": {
-			"head": [
-			0, 
-			0, 
-			2.7
-			], 
-			"root": [
-			0, 
-			0, 
-			0
-			]
-		}
-	}, 
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "display_name": "Ocelot",
+  "description": "Anti-air Tank: Powerful tank armed with 4 flak cannons. Medium range. Low AoE",
+  "max_health": 250,
+  "build_metal_cost": 200,
+  "TEMP_texelinfo": 5.84968,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
   "unit_types": [
     "UNITTYPE_Custom6",
-    "UNITTYPE_Tank", 
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Land", 
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
     "UNITTYPE_Offense",
-    "UNITTYPE_Basic", 
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_AirDefense"
   ],
   "transportable": {
     "size": 1
-  }, 
-  "guard_layer": "WL_Air", 
+  },
+  "guard_layer": "WL_Air",
   "navigation": {
-    "acceleration": 100, 
-    "brake": 100, 
-    "move_speed": 12, 
-    "turn_speed": 90, 
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 12,
+    "turn_speed": 90,
     "type": "land-small"
-  }, 
-    "physics": {
-    "push_class": 60, 
+  },
+  "physics": {
+    "push_class": 60,
     "radius": 4
-  }, 
-    "recon": {
+  },
+  "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 140, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 140,
           "shape": "capsule"
         }
       ]
     }
-  }, 
-    "model": {
-    "animtree": "/pa/units/land/t_tank_flak/t_tank_flak_anim_tree.json", 
-    "arrows": 5, 
+  },
+  "model": {
+    "animtree": "/pa/units/land/t_tank_flak/t_tank_flak_anim_tree.json",
+    "arrows": 5,
     "filename": "/pa/units/land/t_tank_flak/tank_flak.papa"
-  }, 
-    "tools": [
+  },
+  "tools": [
     {
-      "aim_bone": "bone_pitch", 
+      "aim_bone": "bone_pitch",
       "muzzle_bone": [
-        "socket_rightMuzzle01", 
+        "socket_rightMuzzle01",
         "socket_leftMuzzle02"
-      ], 
+      ],
       "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak_tool_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_pitch", 
+      "aim_bone": "bone_pitch",
       "muzzle_bone": [
-        "socket_leftMuzzle01", 
+        "socket_leftMuzzle01",
         "socket_rightMuzzle02"
-      ], 
+      ],
       "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak_tool_weapon.json"
     }
-  ],	
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"
-    }, 
+    },
     "died": {
       "audio_cue": "/SE/Death/Veh"
-    }, 
+    },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire",
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle01"
     }
-  }, 
+  },
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/veh/tank_light_laser_loop", 
-        "flag": "vel_changed", 
-        "should_start_func": "is_moving", 
+        "cue": "/SE/Movement/veh/tank_light_laser_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    }, 
-        "selection_response": {
-            "cue": "/SE/Selection/veh/aa_missile_vehicle"
-        }
     },
-    "selection_icon": {
-      "diameter": 12.0
-    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/aa_missile_vehicle"
+    }
+  },
+  "selection_icon": {
+    "diameter": 12.0
+  },
   "headlights": [
     {
       "color": [
-        0.9, 
-        0.92, 
+        0.9,
+        0.92,
         1.0
-      ], 
-      "far_distance": 20.0, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1.4, 
-      "near_distance": 1.2, 
-      "near_height": 2.0, 
-      "near_width": 2.0, 
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
       "offset": [
-        0.0, 
-        -1.0, 
+        0.0,
+        -1.0,
         1.5
-      ], 
+      ],
       "orientation": [
-        0.0, 
-        65.0, 
+        0.0,
+        65.0,
         0.0
       ]
     }
-  ],  
+  ],
   "mesh_bounds": [
-    5.3, 
-    9, 
+    5.3,
+    9,
     4.2
-  ], 
+  ],
   "wreckage_health_frac": 1.0
 }
