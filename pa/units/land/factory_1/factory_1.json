@@ -5,7 +5,7 @@
   "display_name": "!LOC:Fabber Foundry",
   "description": "!LOC:Produces Improved fabs. Required for Improved Mex.",
   "max_health": 3000,
-  "build_metal_cost":800,
+  "build_metal_cost": 800,
   "atrophy_rate": 2.5,
   "atrophy_cool_down": 15,
   "area_build_type": "Sphere",
@@ -14,7 +14,6 @@
     "energy": 2000,
     "metal": 25
   },
-
   "buildable_types": "Bot & Mobile & Basic & FactoryBuild & Custom6 & Custom7",
   "factory_cooldown_time": 30,
   "factory": {
@@ -25,28 +24,27 @@
     "default_build_stance": "Continuous"
   },
   "unit_types": [
-        "UNITTYPE_Custom6",
-        "UNITTYPE_Factory",
-        "UNITTYPE_Construction",
-        "UNITTYPE_Bot",
-        "UNITTYPE_Structure",
-        "UNITTYPE_Basic",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_FabBuild",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Important"
+    "UNITTYPE_Custom6",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
   ],
-
   "command_caps": [
-  "ORDER_Move",
-  "ORDER_Patrol",
-  "ORDER_FactoryBuild",
-  "ORDER_Reclaim",
-  "ORDER_Repair",
-  "ORDER_Attack",
-  "ORDER_Assist",
-  "ORDER_Use"],
-
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -65,7 +63,6 @@
       ]
     }
   },
-  
   "model": [
     {
       "layer": "WL_LandHorizontal",
@@ -86,8 +83,12 @@
     }
   ],
   "events": {
-    "build_complete": { "audio_cue": "/SE/Build_Complete/factory" },
-    "fired": { "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire" },
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/factory"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
+    },
     "died": {
       "audio_cue": "/SE/Death/Factory",
       "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
@@ -102,10 +103,21 @@
         "should_stop_func": "no_build_target"
       }
     },
-    "selection_response": { "cue": "/SE/Selection/structure/anti_nuke" }
+    "selection_response": {
+      "cue": "/SE/Selection/structure/anti_nuke"
+    }
   },
-  "selection_icon": { "diameter": 29 },
+  "selection_icon": {
+    "diameter": 29
+  },
   "TEMP_texelinfo": 21.7597,
-  "placement_size": [20, 20],
-  "mesh_bounds": [14, 13, 16]
+  "placement_size": [
+    20,
+    20
+  ],
+  "mesh_bounds": [
+    14,
+    13,
+    16
+  ]
 }
