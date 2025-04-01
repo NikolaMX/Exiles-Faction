@@ -4,10 +4,7 @@
     "rate_of_fire": 10,
     "max_firing_velocity": 200,
     "min_firing_velocity": 30,
-    "ammo_source": "energy",
-    "ammo_capacity": 12000,
-    "ammo_demand": 600,
-    "ammo_per_shot": 1200,
+    
     "carpet_fire":true,
     "carpet_wait_for_full_ammo":true,
     "max_range": 220,
@@ -29,5 +26,9 @@
         "WL_Seafloor",
         "WL_WaterSurface",
         "WL_Underwater"
-    ]
+    ],
+    "ammo_source": "energy",
+    "ammo_capacity": 12000,
+    "ammo_demand": 600,
+    "ammo_per_shot": 1200
 }

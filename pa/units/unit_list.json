@@ -218,7 +218,6 @@
     "/pa/units/commanders/union_formidable/union_formidable.json",
 
 
-    "/pa/units/addon/gatling_tank/gatling_tank.json",
 
 
 
@@ -345,7 +344,7 @@
 
 
 "/pa/units/land/pylon/pylon.json",
-"/pa/units/land/pylon/overcharge/pylon_overcharged.json",
+"/pa/units/land/pylon/overcharged/pylon_overcharged.json",
 "/pa/units/land/adv_pylon/adv_pylon.json",
 "/pa/units/land/adv_pylon/overcharged/adv_pylon_overcharged.json",
 

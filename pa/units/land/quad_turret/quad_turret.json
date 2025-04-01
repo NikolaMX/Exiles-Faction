@@ -15,7 +15,7 @@
         "UNITTYPE_Land",
         "UNITTYPE_SurfaceDefense",
         "UNITTYPE_Defense",
-        "UNITTYPE_AdvFabBuild",
+        "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Custom6"
     ],
     "command_caps": [

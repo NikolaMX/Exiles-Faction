@@ -150,11 +150,7 @@
             "show_range": false
         }
     ],
-    "death_weapon": {
-        "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json",
-        "air_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe_air.json",
-        "air_height_threshold": 50
-    },
+    
     "events": {
         "fired": {
             "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_right_muzzle"

@@ -91,7 +91,7 @@ var newBuild = {
     "/pa/units/air/t_transport/t_transport.json": ["t_air", 0, { row: 2, column: 3 }],
     "/pa/units/air/t_bomber/t_bomber.json": ["t_air", 0, { row: 2, column: 4 }],
     
-    "/pa/units/air/t_vulture/t_vulture.json": ["t_air", 0, { row: 0, column: 0 }],
+    // "/pa/units/air/t_vulture/t_vulture.json": ["t_air", 0, { row: 0, column: 0 }],    //temp disabled
 
     "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json": ["t_air", 0, { row: 1, column: 0 }],
     "/pa/units/air/t_int/t_int.json": ["t_air", 0, { row: 1, column: 1 }],
