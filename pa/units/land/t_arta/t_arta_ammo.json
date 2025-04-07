@@ -17,7 +17,7 @@
         "filename": "/pa/units/land/t_arta/proj_pbomb.pfx"
     },
     
-    "lifetime": 3,
+    "lifetime": 6,
     "max_velocity": 10000,
     "splash_damage": 100,
     "splash_radius": 10,

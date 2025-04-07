@@ -19,8 +19,8 @@
         "WL_Seafloor",
         "WL_WaterSurface"
     ],
-    "ammo_capacity": 1.5,
-    "ammo_per_shot": 0.5,
+    "ammo_capacity": 2.25,
+    "ammo_per_shot": 0.75,
     "carpet_fire": true,
     "carpet_wait_for_full_ammo": true,
     "ammo_source": "time"

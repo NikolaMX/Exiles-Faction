@@ -31,7 +31,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 225,
+  "build_metal_cost": 125,
   "max_health": 125,
   "command_caps": [
     "ORDER_Move",
@@ -55,7 +55,7 @@
           "layer": "surface_and_air",
           "channel": "sight",
           "shape": "capsule",
-          "radius": 100,
+          "radius": 150,
           "uses_energy": true
         },
         {
@@ -69,7 +69,7 @@
           "layer": "underwater",
           "channel": "sight",
           "shape": "capsule",
-          "radius": 100,
+          "radius": 150,
           "uses_energy": true
         },
         {
@@ -82,7 +82,7 @@
         {
           "channel": "sight",
           "shape": "capsule",
-          "radius": 100,
+          "radius": 150,
           "layer": "mine"
         }
       ]

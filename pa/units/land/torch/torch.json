@@ -4,132 +4,134 @@
     "description": "!LOC:Disarm Artillery - Fires volleys of non-lethal missiles that disarm enemies in a small area.",
     "TEMP_texelinfo": 6.12932,
     "attachable": {
-      "offsets": {
-        "root": [
-          0,
-          0,
-          0
-        ],
-        "head": [
-          0,
-          1,
-          4.1
-        ]
-      }
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                1.5,
+                6.1499996
+            ]
+        }
     },
     "audio": {
-      "loops": {
-        "move": {
-          "should_stop_func": "is_not_moving",
-          "cue": "/SE/Movement/veh/attack_vehicle_loop",
-          "should_start_func": "is_moving",
-          "flag": "vel_changed"
+        "loops": {
+            "move": {
+                "should_stop_func": "is_not_moving",
+                "cue": "/SE/Movement/veh/attack_vehicle_loop",
+                "should_start_func": "is_moving",
+                "flag": "vel_changed"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/attack_vehicle"
         }
-      },
-      "selection_response": {
-        "cue": "/SE/Selection/veh/attack_vehicle"
-      }
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 500,
+    "build_metal_cost": 550,
     "events": {
-      "fired": {
-        "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
-        "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_1 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_7"
-      },
-      "died": {
-        "audio_cue": "/SE/Death/Veh",
-        "effect_scale": 1.0
-      },
-      "build_complete": {
-        "audio_cue": "/SE/Build_Complete/veh"
-      }
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_1 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_7",
+            "effect_scale": 1.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.5
+        },
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh",
+            "effect_scale": 1.5
+        }
     },
     "guard_layer": "WL_AnySurface",
     "max_health": 200,
     "mesh_bounds": [
-      3.8,
-      5,
-      3.5
+        5.7,
+        7.5,
+        5.25
     ],
     "model": {
-      "filename": "/pa/units/land/torch/torch.papa",
-      "animations": {
-        "walk": "/pa/units/land/torch/torch_run.papa",
-        "idle": "/pa/units/land/torch/torch_idle.papa"
-      },
-      "animtree": "/pa/units/land/torch/anim_tree.json",
-      "walk_speed": 8
+        "filename": "/pa/units/land/torch/torchX.papa",
+        "animations": {
+            "walk": "/pa/units/land/torch/torch_runX.papa",
+            "idle": "/pa/units/land/torch/torch_idleX.papa"
+        },
+        "animtree": "/pa/units/land/torch/anim_tree.json",
+        "walk_speed": 8
     },
     "navigation": {
-      "acceleration": 150,
-      "brake": 150,
-      "turn_speed": 90,
-      "move_speed": 14,
-      "type": "land-small"
+        "acceleration": 150,
+        "brake": 150,
+        "turn_speed": 90,
+        "move_speed": 14,
+        "type": "land-small"
     },
     "physics": {
-      "radius": 3.5
+        "radius": 5.25
     },
     "recon": {
-      "observer": {
-        "items": [
-          {
-            "channel": "sight",
-            "layer": "surface_and_air",
-            "radius": 100,
-            "shape": "capsule"
-          },
-          {
-            "channel": "sight",
-            "layer": "underwater",
-            "radius": 100,
-            "shape": "capsule"
-          }
-        ]
-      }
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
     },
     "selection_icon": {
-      "diameter": 10.0
+        "diameter": 10.0
     },
     "tools": [
-      {
-        "muzzle_bone": [
-          "socket_muzzle_1",
-          "socket_muzzle_2",
-          "socket_muzzle_3",
-          "socket_muzzle_4",
-          "socket_muzzle_5",
-          "socket_muzzle_6",
-          "socket_muzzle_7",
-          "socket_muzzle_8",
-          "socket_muzzle_9",
-          "socket_muzzle_10"
-        ],
-        "projectiles_per_fire": 1,
-        "spec_id": "/pa/units/land/torch/torch_weapon.json",
-        "aim_bone": "bone_pitch"
-      }
+        {
+            "muzzle_bone": [
+                "socket_muzzle_1",
+                "socket_muzzle_2",
+                "socket_muzzle_3",
+                "socket_muzzle_4",
+                "socket_muzzle_5",
+                "socket_muzzle_6",
+                "socket_muzzle_7",
+                "socket_muzzle_8",
+                "socket_muzzle_9",
+                "socket_muzzle_10"
+            ],
+            "projectiles_per_fire": 1,
+            "spec_id": "/pa/units/land/torch/torch_weapon.json",
+            "aim_bone": "bone_pitch"
+        }
     ],
     "transportable": {
-      "size": 1
+        "size": 1
     },
     "unit_types": [
-      "UNITTYPE_Bot",
-      "UNITTYPE_Mobile",
-      "UNITTYPE_Land",
-      "UNITTYPE_Advanced",
-      "UNITTYPE_FactoryBuild",
-      "UNITTYPE_CannonBuildable",
-      "UNITTYPE_Offense",
-      "UNITTYPE_Custom6"
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Custom6"
     ],
     "command_caps": [
-      "ORDER_Move",
-      "ORDER_Patrol",
-      "ORDER_Attack",
-      "ORDER_Assist",
-      "ORDER_Use",
-      "ORDER_FireSecondaryWeapon"
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
     ]
-  }
+}
