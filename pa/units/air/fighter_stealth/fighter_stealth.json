@@ -125,7 +125,7 @@
   "navigation": {
     "acceleration": 100,
     "brake": 50,
-    "move_speed": 45,
+    "move_speed": 60,
     "turn_speed": 80,
     "dodge_radius": 30,
     "dodge_multiplier": 0.5,

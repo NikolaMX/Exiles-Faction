@@ -1,11 +1,10 @@
 {
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "display_name": "STORK",
+    "display_name": "Stork",
     "si_name": "t_transport",
     "description": "!LOC:Sturdy Air Transport - Load up to 3 land units to transport for snipes or expansions. Moves slower than most air, but can brake quickly and has more health.",
     "max_health": 180,
     "build_metal_cost": 100,
-    "usable": true,
     "attachable": {
         "offsets": {
             "root": [
@@ -56,15 +55,16 @@
         "ORDER_Unload",
         "ORDER_SpecialMove"
     ],
-    "useable": {
-        "type": "transport",
-        "range": 20
-    },
     "transporter": {
         "capacity": 3,
         "transportable_unit_types": "Mobile & Land - Commander",
         "transporter_attach_bone": "bone_payload",
         "transportable_attach_offset": "head"
+    },
+    "usable": true,
+    "useable": {
+        "type": "transport",
+        "range": 4084
     },
     "navigation": {
         "type": "air",
