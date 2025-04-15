@@ -1,0 +1,16 @@
+{
+    "base_spec": "/pa/units/commanders/base_commander/base_commander_ammo.json",
+    "damage": 120,
+    "events": {
+      "spawned": {
+        "audio_cue": "/SE/Weapons/commander/Commander_gun_fire"
+      }
+    },
+    "flight_type": "Seeking",
+    "initial_velocity": 125.0,
+    "lifetime": 1.25,
+    "max_velocity": 125.0,
+    "splash_damage": 120,
+    "splash_radius": 3,
+    "turn_rate": 30
+  }

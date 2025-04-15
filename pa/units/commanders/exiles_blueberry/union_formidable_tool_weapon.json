@@ -1,0 +1,28 @@
+{
+    "ammo_id": [
+      {
+        "layer": "WL_AnyLand",
+        "id": "/pa/units/commanders/exiles_blueberry/union_formidable_ammo.json"
+      }
+    ],
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "idle_aim_delay": 5,
+    "max_range": 100,
+    "pitch_range": 40,
+    "pitch_rate": 360,
+    "rate_of_fire": 1.0,
+    "spread_fire": true,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface",
+      "WL_Seafloor"
+    ],
+    "target_priorities": [
+      "Mobile - Air",
+      "Mobile",
+      "Structure - Wall"
+    ],
+    "yaw_range": 180,
+    "yaw_rate": 360
+  }

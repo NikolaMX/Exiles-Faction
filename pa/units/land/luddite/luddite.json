@@ -85,7 +85,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/assault_adv_fire",
-            "effect_spec": "/pa/units/air/strafer/strafer_jets.pfx socket_right_muzzle /pa/units/air/strafer/strafer_jets.pfx socket_left_muzzle"
+            "effect_spec": "/pa/units/land/luddite/strafer_jets.pfx socket_right_muzzle /pa/units/land/luddite/strafer_jets.pfx socket_left_muzzle"
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
@@ -93,6 +93,28 @@
             "effect_scale": 1.0
         }
     },
+    "fx_offsets": [
+        {
+            "type": "fired",
+            "filename": "/pa/units/land/luddite/strafer_jets.pfx",
+            "bone": "socket_right_muzzle",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+          },
+          {
+            "type": "fired",
+            "filename": "/pa/units/land/luddite/strafer_jets.pfx",
+            "bone": "socket_left_muzzle",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+          }
+    ],
     "audio": {
         "loops": {
             "move": {
@@ -113,6 +135,6 @@
     "mesh_bounds": [
         9,
         4.5,
-        6
+        8
     ]
 }

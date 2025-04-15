@@ -14,7 +14,7 @@
 						"type": "effect",
 						"parameters": {
 							"bone": "bone_root",
-							"spec": "/pa/units/assimilation/land/a_metal_extractor/a_metal_extractor_effect_in.pfx",
+							"spec": "/pa/units/land/t_metal_extractor_0/a_metal_extractor_effect_in.pfx",
 							"effect_scale": 1.0,
 							"bone_offset": [
 								0.0,
@@ -28,7 +28,7 @@
 						"type": "effect",
 						"parameters": {
 							"bone": "bone_root",
-							"spec": "/pa/units/assimilation/land/a_metal_extractor/a_metal_extractor_effect_out.pfx",
+							"spec": "/pa/units/land/t_metal_extractor_0/a_metal_extractor_effect_out.pfx",
 							"effect_scale": 1.0,
 							"bone_offset": [
 								0.0,

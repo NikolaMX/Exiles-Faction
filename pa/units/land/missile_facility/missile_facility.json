@@ -10,7 +10,6 @@
     "area_build_type": "Sphere",
     "area_build_separation": 80,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    
     "factory_cooldown_time": 5,
     "factory": {
         "store_units": true,
@@ -20,7 +19,6 @@
         ],
         "default_build_stance": "Continuous"
     },
-   
     "command_caps": [
         "ORDER_FactoryBuild",
         "ORDER_Attack"
@@ -59,7 +57,6 @@
             "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json"
         }
     ],
-    
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/factory"
@@ -188,15 +185,14 @@
         13,
         15
     ],
-    
     "alt_area_build_type": "Sphere",
     "alt_area_max_radius": 100.0,
     "buildable_projectiles": [
         "/pa/units/land/missile_facility/large_DOT_ammo.json",
         "/pa/units/land/missile_facility/large_stun_ammo.json",
-        "/pa/units/land/missile_facility/precision_strike_ammo.json"
+        "/pa/units/land/missile_facility/precision_strike_ammo.json",
+        "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
     ],
-    
     "unit_types": [
         "UNITTYPE_Custom6",
         "UNITTYPE_Land",
@@ -206,10 +202,9 @@
         "UNITTYPE_Nuke",
         "UNITTYPE_Factory",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Important"
+        "UNITTYPE_Important",
+        "UNITTYPE_Interplanetary"
     ],
-    
-    
     "tools": [
         {
             "spec_id": "/pa/units/land/missile_facility/missile_facility_tool_weapon.json",
@@ -220,10 +215,6 @@
             "aim_bone": "bone_root"
         }
     ],
-    
-    
-    
-    
     "wreckage_mesh_bounds": [
         14,
         14,
@@ -233,5 +224,4 @@
         20,
         20
     ]
-    
 }

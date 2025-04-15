@@ -31,7 +31,7 @@
   },
   "base_spec": "/pa/units/land/fabrication_vehicle/fabrication_vehicle.json",
   "build_metal_cost": 150,
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced - Orbital | FabBuild) & Custom6 - Custom7",
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & (Bot | Air | Naval | Tank) | FabBuild) & Custom6 - Custom7",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

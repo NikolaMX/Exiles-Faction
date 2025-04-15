@@ -126,7 +126,7 @@ var newBuild = {
     "/pa/units/land/aa_missile_launcher/aa_missile_launcher.json": ["t_combat", 4, {row: 0, column: 1}],
 
     "/pa/units/addon/r_artillery/r_artillery.json": ["t_combat", 0, { row: 0, column: 2 }],
-    "/pa/units/land/t_arta/t_arta.json": ["t_combat", 0, { row: 1, column: 2 }],
+    "/pa/units/land/t_arta/t_arta.json": ["t_combat", 0, { row: 2, column: 2 }],
 
 
 

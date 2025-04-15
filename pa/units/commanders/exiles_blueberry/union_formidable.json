@@ -1,19 +1,19 @@
 {
     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
-    "display_name": "Formidable Commander",
+    "display_name": "Blueberry Commander",
     "si_name": "replicate_commander_1",
     "description": "Basic Tiha Commander.",
     "model": {
-        "filename": "/pa/units/commanders/union_formidable/formidable.papa",
+        "filename": "/pa/units/commanders/exiles_blueberry/formidable.papa",
         "animations": {
-            "death01": "/pa/units/commanders/union_formidable/formidable.papa",
-            "walk": "/pa/units/commanders/union_formidable/formidable_run.papa",
-            "idle": "/pa/units/commanders/union_formidable/formidable_idle.papa",
-            "walk_stop": "/pa/units/commanders/union_formidable/formidable_stop.papa",
-            "aim_up": "/pa/units/commanders/union_formidable/formidable.papa",
-            "aim_down": "/pa/units/commanders/union_formidable/formidable.papa"
+            "death01": "/pa/units/commanders/exiles_blueberry/formidable.papa",
+            "walk": "/pa/units/commanders/exiles_blueberry/formidable_run.papa",
+            "idle": "/pa/units/commanders/exiles_blueberry/formidable_idle.papa",
+            "walk_stop": "/pa/units/commanders/exiles_blueberry/formidable_stop.papa",
+            "aim_up": "/pa/units/commanders/exiles_blueberry/formidable.papa",
+            "aim_down": "/pa/units/commanders/exiles_blueberry/formidable.papa"
         },
-        "animtree": "/pa/units/commanders/union_formidable/union_formidable_comm_anim_tree.json",
+        "animtree": "/pa/units/commanders/exiles_blueberry/union_formidable_comm_anim_tree.json",
         "walk_speed": 3.5
     },
     "strategic_icon_priority": 0,
@@ -124,7 +124,7 @@
             "aim_bone": "bone_turret"
         },
         {
-            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+            "spec_id": "/pa/units/commanders/exiles_blueberry/union_formidable_tool_weapon.json",
             "aim_bone": "bone_turret",
             "muzzle_bone": "socket_right",
             "primary_weapon": true
@@ -285,9 +285,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/union_formidable/img_union_formidable.png",
-            "thumb_image": "/pa/units/commanders/union_formidable//img_union_formidable_thumb.png",
-            "profile_image": "/pa/units/commanders/union_formidable/profile_union_formidable.png"
+            "image": "/pa/units/commanders/exiles_blueberry/img_union_formidable.png",
+            "thumb_image": "/pa/units/commanders/exiles_blueberry//img_union_formidable_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
         }
     }
 }

@@ -20,7 +20,7 @@
             ]
         }
     },
-    "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced - Orbital | FabBuild) & Custom6 - Custom7",
+    "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & (Bot | Air | Naval | Tank) | FabBuild) & Custom6 - Custom7",
     "unit_types": [
         "UNITTYPE_Fabber",
         "UNITTYPE_Construction",

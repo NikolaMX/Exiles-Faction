@@ -1,11 +1,11 @@
 {
-	"identifier": "pa.mla.unit.replicate.LOCAL_NEW_FAC",
+	"identifier": "com.pa.nik.exiles",
 	"display_name": "Exiles Faction WIP",
 	"description": "Tiha Faction WIP.",
 	"author": "borrowed from a bunch of people",
 	"signature": "not yet implemented",
 	"forum": "",
-	"priority": 50,
+	"priority": 99,
 	"icon": "https://raw.githubusercontent.com/NikolaMX/Exiles-Faction/refs/heads/main/icon.png",
 	"titansOnly": true,
 	"category": [
@@ -17,10 +17,10 @@
 	],
 	"scenes": {
 		"shared_build": [
-			"coui://ui/mods/pa.mla.unit.replicate/shared_build.js"
+			"coui://ui/mods/com.pa.nik.exiles/shared_build.js"
 		],
 		"icon_atlas": [
-			"coui://ui/mods/pa.mla.unit.replicate/icon_atlas.js"
+			"coui://ui/mods/com.pa.nik.exiles/icon_atlas.js"
 		]
 	},
 	"context": "server",

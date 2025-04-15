@@ -84,10 +84,23 @@
       "stage_duration": 5000,
       "stage_turn_rate": 360,
       "rotates_to_velocity": true
+    },
+    {
+        "ignores_gravity": false,
+        "ignores_LOS": false,
+        "stage_duration": 5000,
+        "stage_turn_rate": 1080,
+        "rotates_to_velocity": true
     }
   ],
   "turn_rate": 180,
   "unit_types": [
-    "UNITTYPE_Mobile"
-  ]
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Interplanetary"
+  ],
+  "interplanetary_type": "INTER_System",
+  "system_velocity_multiplier": 20.0,
+  "gravwell_velocity_multiplier": 10.0,
+  "stage_on_planet_handoff": 2
 }
