@@ -1,9 +1,9 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "display_name": "Ocelot",
-  "description": "Anti-air Tank: Durable tank armed with 4 flak cannons. Medium range. Low AoE",
+  "description": "Anti-air Tank: Powerful tank armed with 4 flak cannons. Medium range. Low AoE",
   "max_health": 250,
-  "build_metal_cost": 160,
+  "build_metal_cost": 200,
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {

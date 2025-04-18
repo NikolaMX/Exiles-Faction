@@ -286,7 +286,7 @@
     "client": {
         "ui": {
             "image": "/pa/units/commanders/exiles_blueberry/img_union_formidable.png",
-            "thumb_image": "/pa/units/commanders/exiles_blueberry/img_union_formidable_thumb.png",
+            "thumb_image": "/pa/units/commanders/exiles_blueberry//img_union_formidable_thumb.png",
             "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
         }
     }
