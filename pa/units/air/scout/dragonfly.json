@@ -4,7 +4,7 @@
     "si_name": "t_air_scout",
     "description": "!LOC:Scout - Fast. Can see far away. Does not attack.",
     "max_health": 100,
-    "build_metal_cost": 120,
+    "build_metal_cost": 85,
     "unit_types": [
         "UNITTYPE_Scout",
         "UNITTYPE_Mobile",
@@ -41,26 +41,26 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 220
+                    "radius": 200
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 220
+                    "radius": 200
                 },
                 {
                     "channel": "radar",
                     "uses_energy": false,
                     "layer": "surface_and_air",
-                    "radius": 300,
+                    "radius": 310,
                     "shape": "capsule"
                 },
                 {
                     "channel": "radar",
                     "uses_energy": false,
                     "layer": "underwater",
-                    "radius": 300,
+                    "radius": 310,
                     "shape": "capsule"
                 }
             ]
