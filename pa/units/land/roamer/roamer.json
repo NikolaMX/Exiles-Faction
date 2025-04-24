@@ -104,8 +104,8 @@
             "filename": "/pa/units/land/roamer/laser.pfx",
             "bone": "bone_root",
             "offset": [
-                0,
-                0,
+                -1,
+                1,
                 2
             ],
             "orientation": [
@@ -119,8 +119,8 @@
             "filename": "/pa/units/land/roamer/laser.pfx",
             "bone": "bone_root",
             "offset": [
-                0,
-                0,
+                1,
+                1,
                 2
             ],
             "orientation": [

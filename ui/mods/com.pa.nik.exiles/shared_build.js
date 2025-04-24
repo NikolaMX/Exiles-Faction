@@ -23,7 +23,7 @@ var newBuild = {
 
 
     //Special Factory
-    "/pa/units/land/factory_1/factory_1.json": ["t_factory", 0, { row: 0, column: 1 }],
+    
     //"/pa/units/land/t_bot_fac_adv/t_bot_fac_adv.json": ["t_factory", 0, { row: 1, column: 5 }],
 
 
@@ -39,7 +39,7 @@ var newBuild = {
     "/pa/units/land/lice/lice.json": ["t_bot", 0, { row: 2, column: 3 }],
     "/pa/units/land/tin/tin.json": ["t_bot", 0, { row: 2, column: 4 }],
     "/pa/units/land/hyena/hyena.json": ["t_bot", 0, { row: 2, column: 5 }],
-    "/pa/units/land/sword_dox/sword_dox.json": ["t_bot", 0, { row: 2, column: 6 }],
+    
     
     
     
@@ -57,6 +57,7 @@ var newBuild = {
 
     // Special Factory
     "/pa/units/addon/r_grug/r_grug.json": ["t_foundry", 0, { row: 2, column: 0 }],
+    "/pa/units/land/sword_dox/sword_dox.json": ["t_foundry", 0, { row: 2, column: 1 }],
     // "/pa/units/land/ft_assault_walker/ft_assault_walker.json": ["t_foundry", 0, { row: 2, column: 1 }],
 
     //Tank Factory
@@ -126,6 +127,7 @@ var newBuild = {
     "/pa/units/land/aa_missile_launcher/aa_missile_launcher.json": ["t_combat", 4, {row: 0, column: 1}],
 
     "/pa/units/addon/r_artillery/r_artillery.json": ["t_combat", 0, { row: 0, column: 2 }],
+    "/pa/units/land/factory_1/factory_1.json": ["t_combat", 0, { row: 1, column: 2 }],
     "/pa/units/land/t_arta/t_arta.json": ["t_combat", 0, { row: 2, column: 2 }],
 
 

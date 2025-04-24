@@ -1,8 +1,8 @@
 {
   "si_name": "r_grug",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "Universal Fab",
-  "description": "!LOC:Can build Improved Mex. Armed with weak AA and anti-ground. Can not assist or repair.",
+  "display_name": "Battle Fabricator",
+  "description": "!LOC:Armed with weak AA and anti-ground weapons. Can not assist or repair.",
   "strategic_icon_priority": 0,
   "max_health": 200,
   "build_metal_cost": 400,

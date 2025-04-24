@@ -15,7 +15,8 @@
     "metal": 25
   },
   "buildable_types": "Bot & Mobile & Basic & FactoryBuild & Custom6 & Custom7",
-  "factory_cooldown_time": 30,
+  "factory_cooldown_time": 2,
+  "wait_to_rolloff_time": 1,
   "factory": {
     "store_units": false,
     "spawn_points": [
