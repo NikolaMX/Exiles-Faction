@@ -120,7 +120,7 @@
     "teleportable": {},
     "tools": [
         {
-            "spec_id": "/pa/units/addon/extra/replicate_commander_1_build_arm.json",
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_build_arm.json",
             "aim_bone": "bone_turret"
         },
         {
