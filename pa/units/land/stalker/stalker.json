@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "!LOC:Stalker",
+    "display_name": "!LOC:Cobra",
     "si_name": "stalker",
     "description": "!LOC:Cloaked Attack Vehicle - Invisible short-range tank. High damage, long reload.",
     "max_health": 400,
