@@ -24,7 +24,12 @@
         "/pa/units/air/swordfish/swordfish_ammo.json",
         "/pa/units/air/strat_bomber/strat_bomber_ammo.json",
         
-        "/pa/units/air/l_bomber/l_bomber_ammo.json"
+        "/pa/units/air/l_bomber/l_bomber_ammo.json",
+
+
+        "/pa/units/air/bug_bomber/bug_bomber_ammo.json",
+        "/pa/units/air/bug_bomber_adv/bug_bomber_adv_ammo.json"
+
     ],
     "target_layers": [
         "WL_Air"

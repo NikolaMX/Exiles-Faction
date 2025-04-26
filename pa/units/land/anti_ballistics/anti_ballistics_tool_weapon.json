@@ -14,15 +14,36 @@
 	"auto_task_type": "anti_entity",
 	"anti_entity_targets_units": false,
 	"anti_entity_targets": [
-		"/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
+		
 		"/pa/units/air/bomber_adv/bomber_adv_ammo.json",
+		"/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
+		"/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo.json",
+		"/pa/units/sea/missile_ship/missile_ship_ammo.json",
+
 		"/pa/units/land/artillery_short/artillery_short_ammo.json",
 		"/pa/units/land/artillery_long/artillery_long_ammo.json",
-		"/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo.json",
 		"/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
-		"/pa/units/land/hail/hail_ammo.json",
-		"/pa/units/land/t_arta/t_arta_ammo.json"
+		
 
+
+		"/pa/units/land/hail/hail_ammo.json",
+		"/pa/units/land/t_arta/t_arta_ammo.json",
+
+
+		"pa/units/land/bug_hydra/bug_hydra_ammo.json",
+		"pa/units/structure/bug_arty_large/bug_arty_large_ammo.json",
+		"pa/units/structure/bug_turret_acid/bug_turret_acid_ammo.json",
+
+
+		"/pa/units/land/l_bot_artillery/l_bot_artillery_ammo.json",
+		"/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
+
+		"/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json",
+		"/pa/units/land/l_artillery_long/l_artillery_long_ammo.json",
+		"/pa/units/land/l_artillery_short/l_artillery_short_ammo.json"
+
+		
+		
 	],
 	"target_layers": [
 		"WL_Air",

@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "unit_name": "Trapper",
+    "unit_name": "Taipan",
     "si_name": "hunter",
     "display_name": "!LOC:Trapper",
     "description": "!LOC:Artillery Crawler - Deals damage over time",

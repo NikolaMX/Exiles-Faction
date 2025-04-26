@@ -17,6 +17,7 @@
     "auto_task_type": "anti_entity",
     "anti_entity_targets_units": false,
     "anti_entity_targets": [
+        "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
         "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
         "/pa/units/land/missile_facility/large_stun_ammo.json",
         "/pa/units/land/missile_facility/large_DOT_ammo.json",

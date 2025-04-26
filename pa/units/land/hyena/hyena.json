@@ -155,7 +155,22 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_combat_spray.pfx",
-            "bone": "socket_fabber_muzzle",
+            "bone": "socket_lower_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+            "bone": "socket_upper_muzzle",
             "offset": [
                 0,
                 0,

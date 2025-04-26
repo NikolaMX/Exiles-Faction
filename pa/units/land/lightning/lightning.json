@@ -151,9 +151,9 @@
   },
   "model": {
     "animtree": "/pa/units/land/lightning/one_turret.json",
-    "filename": "/pa/units/land/lightning/Vassault21.papa",
+    "filename": "/pa/units/land/lightning/lightning.papa",
     "animations": {
-      "firing": "/pa/units/land/lightning/Vassault21_anim_fired.papa"
+      "firing": "/pa/units/land/lightning/lightning_anim_fired.papa"
     }
   },
   "physics": {

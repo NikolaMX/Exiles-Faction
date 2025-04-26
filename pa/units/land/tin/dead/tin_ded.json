@@ -146,9 +146,9 @@
         "diameter": 10.0
     },
     "mesh_bounds": [
-        4,
-        4,
-        4
+        2,
+        2,
+        2
     ],
     "TEMP_texelinfo": 4.07719
 }

@@ -14,7 +14,7 @@
 		"UNITTYPE_Custom6"
 	],
 	"guard_radius": 120,
-	"guard_layer": "WL_AnySurface",
+	"guard_layer": "WL_AnyLayer",
 	"navigation": {
 		"type": "air",
 		"acceleration": 75,

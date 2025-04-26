@@ -36,7 +36,7 @@
                 "type": "procedural_aim",
                 "rotation_bone": "bone_fabber_turret",
                 "rotation_axis": "z",
-                "weapon_index": 0
+                "weapon_index": 1
             }
         },
         {
@@ -46,7 +46,7 @@
                 "type": "procedural_aim",
                 "rotation_bone": "bone_turret",
                 "rotation_axis": "z",
-                "weapon_index": 1
+                "weapon_index": 0
             }
         },
         {
@@ -56,7 +56,7 @@
                 "type": "procedural_aim",
                 "rotation_bone": "bone_pitch",
                 "rotation_axis": "x",
-                "weapon_index": 1
+                "weapon_index": 0
             }
         }
     ]
