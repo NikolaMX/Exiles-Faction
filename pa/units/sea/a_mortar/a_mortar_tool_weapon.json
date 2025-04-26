@@ -5,38 +5,31 @@
 	"max_firing_velocity": 150,
 	"min_firing_velocity": 75,
 	"max_range": 200,
-	
 	"ammo_source": "time",
 	"ammo_capacity": 3,
 	"ammo_per_shot": 3,
-	
 	"yaw_rate": 45,
 	"pitch_rate": 60,
-	
 	"yaw_range": 180,
 	"pitch_range": 89.9,
-	
 	"firing_arc_yaw": 0,
 	"firing_arc_pitch": 5,
-	
 	"auto_attack": true,
-	"firing_standard_deviation": 2.0,
 	"physics": {
 		"radius": 1,
 		"gravity_scalar": 1,
-		"add_to_spatial_db": false
+		"add_to_spatial_db": true
 	},
 	"target_layers": [
 		"WL_Underwater",
 		"WL_Seafloor",
 		"WL_WaterSurface",
 		"WL_LandHorizontal"
-		
 	],
 	"target_priorities": [
-    "Sub",
-    "Mobile",
-    "Structure - Wall",
-    "Wall"
+		"Sub",
+		"Mobile",
+		"Structure - Wall",
+		"Wall"
 	]
 }

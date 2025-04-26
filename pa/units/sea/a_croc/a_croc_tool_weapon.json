@@ -9,7 +9,7 @@
     "ammo_per_shot": 50,
     "carpet_fire": false,
     "carpet_wait_for_full_ammo": false,
-    "max_range": 180,
+    "max_range": 150,
     "yaw_rate": 45,
     "pitch_rate": 45,
     "yaw_range": 120,

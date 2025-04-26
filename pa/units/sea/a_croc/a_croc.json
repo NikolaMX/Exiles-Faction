@@ -1,15 +1,15 @@
 {
     "si_name": "a_croc",
     "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-    "display_name": "Croc",
+    "display_name": "Fiend",
     "description": "!LOC:Laser Frigate - Durable. Rapid-fire. Attacks land and sea targets.",
     "max_health": 800,
     "build_metal_cost": 475,
     "spawn_layers": "WL_WaterSurface",
     "mesh_bounds": [
         6,
-        15,
-        8
+        24,
+        5.75
     ],
     "unit_types": [
         "UNITTYPE_Custom6",

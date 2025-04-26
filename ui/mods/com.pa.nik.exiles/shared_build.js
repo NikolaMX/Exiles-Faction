@@ -91,6 +91,9 @@ var newBuild = {
     "/pa/units/air/scout/dragonfly.json": ["t_air", 0, { row: 2, column: 2 }],
     "/pa/units/air/t_transport/t_transport.json": ["t_air", 0, { row: 2, column: 3 }],
     "/pa/units/air/t_bomber/t_bomber.json": ["t_air", 0, { row: 2, column: 4 }],
+
+
+    "/pa/units/air/t_transport_adv/t_transport_adv.json": ["t_factory", 0, { row: 0, column: 1 }],
     
     // "/pa/units/air/t_vulture/t_vulture.json": ["t_air", 0, { row: 0, column: 0 }],    //temp disabled
 
@@ -109,7 +112,9 @@ var newBuild = {
     "/pa/units/sea/t_naval_fac/t_naval_fac.json": ["t_factory", 0, { row: 2, column: 2 }],
     "/pa/units/sea/t_naval_fac_adv/t_naval_fac_adv.json": ["t_factory", 0, { row: 1, column: 2 }],
 
+    "/pa/units/sea/t_naval_fab/t_naval_fab.json": ["t_naval", 0, { row: 2, column: 0 }],
     
+    "/pa/units/sea/t_hover_skiff/t_hover_skiff.json": ["t_naval", 0, { row: 2, column: 1 }],
     "/pa/units/sea/a_croc/a_croc.json": ["t_naval", 0, { row: 2, column: 2 }],
     "/pa/units/sea/cruiser/cruiser.json": ["t_naval", 0, { row: 2, column: 3 }],
     "/pa/units/sea/a_mortar/a_mortar.json": ["t_naval", 0, { row: 2, column: 4 }],
@@ -135,7 +140,7 @@ var newBuild = {
     "/pa/units/land/anti_ballistics/anti_ballistics.json": ["t_combat", 0, { row: 0, column: 3 }],
     
     
-    "/pa/units/land/missile_facility/missile_facility.json": ["t_combat", 4, {row: 0, column: 4}],                //DISABLED FOR NOW
+    "/pa/units/land/missile_facility/missile_facility.json": ["t_combat", 4, {row: 0, column: 4}],
     "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json": ["t_combat", 4, {row: 1, column: 4}],
     "/pa/units/addon/r_umbrella/r_umbrella.json": ["t_combat", 0, { row: 2, column: 4 }],
 

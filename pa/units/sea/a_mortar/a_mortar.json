@@ -6,9 +6,9 @@
 	"max_health": 1000,
 	"spawn_layers": "WL_DeepWater",
 	"mesh_bounds": [
-		4,
-		24,
-		7
+		5.5,
+		20,
+		4	
 	],
 	"unit_types": [
 		"UNITTYPE_Custom6",
@@ -90,7 +90,7 @@
 		}
 	],
 	"selection_icon": {
-		"diameter": 22.0
+		"diameter": 24.0
 	},
 	"TEMP_texelinfo": 22.1895
 }

@@ -1,0 +1,188 @@
+{
+    "si_name": "t_hover_skiff",
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Skipper",
+    "description": "!LOC:Hover Skiff - Fast. Fragile. Can go on land and watter. Attacks land and sea targets.",
+    "max_health": 125,
+    "build_metal_cost": 225,
+    "armor_type": "AT_Hover",
+    
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                2.7
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Hover"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "hover",
+        "acceleration": 140,
+        "brake": 140,
+        "move_speed": 16,
+        "turn_speed": 90
+    },
+    "physics": {
+        "radius": 3,
+        "air_friction": 0.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/t_hover_skiff/t_hover_skiff.papa",
+        "animations": {
+            "hover": "/pa/units/sea/t_hover_skiff/t_hover_skiff_anim_hover.papa"
+        },
+        "animtree": "/pa/units/sea/t_hover_skiff/t_hover_skiff_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/t_hover_skiff/t_hover_skiff_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "bone_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Death/Sea",
+            "effect_spec": "/pa/units/land/roamer/roamer_muzzle_flash.pfx bone_muzzle",
+            "effect_scale": 2
+        },
+        "died": {
+      "audio_cue": "/SE/Death/Sea",
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+      "effect_scale": 0.6
+    }
+    },
+    "fx_offsets": [
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                -2.86,
+                -1.9,
+                0.96
+            ],
+            "orientation": [
+                0,
+                0,
+                -202.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                2.86,
+                -1.9,
+                0.96
+            ],
+            "orientation": [
+                0,
+                0,
+                22.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                2.13,
+                2.14,
+                2.22
+            ],
+            "orientation": [
+                0,
+                0,
+                -15
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                -2.13,
+                2.14,
+                2.22
+            ],
+            "orientation": [
+                0,
+                0,
+                195
+            ]
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_hover_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_hover"
+        }
+    },
+    "selection_icon": {
+        "diameter": 18.0
+    },
+    "mesh_bounds": [
+        5,
+        8.9,
+        5
+    ],
+    "TEMP_texelinfo": 5.84968
+}

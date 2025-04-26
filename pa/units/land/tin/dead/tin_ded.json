@@ -79,7 +79,8 @@
         "walk_speed": 5
     },
     "command_caps": [
-        "ORDER_FireSecondaryWeapon"
+        "ORDER_FireSecondaryWeapon",
+        "ORDER_Use"
       ],
     "tools": [
         {

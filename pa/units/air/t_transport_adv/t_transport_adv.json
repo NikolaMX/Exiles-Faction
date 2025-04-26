@@ -1,0 +1,290 @@
+{
+    "si_name": "t_transport_adv",
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Heron",
+    "description": "!LOC:Advanced Interplanetary Carrier - Can load up to 24 land units and fly to other planets.",
+    "max_health": 800,
+    "build_metal_cost": 1200,
+    "usable": true,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Air",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Transport",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+        "UNITTYPE_Interplanetary",
+        "UNITTYPE_Important"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "child_attached": {
+            "audio_cue": "/SE/Movement/air/transport_load"
+        },
+        "child_detached": {
+            "audio_cue": "/SE/Movement/air/transport_unload"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_transport_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/transport"
+        }
+    },
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Assist",
+        "ORDER_Load",
+        "ORDER_Unload"
+    ],
+    "useable": {
+        "type": "transport",
+        "range": 4048
+    },
+    "transporter": {
+        "capacity": 24,
+        "transportable_unit_types": "Mobile & Land - Titan",
+        "transporter_attach_bone": "bone_root",
+        "transportable_attach_offset": "root",
+        "load_range": 50,
+        "chase_range": 20
+    },
+    "planetary_arrival_cooldown_time": 10.0,
+    "system_velocity_multiplier": 30.0,
+    "gravwell_velocity_multiplier": 10.0,
+    "navigation": {
+        "type": "air",
+        "aggressive_behavior": "line",
+        "inter_planetary_type": "system",
+        "acceleration": 20,
+        "brake": 50,
+        "move_speed": 50,
+        "turn_speed": 120,
+        "turn_accel": 30,
+        "hover_time": -1.0,
+        "vertical_speed": 50,
+        "turn_in_place": true
+    },
+    "physics": {
+        "radius": 8,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0,
+        "gravity_scalar": 1
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 300
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/t_transport_adv/t_transport_adv.papa",
+        "animations": {
+            "fly": "/pa/units/air/t_transport_adv/t_transport_adv_anim_fly.papa"
+        },
+        "animtree": "/pa/units/air/t_transport_adv/transport_anim_tree.json"
+    },
+    "TEMP_texelinfo": 10.4837,
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustFL1",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustFR1",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustFL2",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustFR2",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustBL1",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustBR1",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustBL2",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thrustBR2",
+            "offset": [
+                0,
+                1.6,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "backThrust2",
+            "offset": [
+                0,
+                1,
+                0
+            ],
+            "orientation": [
+                90,
+                0,
+                0
+            ],
+            "effect_scale": 1.5
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "backThrust1",
+            "offset": [
+                0,
+                1,
+                0
+            ],
+            "orientation": [
+                90,
+                0,
+                0
+            ],
+            "effect_scale": 1.5
+        }
+    ],
+    "selection_icon": {
+        "diameter": 33.0
+    },
+    "mesh_bounds": [
+        10,
+        26,
+        6
+    ]
+}

@@ -106,6 +106,8 @@ var paeiouIcons = [
     "strat_bomber",
     "ts_air_fab",
 
+    "t_transport_adv",
+
     //Titans
     "t_chimera",
 
@@ -122,6 +124,9 @@ var paeiouIcons = [
     
 
     //Naval Units
+    "t_naval_fab",
+
+    "t_hover_skiff",
     "cruiser",
     "a_croc",
     "a_mortar",

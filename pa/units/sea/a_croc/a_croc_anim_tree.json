@@ -12,6 +12,12 @@
             "type": "procedural_aim",
             "rotation_bone": "bone_pitch",
             "rotation_axis": "x"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil",
+            "recoil_dist": 2,
+            "restore_time": 0.5
         }
     ]
 }

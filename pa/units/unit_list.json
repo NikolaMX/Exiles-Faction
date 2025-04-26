@@ -299,6 +299,8 @@
 "/pa/units/air/t_transport/t_transport.json",
 
 "/pa/units/air/t_vulture/t_vulture.json",
+"/pa/units/air/t_transport_adv/t_transport_adv.json",
+
 
 
 "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json",
@@ -362,8 +364,9 @@
 "/pa/units/sea/t_naval_fac/t_naval_fac.json",
 "/pa/units/sea/t_naval_fac_adv/t_naval_fac_adv.json",
 
+"/pa/units/sea/t_naval_fab/t_naval_fab.json",
 
-
+"/pa/units/sea/t_hover_skiff/t_hover_skiff.json",
 "/pa/units/sea/cruiser/cruiser.json",
 "/pa/units/sea/a_croc/a_croc.json",
 "/pa/units/sea/a_mortar/a_mortar.json",

@@ -1,10 +1,10 @@
 {
     "si_name": "cruiser",
     "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-    "display_name": "Barracuda",
-    "description": "!LOC:Submarine - High damage. Cannot be targeted by cannons. Attacks sea and undersea targets.",
-    "max_health": 700,
-    "build_metal_cost": 500,
+    "display_name": "Morray",
+    "description": "!LOC:Submarine - Fires volleys of unguided torpedoes. Cannot be targeted by cannons. Attacks sea and undersea targets.",
+    "max_health": 760,
+    "build_metal_cost": 700,
     "spawn_layers": "WL_Underwater",
     "unit_types": [
         "UNITTYPE_Custom6",
@@ -44,13 +44,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 150
+                    "radius": 170
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 150
+                    "radius": 170
                 }
             ]
         }
@@ -67,7 +67,10 @@
         {
             "spec_id": "/pa/units/sea/cruiser/cruiser_tool_weapon.json",
             "aim_bone": "bone_root",
+            "projectiles_per_fire": 4,
             "muzzle_bone": [
+                "socket_muzzle01",
+                "socket_muzzle02",
                 "socket_muzzle01",
                 "socket_muzzle02"
             ]
@@ -109,8 +112,8 @@
     },
     "TEMP_texelinfo": 8.37977,
     "mesh_bounds": [
-        4,
-        15,
+        7,
+        24,
         4
     ]
 }
