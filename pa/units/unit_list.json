@@ -235,8 +235,6 @@
 
     "/pa/units/land/factory_1/factory_1.json",
     "/pa/units/addon/r_grug/r_grug.json",
-    "/pa/units/commanders/replicate_commander_1/replicate_commander_1.json",
-    "/pa/units/land/ft_assault_walker/ft_assault_walker.json",
     "/pa/units/commanders/ft_commander/ft_commander.json",
 
 
@@ -301,15 +299,13 @@
 "/pa/units/air/t_vulture/t_vulture.json",
 "/pa/units/air/t_transport_adv/t_transport_adv.json",
 
-
-
 "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json",
 "/pa/units/air/t_int/t_int.json",
 "/pa/units/air/swordfish/swordfish.json",
 "/pa/units/air/strat_bomber/strat_bomber.json",
 "/pa/units/air/t_bomber/t_bomber.json",
 "/pa/units/air/ts_air_fab/t_air_fab.json",
-"/pa/units/air/tick/tick.json",
+
 
 
 

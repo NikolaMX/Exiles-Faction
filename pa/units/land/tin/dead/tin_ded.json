@@ -51,8 +51,8 @@
     },
     "recon": {
         "observable": {
-      "layer": "mine"
-    },
+            "layer": "mine"
+        },
         "observer": {
             "items": [
                 {
@@ -81,13 +81,13 @@
     "command_caps": [
         "ORDER_FireSecondaryWeapon",
         "ORDER_Use"
-      ],
+    ],
     "tools": [
         {
             "spec_id": "/pa/units/land/tin/dead/tin_ded_death_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
-          }
+        }
     ],
     "events": {
         "build_complete": {
@@ -96,6 +96,11 @@
         "fired": {
             "audio_cue": "/SE/Weapons/bot/assault_fire",
             "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx",
+            "effect_scale": 0.2
         }
     },
     "audio": {
