@@ -96,7 +96,17 @@
             "bone": "socket_thruster",
             "offset": [
                 0,
-                0.8,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "socket_thruster.001",
+            "offset": [
+                0,
+                0,
                 0
             ]
         }
