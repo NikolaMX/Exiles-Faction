@@ -95,6 +95,20 @@
     },
     "fx_offsets": [
         {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
             "type": "fired",
             "filename": "/pa/units/land/luddite/strafer_jets.pfx",
             "bone": "socket_right_muzzle",
