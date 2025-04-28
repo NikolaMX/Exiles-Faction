@@ -59,7 +59,7 @@
 		}
 	},
 	"model": {
-		"filename": "/pa/units/land/tank_gattling/tank_gattling.papa",
+		"filename": "/pa/units/land/tank_gattling/gattling.papa",
 		"animtree": "/pa/units/land/tank_gattling/tank_gattling_anim_tree.json",
 		"arrows": 5
 	},
