@@ -142,7 +142,9 @@
     3
   ],
   "model": {
-    "filename": "/pa/units/land/meerkat/Vpd22.papa"
+    "filename": "/pa/units/land/meerkat/meerkat.papa",
+    "animtree": "/pa/units/land/meerkat/meerkat_anim_tree.json",
+    "arrows": 5
   },
   "navigation": {
     "type": "amphibious",
@@ -157,8 +159,15 @@
   "tools": [
     {
       "spec_id": "/pa/units/land/meerkat/meerkat_tool_interception.json",
-      "aim_bone": "muzzle00",
-      "muzzle_bone": "muzzle00"
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "muzzle1",
+        "muzzle2",
+        "muzzle3",
+        "muzzle4",
+        "muzzle5",
+        "muzzle6"
+      ]
     }
   ],
   "unit_types": [

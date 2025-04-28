@@ -4,7 +4,7 @@
     "display_name": "!LOC:Strategic Missile Launcher",
     "description": "!LOC:Builds a selection of long range strategic missiles.",
     "max_health": 2900,
-    "build_metal_cost": 9000,
+    "build_metal_cost": 12000,
     "atrophy_rate": 200,
     "atrophy_cool_down": 15,
     "area_build_type": "Sphere",
