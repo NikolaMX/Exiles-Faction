@@ -105,7 +105,8 @@ var newBuild = {
     
 
     // Titans
-    "/pa/units/land/t_chimera/t_chimera.json": ["t_factory", 0, { row: 0, column: 5 }],   
+    "/pa/units/land/t_chimera/t_chimera.json": ["t_factory", 0, { row: 0, column: 5 }],
+    "/pa/units/land/cyclone/cyclone.json": ["t_factory", 0, { row: 0, column: 3 }],      
 
 
     //Naval Factory

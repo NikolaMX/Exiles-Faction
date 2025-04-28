@@ -226,7 +226,7 @@
         },
         {
             "type": "recoil",
-            "bone": "bone_turret",
+            "bone": "bone_recoil",
             "recoil_dist": 1.5,
             "restore_time": 0.5
         }

@@ -1,0 +1,230 @@
+{
+    "si_name": "cyclone",
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Cyclone",
+    "description": "!LOC:Hover Titan. Lingering damage over a large area. Very fast. Fragile. Can hover over water and lava",
+    "max_health": 12000,
+    "build_metal_cost": 20000,
+    "armor_type": "AT_Hover",
+    "has_death_effects": true,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                2.7
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Titan",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Hover"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "turn_in_place": true,
+        "type": "hover-large",
+        "acceleration": 140,
+        "brake": 60,
+        "move_speed": 15,
+        "turn_speed": 60,
+        "turn_accel": 45
+    },
+    "physics": {
+        "radius": 6,
+        "air_friction": 5,
+        "orient_interp_rate": 90.0
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/cyclone/cyclone.papa",
+        "animations": {
+            "build": "/pa/units/land/cyclone/cyclone_anim_build.papa",
+            "deploy": "/pa/units/land/cyclone/cyclone_anim_deploy.papa",
+            "idle": "/pa/units/land/cyclone/cyclone_anim_core_spin.papa",
+            "dead": "/pa/units/land/cyclone/cyclone_anim_dead1.papa",
+            "death": "/pa/units/land/cyclone/cyclone_anim_dead1.papa",
+            "walk": "/pa/units/land/cyclone/cyclone_anim_forward.papa",
+            "walk_stop": "/pa/units/land/cyclone/cyclone_anim_walk_stop.papa",
+            "turn_left": "/pa/units/land/cyclone/cyclone_anim_turn_left.papa",
+            "turn_right": "/pa/units/land/cyclone/cyclone_anim_turn_right.papa",
+            "attack": "/pa/units/land/cyclone/cyclone_anim_attack.papa"
+        },
+        "animtree": "/pa/units/land/cyclone/cyclone_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/cyclone/cyclone_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": "bone_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+            "effect_scale": 0.5,
+            "effect_spec": ""
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 5
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/cyclone/mkv_jets.pfx",
+            "bone": "jetF.l",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/cyclone/mkv_jets.pfx",
+            "bone": "jetB.l",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/cyclone/mkv_jets.pfx",
+            "bone": "jetB.r",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/cyclone/mkv_jets.pfx",
+            "bone": "jetF.r",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/nuke_tank_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_vagaurd_T2"
+        }
+    },
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_titan_01.json"
+        ]
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "bone": "core",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 10.0,
+            "near_distance": 3.0,
+            "far_distance": 50.0,
+            "color": [
+                2,
+                0.5,
+                0.5
+            ],
+            "intensity": 10
+        }
+    ],
+    "selection_icon": {
+        "diameter": 35
+    },
+    "mesh_bounds": [
+        20,
+        20,
+        35
+    ],
+    "TEMP_texelinfo": 5.84968
+}

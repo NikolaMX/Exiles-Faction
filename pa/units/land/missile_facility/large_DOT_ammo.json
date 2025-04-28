@@ -67,6 +67,9 @@
   "splash_damage_orbital": false,
   "splash_damages_allies": false,
   "splash_radius": 0,
+  "interplanetary_type": "INTER_System",
+  "system_velocity_multiplier": 20.0,
+  "gravwell_velocity_multiplier": 20.0,
   "stages": [
     {
       "ignores_gravity": true,
@@ -100,6 +103,8 @@
   ],
   "turn_rate": 180,
   "unit_types": [
-    "UNITTYPE_Mobile"
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Interplanetary"
   ]
 }
