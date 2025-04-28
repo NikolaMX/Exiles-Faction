@@ -113,11 +113,11 @@
   },
   "model": {
     "animations": {
-      "walk": "/pa/units/land/tank_wheel/Vscout23_anim_drive.papa",
-      "idle": "/pa/units/land/tank_wheel/Vscout23_anim_idle.papa"
+      "walk": "/pa/units/land/tank_wheel/ball_anim_drive.papa",
+      "idle": "/pa/units/land/tank_wheel/ball_anim_idle.papa"
     },
-    "animtree": "/pa/units/land/tank_wheel/two_turrets_walk.json",
-    "filename": "/pa/units/land/tank_wheel/Vscout23.papa"
+    "animtree": "/pa/units/land/tank_wheel/tank_wheel_animtree.json",
+    "filename": "/pa/units/land/tank_wheel/ball.papa"
   },
   "navigation": {
     "type": "land-small",
