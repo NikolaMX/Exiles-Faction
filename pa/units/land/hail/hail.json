@@ -63,7 +63,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/hail/a_hail.papa",
+        "filename": "/pa/units/land/hail/hail.papa",
         "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
         "arrows": 5
     },
