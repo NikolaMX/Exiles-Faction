@@ -42,13 +42,13 @@
 	"model": [
 		{
 			"layer": "WL_LandHorizontal",
-			"filename": "/pa/units/land/anti_ballistics/anti_ballistics.papa",
+			"filename": "/pa/units/land/anti_ballistics/anti_ballistics_new.papa",
 			"animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
 			"skirt_decal": "/pa/effects/specs/skirt_defense.json"
 		},
 		{
 			"layer": "WL_WaterSurface",
-			"filename": "/pa/units/land/anti_ballistics/anti_ballistics.papa",
+			"filename": "/pa/units/land/anti_ballistics/anti_ballistics_new.papa",
 			"animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
 		}
 	],
