@@ -61,12 +61,6 @@
           "shape": "capsule",
           "radius": 450,
           "uses_energy": true
-        },
-        {
-          "layer": "mine",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 200
         }
       ]
     }
