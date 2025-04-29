@@ -4,7 +4,7 @@
   "display_name": "Battle Fabricator",
   "description": "!LOC:Armed with weak AA and anti-ground weapons. Can not assist or repair.",
   "strategic_icon_priority": 0,
-  "max_health": 200,
+  "max_health": 250,
   "build_metal_cost": 400,
   "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Land & Bot | Factory & Advanced & Land & Tank | FabBuild & Basic) & Custom6",
   "show_in_orbital_layer": true,
