@@ -57,7 +57,7 @@
 	},
 	"maintain_priority_target": false,
 	"model": {
-		"filename": "/pa/units/air/t_bomber/a_blazer.papa",
+		"filename": "/pa/units/air/t_bomber/redkite.papa",
 		"arrows": 5
 	},
 	"tools": [
