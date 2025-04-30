@@ -27,7 +27,7 @@
 		"brake": 30,
 		"move_speed": 90,
 		"turn_speed": 270,
-		"aggressive_distance": 50.0,
+		"aggressive_distance": 100.0,
 		"bank_factor": 10,
 		"vertical_speed": 45,
 		"hover_time": -1.0
@@ -58,11 +58,11 @@
 		{
 			"spec_id": "/pa/units/air/t_int/t_int_tool_weapon.json",
 			"aim_bone": "bone_root",
-			"muzzle_bone": "bone_root"
+			"muzzle_bone": ["muzzle.r", "muzzle.l"] 
 		}
 	],
 	"model": {
-		"filename": "/pa/units/air/t_int/Abomber22.papa",
+		"filename": "/pa/units/air/t_int/yastreb.papa",
 		"arrows": 5
 	},
 	"events": {
@@ -94,21 +94,31 @@
 	"fx_offsets": [
 		{
 			"type": "moving_forward",
-			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
-			"bone": "engine01",
+			"filename": "/pa/units/air/t_int/jet_aircraftNT.pfx",
+			"bone": "jetR",
 			"offset": [
 				0,
-				-2.5,
+				0,
 				0
 			]
 		},
 		{
 			"type": "moving_forward",
-			"filename": "/pa/effects/specs/jet_aircraftNT.pfx",
-			"bone": "engine02",
+			"filename": "/pa/units/air/t_int/jet_aircraftNT.pfx",
+			"bone": "jetL",
 			"offset": [
 				0,
-				-2.5,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/t_int/jet_aircraftNT.pfx",
+			"bone": "jetT",
+			"offset": [
+				0,
+				0,
 				0
 			]
 		}
