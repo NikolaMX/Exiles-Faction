@@ -60,6 +60,7 @@ var paeiouIcons = [
 
     "minigun_vehicle",  //Replacement for meerkat
 
+    "shah",
     "tank_gattling",
     "hippo",
     "stalker",

@@ -17,10 +17,10 @@
             "effect_spec": "/pa/units/land/roamer/roamer_ammo_hit.pfx"
         }
     },
-    "damage": 150,
+    "damage": 125,
     "splash_damage": 0,
     "splash_radius": 0,
-    "initial_velocity": 200.0,
-    "max_velocity": 200.0,
-    "lifetime": 2
+    "initial_velocity": 180.0,
+    "max_velocity": 180.0,
+    "lifetime": 1
 }

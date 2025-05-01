@@ -1,0 +1,113 @@
+{
+    "si_name": "shah",
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Shah",
+    "description": "!LOC:Heavy Anti-Orbital Railgun Tank. Will attempt to shoot at surface targets if it has line of sight.",
+    "max_health": 2000,
+    "build_metal_cost": 1400,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.4
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "scrolling_uv": {
+        "scroll_rate": 0.5,
+        "uv_split": 0.86
+    },
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 10,
+        "turn_speed": 60
+    },
+    "physics": {
+        "radius": 5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/shah/shah.papa",
+        "animtree": "/pa/units/land/shah/shah_anim_tree.json",
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/shah/shah_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": [
+                "muzzleL",
+                "muzzleR"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx muzzleL /pa/effects/specs/tank_muzzle_flash.pfx muzzleR"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_leveler_T2"
+        }
+    },
+    "selection_icon": {
+        "diameter": 21.0
+    },
+    "TEMP_texelinfo": 10.3794,
+    "mesh_bounds": [
+        10,
+        14,
+        5.4
+    ]
+}
