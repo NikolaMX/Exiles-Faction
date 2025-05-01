@@ -90,9 +90,9 @@
         "push_sideways": false,
         "allow_underground": false,
         "collide_with_types": [
-          "Projectile"
+            "Projectile"
         ]
-      },
+    },
     "recon": {
         "observable": {
             "layer": "mine"
@@ -111,6 +111,11 @@
     "tools": [
         {
             "spec_id": "/pa/units/land/hail/hail_mine/hail_mine_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        },
+        {
+            "spec_id": "/pa/units/land/hail/hail_mine/hail_mine_death_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
         }
