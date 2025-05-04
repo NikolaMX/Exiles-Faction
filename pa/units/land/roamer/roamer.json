@@ -58,7 +58,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/roamer/arc_cannon.papa",
+        "filename": "/pa/units/land/roamer/roamer2/roamer2.papa",
         "animations": {
             "hover": "/pa/units/land/roamer/arc_cannon_anim_hover.papa"
         },

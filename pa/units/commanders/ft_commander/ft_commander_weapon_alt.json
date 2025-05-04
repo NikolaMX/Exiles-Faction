@@ -1,7 +1,7 @@
 {
   "ammo_id": "/pa/units/commanders/ft_commander/ft_commander_ammo_alt.json",
   "ammo_capacity": 10000,
-  "ammo_demand": 1000,
+  "ammo_demand": 800,
   "ammo_per_shot": 5000,
   "ammo_source": "energy",
   "auto_attack": false,

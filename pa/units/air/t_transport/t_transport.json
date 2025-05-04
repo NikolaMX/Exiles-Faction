@@ -52,8 +52,7 @@
         "ORDER_Patrol",
         "ORDER_Assist",
         "ORDER_Load",
-        "ORDER_Unload",
-        "ORDER_SpecialMove"
+        "ORDER_Unload"
     ],
     "transporter": {
         "capacity": 3,

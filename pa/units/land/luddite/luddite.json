@@ -60,10 +60,10 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/luddite/model.papa",
+        "filename": "/pa/units/land/luddite/rhino.papa",
         "animations": {
-            "idle": "/pa/units/land/luddite/anim_idle.papa",
-            "walk": "/pa/units/land/luddite/anim_walk.papa"
+            "idle": "/pa/units/land/luddite/rhino_anim_idle.papa",
+            "walk": "/pa/units/land/luddite/rhino_anim_run.papa"
         },
         "animtree": "/pa/units/land/luddite/anim_tree.json",
         "walk_speed": 13
@@ -72,6 +72,7 @@
         {
             "spec_id": "/pa/units/land/luddite/weapon.json",
             "aim_bone": "bone_turret",
+            "projectiles_per_fire": 2,
             "muzzle_bone": [
                 "socket_right_muzzle",
                 "socket_left_muzzle"

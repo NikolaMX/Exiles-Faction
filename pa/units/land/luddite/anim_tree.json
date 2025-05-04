@@ -59,6 +59,18 @@
                 "rotation_bone": "bone_pitch",
                 "rotation_axis": "x"
             }
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_left_recoil",
+            "recoil_dist": 1,
+            "restore_time": 0.5
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_right_recoil",
+            "recoil_dist": 1,
+            "restore_time": 0.5
         }
     ]
 }

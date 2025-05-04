@@ -50,7 +50,7 @@
     "tools": [
         {
             "spec_id": "/pa/units/land/quad_turret/quad_turret_weapon.json",
-            "aim_bone": "socket_left_lower_muzzle",
+            "aim_bone": "bone_pitch",
             "projectiles_per_fire": 4,
             "muzzle_bone": [
                 "socket_right_upper_muzzle",

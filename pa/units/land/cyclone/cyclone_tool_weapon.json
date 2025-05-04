@@ -21,6 +21,6 @@
         "Structure - Wall",
         "Wall"
     ],
-    "yaw_range": 120,
+    "yaw_range": 90,
     "yaw_rate": 45
 }
