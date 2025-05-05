@@ -47,7 +47,7 @@ var paeiouIcons = [
 
 
     //Special Factory
-    "r_grug",
+    "battle_fab",
     "ft_assault_walker",
 
 

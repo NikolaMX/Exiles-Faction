@@ -1,5 +1,5 @@
 {
-  "si_name": "r_grug",
+  "si_name": "battle_fab",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Battle Fabricator",
   "description": "!LOC:Armed with weak AA and anti-ground weapons. Can not assist or repair.",
@@ -31,9 +31,11 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "transportable": { "size": 1 },
+  "transportable": {
+    "size": 1
+  },
   "navigation": {
-    "type": "amphibious",
+    "type": "hover",
     "acceleration": 120,
     "brake": 120,
     "move_speed": 10,
@@ -59,38 +61,33 @@
     }
   },
   "model": {
-    "filename": "/pa/units/addon/r_grug/r_grug.papa",
-    "animtree": "/pa/units/addon/r_grug/r_grug_anim_tree.json",
+    "filename": "/pa/units/exiles/battle_fab/battle_fab.papa",
+    "animtree": "/pa/units/exiles/battle_fab/battle_fab_anim_tree.json",
     "animations": {
-      "walk": "/pa/units/addon/r_grug/r_grug_walk.papa",
-      "idle": "/pa/units/addon/r_grug/r_grug_idle.papa"
+      "hover": "/pa/units/exiles/battle_fab/battle_fab_anim_hover.papa"
     },
     "walk_speed": 4.0
   },
   "teleportable": {},
   "tools": [
     {
-      "spec_id": "/pa/units/addon/r_grug/r_grug_tool_weapon.json",
+      "spec_id": "/pa/units/exiles/battle_fab/battle_fab_tool_weapon.json",
       "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle_gun_vestige",
+      "muzzle_bone": "bone_muzzle",
+      "record_index": 1,
       "primary_weapon": true
     },
     {
-      "spec_id": "/pa/units/addon/r_grug/r_grug_aa_tool_weapon.json",
-      "aim_bone": "socket_muzzle_missile",
-      "projectiles_per_fire": 1,
-      "muzzle_bone": "socket_muzzle_missile"
-    },
-    {
-      "spec_id": "/pa/units/addon/r_grug/r_grug_tool_build_arm.json",
-      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/exiles/battle_fab/battle_fab_tool_build_arm.json",
+      "aim_bone": "muzzle_fab",
+      "record_index": 2,
       "primary_weapon": false
     }
   ],
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_light_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle_gun_vestige"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",
@@ -102,7 +99,7 @@
     {
       "type": "build",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "socket_muzzle_fab"
+      "bone": "muzzle_fab"
     }
   ],
   "audio": {
@@ -120,8 +117,16 @@
         "should_stop_func": "is_not_moving"
       }
     },
-    "selection_response": { "cue": "/SE/Selection/bot/sub_commander" }
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sub_commander"
+    }
   },
-  "selection_icon": { "diameter": 8.0 },
-  "mesh_bounds": [4, 2, 4]
+  "selection_icon": {
+    "diameter": 11
+  },
+  "mesh_bounds": [
+    4,
+    2,
+    4
+  ]
 }

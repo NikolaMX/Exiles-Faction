@@ -56,7 +56,7 @@ var newBuild = {
 
 
     // Special Factory
-    "/pa/units/addon/r_grug/r_grug.json": ["t_foundry", 0, { row: 2, column: 0 }],
+    "/pa/units/exiles/battle_fab/battle_fab.json": ["t_foundry", 0, { row: 2, column: 0 }],
     "/pa/units/land/sword_dox/sword_dox.json": ["t_foundry", 0, { row: 2, column: 1 }],
     // "/pa/units/land/ft_assault_walker/ft_assault_walker.json": ["t_foundry", 0, { row: 2, column: 1 }],
 
