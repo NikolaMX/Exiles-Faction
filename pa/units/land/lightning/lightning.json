@@ -55,7 +55,7 @@
     {
       "type": "idle",
       "filename": "/pa/units/land/lightning/arcc.pfx",
-      "bone": "bone_recoil",
+      "bone": "pitch00",
       "offset": [
         0,
         3,
@@ -160,8 +160,8 @@
     "radius": 4
   },
   "scrolling_uv": {
-    "scroll_rate": 0.6,
-    "uv_split": 0.85
+    "scroll_rate": 0.5,
+    "uv_split": 0.895
   },
   "tools": [
     {
