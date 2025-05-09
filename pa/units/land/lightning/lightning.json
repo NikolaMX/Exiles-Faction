@@ -153,8 +153,11 @@
     "animtree": "/pa/units/land/lightning/one_turret.json",
     "filename": "/pa/units/land/lightning/lightning.papa",
     "animations": {
-      "firing": "/pa/units/land/lightning/lightning_anim_fired.papa"
-    }
+      "firing": "/pa/units/land/lightning/lightning_anim_fired.papa",
+      "walk": "/pa/units/land/lightning/lightning_anim_walk.papa",
+      "idle": "/pa/units/land/lightning/lightning_anim_idle.papa"
+    },
+    "walk_speed": 5
   },
   "physics": {
     "radius": 4

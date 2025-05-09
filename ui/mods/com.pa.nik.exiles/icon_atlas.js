@@ -154,6 +154,11 @@ var paeiouIcons = [
     "t_metal_extractor_2",
 
     
+    //Orbital
+    "t_orbital_launcher",
+
+
+
     //Special
     "shield",
     "flare",

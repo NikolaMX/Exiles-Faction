@@ -124,6 +124,15 @@ var newBuild = {
 
 
     
+
+    //Orbital Factory
+    "/pa/units/orbital/t_orbital_launcher/t_orbital_launcher.json": ["t_factory", 0, { row: 2, column: 1 }],
+
+
+
+
+
+
     //Deffense
     
     "/pa/units/land/ambush_twr/hid/ambush_twr_hid.json": ["t_combat", 0, { row: 2, column: 0 }],
@@ -146,6 +155,10 @@ var newBuild = {
     "/pa/units/land/missile_facility/missile_facility.json": ["t_combat", 4, {row: 0, column: 4}],
     "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json": ["t_combat", 4, {row: 1, column: 4}],
     "/pa/units/addon/r_umbrella/r_umbrella.json": ["t_combat", 0, { row: 2, column: 4 }],
+
+
+
+
 
 
     //AMMO
