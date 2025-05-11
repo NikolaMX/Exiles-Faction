@@ -62,7 +62,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/can/model.papa",
+        "filename": "/pa/units/land/can/can.papa",
         "animations": {
             "idle": "/pa/units/land/can/anim_idle.papa",
             "walk": "/pa/units/land/can/anim_run.papa"
@@ -77,7 +77,7 @@
             "aim_bone": "bone_turret",
             "projectiles_per_fire": 1,
             "muzzle_bone": [
-                "socket_left_muzzle"
+                "socket_left_muzzle1"
             ]
         },
         {
@@ -85,7 +85,7 @@
             "aim_bone": "bone_turret",
             "projectiles_per_fire": 1,
             "muzzle_bone": [
-                "socket_right_muzzle"
+                "socket_right_muzzle1"
             ]
         }
     ],
@@ -95,7 +95,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/assault_fire",
-            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle"
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle1 /pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle1"
         }
     },
     "audio": {
