@@ -78,15 +78,17 @@
             "projectiles_per_fire": 1,
             "muzzle_bone": [
                 "socket_left_muzzle1"
-            ]
+            ],
+            "record_index": 0
         },
         {
             "spec_id": "/pa/units/land/can/can_tool_weapon.json",
-            "aim_bone": "bone_pitch",
+            "aim_bone": "bone_turret",
             "projectiles_per_fire": 1,
             "muzzle_bone": [
                 "socket_right_muzzle1"
-            ]
+            ],
+            "record_index": 1
         }
     ],
     "events": {

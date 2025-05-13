@@ -17,9 +17,11 @@
         ]
     },
     "physics": {
-        "radius": 1,
+        "radius": 2,
         "gravity_scalar": 5,
         "add_to_spatial_db": false,
         "allow_underground": true
-    }
+    },
+    "flight_type": "Seeking",
+    "turn_rate": 30
 }

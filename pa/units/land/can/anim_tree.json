@@ -41,14 +41,15 @@
             }
         }
     },
-    "skeleton_controls": [
+   "skeleton_controls": [
         {
             "type": "fader",
             "lerp_func": "is_active",
             "child": {
                 "type": "procedural_aim",
                 "rotation_bone": "bone_turret",
-                "rotation_axis": "z"
+                "rotation_axis": "z",
+                "weapon_index": 0
             }
         },
         {
@@ -56,9 +57,42 @@
             "lerp_func": "is_active",
             "child": {
                 "type": "procedural_aim",
-                "rotation_bone": "bone_pitch",
-                "rotation_axis": "x"
+                "rotation_bone": "bone_pitch.l",
+                "rotation_axis": "x",
+                "weapon_index": 0
             }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret",
+                "rotation_axis": "z",
+                "weapon_index": 1
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch.r",
+                "rotation_axis": "x",
+                "weapon_index": 1
+            }
+        },
+        {
+            "type": "recoil",
+            "bone": "recoil.l",
+            "recoil_dist": 0.75,
+            "restore_time": 0.5
+        },
+        {
+            "type": "recoil",
+            "bone": "recoil.r",
+            "recoil_dist": 0.75,
+            "restore_time": 0.5
         }
     ]
 }
