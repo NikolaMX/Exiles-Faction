@@ -38,8 +38,8 @@
         "type": "hover",
         "acceleration": 140,
         "brake": 140,
-        "move_speed": 16,
-        "turn_speed": 90
+        "move_speed": 20,
+        "turn_speed": 120
     },
     "physics": {
         "radius": 3,

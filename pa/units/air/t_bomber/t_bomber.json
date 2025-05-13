@@ -2,8 +2,8 @@
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
 	"display_name": "Redkite",
 	"description": "!LOC:Strafing Bomber - Durable. High damage over a narrow area. Effective against clumps of enemies. Attacks land, sea and undersea targets.",
-	"max_health": 150,
-	"build_metal_cost": 300,
+	"max_health": 130,
+	"build_metal_cost": 350,
 	"unit_types": [
 		"UNITTYPE_Bomber",
 		"UNITTYPE_Mobile",
@@ -85,6 +85,19 @@
 		}
 	},
 	"fx_offsets": [
+		{
+		"type": "idle",
+		"filename": "/pa/units/air/t_bomber/bomb_area.pfx",
+            "bone": "socket_aim",
+            "offset": [
+                0,
+                -48,
+				-35
+            ]	
+		},
+
+
+
 		{
 			"type": "moving_forward",
             "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
