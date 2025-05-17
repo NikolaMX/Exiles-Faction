@@ -133,6 +133,8 @@ var paeiouIcons = [
     "a_croc",
     "a_mortar",
 
+    "scilla",
+
 
 
     //Utility

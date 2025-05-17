@@ -22,8 +22,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Tech 2 fabricator: wired to build structures.",
-  "display_name": "Tech 2 fabrication aircraft",
+  "description": "Basic Air Fabricator. Builds basic structures. Can not assist factories.",
+  "display_name": "Fabrication Aircraft",
   "fx_offsets": [
     {
       "bone": "muzzle01",

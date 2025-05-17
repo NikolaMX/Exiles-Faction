@@ -122,7 +122,7 @@ var newBuild = {
     "/pa/units/sea/cruiser/cruiser.json": ["t_naval", 0, { row: 2, column: 3 }],
     "/pa/units/sea/a_mortar/a_mortar.json": ["t_naval", 0, { row: 2, column: 4 }],
 
-
+    "/pa/units/sea/scilla/scilla.json": ["t_naval", 0, { row: 2, column: 5 }],
     
 
     //Orbital Factory
