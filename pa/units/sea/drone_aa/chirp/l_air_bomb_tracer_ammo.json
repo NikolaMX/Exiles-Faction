@@ -1,0 +1,10 @@
+{
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "enemies",
+  "damage": 0,
+  "full_damage_splash_radius": 1,
+  "fx_beam_spec": "/pa/units/sea/drone_aa/chirp/tracer_trail.pfx",
+  "fx_collision_spec": "/pa/units/sea/drone_aa/chirp/tracer_hit.pfx",
+  "splash_damage": 0,
+  "splash_radius": 0
+}

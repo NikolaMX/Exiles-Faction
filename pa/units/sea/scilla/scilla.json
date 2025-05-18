@@ -7,11 +7,11 @@
     "build_metal_cost": 500,
     "spawn_layers": "WL_Underwater",
     "unit_types": [
+        "UNITTYPE_Advanced",
         "UNITTYPE_Custom6",
         "UNITTYPE_Naval",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
-        "UNITTYPE_Basic",
         "UNITTYPE_Sub",
         "UNITTYPE_FactoryBuild"
     ],

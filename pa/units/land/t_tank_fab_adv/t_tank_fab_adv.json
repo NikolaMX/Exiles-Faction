@@ -32,7 +32,7 @@
       "cue": "/SE/Selection/veh/fab"
     }
   },
-  "buildable_types": "(Land & Structure & Advanced | FabAdvBuild | FabBuild | Titan & Land) & Custom6",
+  "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

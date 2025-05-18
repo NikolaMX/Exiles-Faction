@@ -1,0 +1,139 @@
+{
+    "si_name": "hardtack",
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Hardtack",
+    "description": "!LOC:Suport AA Craft - Water hover. Attacks Air units and intercepts torpedoes. Detects Mines.",
+    "max_health": 600,
+    "build_metal_cost": 400,
+    "spawn_layers": "WL_WaterSurface",
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_WaterHover"
+    ],
+    "navigation": {
+        "type": "water-hover",
+        "acceleration": 45,
+        "brake": 90,
+        "move_speed": 14,
+        "turn_speed": 120,
+        "turn_accel": 60
+    },
+    "physics": {
+        "radius": 6
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/hardtack/hardtack.papa",
+        "animtree": "/pa/units/sea/hardtack/hardtack_anim_tree.json",
+        "animations": {
+            "hover": "/pa/units/sea/hardtack/hardtack_anim_hover.papa"
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/hardtack/hardtack_tool_weapon.json",
+            "aim_bone": "left_gun",
+            "muzzle_bone": [
+                "muzzle1",
+                "muzzle2",
+                "muzzle3"
+            ],
+            "record_index": 0
+        },
+        {
+            "spec_id": "/pa/units/sea/hardtack/hardtack_tool_weapon.json",
+            "aim_bone": "right_gun",
+            "muzzle_bone": [
+                "muzzle4",
+                "muzzle5",
+                "muzzle6"
+            ],
+            "record_index": 1
+        },
+        {
+            "spec_id": "/pa/units/sea/hardtack/hardtack_tool_intercept.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": [
+                "bone_root"
+            ],
+            "record_index": 2
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/sea/sea_scout_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+            "effect_scale": 0.6
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/sea_scout_ship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "offset": [
+                0,
+                4,
+                0.55
+            ],
+            "filename": "/pa/units/sea/sea_scout/sea_scout_thrust.pfx"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 18.0
+    },
+    "TEMP_texelinfo": 4.24257,
+    "mesh_bounds": [
+        10,
+        12,
+        5
+    ]
+}

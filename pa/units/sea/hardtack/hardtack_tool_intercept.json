@@ -1,0 +1,64 @@
+{
+    "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+    "ammo_id": "/pa/units/sea/hardtack/hardtack_ammo_intercept.json",
+    "rate_of_fire": 20.0,
+    "idle_aim_delay": 3,
+    "max_range": 75,
+    "yaw_rate": 7200,
+    "pitch_rate": 7200,
+    "yaw_range": 360,
+    "pitch_range": 90,
+    "firing_arc_yaw": 0,
+    "firing_arc_pitch": 180,
+    "spread_fire": true,
+    "auto_attack": true,
+    "auto_task_type": "anti_entity",
+    "manual_fire": true,
+    "anti_entity_targets_units": false,
+    "anti_entity_targets": [
+        "/pa/units/commanders/base_commander/base_commander_torpedo_ammo_water.json",
+        "/pa/units/commanders/base_commander/base_commander_torpedo_ammo_land.json",
+
+        "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_water.json",
+        "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_land.json",
+        "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_ammo_water.json",
+        "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_ammo_land.json",
+
+
+        "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher_wave_ammo.json",
+        "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_ammo.json",
+
+
+        "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo_water.json",
+        "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo_land.json",
+
+        "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_water_ammo.json",
+        "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_land_ammo.json",
+
+        "/pa/units/sea/drone_carrier/drone/drone_ammo_torpedo.json",
+
+
+        "/pa/units/sea/frigate/frigate_ammo_torpedo.json",
+        "/pa/units/sea/attack_sub/attack_sub_ammo.json",
+        "/pa/units/sea/nuclear_sub/nuclear_sub_ammo.json",
+
+
+        "/pa/units/sea/l_sea_scout/l_sea_scout_torpedo_ammo.json",
+        "/pa/units/sea/l_attack_sub/l_attack_sub_ammo.json",
+        "/pa/units/sea/l_sea_tank/l_sea_tank_torpedo_ammo.json",
+
+
+
+        "/pa/units/sea/cruiser/cruiser_ammo.json"
+
+
+    ],
+    "target_layers": [
+        "WL_WaterSurface",
+        "WL_Underwater"
+    ],
+    "ammo_capacity": 20,
+    "ammo_demand": 1,
+    "ammo_per_shot": 5,
+    "ammo_source": "time"
+}

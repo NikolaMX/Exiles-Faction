@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
-	"display_name": "Mortar",
-	"description": "!LOC:Artillery Frigate - Long range. Durable. Attacks land and sea targets.",
+	"display_name": "Brick",
+	"description": "!LOC:Artillery Frigate - Long range. Durable. Attacks land, subs and ship.",
 	"build_metal_cost": 550,
 	"max_health": 1000,
 	"spawn_layers": "WL_DeepWater",
@@ -47,6 +47,18 @@
 					"channel": "sight",
 					"shape": "capsule",
 					"radius": 130
+				},
+				{
+					"layer": "surface_and_air",
+					"channel": "radar",
+					"shape": "capsule",
+					"radius": 180
+				},
+				{
+					"layer": "underwater",
+					"channel": "radar",
+					"shape": "capsule",
+					"radius": 180
 				}
 			]
 		}

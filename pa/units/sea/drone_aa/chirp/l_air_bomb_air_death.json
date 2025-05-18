@@ -1,0 +1,27 @@
+{
+  "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    "AT_Air": 1.0,
+    "AT_Bot": 0,
+    "AT_Commander": 0,
+    "AT_Hover": 0,
+    "AT_Naval": 0,
+    "AT_Orbital": 0,
+    "AT_Structure": 0,
+    "AT_Vehicle": 0
+  },
+  "damage_volume": {
+    "burnable_remove_radius": 60,
+    "delay": 0.01,
+    "initial_radius": 20.0,
+    "radius_accel": -25.0,
+    "radius_velocity": 140.0
+  },
+  "damage": 150,
+  "full_splash_damage_radius": 5,
+  "splash_damage": 150,
+  "splash_radius": 15,
+  "splash_damages_allies": false,
+  "sim_fire_effect": "/pa/units/sea/drone_aa/chirp/l_air_bomb_air_death_ent.json"
+  
+}

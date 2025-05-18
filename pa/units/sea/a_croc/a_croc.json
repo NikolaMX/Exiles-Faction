@@ -51,7 +51,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/sea/a_croc/a_croc.papa",
+        "filename": "/pa/units/sea/a_croc/fiend.papa",
         "animtree": "/pa/units/sea/a_croc/a_croc_anim_tree.json"
     },
     "nearby_target_tick_update_interval": 3,

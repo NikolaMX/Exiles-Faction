@@ -1,0 +1,23 @@
+{
+    "ammo_capacity": 20,
+    "ammo_demand": 1,
+    "ammo_per_shot": 4,
+    "ammo_source": "time",
+    "ammo_id": "/pa/units/sea/drone_aa/drone_aa_ammo_drone.json",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "firing_arc_pitch": 180,
+    "firing_arc_yaw": 180,
+    "max_range": 200,
+    "pitch_range": 0,
+    "pitch_rate": 180,
+    "rate_of_fire": 4.0,
+    "spread_fire": true,
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true,
+    "target_layers": [
+        "WL_Air"
+    ],
+    "yaw_range": 0,
+    "yaw_rate": 180
+}

@@ -1,0 +1,144 @@
+{
+    "si_name": "drone_aa",
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Ulua",
+    "description": "!LOC:Anti-Air Cruiser - Deploys suicide drones that hunt down enemy air. High damage anti-air missiles. Attacks air, and orbital targets.",
+    "max_health": 3000,
+    "build_metal_cost": 3200,
+    "spawn_layers": "WL_WaterSurface",
+    "mesh_bounds": [
+        8,
+        34,
+        7
+    ],
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "physics": {
+        "shape": "sphere",
+        "radius": 3
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "deepwater",
+        "acceleration": 30,
+        "brake": 80,
+        "move_speed": 8,
+        "turn_speed": 45,
+        "turn_accel": 15
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/drone_aa/drone_AA.papa",
+        "animations": {
+            "idle": "/pa/units/sea/drone_aa/drone_aa_anim_idle.papa",
+            "start": "/pa/units/sea/drone_aa/drone_aa_anim_start.papa",
+            "end": "/pa/units/sea/drone_aa/drone_aa_anim_stop.papa.papa"
+        },
+        "animtree": "/pa/units/sea/drone_aa/drone_aa_anim_tree.json"
+    },
+    "nearby_target_tick_update_interval": 20,
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/drone_aa/drone_aa_tool_drone.json",
+            "aim_bone": "pod1",
+            "record_index": 0,
+            "fire_event": "fired0",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": [
+                "pod1",
+                "pod2"
+            ]
+        },
+        {
+            "spec_id": "/pa/units/sea/drone_aa/drone_aa_tool_drone.json",
+            "aim_bone": "pod3",
+            "record_index": 0,
+            "fire_event": "fired0",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": [
+                "pod3",
+                "pod4"
+            ]
+        },
+        {
+            "spec_id": "/pa/units/sea/drone_aa/drone_aa_tool_aa.json",
+            "aim_bone": "bone_turret",
+            "record_index": 1,
+            "projectiles_per_fire": 4,
+            "fire_event": "fired1",
+            "muzzle_bone": [
+                "muzzle1",
+                "muzzle4",
+                "muzzle3",
+                "muzzle6"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+            "effect_spec": "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod1 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod2 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod3 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod4",
+            "effect_scale": 0.4
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/structure/air_defense_fire",
+            "effect_scale": 0.5,
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle1 /pa/effects/specs/default_muzzle_flash.pfx muzzle4 /pa/effects/specs/default_muzzle_flash.pfx muzzle3 /pa/effects/specs/default_muzzle_flash.pfx muzzle6"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval_t2.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/T2_missile_ship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/sea/sea_large"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/sea/missile_ship/missile_ship_wake.pfx"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 32.0
+    },
+    "TEMP_texelinfo": 30.5603
+}

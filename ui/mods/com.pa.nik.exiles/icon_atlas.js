@@ -127,13 +127,17 @@ var paeiouIcons = [
 
     //Naval Units
     "t_naval_fab",
+    "t_naval_fab_adv",
 
     "t_hover_skiff",
     "cruiser",
     "a_croc",
     "a_mortar",
+    "hardtack",
 
     "scilla",
+    "drone_aa",
+
 
 
 

@@ -116,13 +116,15 @@ var newBuild = {
     "/pa/units/sea/t_naval_fac_adv/t_naval_fac_adv.json": ["t_factory", 0, { row: 1, column: 2 }],
 
     "/pa/units/sea/t_naval_fab/t_naval_fab.json": ["t_naval", 0, { row: 2, column: 0 }],
-    
     "/pa/units/sea/t_hover_skiff/t_hover_skiff.json": ["t_naval", 0, { row: 2, column: 1 }],
-    "/pa/units/sea/a_croc/a_croc.json": ["t_naval", 0, { row: 2, column: 2 }],
-    "/pa/units/sea/cruiser/cruiser.json": ["t_naval", 0, { row: 2, column: 3 }],
+    "/pa/units/sea/hardtack/hardtack.json": ["t_naval", 0, { row: 2, column: 2 }],
+    "/pa/units/sea/a_croc/a_croc.json": ["t_naval", 0, { row: 2, column: 3 }],
     "/pa/units/sea/a_mortar/a_mortar.json": ["t_naval", 0, { row: 2, column: 4 }],
 
-    "/pa/units/sea/scilla/scilla.json": ["t_naval", 0, { row: 2, column: 5 }],
+    "/pa/units/sea/t_naval_fab_adv/t_naval_fab_adv.json": ["t_naval", 0, { row: 1, column: 0 }],
+    "/pa/units/sea/drone_aa/drone_aa.json": ["t_naval", 0, { row: 1, column: 2 }],
+    "/pa/units/sea/cruiser/cruiser.json": ["t_naval", 0, { row: 1, column: 3 }],
+    "/pa/units/sea/scilla/scilla.json": ["t_naval", 0, { row: 1, column: 4 }],
     
 
     //Orbital Factory

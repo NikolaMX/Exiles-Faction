@@ -11,7 +11,7 @@
         "UNITTYPE_Naval",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
-        "UNITTYPE_Basic",
+        "UNITTYPE_Advanced",
         "UNITTYPE_Sub",
         "UNITTYPE_FactoryBuild"
     ],

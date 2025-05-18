@@ -1,0 +1,132 @@
+{
+  "si_icon": "empty",
+  "display_name": "!LOC:Chirp",
+  "description": "!LOC:Flying Bomb - In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only.",
+  "TEMP_texelinfo": 10.4837,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_transport_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/transport"
+    }
+  },
+  "command_caps": [  ],
+
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 180,
+  "wreckage_health_frac": 0.0,
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/sea/drone_aa/chirp/l_air_bomb_air_death.json"
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
+      "effect_scale": 2,
+      "effect_spec": "/pa/units/sea/drone_aa/chirp/exp_blue.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_scale": 1,
+      "effect_spec": ""
+    }
+  },
+ "fx_offsets": [
+    {
+      "type": "moving_forward",
+      "filename": "/pa/units/sea/drone_carrier/drone/drone_jets.pfx",
+      "offset": [
+        0,
+        0.727,
+        0.42
+      ]
+    }
+  ],
+  "guard_layer": "WL_Air",
+  "guard_radius": 160,
+  "max_health": 200,
+  "mesh_bounds": [
+    4,
+    4,
+    2
+  ],
+  "model": {
+    "filename": "/pa/units/sea/drone_carrier/drone/drone.papa",
+    "animations": {
+      "deploy": "/pa/units/sea/drone_carrier/drone/drone_anim_deploy.papa",
+      "idle": "/pa/units/sea/drone_carrier/drone/drone_anim_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/drone_anim_tree.json"
+  },
+  "navigation": {
+    "acceleration": 400,
+    "brake": 400,
+    "move_speed": 120,
+     "vertical_speed": 200,
+    "turn_speed": 480,
+    "wobble_factor": 0.25,
+    "wobble_speed": 0.2
+  },
+  "physics": {
+    "allow_pushing": false,
+    "gravity_scalar": 0.001,
+    "push_sideways": false
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -14
+  },
+  "nearby_target_tick_update_interval": 1,
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/sea/drone_aa/chirp/l_air_bomb_death_tool_weapon.json",
+      "primary_weapon": false
+    },
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/sea/drone_aa/chirp/l_air_bomb_tool_weapon.json",
+      "primary_weapon": true
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired0",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/sea/drone_aa/chirp/l_air_bomb_tracer_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_SelfDestruct",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom6"
+  ]
+}
