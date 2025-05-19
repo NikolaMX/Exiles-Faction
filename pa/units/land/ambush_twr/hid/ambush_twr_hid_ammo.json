@@ -13,6 +13,11 @@
     "radius_accel": 0.0,
     "radius_velocity": 0.0
   },
+  "physics": {
+    
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    
+  },
   "full_damage_splash_radius": 0,
   "splash_damages_allies": false,
   "splash_radius": 0,
