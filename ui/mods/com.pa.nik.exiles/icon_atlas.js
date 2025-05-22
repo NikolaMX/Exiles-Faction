@@ -3,6 +3,7 @@ var paeiouIcons = [
     // COMMANDERS
     "replicate_commander_1",
     "union_formidable",
+    "exiles_maxim",
 
 
     "r_umbrella",

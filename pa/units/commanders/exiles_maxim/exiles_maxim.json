@@ -1,23 +1,23 @@
 {
     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
-    "display_name": "Blueberry Commander",
-    "si_name": "replicate_commander_1",
-    "description": "Basic Tiha Commander.",
+    "display_name": "Maxim Commander",
+    "si_name": "exiles_maxim",
+    "description": "Armored Exile Commander. More HP and better guns but slower and worse at building",
     "model": {
-        "filename": "/pa/units/commanders/exiles_blueberry/formidable.papa",
+        "filename": "/pa/units/commanders/exiles_maxim/maxim.papa",
         "animations": {
-            "death01": "/pa/units/commanders/exiles_blueberry/formidable.papa",
-            "walk": "/pa/units/commanders/exiles_blueberry/formidable_run.papa",
-            "idle": "/pa/units/commanders/exiles_blueberry/formidable_idle.papa",
-            "walk_stop": "/pa/units/commanders/exiles_blueberry/formidable_stop.papa",
-            "aim_up": "/pa/units/commanders/exiles_blueberry/formidable.papa",
-            "aim_down": "/pa/units/commanders/exiles_blueberry/formidable.papa"
+            "death01": "/pa/units/commanders/exiles_maxim/maxim_anim_dead.papa",
+            "walk": "/pa/units/commanders/exiles_maxim/maxim_anim_run.papa",
+            "idle": "/pa/units/commanders/exiles_maxim/maxim_anim_idle.papa",
+            "walk_stop": "",
+            "aim_up": "/pa/units/commanders/exiles_maxim/maxim_anim_aim_up.papa",
+            "aim_down": "/pa/units/commanders/exiles_maxim/maxim_anim_aim_down.papa"
         },
-        "animtree": "/pa/units/commanders/exiles_blueberry/union_formidable_comm_anim_tree.json",
-        "walk_speed": 3.5
+        "animtree": "/pa/units/commanders/exiles_maxim/maxim_anim_tree.json",
+        "walk_speed": 9
     },
     "strategic_icon_priority": 0,
-    "max_health": 10500,
+    "max_health": 17500,
     "build_metal_cost": 8000,
     "buildable_types": "CmdBuild & Custom6",
     "show_in_orbital_layer": true,
@@ -42,8 +42,8 @@
         "metal": 20
     },
     "storage": {
-        "energy": 37500,
-        "metal": 2500
+        "energy": 45000,
+        "metal": 1750
     },
     "unit_types": [
         "UNITTYPE_Commander",
@@ -71,9 +71,9 @@
         "type": "amphibious",
         "acceleration": 60,
         "brake": -1,
-        "move_speed": 12,
+        "move_speed": 9,
         "turn_speed": 180,
-        "turn_in_place": true,
+        "turn_in_place": false,
         "park_stamp": {
             "shape": "sphere",
             "cost": 20,
@@ -120,47 +120,73 @@
     "teleportable": {},
     "tools": [
         {
-            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_build_arm.json",
-            "aim_bone": "bone_turret"
+            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_build_arm.json",
+            "aim_bone": "fab_turret",
+            "record_index": 2,
+            "primary_weapon": false
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_blueberry/union_formidable_tool_weapon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_right",
-            "primary_weapon": true
+            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_weapon.json",
+            "aim_bone": "bone_turret_right",
+            "muzzle_bone": "muzzle_right",
+            "primary_weapon": true,
+            "record_index": 1,
+            "fire_event": "fired1"
         },
         {
-            "spec_id": "/pa/tools/uber_cannon/uber_cannon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_right",
+            "spec_id": "/pa/units/commanders/exiles_maxim/uber_cannon.json",
+            "aim_bone": "bone_turret_right",
+            "muzzle_bone": "muzzle_right",
             "secondary_weapon": true
         },
         {
-            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_right",
+            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_aa_weapon.json",
+            "aim_bone": "bone_pitch_aa",
+            "muzzle_bone": [
+                "muzzleAA1",
+                "muzzleAA2",
+                "muzzleAA3"
+            ],
+            "fire_event": "fired2",
+            "primary_weapon": false,
+            "show_range": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_intercept.json",
+            "aim_bone": "bone_pitch_aa",
+            "muzzle_bone": [
+                "muzzleAA1",
+                "muzzleAA2",
+                "muzzleAA3"
+            ],
             "primary_weapon": false,
             "show_range": false
         },
         {
             "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_right",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
             "primary_weapon": false,
             "show_range": false
         }
     ],
-    
     "events": {
-        "fired": {
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_right_muzzle"
+        "fired1": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle_right"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA2"
+        },"fired2": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA1 /pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA2"
         }
     },
     "fx_offsets": [
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_left"
+            "bone": "fab_muzzle"
         }
     ],
     "headlights": [
@@ -285,9 +311,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_blueberry/img_union_formidable.png",
-            "thumb_image": "/pa/units/commanders/exiles_blueberry//img_union_formidable_thumb.png",
-            "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
+            "image": "/pa/units/commanders/exiles_maxim/untitled6.png",
+            "thumb_image": "/pa/units/commanders/exiles_maxim/untitled7.png",
+            "profile_image": "/pa/units/commanders/exiles_maxim/profile_exiles_maxim1.png"
         }
     }
 }

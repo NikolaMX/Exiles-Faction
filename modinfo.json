@@ -4,9 +4,9 @@
 	"display_name": "Exiles Faction WIP",
 	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
 	"author": "NikolaMX, BOIYOUSAYWHAT. Assets by billthebluebot, Anonemous2, Bot1, Quiltide, Taiga, KillerKiwiJuice, traqui, RLM Filser",
-	"date": "2025-05-20",
+	"date": "2025-05-22",
 	"build": "120799",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"signature": "not yet implemented",
 	"forum": "https://steamcommunity.com/app/386070/discussions/0/599650671167384160/",
 	"icon": "https://raw.githubusercontent.com/NikolaMX/Exiles-Faction/refs/heads/main/icon.png",
@@ -27,8 +27,11 @@
 		],
 		"icon_atlas": [
 			"coui://ui/mods/com.pa.nik.exiles/icon_atlas.js"
+		],
+		"live_game_players": [
+			"coui://ui/mods/com.pa.nik.exiles/live_game/players.js"
 		]
-	},	
+	},
 	"dependencies": [
 		"com.pa.ferretmaster.commander-merge",
 		"com.pa.ferretmaster.build-bar-tabs"
