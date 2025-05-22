@@ -248,7 +248,9 @@
     "/pa/units/land/t_arta/t_arta.json",
     "/pa/units/land/t_aa_twr_adv/t_aa_twr_adv.json",
     "/pa/units/land/anti_ballistics/anti_ballistics.json",
-    
+    "/pa/units/sea/t_torp_launcher/t_torp_launcher.json",
+    "/pa/units/sea/t_torp_launcher_adv/t_torp_launcher_adv.json",
+
 
     "/pa/units/land/bug_gas_turret/bug_gas_turret.json",
 
@@ -372,9 +374,8 @@
 "/pa/units/sea/hardtack/hardtack.json",
 
 
+"/pa/units/sea/t_battleship/t_battleship.json",
 "/pa/units/sea/scilla/scilla.json",
-
-
 "/pa/units/sea/drone_aa/drone_aa.json",
 "/pa/units/sea/drone_aa/chirp/chirp.json",
 

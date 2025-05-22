@@ -122,6 +122,7 @@ var newBuild = {
     "/pa/units/sea/a_mortar/a_mortar.json": ["t_naval", 0, { row: 2, column: 4 }],
 
     "/pa/units/sea/t_naval_fab_adv/t_naval_fab_adv.json": ["t_naval", 0, { row: 1, column: 0 }],
+    "/pa/units/sea/t_battleship/t_battleship.json": ["t_naval", 0, { row: 1, column: 1 }],
     "/pa/units/sea/drone_aa/drone_aa.json": ["t_naval", 0, { row: 1, column: 2 }],
     "/pa/units/sea/cruiser/cruiser.json": ["t_naval", 0, { row: 1, column: 3 }],
     "/pa/units/sea/scilla/scilla.json": ["t_naval", 0, { row: 1, column: 4 }],
@@ -150,9 +151,10 @@ var newBuild = {
     "/pa/units/land/t_arta/t_arta.json": ["t_combat", 0, { row: 2, column: 2 }],
 
 
-
     "/pa/units/land/anti_ballistics/anti_ballistics.json": ["t_combat", 0, { row: 0, column: 3 }],
-    
+    "/pa/units/sea/t_torp_launcher_adv/t_torp_launcher_adv.json": ["t_combat", 0, { row: 1, column: 3 }],
+    "/pa/units/sea/t_torp_launcher/t_torp_launcher.json": ["t_combat", 0, { row: 2, column: 3 }],
+
     
     "/pa/units/land/missile_facility/missile_facility.json": ["t_combat", 4, {row: 0, column: 4}],
     "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json": ["t_combat", 4, {row: 1, column: 4}],

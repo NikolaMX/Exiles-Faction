@@ -33,6 +33,8 @@ var paeiouIcons = [
     "t_aa_twr_adv",
 
     "anti_ballistics",
+    "t_torp_launcher",
+    "t_torp_launcher_adv",
     
     //special nukes
     "aa_missile_launcher",
@@ -136,6 +138,7 @@ var paeiouIcons = [
     "a_mortar",
     "hardtack",
 
+    "t_battleship",
     "scilla",
     "drone_aa",
 
