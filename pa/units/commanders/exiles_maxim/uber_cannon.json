@@ -13,7 +13,7 @@
     "firing_standard_deviation": 3,
     "carpet_fire": true,
     "carpet_wait_for_full_ammo": true,
-    "max_range": 110,
+    "max_range": 125,
     "yaw_rate": 360,
     "pitch_rate": 360,
     "yaw_range": 180,
