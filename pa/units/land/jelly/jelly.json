@@ -182,7 +182,7 @@
     "mass_teleporter": {
         "radius": 50,
         "phasing_duration": 6,
-        "phasing_health_frac": 0.5,
+        "phasing_health_frac": 0.15,
         "fixup_radius": 50,
         "energy_drain": 1000,
         "energy_cost": 10000,
