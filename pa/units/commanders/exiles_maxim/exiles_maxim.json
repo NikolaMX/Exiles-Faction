@@ -135,8 +135,8 @@
         },
         {
             "spec_id": "/pa/units/commanders/exiles_maxim/uber_cannon.json",
-            "aim_bone": "bone_turret_right",
-            "muzzle_bone": "muzzle_right",
+            "aim_bone": "muzzleAA2",
+            "muzzle_bone": "muzzleAA2",
             "secondary_weapon": true
         },
         {

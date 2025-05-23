@@ -8,7 +8,7 @@
   "build_metal_cost": 800,
   "atrophy_rate": 2.5,
   "atrophy_cool_down": 15,
-  "area_build_type": "Sphere",
+  "area_build_type": "Line",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "storage": {
     "energy": 2000,
