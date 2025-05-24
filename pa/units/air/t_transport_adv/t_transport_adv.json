@@ -3,7 +3,7 @@
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
     "display_name": "Heron",
     "description": "!LOC:Advanced Interplanetary Carrier - Can load up to 24 land units and fly to other planets.",
-    "max_health": 800,
+    "max_health": 900,
     "build_metal_cost": 1200,
     "usable": true,
     "attachable": {
