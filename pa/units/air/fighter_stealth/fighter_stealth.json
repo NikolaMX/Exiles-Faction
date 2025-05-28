@@ -128,7 +128,7 @@
     "move_speed": 60,
     "turn_speed": 100,
     "dodge_radius": 30,
-    "dodge_multiplier": 0.5,
+    "dodge_multiplier": 2,
     "aggressive_distance": 75.0,
     "aggressive_behavior": "circle",
     "aggressive_height": 100.0,

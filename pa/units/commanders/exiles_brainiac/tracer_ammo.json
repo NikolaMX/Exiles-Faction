@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "target",
+  "damage": 0,
+  "full_damage_splash_radius": 0,
+  "fx_beam_spec": "/pa/units/commanders/exiles_brainiac/tracer_trail.pfx",
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "fx_collision_spec": "/pa/units/commanders/exiles_brainiac/tracer_hit.pfx",
+  "initial_velocity": 500.0,
+  "max_velocity": 500.0
+}

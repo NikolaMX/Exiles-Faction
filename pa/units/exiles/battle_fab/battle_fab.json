@@ -9,6 +9,23 @@
   "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Land & Bot | Factory & Advanced & Land & Tank | FabBuild & Basic) & Custom6",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "transportable": {
+    "size": 1
+  },
   "unit_types": [
     "UNITTYPE_Custom6",
     "UNITTYPE_Custom7",
@@ -31,9 +48,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "transportable": {
-    "size": 1
-  },
   "navigation": {
     "type": "hover",
     "acceleration": 120,

@@ -1,0 +1,294 @@
+{
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "display_name": "Brainiac Commander",
+    "si_name": "exiles_brainiac",
+    "description": "Hover Exile Commander. Slow, Low HP but armed with devastating long-range laser.",
+    "model": {
+        "filename": "/pa/units/commanders/exiles_brainiac/brainiac.papa",
+        "animations": {
+            "death01": "/pa/units/commanders/exiles_brainiac/brainiac_anim_dead.papa",
+            "walk": "/pa/units/commanders/exiles_brainiac/brainiac_anim_run.papa",
+            "idle": "/pa/units/commanders/exiles_brainiac/brainiac_anim_idle.papa",
+            "walk_stop": "",
+            "aim_up": "",
+            "aim_down": ""
+        },
+        "animtree": "/pa/units/commanders/exiles_brainiac/brainiac_anim_tree.json",
+        "walk_speed": 9
+    },
+    "strategic_icon_priority": 0,
+    "max_health": 10500,
+    "build_metal_cost": 8000,
+    "buildable_types": "CmdBuild & Custom6",
+    "show_in_orbital_layer": true,
+    "armor_type": "AT_Commander",
+    "wreckage_health_frac": 1,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                10
+            ]
+        }
+    },
+    "production": {
+        "energy": 2000,
+        "metal": 20
+    },
+    "storage": {
+        "energy": 45000,
+        "metal": 1750
+    },
+    "unit_types": [
+        "UNITTYPE_Commander",
+        "UNITTYPE_Hover",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Attack",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "navigation": {
+        "type": "hover-large",
+        "acceleration": 60,
+        "brake": -1,
+        "move_speed": 9,
+        "turn_speed": 180,
+        "turn_in_place": true,
+        "park_stamp": {
+            "shape": "sphere",
+            "cost": 20,
+            "type_data": [
+                {
+                    "move_type": "hover",
+                    "stamp_type": "simple"
+                }
+            ]
+        }
+    },
+    "physics": {
+        "radius": 9,
+        "sync_radius_to_extents": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 160
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 160
+                },
+                {
+                    "layer": "celestial",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 1
+                }
+            ]
+        }
+    },
+    "teleportable": {},
+    "tools": [
+        {
+            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_build_arm.json",
+            "aim_bone": "bone_turret",
+            "record_index": 2,
+            "primary_weapon": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "eye",
+            "primary_weapon": true,
+            "record_index": 1,
+            "fire_event": "fired1"
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_brainiac/tool_tracer.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "bone_head",
+            "primary_weapon": true,
+            "record_index": 3,
+            "fire_event": "fired2"
+        }
+    ],
+    "events": {
+        "fired1": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx eye"
+        },
+        "fired3": {
+            "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx ring1.r /pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx ring1.l"
+        },
+        "fired2": {
+            "audio_cue": "",
+            "effect_spec": ""
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "fab.l"
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "fab.r"
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/commanders/exiles_brainiac/hover_idle_01.pfx",
+            "bone": "bone_recoil",
+            "offset": [
+                1,
+                1,
+                -2
+            ],
+            "orientation": [
+                -60,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/commanders/exiles_brainiac/hover_idle_01.pfx",
+            "bone": "bone_recoil",
+            "offset": [
+                -1,
+                1,
+                -2
+            ],
+            "orientation": [
+                -150,
+                0,
+                0
+            ]
+        }
+    ],
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -5,
+                1.2
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                0.4,
+                0.4
+            ],
+            "intensity": 5.0,
+            "bone": "eye",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                4,
+                0,
+                1.2
+            ],
+            "radius": 8.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0,
+            "bone": "bone_root"
+        },
+        {
+            "offset": [
+                -4,
+                0,
+                1.2
+            ],
+            "radius": 8.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0,
+            "bone": "bone_root"
+        }
+    ],
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Commander_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/commander/Commander_move_loop_tank",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            },
+            "selection_response": {
+                "cue": "/SE/Selection/commander"
+            },
+            "sing_selection_response": {
+                "cue": "/SE/UI/plus/sing"
+            }
+        },
+        "selection_icon": {
+            "diameter": 6
+        },
+        "mesh_bounds": [
+            12,
+            12,
+            12
+        ]
+    },
+    "catalog_object_name": "TankAeson",
+    "client": {
+        "ui": {
+            "image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
+            "thumb_image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
+            "profile_image": "/pa/units/commanders/exiles_brainiac/profile_exiles_brainiac1.png"
+        }
+    }
+}

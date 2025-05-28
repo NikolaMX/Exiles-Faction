@@ -3,7 +3,7 @@
     "unit_name": "Fabrication Crawler",
     "si_name": "t_bot_fab",
     "display_name": "!LOC:Fabrication Crawler",
-    "description": "!LOC:Basic Fabricator - Builds basic structures. Can not assist factories or T2 fabs.Extremly fast.",
+    "description": "!LOC:Basic Fabricator - Builds basic structures. Can not assist factories or T2 fabs. Extremly fast.",
     "max_health": 50,
     "build_metal_cost": 135,
     "attachable": {

@@ -3,7 +3,7 @@
     "display_name": "Rhino",
     "description": "!LOC:Advanced frontline Bot - Fast. Very durable. Weak attack.",
     "max_health": 1600,
-    "build_metal_cost": 600,
+    "build_metal_cost": 650,
     "attachable": {
         "offsets": {
             "root": [

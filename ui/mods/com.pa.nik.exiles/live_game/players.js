@@ -8,7 +8,7 @@ var legionCommanders = [  "/pa/units/commanders/l_overwatch/l_overwatch.json",
 "/pa/units/commanders/l_quad/l_quad.json",
 "/pa/units/commanders/l_tank/l_tank.json"]
 var bugCommanders = ["/pa/units/commanders/bug_commander/bug_commander.json","/pa/units/commanders/scenario_ai_invincible_com/scenario_ai_invincible_com.json"]
-var exilesCommanders = [
+var exileCommanders = [
   "/pa/units/commanders/exiles_blueberry/union_formidable.json",
   "/pa/units/commanders/exiles_maxim/exiles_maxim.json"
 ]
@@ -33,7 +33,7 @@ if (!bugsLiveGamePlayersLoaded) {
               legionCount++
               mlaFound = false;
             }
-            if (_.includes(exilesCommanders, value)) {
+            if (_.includes(exileCommanders, value)) {
               exilesCount++
               mlaFound = false;
             }

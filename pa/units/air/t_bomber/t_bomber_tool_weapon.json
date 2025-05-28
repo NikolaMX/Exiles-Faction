@@ -7,7 +7,7 @@
 	
 	"rate_of_fire": 15,
 	"ammo_capacity": 4,
-	"max_range": 95,
+	"max_range": 70,
 	
 	"yaw_rate": 3600,
 	"yaw_range": 20,
@@ -16,6 +16,7 @@
 	"pitch_rate": 3600,	
 	"pitch_range": 0,
 	"firing_arc_pitch": 90,
+	"force_fire_from_muzzle": true,
 	
 	"idle_aim_delay": 0.0,
 	

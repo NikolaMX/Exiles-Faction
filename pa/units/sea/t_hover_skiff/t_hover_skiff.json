@@ -2,7 +2,7 @@
     "si_name": "t_hover_skiff",
     "base_spec": "/pa/units/sea/base_ship/base_ship.json",
     "display_name": "Skipper",
-    "description": "!LOC:Hover Skiff - Fast. Fragile. Can go on land and watter. Attacks land and sea targets.",
+    "description": "!LOC:Hover Skiff - Fast. Fragile. Can go on land and water. Attacks land and sea targets.",
     "max_health": 125,
     "build_metal_cost": 225,
     "armor_type": "AT_Hover",

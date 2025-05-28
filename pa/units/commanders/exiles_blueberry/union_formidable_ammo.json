@@ -1,16 +1,29 @@
 {
-    "base_spec": "/pa/units/commanders/base_commander/base_commander_ammo.json",
-    "damage": 120,
-    "events": {
-      "spawned": {
-        "audio_cue": "/SE/Weapons/commander/Commander_gun_fire"
-      }
+  "base_spec": "/pa/units/commanders/base_commander/base_commander_ammo.json",
+  "damage": 120,
+  "model": {
+    "filename": "/pa/units/air/missile/missile.papa",
+    "arrows": 3
+  },
+  "fx_trail": {
+    "filename": "/pa/units/commanders/exiles_blueberry/base_commander_ammo_missile_trail.pfx"
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_specs": "/pa/effects/specs/default_proj_explosion.pfx",
+      "effect_spec": "/pa/units/commanders/base_commander/base_commander_bullet_hit.pfx",
+      "effect_scale": 3
     },
-    "flight_type": "Seeking",
-    "initial_velocity": 125.0,
-    "lifetime": 1.25,
-    "max_velocity": 125.0,
-    "splash_damage": 120,
-    "splash_radius": 3,
-    "turn_rate": 30
-  }
+    "spawned": {
+      "audio_cue": "/SE/Weapons/commander/Commander_gun_fire_missile"
+    }
+  },
+  "flight_type": "Seeking",
+  "initial_velocity": 125.0,
+  "lifetime": 1.25,
+  "max_velocity": 125.0,
+  "splash_damage": 120,
+  "splash_radius": 3,
+  "turn_rate": 30
+}

@@ -4,6 +4,7 @@ var paeiouIcons = [
     "replicate_commander_1",
     "union_formidable",
     "exiles_maxim",
+    "exiles_brainiac",
 
 
     "r_umbrella",

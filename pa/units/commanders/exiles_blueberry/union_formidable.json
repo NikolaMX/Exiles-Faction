@@ -127,23 +127,26 @@
             "spec_id": "/pa/units/commanders/exiles_blueberry/union_formidable_tool_weapon.json",
             "aim_bone": "bone_turret",
             "muzzle_bone": "socket_right",
-            "primary_weapon": true
+            "primary_weapon": true,
+            "fire_event": "fired"
         },
         {
-            "spec_id": "/pa/tools/uber_cannon/uber_cannon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_right",
-            "secondary_weapon": true
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_uber_cannon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "secondary_weapon": true,
+            "show_range": false,
+            "fire_event": "fired0"
         },
         {
-            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_tool_aa_weapon.json",
             "aim_bone": "bone_turret",
             "muzzle_bone": "socket_right",
             "primary_weapon": false,
             "show_range": false
         },
         {
-            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_tool_torpedo_weapon.json",
             "aim_bone": "bone_turret",
             "muzzle_bone": "socket_right",
             "primary_weapon": false,
@@ -154,6 +157,10 @@
     "events": {
         "fired": {
             "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_right_muzzle"
+        },
+        "fired0": {
+            "effect_spec": "/pa/units/commanders/exiles_blueberry/a_aftershock_ammo_shockwave.pfx bone_turret",
+            "effect_scale": 1.7
         }
     },
     "fx_offsets": [
@@ -286,7 +293,7 @@
     "client": {
         "ui": {
             "image": "/pa/units/commanders/exiles_blueberry/img_union_formidable.png",
-            "thumb_image": "/pa/units/commanders/exiles_blueberry//img_union_formidable_thumb.png",
+            "thumb_image": "/pa/units/commanders/exiles_blueberry/img_union_formidable_thumb.png",
             "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
         }
     }

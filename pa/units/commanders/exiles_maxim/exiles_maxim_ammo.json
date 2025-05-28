@@ -4,7 +4,11 @@
     "events": {
       "spawned": {
         "audio_cue": "/SE/Weapons/commander/Commander_gun_fire"
-      }
+      },
+      "died": {
+      
+      "effect_spec": "/pa/units/commanders/exiles_maxim/battleship_ammo_hit.pfx"
+    }
     },
     "flight_type": "Seeking",
     "initial_velocity": 125.0,
@@ -12,5 +16,12 @@
     "max_velocity": 125.0,
     "splash_damage": 120,
     "splash_radius": 3,
-    "turn_rate": 30
+    "turn_rate": 30,
+    "model": {
+    "filename": "/pa/units/air/shell/shell.papa"
+  },
+  "fx_trail": {
+    "filename": "/pa/units/commanders/exiles_maxim/battleship_ammo_trail.pfx"
+  }
+  
   }

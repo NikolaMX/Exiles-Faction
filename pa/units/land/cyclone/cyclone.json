@@ -3,7 +3,7 @@
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name": "Cyclone",
     "description": "!LOC:Hover Titan. Lingering damage over a large area. Very fast. Fragile. Can hover over water and lava",
-    "max_health": 12000,
+    "max_health": 20000,
     "build_metal_cost": 20000,
     "armor_type": "AT_Hover",
     "has_death_effects": true,

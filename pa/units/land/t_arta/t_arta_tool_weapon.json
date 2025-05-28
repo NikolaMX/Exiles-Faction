@@ -24,7 +24,7 @@
       "WL_WaterSurface"
     ],
     "tool_type": "TOOL_Weapon",
-    "yaw_range": 45,
+    "yaw_range": 30,
     "pitch_range": 89.9,
     "yaw_rate": 30,
     "pitch_rate": 30

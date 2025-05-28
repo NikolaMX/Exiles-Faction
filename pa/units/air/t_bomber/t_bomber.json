@@ -20,8 +20,9 @@
 		"acceleration": 75,
 		"brake": 20,
 		"move_speed": 65,
-		"turn_speed": 175,
-		"dodge_radius": 0,
+		"turn_speed": 140,
+		"turn_accel": 30,
+		"dodge_radius": 30,
 		"dodge_multiplier": 0.0,
 		"aggressive_distance": 110.0,
 		"aggressive_height": 100.0,
@@ -86,27 +87,24 @@
 	},
 	"fx_offsets": [
 		{
-		"type": "idle",
-		"filename": "/pa/units/air/t_bomber/bomb_area.pfx",
-            "bone": "socket_aim",
-            "offset": [
-                0,
-                -48,
-				-35
-            ]	
+			"type": "idle",
+			"filename": "/pa/units/air/t_bomber/bomb_area.pfx",
+			"bone": "socket_aim",
+			"offset": [
+				0,
+				-15,
+				-30
+			]
 		},
-
-
-
 		{
 			"type": "moving_forward",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "socket_thruster",
-            "offset": [
-                0,
-                0,
-                0
-            ]
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"bone": "socket_thruster",
+			"offset": [
+				0,
+				0,
+				0
+			]
 		}
 	],
 	"audio": {

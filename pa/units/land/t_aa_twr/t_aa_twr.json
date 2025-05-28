@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "display_name": "Harper Turret",
     "si_name": "t_aa_twr",
-    "description": "!LOC:Anti-Air Defense - High Damage. Low Rate of Fire. Only attacks air and you.",
+    "description": "!LOC:Anti-Air Defense - High Damage. Low Rate of Fire. Only attacks Air.",
     "max_health": 1000,
     "build_metal_cost": 300,
     "atrophy_rate": 5,
