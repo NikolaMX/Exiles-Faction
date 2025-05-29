@@ -1,125 +1,141 @@
 {
-    "display_name": "Tarantula",
-    "description": "!LOC:Advanced Anti-Air Bot. Long Range. High damage. Intercepts falling bombs. Can not be stunned.",
-    "si_icon":"t_bot_aa",
-    "TEMP_texelinfo": 4.07719,
-    "attachable": {
-      "offsets": {
-        "root": [
-          0,
-          0,
-          0
-        ],
-        "head": [
-          0,
-          0,
-          3.5
-        ]
+  "display_name": "Tarantula",
+  "description": "!LOC:Advanced Anti-Air Bot. Long Range. High damage. Intercepts falling bombs. Can not be stunned.",
+  "si_icon": "t_bot_aa",
+  "TEMP_texelinfo": 4.07719,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.5
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/assault_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
       }
     },
-    "audio": {
-      "loops": {
-        "move": {
-          "cue": "/SE/Movement/bot/assault_loop",
-          "flag": "vel_changed",
-          "should_start_func": "is_moving",
-          "should_stop_func": "is_not_moving"
+    "selection_response": {
+      "cue": "/SE/Selection/bot/assault"
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/bot/assault_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx top_muzzle /pa/effects/specs/default_small_muzzle_flash.pfx bottom_muzzle"
+    },
+    "fired2": {
+      "audio_cue": "",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 400,
+  "build_metal_cost": 400,
+  "mesh_bounds": [
+    7.5,
+    8.2,
+    12
+  ],
+  "model": {
+    "filename": "/pa/units/land/t_bot_aa/ft_aa_walker.papa",
+    "animations": {
+      "death01": "/pa/units/land/t_bot_aa/ft_aa_walker_death.papa",
+      "walk": "/pa/units/land/t_bot_aa/ft_aa_walker_walk.papa",
+      "idle": "/pa/units/land/t_bot_aa/ft_aa_walker_idle.papa",
+      "aim_down": "/pa/units/land/t_bot_aa/ft_aa_walker_anim_aim_down.papa",
+      "aim_up":"/pa/units/land/t_bot_aa/ft_aa_walker_anim_aim_up.papa"
+    },
+    "animtree": "/pa/units/land/t_bot_aa/t_bot_aa_anim_tree.json",
+    "walk_speed": 16
+  },
+  "navigation": {
+    "type": "land-small",
+    "acceleration": 30,
+    "brake": -1,
+    "move_speed": 12,
+    "turn_speed": 360
+  },
+  "physics": {
+    "radius": 7.0,
+    "orient_interp_rate": 90.0
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 105
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 160
         }
-      },
-      "selection_response": {
-        "cue": "/SE/Selection/bot/assault"
-      }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 12
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "top_muzzle",
+        "bottom_muzzle"
+      ]
     },
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "events": {
-      "build_complete": {
-        "audio_cue": "/SE/Build_Complete/bot"
-      },
-      "fired": {
-        "audio_cue": "/SE/Weapons/bot/assault_fire",
-        "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle"
-      }
+    {
+      "spec_id": "/pa/units/land/t_bot_aa/tool_tracer.json",
+      "aim_bone": "bone_turret",
+      "projectiles_per_fire": 1,
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "bone_laser"
+      ]
     },
-    "guard_layer": "WL_AnySurface",
-    "max_health": 400,
-    "build_metal_cost": 400,
-    "mesh_bounds": [
-      7.5,
-      8.2,
-      12
-    ],
-    "model": {
-      "filename": "/pa/units/land/t_bot_aa/ft_aa_walker.papa",
-      "animations": {
-        "death01": "/pa/units/land/t_bot_aa/ft_aa_walker_death.papa",
-        "walk": "/pa/units/land/t_bot_aa/ft_aa_walker_walk.papa",
-        "idle": "/pa/units/land/t_bot_aa/ft_aa_walker_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
-      "walk_speed": 7
-    },
-    "navigation": {
-      "type": "land-small",
-      "acceleration": 30,
-      "brake": -1,
-      "move_speed": 12,
-      "turn_speed": 360
-    },
-    "physics": {
-      "radius": 7.0,
-      "orient_interp_rate": 90.0
-    },
-    "recon": {
-      "observer": {
-        "items": [
-          {
-            "layer": "surface_and_air",
-            "channel": "sight",
-            "shape": "capsule",
-            "radius": 105
-          },
-          {
-            "layer": "surface_and_air",
-            "channel": "radar",
-            "shape": "capsule",
-            "radius": 160
-          }
-        ]
-      }
-    },
-    "selection_icon": {
-      "diameter": 12
-    },
-    "tools": [
-      {
-        "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa_weapon.json",
-        "aim_bone": "bone_turret",
-        "projectiles_per_fire": 2,
-        "record_index": 0,
-        "muzzle_bone": [
-          "socket_muzzle_upper",
-          "socket_muzzle_lower"
-        ]
-      },
-      {
-        "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa_tool_interception.json",
-        "record_index": 1,
-        "fire_event": "fired0",
-        "aim_bone": "bone_root",
-        "muzzle_bone": "bone_root"
-      }
-    ],
-    "transportable": {
-      "size": 1
-    },
-    "unit_types": [
+    {
+      "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa_tool_interception.json",
+      "record_index": 1,
+      "fire_event": "fired0",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
     "UNITTYPE_Custom6",
-      "UNITTYPE_Bot",
-      "UNITTYPE_Mobile",
-      "UNITTYPE_Offense",
-      "UNITTYPE_Land",
-      "UNITTYPE_Advanced",
-      "UNITTYPE_FactoryBuild",
-      "UNITTYPE_CannonBuildable"
-    ]
-  }
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
+  ]
+}

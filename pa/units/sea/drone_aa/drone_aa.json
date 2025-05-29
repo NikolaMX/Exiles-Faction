@@ -104,8 +104,8 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-            "effect_spec": "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod1 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod2 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod3 /pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx pod4",
-            "effect_scale": 0.2
+            "effect_spec": "/pa/units/sea/drone_aa/launch.pfx pod11 /pa/units/sea/drone_aa/launch.pfx pod22 /pa/units/sea/drone_aa/launch.pfx pod33 /pa/units/sea/drone_aa/launch.pfx pod44",
+            "effect_scale": 0.1
         },
         "fired1": {
             "audio_cue": "/SE/Weapons/structure/air_defense_fire",

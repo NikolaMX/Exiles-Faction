@@ -120,7 +120,9 @@
     "model": {
         "filename": "/pa/units/air/t_transport_adv/t_transport_adv.papa",
         "animations": {
-            "fly": "/pa/units/air/t_transport_adv/t_transport_adv_anim_fly.papa"
+            "fly": "/pa/units/air/t_transport_adv/t_transport_adv_anim_fly.papa",
+            "dead": "/pa/units/air/t_transport_adv/t_transport_adv_anim_dead.papa",
+            "death": "/pa/units/air/t_transport_adv/t_transport_adv_anim_death.papa"
         },
         "animtree": "/pa/units/air/t_transport_adv/transport_anim_tree.json"
     },
