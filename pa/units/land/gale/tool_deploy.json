@@ -1,0 +1,30 @@
+{
+  "ammo_id": "/pa/units/land/gale/ammo_deploy.json",
+  "auto_attack": false,
+  "firing_arc_pitch": 360,
+  "firing_arc_yaw": 360,
+  "idle_aim_delay": 0,
+  "max_range": 5000,
+  "auto_fire_when_charged": false,
+  "start_fully_charged": false,
+  "fire_delay": 0,
+  "pitch_range": 0,
+  "pitch_rate": 0,
+  "rate_of_fire": 1,
+  "tool_type": "TOOL_Weapon",
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Seafloor"
+  ],
+  "guard_radius": 80,
+  "yaw_range": 0,
+  "yaw_rate": 0,
+
+  "charge_ammo_when_targeting": true,
+  "self_destruct": true,
+  "ammo_capacity": 15,
+  "ammo_demand": 1,
+  "ammo_per_shot": 15,
+  "ammo_source": "time"
+}

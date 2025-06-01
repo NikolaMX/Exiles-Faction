@@ -4,6 +4,7 @@
     "description": "!LOC: Mobile Radar Jammer and maybe more soon",
     "max_health": 400,
     "build_metal_cost": 500,
+    "wreckage_health_frac": 0.0,
     "attachable": {
         "offsets": {
             "root": [
@@ -18,6 +19,14 @@
             ]
         }
     },
+     "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
     "unit_types": [
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
@@ -67,6 +76,15 @@
             ]
         }
     },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/gale/tool_deploy.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "secondary_weapon": true,
+            "show_range": false
+        }
+    ],
     "model": {
         "filename": "/pa/units/land/gale/model.papa",
         "animations": {

@@ -1,0 +1,16 @@
+{
+    "base_spec": "/pa/ammo/mine_pbaoe/mine_pbaoe.json",
+    "sim_fire_effect": "/pa/units/land/gale/nuke_mine/nuke_mine_ammo_explosion_ent.json",
+    "impact_decals": [
+        "/pa/effects/specs/scorch_titan_01.json"
+    ],
+    "ammo_type": "PBAOE",
+    "damage": 2000,
+    "full_damage_splash_radius": 20,
+    "splash_radius": 30,
+    "splash_damage": 2000,
+    "splash_damages_allies": true,
+    "damage_volume": {
+        "initial_radius": 30.0
+    }
+}

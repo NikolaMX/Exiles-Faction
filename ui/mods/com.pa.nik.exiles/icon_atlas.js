@@ -23,6 +23,7 @@ var paeiouIcons = [
 
     //Turrets
     "t_mine",
+    "nuke_mine",
     "t_wall",
     "bug_gas_turret",
 

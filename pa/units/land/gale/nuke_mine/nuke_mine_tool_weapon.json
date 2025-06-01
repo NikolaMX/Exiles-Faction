@@ -1,0 +1,25 @@
+{
+    "tool_type": "TOOL_Weapon",
+    "ammo_id": "/pa/units/land/gale/nuke_mine/nuke_mine_ammo.json",
+    "rate_of_fire": 5,
+    "idle_aim_delay": 0,
+    "max_range": 40,
+    "yaw_rate": 0,
+    "pitch_rate": 0,
+    "yaw_range": 0,
+    "pitch_range": 0,
+    "firing_arc_yaw": 360,
+    "firing_arc_pitch": 360,
+    "auto_attack": true,
+    "self_destruct": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface"
+    ],
+    "ammo_capacity": 7,
+    "ammo_demand": 1,
+    "ammo_per_shot": 7,
+    "ammo_source": "time",
+    "charge_ammo_when_targeting": true,
+    "start_fully_charged": false
+}
