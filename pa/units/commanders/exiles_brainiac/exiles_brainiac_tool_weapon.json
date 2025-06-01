@@ -12,7 +12,7 @@
    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
   "ammo_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_ammo.json",
   "idle_aim_delay": 3,
-  "max_range": 135,
+  "max_range": 140,
   "pitch_range": 90,
   "pitch_rate": 360,
   "rate_of_fire": 1,
@@ -24,10 +24,14 @@
     "WL_Air"
   ],
   "target_priorities": [
+    "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Land & Advanced & Offense",
+    "Land & Offense",
+    "Mobile & Air",
     "Mobile - Air",
     "Mobile",
     "Structure - Wall"
   ],
-  "yaw_range": 120,
-  "yaw_rate": 150
+  "yaw_range": 180,
+  "yaw_rate": 240
 }
