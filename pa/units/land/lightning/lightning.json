@@ -13,7 +13,7 @@
     }
   },
   "build_metal_cost": 175,
-  "max_healt": 200,
+  "max_health": 200,
   "audio": {
     "loops": {
       "move": {
