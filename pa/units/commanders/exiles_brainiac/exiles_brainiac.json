@@ -137,6 +137,17 @@
             "primary_weapon": true,
             "record_index": 3,
             "fire_event": "fired2"
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_tool_spawn.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "ring1.r",
+                "ring1.l"
+            ],
+            "secondary_weapon": true,
+            "record_index": 4,
+            "fire_event": "fired3"
         }
     ],
     "events": {
