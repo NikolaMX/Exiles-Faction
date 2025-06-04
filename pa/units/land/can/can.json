@@ -1,7 +1,7 @@
 {
     "si_name": "can",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Can",
+    "display_name": "Cub",
     "description": "!LOC:Crowd Control Bot - Counters swarms of weak units.",
     "max_health": 110,
     "build_metal_cost": 70,
