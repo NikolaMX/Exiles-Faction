@@ -1,13 +1,14 @@
 {
   "ammo_id": "/pa/units/commanders/exiles_brainiac/tracer_ammo.json",
   "auto_attack": true,
+  "idle_aim_delay": 3,
   "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
   "firing_arc_pitch": 0,
   "firing_arc_yaw": 0,
-  "max_range": 135,
+  "max_range": 140,
   "no_busy_auto_attack": false,
-  "pitch_range": 180,
-  "pitch_rate": 3600,
+  "pitch_range": 90,
+  "pitch_rate": 360,
   "rate_of_fire": 10,
   "spread_fire": false,
   "target_layers": [
@@ -21,6 +22,6 @@
     "Mobile",
     "Structure - Wall"
   ],
-  "yaw_range": 150,
-  "yaw_rate": 120
+  "yaw_range": 180,
+  "yaw_rate": 240
 }
