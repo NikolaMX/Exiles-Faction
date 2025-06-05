@@ -4,7 +4,7 @@
     "display_name": "Tin but dead",
     "description": "!LOC:What is dead may never die",
     "max_health": 10,
-    "build_metal_cost": 150,
+    "build_metal_cost": 135,
     "wreckage_health_frac": 0,
     "attachable": {
         "offsets": {

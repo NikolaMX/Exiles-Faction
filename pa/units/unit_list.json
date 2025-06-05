@@ -210,11 +210,6 @@
 
 
 
-
-
-
-
-    "/pa/units/commanders/replicate_commander_1/replicate_commander_1.json",
     "/pa/units/commanders/exiles_blueberry/union_formidable.json",
     "/pa/units/commanders/exiles_maxim/exiles_maxim.json",
     "/pa/units/commanders/exiles_brainiac/exiles_brainiac.json",
@@ -241,7 +236,7 @@
 
     "/pa/units/land/gale/nuke_mine/nuke_mine.json",
 
-    "/pa/units/land/t_mine/t_mine.json",
+ 
     "/pa/units/land/t_wall/t_wall.json",
     "/pa/units/land/ambush_twr/ambush_twr.json",
     "/pa/units/land/ambush_twr/hid/ambush_twr_hid.json",
@@ -343,7 +338,7 @@
 
 "/pa/units/land/seizmic/seizmic.json",
 "/pa/units/land/reactor/reactor.json",
-"/pa/units/land/shield/shield.json",
+
 
 
 

@@ -3,7 +3,7 @@
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Tin",
     "description": "!LOC:Lazarus Bot. Can be resurected with Alt-Fire 30s after being destroyed. Resurection costs metal. Short range high damage.",
-    "max_health": 110,
+    "max_health": 90,
     "build_metal_cost": 135,
     "wreckage_health_frac": 0,
     "attachable": {

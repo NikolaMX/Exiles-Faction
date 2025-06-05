@@ -284,6 +284,7 @@
     "selection_icon": {
         "diameter": 33.0
     },
+     "strategic_icon_priority": 1,
     "mesh_bounds": [
         10,
         26,

@@ -5,7 +5,7 @@
         "/pa/effects/specs/scorch_titan_01.json"
     ],
     "ammo_type": "PBAOE",
-    "damage": 2000,
+    "damage": 3000,
     "full_damage_splash_radius": 20,
     "splash_radius": 30,
     "splash_damage": 2000,

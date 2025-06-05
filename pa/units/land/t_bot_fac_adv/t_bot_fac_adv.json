@@ -22,8 +22,8 @@
         ]
     ],
     "spawn_layers": "WL_LandHorizontal",
-    "wait_to_rolloff_time": 4,
-    "factory_cooldown_time": 4,
+    "wait_to_rolloff_time": 3,
+    "factory_cooldown_time": 3,
     "unit_types": [
         "UNITTYPE_Custom6",
         "UNITTYPE_Factory",
