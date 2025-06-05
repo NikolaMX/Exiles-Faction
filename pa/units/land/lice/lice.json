@@ -35,6 +35,7 @@
     },
     "guard_layer": "WL_AnySurface",
     "navigation": {
+        "type": "amphibious",
         "acceleration": 50,
         "brake": -1,
         "move_speed": 18,
@@ -131,10 +132,9 @@
     ],
     "TEMP_texelinfo": 4.07719,
     "command_caps": [
-      "ORDER_Move",
-      "ORDER_Patrol",
-      "ORDER_Assist",
-      "ORDER_Use"
-      
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Assist",
+        "ORDER_Use"
     ]
 }
