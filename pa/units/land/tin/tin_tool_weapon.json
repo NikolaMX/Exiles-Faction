@@ -20,7 +20,7 @@
         "WL_WaterSurface"
     ],
     "ammo_capacity": 2,
-    "ammo_per_shot": 0.5,
+    "ammo_per_shot": 0.66,
     "carpet_fire": true,
     "carpet_wait_for_full_ammo": true,
     "ammo_source": "time"

@@ -126,7 +126,7 @@
     "acceleration": 100,
     "brake": 50,
     "move_speed": 60,
-    "turn_speed": 100,
+    "turn_speed": 90,
     "dodge_radius": 30,
     "dodge_multiplier": 2,
     "aggressive_distance": 75.0,
