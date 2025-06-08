@@ -3,7 +3,7 @@
   "display_name": "Cyclops",
   "description": "Anti-Heavy Bot. Long Range. High damage. Durable. Amphibious.",
   "max_health": 3000,
-  "build_metal_cost": 4000,
+  "build_metal_cost": 3000,
   "attachable": {
     "offsets": {
       "root": [
