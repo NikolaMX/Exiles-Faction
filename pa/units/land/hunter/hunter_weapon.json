@@ -3,7 +3,7 @@
     "ammo_id": "/pa/units/land/hunter/hunter_ammo.json",
     "rate_of_fire": 0.2,
     "idle_aim_delay": 10,
-    "max_range": 120,
+    "max_range": 140,
     "yaw_rate": 60,
     "pitch_rate": 60,
     "yaw_range": 180,

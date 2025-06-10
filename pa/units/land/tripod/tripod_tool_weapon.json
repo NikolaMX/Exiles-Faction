@@ -15,5 +15,12 @@
     "target_layers": [
         "WL_LandHorizontal",
         "WL_WaterSurface"
+    ],
+    "target_priorities": [
+        "Mobile & Advanced",
+        "Commander",
+        "Mobile - Air",
+        "Structure - Wall",
+        "Wall"
     ]
 }
