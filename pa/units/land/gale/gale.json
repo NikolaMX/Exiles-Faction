@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "CAPE",
+    "display_name": "Cape",
     "description": "!LOC: Mobile Radar Jammer and maybe more soon",
     "max_health": 400,
     "build_metal_cost": 500,
