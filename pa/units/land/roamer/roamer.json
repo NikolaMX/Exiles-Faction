@@ -3,7 +3,7 @@
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name": "Crocodile",
     "description": "!LOC:Hover Tank Destroyer - Fast. Fragile. Can cross water and lava. Only shoots forward. Attacks land and sea targets.",
-    "max_health": 120,
+    "max_health": 125,
     "build_metal_cost": 200,
     "armor_type": "AT_Hover",
     "attachable": {
