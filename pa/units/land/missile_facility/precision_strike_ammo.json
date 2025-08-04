@@ -23,7 +23,6 @@
     }
   },
   "flight_type": "Staged",
-  "full_damage_splash_radius": 0,
   "fx_trail": {
     "filename": "/pa/units/land/missile_facility/precision_strike_ammo_trail.pfx",
     "offset": [
@@ -58,10 +57,11 @@
   "si_name": "large_DOT_ammo",
   "signal_type": "nuke",
   "spawn_layers": "WL_Air",
+  "full_damage_splash_radius": 37.5,
   "splash_damage": 10000,
   "splash_damage_orbital": false,
   "splash_damages_allies": false,
-  "splash_radius": 25,
+  "splash_radius": 37.5,
   "stages": [
     {
       "ignores_gravity": true,
@@ -86,11 +86,11 @@
       "rotates_to_velocity": true
     },
     {
-        "ignores_gravity": false,
-        "ignores_LOS": false,
-        "stage_duration": 5000,
-        "stage_turn_rate": 1080,
-        "rotates_to_velocity": true
+      "ignores_gravity": false,
+      "ignores_LOS": false,
+      "stage_duration": 5000,
+      "stage_turn_rate": 1080,
+      "rotates_to_velocity": true
     }
   ],
   "turn_rate": 180,
