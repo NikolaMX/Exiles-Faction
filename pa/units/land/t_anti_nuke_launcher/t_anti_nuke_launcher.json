@@ -1,33 +1,62 @@
 {
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Anti-Nuke Launcher",
     "display_name": "!LOC:Anti-Nuke Launcher",
     "description": "!LOC:Anti-Nuke - Builds advanced anti-nuclear missiles.",
-    "TEMP_texelinfo": 21.7597,
-    "alt_area_build_separation": 80,
-    "alt_area_build_type": "Sphere",
-    "area_build_separation": 100,
-    "area_build_type": "Sphere",
-    "atrophy_cool_down": 15,
+    "max_health": 3500,
+    "build_metal_cost": 12000,
     "atrophy_rate": 200,
-    "audio": {
-        "loops": {
-            "build": {
-                "cue": "/SE/Construction/Factory_contruction_loop_antinuke",
-                "flag": "build_target_changed",
-                "should_start_func": "has_build_target",
-                "should_stop_func": "no_build_target"
-            }
-        },
-        "selection_response": {
-            "cue": "/SE/Selection/structure/anti_nuke"
+    "atrophy_cool_down": 15,
+    "area_build_type": "Sphere",
+    "area_build_separation": 80,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "factory_cooldown_time": 5,
+    "factory": {
+        "store_units": true,
+        "spawn_points": [
+            "socket_ammo_1",
+            "socket_ammo_2"
+        ],
+        "initial_build_spec": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json",
+        "default_build_stance": "Continuous"
+    },
+    "command_caps": [
+        "ORDER_FactoryBuild",
+        "ORDER_Attack"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
         }
     },
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 12000,
-    "buildable_projectiles": [
-        "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
-    ],
-    "command_caps": [
-        "ORDER_FactoryBuild"
+    "model": [
+        {
+            "filename": "/pa/units/land/missile_facility/anti_nuke_launcher.papa",
+            "skirt_decal": "/pa/effects/specs/skirt_antinuke.json",
+            "animations": {
+                "idle": "/pa/units/land/missile_facility/anti_nuke_launcher_idle.papa",
+                "build_start_2": "/pa/units/land/missile_facility/anti_nuke_launcher_start_build_1.papa",
+                "build_loop_2": "/pa/units/land/missile_facility/anti_nuke_launcher_loop_build_1.papa",
+                "build_end_2": "/pa/units/land/missile_facility/anti_nuke_launcher_end_build_1.papa",
+                "build_start_1": "/pa/units/land/missile_facility/anti_nuke_launcher_start_build_2.papa",
+                "build_loop_1": "/pa/units/land/missile_facility/anti_nuke_launcher_loop_build_2.papa",
+                "build_end_1": "/pa/units/land/missile_facility/anti_nuke_launcher_end_build_2.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json"
+        }
     ],
     "events": {
         "build_complete": {
@@ -41,163 +70,127 @@
             "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
         }
     },
-    "factory": {
-        "store_units": true,
-        "spawn_points": [
-            "socket_missile01",
-            "socket_missile02",
-            "socket_missile03"
-        ],
-        "initial_build_spec": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json",
-        "default_build_stance": "Continuous"
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_antinuke",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/structure/anti_nuke"
+        }
     },
-    "factory_cooldown_time": 5,
+    "lamps": [
+        {
+            "offset": [
+                0,
+                5.5,
+                9.5
+            ],
+            "radius": 3,
+            "color": [
+                1,
+                0,
+                0
+            ],
+            "intensity": 2,
+            "bone": "bone_root"
+        },
+        {
+            "offset": [
+                2.5,
+                1,
+                9.5
+            ],
+            "radius": 3,
+            "color": [
+                1,
+                0,
+                0
+            ],
+            "intensity": 2,
+            "bone": "bone_root"
+        },
+        {
+            "offset": [
+                -2.5,
+                1,
+                9.5
+            ],
+            "radius": 3,
+            "color": [
+                1,
+                0,
+                0
+            ],
+            "intensity": 2,
+            "bone": "bone_root"
+        },
+        {
+            "offset": [
+                3,
+                2.5,
+                0
+            ],
+            "radius": 2.5,
+            "color": [
+                0.2,
+                0.8,
+                0
+            ],
+            "intensity": 3,
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                -3,
+                2.5,
+                0
+            ],
+            "radius": 2.5,
+            "color": [
+                0.2,
+                0.8,
+                0
+            ],
+            "intensity": 3,
+            "bone": "bone_turret"
+        }
+    ],
     "fx_offsets": [
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_rightWrist",
+            "bone": "socket_muzzle",
             "offset": [
-                1,
+                0,
                 0,
                 0
             ],
             "orientation": [
                 0,
                 0,
-                -90
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_leftWrist",
-            "offset": [
-                1,
-                0,
                 0
-            ],
-            "orientation": [
-                0,
-                0,
-                -90
             ]
         }
     ],
-    "lamps": [
-        {
-            "offset": [
-                1.64,
-                -0.7,
-                -0.87
-            ],
-            "radius": 3,
-            "color": [
-                0.1,
-                1,
-                0.1
-            ],
-            "intensity": 5,
-            "bone": "bone_rightShoulder"
-        },
-        {
-            "offset": [
-                1.64,
-                -0.7,
-                0.87
-            ],
-            "radius": 3,
-            "color": [
-                0.1,
-                1,
-                0.1
-            ],
-            "intensity": 5,
-            "bone": "bone_leftShoulder"
-        }
-    ],
-    "max_health": 3500,
-    "mesh_bounds": [
-        18.5,
-        19.5,
-        14
-    ],
-    "model": [
-        {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher.papa",
-            "skirt_decal": "/pa/effects/specs/skirt_antinuke.json",
-            "animations": {
-                "idle": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_idle.papa",
-                "build_start_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart01.papa",
-                "build_loop_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop01.papa",
-                "build_end_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd01.papa",
-                "build_start_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart02.papa",
-                "build_loop_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop02.papa",
-                "build_end_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd02.papa",
-                "build_start_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart03.papa",
-                "build_loop_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop03.papa",
-                "build_end_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd03.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json"
-        },
-        {
-            "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/anti_nuke_launcher/anti_nuke_launcher.papa",
-            "animations": {
-                "build_start_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart01.papa",
-                "build_loop_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop01.papa",
-                "build_end_1": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd01.papa",
-                "build_start_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart02.papa",
-                "build_loop_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop02.papa",
-                "build_end_2": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd02.papa",
-                "build_start_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildStart03.papa",
-                "build_loop_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildLoop03.papa",
-                "build_end_3": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_anim_buildEnd03.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json"
-        }
-    ],
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                },
-                {
-                    "layer": "surface_and_air",
-                    "channel": "radar",
-                    "shape": "capsule",
-                    "radius": 310
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                }
-            ]
-        }
-    },
     "selection_icon": {
-        "diameter": 28.0
+        "diameter": 26.0
     },
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "tools": [
-        {
-            "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_build_arm.json",
-            "aim_bone": "bone_root"
-        },
-        {
-            "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "muzzle_bone": "bone_root"
-        }
+    "TEMP_texelinfo": 21.7597,
+    "mesh_bounds": [
+        15,
+        13,
+        15
     ],
-    "unit_name": "Anti-Nuke Launcher",
+    "alt_area_build_type": "Sphere",
+    "alt_area_max_radius": 100.0,
+    "buildable_projectiles": [
+        "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
+    ],
     "unit_types": [
         "UNITTYPE_Custom6",
         "UNITTYPE_Land",
@@ -210,9 +203,24 @@
         "UNITTYPE_CombatFabAdvBuild",
         "UNITTYPE_Important"
     ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_build_arm.json",
+            "aim_bone": "bone_root"
+        },
+        {
+            "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
     "wreckage_mesh_bounds": [
-        18.5,
-        19.5,
-        12
+        14,
+        14,
+        22.5
+    ],
+    "placement_size": [
+        20,
+        20
     ]
 }
