@@ -4,7 +4,7 @@
     "display_name": "!LOC:Anti-Nuke Launcher",
     "description": "!LOC:Anti-Nuke - Builds advanced anti-nuclear missiles.",
     "max_health": 3500,
-    "build_metal_cost": 12000,
+    "build_metal_cost": 9000,
     "atrophy_rate": 200,
     "atrophy_cool_down": 15,
     "area_build_type": "Sphere",
