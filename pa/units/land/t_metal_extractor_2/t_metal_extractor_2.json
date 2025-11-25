@@ -69,6 +69,7 @@
     ],
     "replaceable_units": [
         "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json",
+        "/pa/units/land/t_metal_extractor_01/t_metal_extractor_01.json",
 		"/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
     ],
     "events": {

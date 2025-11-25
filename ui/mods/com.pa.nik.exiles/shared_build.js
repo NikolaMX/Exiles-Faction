@@ -23,6 +23,8 @@ var newBuild = {
 
 
     //Special Factory
+    "/pa/units/structures/fab_complex/adv_fab_turret.json": ["t_factory", 0, { row: 2, column: 6 }],       
+
     
     //"/pa/units/land/t_bot_fac_adv/t_bot_fac_adv.json": ["t_factory", 0, { row: 1, column: 5 }],
 
@@ -188,19 +190,17 @@ var newBuild = {
     "/pa/units/land/t_wall/t_wall.json": ["t_economy", 4, { row: 2, column: 0 }],
     
     //Economic
-    "/pa/units/land/reactor/reactor.json": ["t_economy", 4, { row: 0, column: 2 }],
-    "/pa/units/land/t_power_storage/t_power_storage.json": ["t_economy", 4, { row: 1, column: 2 }],
-    "/pa/units/land/t_storage/t_storage.json": ["t_economy", 4, { row: 2, column: 2 }],
+    //"/pa/units/land/reactor/reactor.json": ["t_economy", 4, { row: 0, column: 2 }],
     
-
-    "/pa/units/land/plug/plug.json": ["t_economy", 4, { row: 2, column: 3 }],
-    "/pa/units/land/pylon/pylon.json": ["t_economy", 4, { row: 1, column: 3 }],
+    
     "/pa/units/land/adv_pylon/adv_pylon.json": ["t_economy", 4, { row: 0, column: 3 }],
+    "/pa/units/land/pylon/pylon.json": ["t_economy", 4, { row: 1, column: 3 }],
+    "/pa/units/land/t_power_storage/t_power_storage.json": ["t_economy", 4, { row: 2, column: 3 }],
 
 
-    "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json": ["t_economy", 4, { row: 2, column: 4 }],
-    "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json": ["t_economy", 4, { row: 1, column: 4 }],
     "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json": ["t_economy", 4, { row: 0, column: 4 }],
+    "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json": ["t_economy", 4, { row: 1, column: 4 }],
+    "/pa/units/land/t_storage/t_storage.json": ["t_economy", 4, { row: 2, column: 4 }],
 
 
 

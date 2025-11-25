@@ -119,6 +119,9 @@ var paeiouIcons = [
     "cyclone",
 
     //Factories
+    "fab_complex",      //NEW!! ATTENTION!!
+
+
     "t_naval_fac",
     "t_naval_fac_adv",
     "t_air_fac",
@@ -150,7 +153,6 @@ var paeiouIcons = [
     //Utility
     "seizmic",
     "reactor",
-    "plug",
 
     
     //Economy
@@ -162,6 +164,7 @@ var paeiouIcons = [
     "adv_pylon",
     "adv_pylon_overcharged",
     "t_metal_extractor_0",
+    "t_metal_extractor_01",
     "t_metal_extractor_1",
     "t_metal_extractor_2",
 

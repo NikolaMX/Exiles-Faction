@@ -1,0 +1,24 @@
+{
+  "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    
+  },
+  "burn_damage": 200,
+  "burn_radius": 50,
+  "damage": 500,
+  "damage_volume": {
+    "initial_radius": 50.0,
+    "radius_velocity": 0,
+    "radius_accel": 0,
+    "delay": 0,
+    "burnable_remove_radius": 10.0
+  },
+  "full_damage_splash_radius": 50,
+  "impact_decals": [
+    "/pa/effects/specs/nuke_scorch_01.json"
+  ],
+  "sim_fire_effect": "",
+  "splash_damage": 500,
+  "splash_damages_allies": true,
+  "splash_radius": 50
+}

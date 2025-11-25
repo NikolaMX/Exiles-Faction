@@ -8,17 +8,15 @@
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "armor_type": "AT_Custom8",
     "area_build_separation": 300,
     "area_build_type": "Sphere",
     "unit_types": [
         "UNITTYPE_Structure",
-        "UNITTYPE_Basic",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_FabBuild",
+        "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Recon",
-        "UNITTYPE_Custom6",
-        "UNITTYPE_Custom7"
+        "UNITTYPE_Custom6"
     ],
     "consumption": {
         "energy": 1200

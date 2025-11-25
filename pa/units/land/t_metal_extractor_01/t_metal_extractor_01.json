@@ -1,10 +1,10 @@
 {
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
-	"display_name": "Basic Metal Extractor",
-	"si_name": "t_metal_extractor_0",
-	"description": "!LOC:Produces small amounts of metal. Income will increase significantly after 150 seconds.",
+	"display_name": "Tweaked Metal Extractor",
+	"si_name": "t_metal_extractor_01",
+	"description": "!LOC:Produces normal amounts of metal. Income will increase over time.",
 	"max_health": 1000,
-	"build_metal_cost": 120,
+	"build_metal_cost": 100,
 	"atrophy_rate": 2.5,
 	"atrophy_cool_down": 15.0,
 	"wreckage_health_frac": 0.0,
@@ -15,7 +15,7 @@
 	"force_snap_to_feature_orientation": true,
 	"area_build_type": "Sphere",
 	"production": {
-		"metal": 5
+		"metal": 7
 	},
 	"consumption": {
 		"energy": 0
@@ -24,11 +24,10 @@
 		"UNITTYPE_Structure",
 		"UNITTYPE_Basic",
 		"UNITTYPE_MetalProduction",
-		"UNITTYPE_CmdBuild",
+		"UNITTYPE_NoBuild",
 		"UNITTYPE_FabBuild",
 		"UNITTYPE_CombatFabAdvBuild",
-		"UNITTYPE_Economy",
-		"UNITTYPE_Custom6"
+		"UNITTYPE_Economy"
 	],
 	"command_caps": [
 		"ORDER_FireSecondaryWeapon",
@@ -36,7 +35,7 @@
 	],
 	"tools": [
 		{
-			"spec_id": "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0_weapon.json",
+			"spec_id": "/pa/units/land/t_metal_extractor_01/t_metal_extractor_01_weapon.json",
 			"aim_bone": "bone_root",
 			"muzzle_bone": "bone_root",
 			"show_range": false
@@ -46,7 +45,7 @@
 			"muzzle_bone": "bone_root",
 			"secondary_weapon": true,
 			"show_range": false,
-			"spec_id": "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0_weapon.json"
+			"spec_id": "/pa/units/land/t_metal_extractor_01/t_metal_extractor_01_weapon.json"
 		}
 	],
 	"recon": {
@@ -97,9 +96,18 @@
 			"audio_cue": "/SE/Death/Factory",
 			"effect_scale": 0.5
 		}
-
 	},
-	
+	"fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/t_metal_extractor_0/mex_upgrade.pfx",
+      "offset": [
+        0,
+        0,
+        3
+      ]
+    }
+  ],
 	"audio": {
 		"selection_response": {
 			"cue": "/SE/Selection/structure/metal"

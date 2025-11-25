@@ -4,8 +4,8 @@
     "si_name": "t_metal_extractor_1",
     "display_name": "!LOC:Improved Metal Extractor",
     "description": "!LOC:Basic Economy - Produces metal, can only be placed on metal deposits.",
-    "max_health": 500,
-    "build_metal_cost": 200,
+    "max_health": 1000,
+    "build_metal_cost": 270,
     "atrophy_rate": 2.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -15,18 +15,17 @@
     "force_snap_to_feature_orientation": true,
     "area_build_type": "Sphere",
     "production": {
-        "metal": 6
+        "metal": 9
     },
     "consumption": {
         "energy": 0
     },
     "unit_types": [
-        "UNITTYPE_Custom6",
-        "UNITTYPE_Custom7",
+        
         "UNITTYPE_Structure",
         "UNITTYPE_Basic",
         "UNITTYPE_MetalProduction",
-        "UNITTYPE_CmdBuild",
+        "UNITTYPE_NoBuild",
         "UNITTYPE_CombatFabBuild",
         "UNITTYPE_FabBuild",
         "UNITTYPE_Economy"
@@ -59,7 +58,7 @@
 		}
 	],
     "replaceable_units": [
-        "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json",
+        
 		"/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json"
 		
     ],
@@ -72,6 +71,17 @@
             "effect_scale": 0.75
         }
     },
+    "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/land/t_metal_extractor_0/mex_upgrade.pfx",
+      "offset": [
+        0,
+        0,
+        3
+      ]
+    }
+  ],
     "audio": {
         "selection_response": {
             "cue": "/SE/Selection/structure/metal"

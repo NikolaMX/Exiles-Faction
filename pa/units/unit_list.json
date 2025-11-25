@@ -288,6 +288,9 @@
 
 
 
+    
+"/pa/units/structures/fab_complex/adv_fab_turret.json",    
+
 
 "/pa/units/air/t_air_fac/t_air_fac.json",
 "/pa/units/air/t_air_fac_adv/t_air_fac_adv.json",
@@ -350,10 +353,12 @@
 "/pa/units/land/adv_pylon/adv_pylon.json",
 "/pa/units/land/adv_pylon/overcharged/adv_pylon_overcharged.json",
 
+"/pa/units/land/reactor/reactor.json",
 "/pa/units/land/t_power_storage/t_power_storage.json",
 "/pa/units/land/t_storage/t_storage.json",
 
 "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json",
+"/pa/units/land/t_metal_extractor_01/t_metal_extractor_01.json",
 "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json",
 "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json",
 
@@ -385,7 +390,6 @@
 
 
 
-"/pa/units/land/plug/plug.json",
 
 
 "/pa/units/base/stun/stun.json",
