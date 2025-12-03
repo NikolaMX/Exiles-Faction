@@ -110,7 +110,7 @@ var paeiouIcons = [
     "t_int",
     "swordfish",
     "strat_bomber",
-    "ts_air_fab",
+    "t_gunship",
 
     "t_transport_adv",
 

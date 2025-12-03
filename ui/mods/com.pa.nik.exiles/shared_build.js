@@ -104,7 +104,7 @@ var newBuild = {
     "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json": ["t_air", 0, { row: 1, column: 0 }],
     "/pa/units/air/t_int/t_int.json": ["t_air", 0, { row: 1, column: 1 }],
     "/pa/units/air/swordfish/swordfish.json": ["t_air", 0, { row: 1, column: 2 }],
-    "/pa/units/air/ts_air_fab/t_air_fab.json": ["t_air", 0, { row: 1, column: 3 }],
+    "/pa/units/air/t_gunship/t_gunship.json": ["t_air", 0, { row: 1, column: 3 }],
     "/pa/units/air/strat_bomber/strat_bomber.json": ["t_air", 0, { row: 1, column: 4 }],
     
 

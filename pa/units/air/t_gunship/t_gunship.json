@@ -1,5 +1,5 @@
 {
-    "si_name": "ts_air_fab",
+    "si_name": "t_gunship",
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
     "unit_name": "Gargoyle",
     "display_name": "!LOC:Gargoyle",
@@ -73,15 +73,15 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/ts_air_fab/t_air_fab.papa",
+        "filename": "/pa/units/air/t_gunship/t_air_fab.papa",
         "animtree": "/pa/anim/anim_trees/fabrication_aircraft_anim_tree.json",
         "animations": {
-            "fly": "/pa/units/air/ts_air_fab/t_air_fab_anim_fly.papa"
+            "fly": "/pa/units/air/t_gunship/t_air_fab_anim_fly.papa"
         }
     },
     "tools": [
         {
-            "spec_id": "/pa/units/air/ts_air_fab/t_air_fab_tool_weapon.json",
+            "spec_id": "/pa/units/air/t_gunship/t_gunship_tool_weapon.json",
             "aim_bone": "bone_pitch",
             "projectiles_per_fire": 12,
             "muzzle_bone": [
