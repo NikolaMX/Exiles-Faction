@@ -52,7 +52,8 @@
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
-        "UNITTYPE_NoBuild"
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom6"
     ],
     "command_caps": [
         "ORDER_Move",

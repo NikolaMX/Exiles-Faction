@@ -16,6 +16,7 @@
         "animtree": "/pa/units/commanders/exiles_maxim/maxim_anim_tree.json",
         "walk_speed": 9
     },
+    
     "strategic_icon_priority": 0,
     "max_health": 17500,
     "build_metal_cost": 8000,
@@ -51,7 +52,8 @@
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
-        "UNITTYPE_NoBuild"
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom6"
     ],
     "command_caps": [
         "ORDER_Move",
