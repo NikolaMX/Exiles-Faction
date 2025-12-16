@@ -1,7 +1,7 @@
 {
 	"context": "server",
-	"identifier": "com.pa.nik.exiles",
-	"display_name": "Exiles Faction WIP",
+	"identifier": "com.pa.nik.exiles_dev",
+	"display_name": "Exiles Server Local",
 	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
 	"author": "NikolaMX, BOIYOUSAYWHAT",
 	"date": "2025-12-15",
@@ -38,9 +38,9 @@
 	"dependencies": [
 		"com.pa.ferretmaster.commander-merge",
 		"com.pa.ferretmaster.build-bar-tabs",
-		"com.pa.nik.exiles_client"
+		"com.pa.nik.exiles_client_dev"
 	],
 	"companions": [
-		"com.pa.nik.exiles_client"
+		"com.pa.nik.exiles_client_dev"
 	]
 }
