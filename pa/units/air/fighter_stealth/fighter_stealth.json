@@ -123,10 +123,10 @@
     "cue": "/SE/Selection/air/fighter"
   },
   "navigation": {
-    "acceleration": 100,
-    "brake": 50,
+    "acceleration": 130,
+    "brake": 130,
     "move_speed": 65,
-    "turn_speed": 90,
+    "turn_speed": 120,
     "dodge_radius": 30,
     "dodge_multiplier": 2,
     "aggressive_distance": 75.0,
