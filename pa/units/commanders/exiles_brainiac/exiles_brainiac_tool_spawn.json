@@ -1,6 +1,6 @@
 {
-  "ammo_capacity": 1500,
-  "ammo_demand": 20,
+  "ammo_capacity": 1200,
+  "ammo_demand": 15,
   "ammo_per_shot": 150,
   "ammo_source": "metal",
 
@@ -9,6 +9,7 @@
   "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
   "carpet_fire": true,
   "carpet_wait_for_full_ammo": true,
+  "start_fully_charged": false,
   "auto_task_type": "none",
   "manual_fire": true,
   "firing_arc_pitch": 5,
