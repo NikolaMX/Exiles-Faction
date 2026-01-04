@@ -181,7 +181,7 @@
     "TEMP_texelinfo": 5.84968,
     "mass_teleporter": {
         "radius": 50,
-        "phasing_duration": 15,
+        "phasing_duration": 10,
         "phasing_health_frac": 0.15,
         "fixup_radius": 50,
         "energy_drain": 1000,

@@ -25,7 +25,7 @@
     "default_build_stance": "Continuous"
   },
   "unit_types": [
-    "UNITTYPE_Custom6",
+    
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
     "UNITTYPE_Bot",

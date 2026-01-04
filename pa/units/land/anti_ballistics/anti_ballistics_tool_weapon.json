@@ -24,6 +24,7 @@
 		"/pa/units/land/artillery_long/artillery_long_ammo.json",
 		"/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
 		
+		"/pa/units/land/titan_vehicle/titan_vehicle_ammo_main.json",
 
 
 		"/pa/units/land/hail/hail_ammo.json",
@@ -40,9 +41,9 @@
 
 		"/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json",
 		"/pa/units/land/l_artillery_long/l_artillery_long_ammo.json",
-		"/pa/units/land/l_artillery_short/l_artillery_short_ammo.json"
+		"/pa/units/land/l_artillery_short/l_artillery_short_ammo.json",
 
-		
+		"/pa/units/land/l_titan_vehicle/l_titan_vehicle_ammo_main.json"
 		
 	],
 	"target_layers": [

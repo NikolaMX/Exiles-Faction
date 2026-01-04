@@ -13,11 +13,10 @@
   "pitch_range": 180,
   "auto_attack": true,
   "idle_aim_delay": 3,
-  "charge_ammo_when_targeting": true,
+  "charge_ammo_when_targeting": false,
   "target_layers": [
     "WL_Orbital",
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
+    "WL_Air"
   ],
   "target_priorities": [
     "Mobile & Orbital",
