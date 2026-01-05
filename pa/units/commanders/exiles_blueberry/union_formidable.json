@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "base_spec": "/pa/units/commanders/base_exiles_commander/base_exiles_commander.json",
     "display_name": "Blueberry Commander",
     "si_name": "replicate_commander_1",
     "description": "Basic Tiha Commander.",

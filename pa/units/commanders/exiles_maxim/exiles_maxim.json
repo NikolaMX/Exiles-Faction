@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+     "base_spec": "/pa/units/commanders/base_exiles_commander/base_exiles_commander.json",
     "display_name": "Maxim Commander",
     "si_name": "exiles_maxim",
     "description": "Armored Exile Commander. More HP and better guns but slower and worse at building",

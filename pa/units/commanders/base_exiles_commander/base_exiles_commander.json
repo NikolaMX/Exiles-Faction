@@ -1,21 +1,25 @@
 {
-    "base_spec": "/pa/units/commanders/base_exiles_commander/base_exiles_commander.json",
-    "display_name": "Brainiac Commander",
-    "si_name": "exiles_brainiac",
-    "description": "Hover Exile Commander. Slow, Low HP but armed with devastating long-range laser.",
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "display_name": "Blueberry Commander",
+    "si_name": "replicate_commander_1",
+    "description": "Basic Tiha Commander.",
     "model": {
-        "filename": "/pa/units/commanders/exiles_brainiac/brainiac.papa",
+        "filename": "/pa/units/commanders/exiles_blueberry/formidable.papa",
         "animations": {
-            "death01": "/pa/units/commanders/exiles_brainiac/brainiac_anim_dead.papa",
-            "walk": "/pa/units/commanders/exiles_brainiac/brainiac_anim_run.papa",
-            "idle": "/pa/units/commanders/exiles_brainiac/brainiac_anim_idle.papa",
-            "walk_stop": "",
-            "aim_up": "",
-            "aim_down": ""
+            "death01": "/pa/units/commanders/exiles_blueberry/formidable.papa",
+            "walk": "/pa/units/commanders/exiles_blueberry/formidable_run.papa",
+            "idle": "/pa/units/commanders/exiles_blueberry/formidable_idle.papa",
+            "walk_stop": "/pa/units/commanders/exiles_blueberry/formidable_stop.papa",
+            "aim_up": "/pa/units/commanders/exiles_blueberry/formidable.papa",
+            "aim_down": "/pa/units/commanders/exiles_blueberry/formidable.papa"
         },
-        "animtree": "/pa/units/commanders/exiles_brainiac/brainiac_anim_tree.json",
-        "walk_speed": 9
+        "animtree": "/pa/units/commanders/exiles_blueberry/union_formidable_comm_anim_tree.json",
+        "walk_speed": 3.5
     },
+  "ai_metal_extractor_names": {
+    "basic": "ExilesIntermediateMetalExtractor",
+    "advanced": "ExilesAdvancedMetalExtractor"
+  },
     "strategic_icon_priority": 0,
     "max_health": 10500,
     "build_metal_cost": 8000,
@@ -42,12 +46,11 @@
         "metal": 20
     },
     "storage": {
-        "energy": 45000,
-        "metal": 1750
+        "energy": 37500,
+        "metal": 2500
     },
     "unit_types": [
         "UNITTYPE_Commander",
-        "UNITTYPE_Hover",
         "UNITTYPE_Construction",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
@@ -70,10 +73,10 @@
         "size": 1
     },
     "navigation": {
-        "type": "hover-large",
+        "type": "amphibious",
         "acceleration": 60,
         "brake": -1,
-        "move_speed": 9,
+        "move_speed": 12,
         "turn_speed": 180,
         "turn_in_place": true,
         "park_stamp": {
@@ -81,7 +84,11 @@
             "cost": 20,
             "type_data": [
                 {
-                    "move_type": "hover",
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
                     "stamp_type": "simple"
                 }
             ]
@@ -98,13 +105,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 160
+                    "radius": 150
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 160
+                    "radius": 150
                 },
                 {
                     "layer": "celestial",
@@ -118,91 +125,54 @@
     "teleportable": {},
     "tools": [
         {
-            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_build_arm.json",
-            "aim_bone": "bone_turret",
-            "record_index": 2,
-            "primary_weapon": false
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_build_arm.json",
+            "aim_bone": "bone_turret"
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_tool_weapon.json",
+            "spec_id": "/pa/units/commanders/exiles_blueberry/union_formidable_tool_weapon.json",
             "aim_bone": "bone_turret",
-            "muzzle_bone": "eye",
+            "muzzle_bone": "socket_right",
             "primary_weapon": true,
-            "record_index": 1,
-            "fire_event": "fired1"
+            "fire_event": "fired"
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_brainiac/tool_tracer.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "bone_head",
-            "record_index": 3,
-            "fire_event": "fired2"
-        },
-        {
-            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_tool_spawn.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": [
-                "ring1.r",
-                "ring1.l"
-            ],
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_uber_cannon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
             "secondary_weapon": true,
-            "record_index": 4,
-            "fire_event": "fired3"
+            "show_range": false,
+            "fire_event": "fired0"
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "primary_weapon": false,
+            "show_range": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_tool_torpedo_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_right",
+            "primary_weapon": false,
+            "show_range": false
         }
     ],
+    
     "events": {
-        "fired1": {
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx eye"
+        "fired": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_right_muzzle"
         },
-        "fired3": {
-            "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
-            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx ring1.r /pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx ring1.l"
-        },
-        "fired2": {
-            "audio_cue": "",
-            "effect_spec": ""
+        "fired0": {
+            "effect_spec": "/pa/units/commanders/exiles_blueberry/a_aftershock_ammo_shockwave.pfx bone_turret",
+            "effect_scale": 1.7
         }
     },
     "fx_offsets": [
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "fab.l"
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "fab.r"
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/commanders/exiles_brainiac/hover_idle_01.pfx",
-            "bone": "bone_recoil",
-            "offset": [
-                1,
-                1,
-                -2
-            ],
-            "orientation": [
-                -60,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/commanders/exiles_brainiac/hover_idle_01.pfx",
-            "bone": "bone_recoil",
-            "offset": [
-                -1,
-                1,
-                -2
-            ],
-            "orientation": [
-                -150,
-                0,
-                0
-            ]
+            "bone": "socket_left"
         }
     ],
     "headlights": [
@@ -224,44 +194,74 @@
             "far_distance": 30.0,
             "color": [
                 1.0,
-                0.4,
-                0.4
+                1.0,
+                1.0
             ],
             "intensity": 5.0,
-            "bone": "eye",
+            "bone": "bone_turret",
             "shadow_resolution": 128
         }
     ],
     "lamps": [
         {
             "offset": [
-                4,
                 0,
+                -5,
                 1.2
             ],
-            "radius": 8.0,
+            "radius": 2.0,
             "color": [
                 1.0,
                 1.0,
                 1.0
             ],
-            "intensity": 2.0,
-            "bone": "bone_root"
+            "intensity": 5.0,
+            "bone": "bone_turret"
         },
         {
             "offset": [
-                -4,
                 0,
-                1.2
+                -2,
+                5
             ],
-            "radius": 8.0,
+            "radius": 3.0,
             "color": [
                 1.0,
                 1.0,
                 1.0
             ],
             "intensity": 2.0,
-            "bone": "bone_root"
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                2.2,
+                -3,
+                5
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_turret"
+        },
+        {
+            "offset": [
+                5,
+                -7,
+                0
+            ],
+            "radius": 6.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_pitch"
         }
     ],
     "audio": {
@@ -297,9 +297,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
-            "thumb_image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
-            "profile_image": "/pa/units/commanders/exiles_brainiac/profile_exiles_brainiac1.png"
+            "image": "/pa/units/commanders/exiles_blueberry/img_union_formidable.png",
+            "thumb_image": "/pa/units/commanders/exiles_blueberry/img_union_formidable_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
         }
     }
 }
