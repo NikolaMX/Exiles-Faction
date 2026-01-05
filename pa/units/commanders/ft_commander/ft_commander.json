@@ -217,6 +217,8 @@
   },
   "unit_types": [
     "UNITTYPE_Custom6",
+    "UNITTYPE_Important",
+    "UNITTYPE_Offense",
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
