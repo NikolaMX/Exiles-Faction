@@ -1,6 +1,6 @@
 {
   "display_name": "Puma",
-  "description": "Experimental Assault bot. Extremly durable. Can deploy disarm areas with Alt-Fire. Auto-Reclaims nearby wreckage.",
+  "description": "Experimental Assault bot. Extremely durable. Can deploy disarm areas with Alt-Fire. Auto-Reclaims nearby wreckage.",
   "icon_si": "puma",
   "armor_type": "AT_Bot",
   "attachable": {
