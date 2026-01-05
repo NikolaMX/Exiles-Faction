@@ -1,6 +1,6 @@
 {
   "display_name": "Puma",
-  "description": "Experimental Assault bot. Extremely durable. Can deploy disarm areas with Alt-Fire. Auto-Reclaims nearby wreckage.",
+  "description": "Experimental Assault bot. Amphibious. Extremely durable. Can deploy disarm areas with Alt-Fire. Auto-Reclaims nearby wreckage.",
   "icon_si": "puma",
   "armor_type": "AT_Bot",
   "attachable": {
@@ -218,7 +218,6 @@
   "unit_types": [
     "UNITTYPE_Custom6",
     "UNITTYPE_Bot",
-    "UNITTYPE_SupportCommander",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
