@@ -297,5 +297,9 @@
             "thumb_image": "/pa/units/commanders/exiles_blueberry/img_union_formidable_thumb.png",
             "profile_image": "/pa/units/commanders/exiles_blueberry/profile_union_formidable.png"
         }
+    },
+    "ai_metal_extractor_names": {
+        "basic": "ExilesIntermediateMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
     }
 }

@@ -317,5 +317,9 @@
             "thumb_image": "/pa/units/commanders/exiles_maxim/untitled7.png",
             "profile_image": "/pa/units/commanders/exiles_maxim/profile_exiles_maxim1.png"
         }
+    },
+    "ai_metal_extractor_names": {
+        "basic": "ExilesIntermediateMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
     }
 }
