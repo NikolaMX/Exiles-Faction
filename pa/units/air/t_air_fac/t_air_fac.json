@@ -79,6 +79,9 @@
     32,
     22
   ],
+  "selection_icon": {
+        "diameter": 36.0
+    },
   "model": [
     {
       "animations": {
