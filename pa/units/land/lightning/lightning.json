@@ -1,7 +1,7 @@
 {
   "si_name": "lightning",
   "TEMP_texelinfo": 5,
-  "description": "Tank equipped with high damage arc thrower. Can shoot through obstacles. Can not be disarmed.",
+  "description": "Tank equipped with high damage arc thrower. Can shoot through obstacles. Cannot be disarmed.",
   "display_name": "Bolt",
   "attachable": {
     "offsets": {
