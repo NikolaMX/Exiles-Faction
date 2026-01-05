@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "!LOC:Hippo",
 	"si_name": "hippo",
-	"description": "!LOC:Adv Hover Tank - Slow. Excells at sinking ships. Vulnerable to flanking. Can cross water and lava. Attacks land and sea targets.",
+	"description": "!LOC:Adv Hover Tank - Slow. Excels at sinking ships. Vulnerable to flanking. Can cross water and lava. Attacks land and sea targets.",
 	"max_health": 1700,
 	"build_metal_cost": 1000,
 	"armor_type": "AT_Hover",
