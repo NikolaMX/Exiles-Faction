@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name": "!LOC:Cobra",
     "si_name": "stalker",
-    "description": "!LOC:Cloaked Assasin Vehicle - Invisible short-range tank. Low Damage.",
+    "description": "!LOC:Cloaked Assassin Vehicle - Invisible short-range tank. Low Damage.",
     "max_health": 400,
     "build_metal_cost": 1000,
     "attachable": {
