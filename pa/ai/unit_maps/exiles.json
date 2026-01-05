@@ -1,0 +1,256 @@
+{
+  "unit_map": {
+    "Commander": { "unit_types": "Commander & Custom6" },
+    "AnyBasicFactory": { "unit_types": "Factory & Basic & Custom6" },
+    "AnyAdvancedFactory": { "unit_types": "Factory & Advanced & Custom6" },
+    "AnyBasicFabber": {
+      "unit_types": "(Fabber & (Basic | Debug)) & Custom6 - Orbital"
+    },
+    "AnyAdvancedFabber": {
+      "unit_types": "(Fabber & (Advanced | Debug)) & Custom6 - Orbital"
+    },
+    "BasicBotFabber": {
+      "spec_id": "/pa/units/land/t_bot_fab/t_bot_fab.json"
+    },
+    "AdvancedBotFabber": {
+      "spec_id": "/pa/units/land/t_bot_fab_adv/t_bot_fab_adv.json"
+    },
+    "BasicBotCombatFabber": {
+      "spec_id": "/pa/units/land/hyena/hyena.json"
+    },
+    "BasicVehicleFabber": {
+      "spec_id": "/pa/units/land/t_tank_fab/t_tank_fab.json"
+    },
+    "AdvancedVehicleFabber": {
+      "spec_id": "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json"
+    },
+    "BasicAirFabber": {
+      "spec_id": "/pa/units/air/t_air_fab/t_air_fab.json"
+    },
+    "AdvancedAirFabber": {
+      "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json"
+    },
+    "BasicNavalFabber": {
+      "spec_id": "/pa/units/sea/t_naval_fab/t_naval_fab.json"
+    },
+    "AdvancedNavalFabber": {
+      "spec_id": "/pa/units/sea/t_naval_fab_adv/t_naval_fab_adv.json"
+    },
+    "OrbitalFabber": {
+      "spec_id": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json"
+    },
+    "BasicMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json"
+    },
+    "BasicEnergyGenerator": {
+      "spec_id": "/pa/units/land/pylon/pylon.json"
+    },
+    "IntermediateMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
+    },
+    "AdvancedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json"
+    },
+    "AdvancedEnergyGenerator": {
+      "spec_id": "/pa/units/land/adv_pylon/adv_pylon.json"
+    },
+    "EnergyStorage": {
+      "spec_id": "/pa/units/land/t_power_storage/t_power_storage.json"
+    },
+    "MetalStorage": {
+      "spec_id": "/pa/units/land/t_storage/t_storage.json"
+    },
+    "LandScout": { "spec_id": "/pa/units/land/lice/lice.json" },
+    "BasicAssaultBot": {
+      "spec_id": "/pa/units/land/can/can.json"
+    },
+    "BasicArtilleryBot": {
+      "spec_id": "/pa/units/land/hunter/hunter.json"
+    },
+    "TeslaBot": { "spec_id": "/pa/units/land/tin/tin.json" },
+    "AdvancedAssaultBot": {
+      "spec_id": "/pa/units/land/luddite/luddite.json"
+    },
+    "AdvancedArtilleryBot": {
+      "spec_id": "/pa/units/land/torch/torch.json"
+    },
+    "AdvancedAABot": {
+      "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa.json"
+    },
+    "RadarJammerBot": {
+      "spec_id": "/pa/units/land/gale/gale.json"
+    },
+    "T3AssaultBot": {
+      "spec_id": "/pa/units/commanders/ft_commander/ft_commander.json"
+    },
+    "T3ArtilleryBot": {
+      "spec_id": "/pa/units/land/tripod/tripod.json"
+    },
+    "LightLaserTank": {
+      "spec_id": "/pa/units/land/lightning/lightning.json"
+    },
+    "BasicArmorTank": {
+      "spec_id": "/pa/units/land/tank_wheel/tank_wheel.json"
+    },
+    "BasicAAVehicle": {
+      "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak.json"
+    },
+    "BasicPointDefenceVehicle": {
+      "spec_id": "/pa/units/land/meerkat/meerkat.json"
+    },
+    "AdvancedLaserTank": {
+      "spec_id": "/pa/units/land/stalker/stalker.json"
+    },
+    "AdvancedArmorTank": {
+      "spec_id": "/pa/units/land/adv_tank_hover/adv_tank_hover.json"
+    },
+    "AdvancedArtilleryVehicle": {
+      "spec_id": "/pa/units/land/hail/hail.json"
+    },
+    "AdvancedAAVehicle": {
+      "spec_id": "/pa/units/land/tank_gattling/tank_gattling.json"
+    },
+    "AdvancedOrbitalDefenceVehicle": {
+      "spec_id": "/pa/units/land/shah/shah.json"
+    },
+    "AirScout": { "spec_id": "/pa/units/air/scout/scout.json" },
+    "BasicFighter": {
+      "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth.json"
+    },
+    "BasicBomber": { "spec_id": "/pa/units/air/t_bomber/t_bomber.json" },
+    "AdvancedFighter": {
+      "spec_id": "/pa/units/air/t_int/t_int.json"
+    },
+    "AdvancedBomber": { "spec_id": "/pa/units/air/swordfish/swordfish.json" },
+    "AdvancedGunship": { "spec_id": "/pa/units/air/t_gunship/t_gunship.json" },
+    "HeavyBomber": {
+      "spec_id": "/pa/units/air/strat_bomber/strat_bomber.json"
+    },
+    "Gunboat": { "spec_id": "/pa/units/sea/t_hover_skiff/t_hover_skiff.json" },
+    "MeleeSub": { "spec_id": "/pa/units/sea/scilla/scilla.json" },
+    "Frigate": { "spec_id": "/pa/units/sea/hardtack/hardtack.json" },
+    "Destroyer": { "spec_id": "/pa/units/sea/a_croc/a_croc.json" },
+    "Cruiser": {
+      "spec_id": "/pa/units/sea/a_mortar/a_mortar.json"
+    },
+    "Battleship": { "spec_id": "/pa/units/sea/t_battleship/t_battleship.json" },
+    "DroneCarrier": {
+      "spec_id": "/pa/units/sea/drone_aa/drone_aa.json"
+    },
+    "TorpedoSub": { "spec_id": "/pa/units/sea/cruiser/cruiser.json" },
+    "OrbitalFighter": {
+      "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter.json"
+    },
+    "DefenseSatellite": {
+      "spec_id": "/pa/units/orbital/defense_satellite/defense_satellite.json"
+    },
+    "OrbitalDeathLaser": {
+      "spec_id": "/pa/units/orbital/orbital_laser/orbital_laser.json"
+    },
+    "OrbitalExtractor": {
+      "spec_id": "/pa/units/orbital/mining_platform/mining_platform.json"
+    },
+    "BasicBotFactory": {
+      "spec_id": "/pa/units/land/t_bot_fac/t_bot_fac.json"
+    },
+    "AdvancedBotFactory": {
+      "spec_id": "/pa/units/land/t_bot_fac_adv/t_bot_fac_adv.json"
+    },
+    "BasicVehicleFactory": {
+      "spec_id": "/pa/units/land/t_tank_fac/t_tank_fac.json"
+    },
+    "AdvancedVehicleFactory": {
+      "spec_id": "/pa/units/land/t_tank_fac_adv/t_tank_fac_adv.json"
+    },
+    "BasicAirFactory": {
+      "spec_id": "/pa/units/air/t_air_fac/t_air_fac.json"
+    },
+    "AdvancedAirFactory": {
+      "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json"
+    },
+    "BasicNavalFactory": {
+      "spec_id": "/pa/units/sea/t_naval_fac/t_naval_fac.json"
+    },
+    "AdvancedNavalFactory": {
+      "spec_id": "/pa/units/sea/t_naval_fac_adv/t_naval_fac_adv.json"
+    },
+    "OrbitalLauncher": {
+      "spec_id": "/pa/units/orbital/t_orbital_launcher/t_orbital_launcher.json"
+    },
+    "OrbitalFactory": {
+      "spec_id": "/pa/units/orbital/orbital_factory/orbital_factory.json"
+    },
+    "BasicAirDefense": {
+      "spec_id": "/pa/units/land/t_aa_twr/t_aa_twr.json"
+    },
+    "BasicLandDefense": {
+      "spec_id": "/pa/units/land/ambush_twr/ambush_twr.json"
+    },
+    "BasicNavalDefense": {
+      "spec_id": "/pa/units/sea/t_torp_launcher/t_torp_launcher.json"
+    },
+    "Umbrella": { "spec_id": "/pa/units/addon/r_umbrella/r_umbrella.json" },
+    "BasicArtillery": {
+      "spec_id": "/pa/units/land/t_arta/t_arta.json"
+    },
+    "IntermediateAirDefense": {
+      "spec_id": "/pa/units/land/t_aa_twr_adv/t_aa_twr_adv.json"
+    },
+    "AdvancedAirDefense": {
+      "spec_id": "/pa/units/land/aa_missile_launcher/aa_missile_launcher.json"
+    },
+    "AdvancedLandDefense": {
+      "spec_id": "/pa/units/land/quad_turret/quad_turret.json"
+    },
+    "AdvancedNavalDefense": {
+      "spec_id": "/pa/units/sea/t_torp_launcher_adv/t_torp_launcher_adv.json"
+    },
+    "AntiBallistics": {
+      "spec_id": "/pa/units/land/anti_ballistics/anti_ballistics.json"
+    },
+    "LongRangeArtillery": {
+      "spec_id": "/pa/units/addons/r_artillery/r_artillery.json"
+    },
+    "NukeSilo": {
+      "spec_id": "/pa/units/land/missile_facility/missile_facility.json"
+    },
+    "AntiNukeSilo": {
+      "spec_id": "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json"
+    },
+    "PlanetEngine": {
+      "spec_id": "/pa/units/addons/t_delta_v_engine/t_delta_v_engine.json"
+    },
+    "ControlModule": {
+      "spec_id": "/pa/units/addons/t_control_module/t_control_module.json"
+    },
+    "Teleporter": {
+      "spec_id": "/pa/units/addons/r_teleporter/r_teleporter.json"
+    },
+    "Wall": { "spec_id": "/pa/units/land/t_wall/t_wall.json" },
+    "BasicRadar": { "spec_id": "/pa/units/addons/r_radar/r_radar.json" },
+    "AdvancedRadar": { "spec_id": "/pa/units/land/seizmic/seizmic.json" },
+    "SolarArray": {
+      "spec_id": "/pa/units/orbital/solar_array/solar_array.json"
+    },
+    "BasicRadarSattelite": {
+      "spec_id": "/pa/units/orbital/radar_satellite/radar_satellite.json"
+    },
+    "OrbitalLander": {
+      "spec_id": "/pa/units/orbital/orbital_lander/orbital_lander.json"
+    },
+    "AdvancedRadarSattelite": {
+      "spec_id": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json"
+    },
+    "NukeMissile": {
+      "spec_id": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+    },
+    "AntiNukeMissile": {
+      "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
+    },
+    "HoverTitan": { "spec_id": "/pa/units/land/cyclone/cyclone.json" },
+    "DemitTitan": { "spec_id": "/pa/units/land/t_chimera/t_chimera.json" },
+    "FabberTower": {
+      "spec_id": "/pa/units/structures/fab_complex/fab_complex.json"
+    }
+  }
+}
