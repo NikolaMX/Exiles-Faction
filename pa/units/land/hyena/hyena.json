@@ -124,6 +124,7 @@
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
+        "UNITTYPE_Construction",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom6"
     ],
