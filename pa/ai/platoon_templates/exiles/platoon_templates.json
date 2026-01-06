@@ -1,5 +1,8 @@
 {
   "platoon_templates": {
+    "Exiles_Bot_Scout": {
+      "units": [{ "unit_types": "Bot & Scout", "max_count": 1 }]
+    },
     "Land_Raid_Small": {
       "units": [
         {
