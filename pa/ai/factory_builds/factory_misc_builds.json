@@ -2,10 +2,10 @@
   "build_list": [
     {
       "name": "Nuke Missile",
-      "to_build": "NukeMissile",
+      "to_build": "ExilesNukeMissile",
       "instance_count": -1,
       "priority": 151,
-      "builders": ["NukeSilo"],
+      "builders": ["ExilesNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -15,12 +15,12 @@
     },
     {
       "name": "Nuke Missile - No Antis",
-      "to_build": "NukeMissile",
+      "to_build": "ExilesNukeMissile",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 387,
-      "builders": ["NukeSilo"],
+      "builders": ["ExilesNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -36,10 +36,10 @@
     },
     {
       "name": "Anti Nuke Missile",
-      "to_build": "AntiNukeMissile",
+      "to_build": "ExilesAntiNukeMissile",
       "instance_count": -1,
       "priority": 151,
-      "builders": ["AntiNukeSilo"],
+      "builders": ["ExilesAntiNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -49,12 +49,12 @@
     },
     {
       "name": "Anti Nuke Missile - Rush",
-      "to_build": "AntiNukeMissile",
+      "to_build": "ExilesAntiNukeMissile",
       "instance_count": -1,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
       "priority": 388,
-      "builders": ["AntiNukeSilo"],
+      "builders": ["ExilesAntiNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },

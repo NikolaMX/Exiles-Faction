@@ -2,12 +2,12 @@
   "build_list": [
     {
       "name": "Basic Air Defense - Mex",
-      "to_build": "BasicAirDefense",
+      "to_build": "ExilesBasicAirDefense",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "ExilesBasicAirDefense",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           {
@@ -29,7 +29,7 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ],
         [
           {
@@ -55,7 +55,7 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ],
         [
           {
@@ -78,7 +78,7 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ],
         [
           {
@@ -105,7 +105,7 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ]
       ],
       "placement_rules": {
@@ -139,10 +139,10 @@
       "name": "Basic Land Defense Single - Mex",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "ExilesBasicLandDefense",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -228,12 +228,12 @@
     },
     {
       "name": "Basic Air Defense",
-      "to_build": "BasicAirDefense",
+      "to_build": "ExilesBasicAirDefense",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "ExilesBasicAirDefense",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           {
@@ -254,7 +254,7 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ],
         [
           {
@@ -275,7 +275,7 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ],
         [
           {
@@ -285,7 +285,7 @@
           },
           { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ]
       ],
       "placement_rules": {
@@ -311,12 +311,12 @@
     },
     {
       "name": "Basic Air Defense - Threat",
-      "to_build": "BasicAirDefense",
+      "to_build": "ExilesBasicAirDefense",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "ExilesBasicAirDefense",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["Commander", "AnyBasicFabber"],
+      "builders": ["ExilesCommander", "AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -344,7 +344,7 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
         ]
       ],
       "placement_rules": {
@@ -372,10 +372,10 @@
       "name": "Basic Land Defense Single",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "ExilesBasicLandDefense",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -461,10 +461,10 @@
       "name": "Basic Land Defense Single - Threat",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "ExilesBasicLandDefense",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["Commander"],
+      "builders": ["ExilesCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -526,11 +526,11 @@
     },
     {
       "name": "Basic Land Defense",
-      "to_build": "BasicLandDefense",
+      "to_build": "ExilesBasicLandDefense",
       "instance_count": 1,
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -551,7 +551,7 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicLandDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -572,7 +572,7 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicLandDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
         ]
       ],
       "placement_rules": {
@@ -598,11 +598,11 @@
     },
     {
       "name": "Basic Land Defense - Threat",
-      "to_build": "BasicLandDefense",
+      "to_build": "ExilesBasicLandDefense",
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -630,7 +630,7 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicLandDefense" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
         ]
       ],
       "placement_rules": {
@@ -656,12 +656,12 @@
     },
     {
       "name": "Basic Artillery",
-      "to_build": "BasicArtillery",
+      "to_build": "ExilesBasicArtillery",
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 245,
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -690,7 +690,7 @@
             "compare0": ">=",
             "value1": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "BasicArtillery" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicArtillery" }
         ]
       ],
       "placement_rules": {
@@ -715,11 +715,11 @@
     },
     {
       "name": "Advanced Air Defense",
-      "to_build": "AdvancedAirDefense",
+      "to_build": "ExilesAdvancedAirDefense",
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -747,7 +747,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "ExilesAdvancedAirDefense"
           }
         ],
         [
@@ -771,7 +771,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "ExilesAdvancedAirDefense"
           }
         ]
       ],
@@ -798,11 +798,11 @@
     },
     {
       "name": "Advanced Air Defense - Threat",
-      "to_build": "AdvancedAirDefense",
+      "to_build": "ExilesAdvancedAirDefense",
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -837,7 +837,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "ExilesAdvancedAirDefense"
           }
         ]
       ],
@@ -864,11 +864,11 @@
     },
     {
       "name": "Advanced Land Defense",
-      "to_build": "AdvancedLandDefense",
+      "to_build": "ExilesAdvancedLandDefense",
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -891,7 +891,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "ExilesAdvancedLandDefense"
           }
         ],
         [
@@ -915,7 +915,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "ExilesAdvancedLandDefense"
           }
         ]
       ],
@@ -942,11 +942,11 @@
     },
     {
       "name": "Advanced Land Defense - Threat",
-      "to_build": "AdvancedLandDefense",
+      "to_build": "ExilesAdvancedLandDefense",
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -976,7 +976,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "ExilesAdvancedLandDefense"
           }
         ]
       ],
@@ -1002,12 +1002,12 @@
       }
     },
     {
-      "name": "Wall",
-      "to_build": "Wall",
+      "name": "ExilesWall",
+      "to_build": "ExilesWall",
       "instance_count": 1,
       "priority": 0,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1017,7 +1017,7 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Wall" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesWall" }
         ]
       ],
       "placement_rules": {
@@ -1041,11 +1041,15 @@
       }
     },
     {
-      "name": "Umbrella",
-      "to_build": "Umbrella",
+      "name": "ExilesUmbrella",
+      "to_build": "ExilesUmbrella",
       "instance_count": 1,
       "priority": 378,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1067,7 +1071,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1089,7 +1093,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1111,7 +1115,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ]
       ],
       "placement_rules": {
@@ -1130,10 +1134,14 @@
     },
     {
       "name": "Umbrella - Rush",
-      "to_build": "Umbrella",
+      "to_build": "ExilesUmbrella",
       "instance_count": 1,
       "priority": 386,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1155,7 +1163,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1177,7 +1185,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1199,7 +1207,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "Umbrella" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesUmbrella" }
         ]
       ],
       "placement_rules": {
@@ -1218,14 +1226,14 @@
     },
     {
       "name": "Anti Nuke Silo",
-      "to_build": "AntiNukeSilo",
+      "to_build": "ExilesAntiNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "AntiNukeSilo",
+      "shared_instance_count": "ExilesAntiNukeSilo",
       "priority": 380,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1239,10 +1247,10 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1256,10 +1264,10 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1273,7 +1281,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ]
       ],
       "placement_rules": {
@@ -1299,16 +1307,16 @@
     },
     {
       "name": "Anti Nuke Silo - Rush",
-      "to_build": "AntiNukeSilo",
+      "to_build": "ExilesAntiNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "AntiNukeSilo",
+      "shared_instance_count": "ExilesAntiNukeSilo",
       "priority": 386,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1328,10 +1336,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           { "test_type": "HaveHadANukeEvent", "boolean": true },
           {
             "test_type": "UnitCountInBase",
@@ -1345,10 +1353,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1368,10 +1376,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "AntiNukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
           { "test_type": "HaveHadANukeEvent", "boolean": true },
           {
             "test_type": "UnitCountInBase",
@@ -1385,7 +1393,7 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "AntiNukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
         ]
       ],
       "placement_rules": {

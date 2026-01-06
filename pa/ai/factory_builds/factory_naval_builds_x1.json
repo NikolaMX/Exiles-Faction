@@ -5,7 +5,7 @@
       "to_build": "SupportBarge",
       "instance_count": 1,
       "priority": 97,
-      "builders": ["BasicNavalFactory"],
+      "builders": ["ExilesBasicNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -27,7 +27,7 @@
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -37,11 +37,11 @@
     },
     {
       "name": "Drone Carrier",
-      "to_build": "DroneCarrier",
+      "to_build": "ExilesDroneCarrier",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },

@@ -5,11 +5,11 @@
       "instance_count": -1,
       "priority": 1,
       "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber",
         "SupportCommander",
-        "OrbitalFabber"
+        "ExilesOrbitalFabber"
       ],
       "build_conditions": [
         [{ "test_type": "CanAffordBuildDemand" }],
@@ -31,18 +31,18 @@
     },
     {
       "name": "Teleporter - Need Land",
-      "to_build": "Teleporter",
+      "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 615,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber",
         "SupportCommander",
-        "OrbitalFabber"
+        "ExilesOrbitalFabber"
       ],
       "build_conditions": [
         [
@@ -104,13 +104,13 @@
     },
     {
       "name": "Teleporter - Need Fabber",
-      "to_build": "Teleporter",
+      "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 615,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -141,18 +141,18 @@
     },
     {
       "name": "Teleporter - Other Planet Needs Fabber",
-      "to_build": "Teleporter",
+      "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 606,
       "min_num_assisters": 1,
       "max_num_assisters": 5,
       "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber",
         "SupportCommander",
-        "OrbitalFabber"
+        "ExilesOrbitalFabber"
       ],
       "build_conditions": [
         [
@@ -184,17 +184,17 @@
       }
     },
     {
-      "name": "Teleporter",
+      "name": "ExilesTeleporter",
       "to_build": "Teleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 258,
       "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber",
         "SupportCommander",
-        "OrbitalFabber"
+        "ExilesOrbitalFabber"
       ],
       "build_conditions": [
         [
@@ -221,16 +221,16 @@
     },
     {
       "name": "Teleporter - Not Alone",
-      "to_build": "Teleporter",
+      "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 380,
       "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber",
         "SupportCommander",
-        "OrbitalFabber"
+        "ExilesOrbitalFabber"
       ],
       "build_conditions": [
         [
@@ -261,11 +261,11 @@
       "instance_count": 1,
       "priority": 801,
       "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber",
-        "AdvancedBotFabber",
+        "ExilesBasicBotFabber",
+        "ExilesBasicVehicleFabber",
+        "ExilesAdvancedBotFabber",
         "SupportCommander",
-        "AdvancedVehicleFabber"
+        "ExilesAdvancedVehicleFabber"
       ],
       "build_conditions": [
         [

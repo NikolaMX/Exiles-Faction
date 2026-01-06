@@ -2,18 +2,18 @@
   "build_list": [
     {
       "name": "Orbital Launcher - Commander",
-      "to_build": "OrbitalLauncher",
+      "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "OrbitalLauncher",
+      "shared_instance_count": "ExilesOrbitalLauncher",
       "priority": 485,
       "max_num_assisters": 3,
-      "builders": ["Commander"],
+      "builders": ["ExilesCommander"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
+            "string0": "ExilesOrbitalLauncher"
           },
           {
             "test_type": "HasPersonalityTag",
@@ -28,13 +28,13 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalLauncher" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
+            "string0": "ExilesOrbitalLauncher"
           },
           {
             "test_type": "HasPersonalityTag",
@@ -49,20 +49,20 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalLauncher" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
         ]
       ],
       "placement_rules": { "buffer": 5 }
     },
     {
       "name": "Orbital Launcher - Rush - Commander",
-      "to_build": "OrbitalLauncher",
+      "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "OrbitalLauncher",
+      "shared_instance_count": "ExilesOrbitalLauncher",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "priority": 486,
-      "builders": ["Commander"],
+      "builders": ["ExilesCommander"],
       "build_conditions": [
         [
           { "test_type": "WantCommanderOffPlanet", "boolean": true },
@@ -90,7 +90,7 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalLauncher" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
         ],
         [
           { "test_type": "UnableToExpand", "boolean": true },
@@ -119,7 +119,7 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalLauncher" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
         ],
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -148,7 +148,7 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalLauncher" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
         ]
       ],
       "placement_rules": { "buffer": 5 }
@@ -158,7 +158,7 @@
       "to_build": "OrbitalMine",
       "instance_count": 1,
       "priority": 379,
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },

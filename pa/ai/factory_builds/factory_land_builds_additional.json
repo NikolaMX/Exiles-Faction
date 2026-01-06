@@ -15,7 +15,7 @@
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicVehicleFactory"],
+      "builders": ["ExilesBasicVehicleFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -83,7 +83,7 @@
       "to_build": "BasicAABot",
       "instance_count": 1,
       "priority": 97,
-      "builders": ["BasicBotFactory"],
+      "builders": ["ExilesBasicBotFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -160,7 +160,7 @@
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["ExilesAdvancedVehicleFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -211,7 +211,7 @@
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["ExilesAdvancedVehicleFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },

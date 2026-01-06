@@ -7,7 +7,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 350,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -48,11 +48,11 @@
     },
     {
       "name": "Nuke Silo",
-      "to_build": "NukeSilo",
+      "to_build": "ExilesNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
+      "shared_instance_count": "ExilesNukeSilo",
       "priority": 360,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -62,7 +62,7 @@
             "string0": "Tutorial",
             "boolean": false
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "NukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Nuke",
@@ -75,20 +75,20 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "NukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
         ]
       ],
       "placement_rules": { "buffer": 2 }
     },
     {
       "name": "Nuke Silo - Alone",
-      "to_build": "NukeSilo",
+      "to_build": "ExilesNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
+      "shared_instance_count": "ExilesNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 505,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -98,7 +98,7 @@
             "string0": "Tutorial",
             "boolean": false
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "NukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Nuke",
@@ -117,20 +117,20 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "NukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
         ]
       ],
       "placement_rules": { "buffer": 2 }
     },
     {
       "name": "Nuke Silo - No Antis",
-      "to_build": "NukeSilo",
+      "to_build": "ExilesNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
+      "shared_instance_count": "ExilesNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 478,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           {
@@ -151,7 +151,7 @@
             "boolean": false
           },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanAffordPotentialDrain", "string0": "NukeSilo" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
           {
             "test_type": "SystemThreat",
             "string0": "Economy",
@@ -164,7 +164,7 @@
             "compare0": "<=",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "NukeSilo" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
         ]
       ],
       "placement_rules": { "buffer": 2 }
@@ -175,7 +175,7 @@
       "instance_count": 1,
       "shared_instance_count": "UnitCannon",
       "priority": 360,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -211,7 +211,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 505,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -247,12 +247,12 @@
     },
     {
       "name": "Long Range Artillery",
-      "to_build": "LongRangeArtillery",
+      "to_build": "ExilesLongRangeArtillery",
       "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 6,
       "priority": 360,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -284,7 +284,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "LongRangeArtillery"
+            "string0": "ExilesLongRangeArtillery"
           }
         ]
       ],
@@ -301,12 +301,12 @@
     },
     {
       "name": "Control Module",
-      "to_build": "ControlModule",
+      "to_build": "ExilesControlModule",
       "instance_count": 1,
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 612,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
       "build_conditions": [
         [
           { "test_type": "PlanetHasUseablePlanetWeapon", "boolean": true },

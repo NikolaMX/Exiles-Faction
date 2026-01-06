@@ -8,7 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedBotFabber"],
+      "builders": ["ExilesAdvancedBotFabber"],
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
@@ -48,7 +48,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedVehicleFabber"],
+      "builders": ["ExilesAdvancedVehicleFabber"],
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
@@ -88,7 +88,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedAirFabber"],
+      "builders": ["ExilesAdvancedAirFabber"],
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
@@ -127,7 +127,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -164,7 +164,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AnyAdvancedFabber"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "EnemyPresenceOnPlanet", "boolean": true },

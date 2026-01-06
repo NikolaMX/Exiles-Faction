@@ -2,12 +2,12 @@
   "build_list": [
     {
       "name": "Basic Metal Extractor - Desire - Area - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           { "test_type": "PlanetIsGasGiant", "boolean": false },
@@ -34,12 +34,12 @@
     },
     {
       "name": "Basic Metal Extractor - Expand - Area 1 - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -99,12 +99,12 @@
     },
     {
       "name": "Basic Metal Extractor - Expand - Area Alone - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -166,12 +166,12 @@
     },
     {
       "name": "Basic Metal Extractor - Expand Low Pri - Area - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -203,12 +203,12 @@
     },
     {
       "name": "Basic Metal Extractor - Desire - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           { "test_type": "PlanetIsGasGiant", "boolean": false },
@@ -228,12 +228,12 @@
     },
     {
       "name": "Basic Metal Extractor - Expand 1 - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -290,12 +290,12 @@
     },
     {
       "name": "Basic Metal Extractor - Expand Low Pri - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
       "base_sort": "FromBuilder",
-      "builders": ["OrbitalFabber"],
+      "builders": ["ExilesOrbitalFabber"],
       "build_conditions": [
         [
           {

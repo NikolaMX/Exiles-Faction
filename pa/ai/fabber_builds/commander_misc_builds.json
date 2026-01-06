@@ -4,7 +4,7 @@
       "name": "Teleport Commander To Planet",
       "instance_count": 1,
       "priority": 1001,
-      "builders": ["Commander"],
+      "builders": ["ExilesCommander"],
       "build_conditions": [
         [
           {

@@ -2,11 +2,11 @@
   "build_list": [
     {
       "name": "Basic Air Fabber",
-      "to_build": "BasicAirFabber",
+      "to_build": "ExilesBasicAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
-      "builders": ["BasicAirFactory"],
+      "builders": ["ExilesBasicAirFactory"],
       "build_conditions": [
         [
           { "test_type": "BaseThreatened", "boolean": false },
@@ -14,7 +14,7 @@
           { "test_type": "NeedBasicAirFabber" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
+            "string0": "ExilesBasicAirFabber"
           }
         ],
         [
@@ -25,10 +25,10 @@
     },
     {
       "name": "Air Scout",
-      "to_build": "AirScout",
+      "to_build": "ExilesAirScout",
       "instance_count": 1,
       "priority": 98,
-      "builders": ["BasicAirFactory"],
+      "builders": ["ExilesBasicAirFactory"],
       "build_conditions": [
         [
           { "test_type": "BaseThreatened", "boolean": false },
@@ -65,11 +65,11 @@
     },
     {
       "name": "Basic Air Fighter",
-      "to_build": "BasicFighter",
+      "to_build": "ExilesBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["ExilesBasicAirFactory"],
       "build_conditions": [
         [
           {
@@ -163,11 +163,11 @@
     },
     {
       "name": "Basic Air Bomber",
-      "to_build": "BasicBomber",
+      "to_build": "ExilesBasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["ExilesBasicAirFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -187,11 +187,11 @@
     },
     {
       "name": "Advanced Air Fabber",
-      "to_build": "AdvancedAirFabber",
+      "to_build": "ExilesAdvancedAirFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 200,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["ExilesAdvancedAirFactory"],
       "build_conditions": [
         [
           { "test_type": "BaseThreatened", "boolean": false },
@@ -199,7 +199,7 @@
           { "test_type": "NeedAdvancedAirFabber" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFabber"
+            "string0": "ExilesAdvancedAirFabber"
           }
         ],
         [
@@ -215,11 +215,11 @@
     },
     {
       "name": "Advanced Air Bomber",
-      "to_build": "AdvancedBomber",
+      "to_build": "ExilesAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["ExilesAdvancedAirFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -239,11 +239,11 @@
     },
     {
       "name": "Advanced Gunship",
-      "to_build": "AdvancedGunship",
+      "to_build": "ExilesAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["ExilesAdvancedAirFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },

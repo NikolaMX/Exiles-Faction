@@ -2,11 +2,11 @@
   "build_list": [
     {
       "name": "Basic Naval Fabber",
-      "to_build": "BasicNavalFabber",
+      "to_build": "ExilesBasicNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
-      "builders": ["BasicNavalFactory"],
+      "builders": ["ExilesBasicNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "BaseThreatened", "boolean": false },
@@ -19,18 +19,18 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFabber"
+            "string0": "ExilesBasicNavalFabber"
           }
         ]
       ]
     },
     {
-      "name": "Destroyer",
-      "to_build": "Destroyer",
+      "name": "ExilesDestroyer",
+      "to_build": "ExilesDestroyer",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicNavalFactory"],
+      "builders": ["ExilesBasicNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -41,11 +41,11 @@
     },
     {
       "name": "Attack Sub",
-      "to_build": "Sub",
+      "to_build": "ExilesMeleeSub",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicNavalFactory"],
+      "builders": ["ExilesBasicNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -68,12 +68,12 @@
       ]
     },
     {
-      "name": "Frigate",
-      "to_build": "Frigate",
+      "name": "ExilesFrigate",
+      "to_build": "ExilesFrigate",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicNavalFactory"],
+      "builders": ["ExilesBasicNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -84,11 +84,11 @@
     },
     {
       "name": "Advanced Naval Fabber",
-      "to_build": "AdvancedNavalFabber",
+      "to_build": "ExilesAdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 200,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "BaseThreatened", "boolean": false },
@@ -101,18 +101,18 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFabber"
+            "string0": "ExilesAdvancedNavalFabber"
           }
         ]
       ]
     },
     {
-      "name": "Battleship",
-      "to_build": "Battleship",
+      "name": "ExilesBattleship",
+      "to_build": "ExilesBattleship",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -122,12 +122,12 @@
       ]
     },
     {
-      "name": "MissleShip",
-      "to_build": "MissleShip",
+      "name": "ExilesCruiser",
+      "to_build": "ExilesCruiser",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -138,11 +138,11 @@
     },
     {
       "name": "Missile Sub",
-      "to_build": "MissileSub",
+      "to_build": "ExilesTorpedoSub",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
+      "builders": ["ExilesAdvancedNavalFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
