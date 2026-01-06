@@ -625,7 +625,7 @@
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "priority": 245,
+      "priority": 0,
       "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
