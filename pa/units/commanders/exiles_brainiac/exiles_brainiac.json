@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "base_spec": "/pa/units/commanders/base_exiles_commander/base_exiles_commander.json",
     "display_name": "Brainiac Commander",
     "si_name": "exiles_brainiac",
     "description": "Hover Exile Commander. Slow, Low HP but armed with devastating long-range laser.",

@@ -224,7 +224,7 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Custom6",
+    "UNITTYPE_NoBuild",
     "UNITTYPE_Fighter",
     "UNITTYPE_Air",
     "UNITTYPE_Mobile",

@@ -3,7 +3,7 @@
     "ammo_id": "/pa/units/land/jelly/jelly_ammo.json",
     "rate_of_fire": 0.4,
     "idle_aim_delay": 3,
-    "max_range": 50,
+    "max_range": 75,
     "yaw_rate": 60,
     "pitch_rate": 60,
     "yaw_range": 180,
