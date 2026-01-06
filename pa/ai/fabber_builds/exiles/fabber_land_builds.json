@@ -338,7 +338,7 @@
       "name": "Exiles - Fabber Tower",
       "to_build": "ExilesFabberTower",
       "instance_count": 1,
-      "priority": 85,
+      "priority": 0,
       "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
@@ -389,7 +389,7 @@
       "name": "Exiles - Fabber Tower - Wasting",
       "to_build": "ExilesFabberTower",
       "instance_count": 1,
-      "priority": 262,
+      "priority": 0,
       "builders": ["AnyExilesBasicFabber"],
       "build_conditions": [
         [
