@@ -182,7 +182,7 @@
     },
     {
       "name": "Exiles - Teleporter",
-      "to_build": "Teleporter",
+      "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 258,

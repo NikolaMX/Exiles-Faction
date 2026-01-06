@@ -23,27 +23,6 @@
           }
         ]
       ]
-    },
-    {
-      "name": "Exiles - Support Platform",
-      "to_build": "SupportPlatform",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["ExilesAdvancedAirFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "AloneOnPlanet", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Air & MissileDefense",
-            "unit_type_string1": "Air & (Bomber | Gunship)",
-            "compare0": "<",
-            "value0": 0.15
-          }
-        ]
-      ]
     }
   ]
 }
