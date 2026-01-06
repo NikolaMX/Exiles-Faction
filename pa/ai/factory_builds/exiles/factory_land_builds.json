@@ -916,8 +916,8 @@
       ]
     },
     {
-      "name": "Exiles - Advanced Armor Tank",
-      "to_build": "ExilesAdvancedArmorTank",
+      "name": "Exiles - Advanced Hover Tank",
+      "to_build": "ExilesAdvancedHoverTank",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
@@ -929,10 +929,10 @@
           { "test_type": "CanDeployLandFromBase", "boolean": true },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy",
+            "unit_type_string0": "Tank & Hover",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.5
+            "value0": 0.2
           }
         ],
         [
@@ -940,10 +940,10 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy",
+            "unit_type_string0": "Tank & Hover",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.5
+            "value0": 0.2
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",

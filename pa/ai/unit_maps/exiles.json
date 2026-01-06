@@ -103,7 +103,7 @@
     "ExilesAdvancedLaserTank": {
       "spec_id": "/pa/units/land/stalker/stalker.json"
     },
-    "ExilesAdvancedArmorTank": {
+    "ExilesAdvancedHoverTank": {
       "spec_id": "/pa/units/land/adv_tank_hover/adv_tank_hover.json"
     },
     "ExilesAdvancedArtilleryVehicle": {
