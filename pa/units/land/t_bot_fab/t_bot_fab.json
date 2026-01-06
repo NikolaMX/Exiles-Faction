@@ -5,7 +5,7 @@
     "display_name": "!LOC:Fabrication Crawler",
     "description": "!LOC:Basic Fabricator - Builds basic structures. Can not assist factories or T2 fabs. Extremly fast.",
     "max_health": 40,
-    "build_metal_cost": 140,
+    "build_metal_cost": 135,
     "attachable": {
         "offsets": {
             "root": [
@@ -85,7 +85,7 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/land/t_bot_fab/tool.json",
+            "spec_id": "/pa/units/land/t_bot_fab/t_bot_fab_build_arm.json",
             "aim_bone": "bone_pitch"
         }
     ],
