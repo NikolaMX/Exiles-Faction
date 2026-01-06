@@ -1,52 +1,52 @@
 {
   "platoon_templates": {
     "Exiles_Bot_Scout": {
-      "units": [{ "unit_types": "Bot & Scout", "max_count": 1 }]
+      "units": [{ "unit_types": "Bot & Scout & Custom6", "max_count": 1 }]
     },
-    "Land_Raid_Small": {
+    "Exiles_Land_Raid_Small": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 1,
           "max_count": 3,
           "squad": "Fast"
         }
       ]
     },
-    "Land_Raid_Medium": {
+    "Exiles_Land_Raid_Medium": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 4,
           "max_count": 9,
           "squad": "Fast"
         }
       ]
     },
-    "Land_Raid_Large": {
+    "Exiles_Land_Raid_Large": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 10,
           "max_count": 19,
           "squad": "Fast"
         }
       ]
     },
-    "Land_Raid_XLarge": {
+    "Exiles_Land_Raid_XLarge": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 20,
           "max_count": 39,
           "squad": "Fast"
         }
       ]
     },
-    "Land_Raid_Max": {
+    "Exiles_Land_Raid_Max": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 40,
           "max_count": -1,
           "squad": "Fast"

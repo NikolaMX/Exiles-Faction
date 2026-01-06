@@ -26,7 +26,7 @@
     },
     {
       "name": "Exiles - Land Raid Platoon Small",
-      "to_build": "Land_Raid_Small",
+      "to_build": "Exiles_Land_Raid_Small",
       "instance_count": 1,
       "priority": 109,
       "build_conditions": [
@@ -34,7 +34,7 @@
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -50,7 +50,7 @@
     },
     {
       "name": "Exiles - Land Raid Platoon Medium",
-      "to_build": "Land_Raid_Medium",
+      "to_build": "Exiles_Land_Raid_Medium",
       "instance_count": 1,
       "priority": 108,
       "build_conditions": [
@@ -58,7 +58,7 @@
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -74,7 +74,7 @@
     },
     {
       "name": "Exiles - Land Raid Platoon Large",
-      "to_build": "Land_Raid_Large",
+      "to_build": "Exiles_Land_Raid_Large",
       "instance_count": 1,
       "priority": 107,
       "build_conditions": [
@@ -82,7 +82,7 @@
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -98,7 +98,7 @@
     },
     {
       "name": "Exiles - Land Raid Platoon XLarge",
-      "to_build": "Land_Raid_XLarge",
+      "to_build": "Exiles_Land_Raid_XLarge",
       "instance_count": 1,
       "priority": 106,
       "build_conditions": [
@@ -106,7 +106,7 @@
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -122,7 +122,7 @@
     },
     {
       "name": "Exiles - Land Raid Platoon Max",
-      "to_build": "Land_Raid_Max",
+      "to_build": "Exiles_Land_Raid_Max",
       "instance_count": 1,
       "priority": 105,
       "build_conditions": [
@@ -130,7 +130,7 @@
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot - Heavy) | (Tank & Heavy & Basic)) & Mobile & Custom6 - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 40
           },
