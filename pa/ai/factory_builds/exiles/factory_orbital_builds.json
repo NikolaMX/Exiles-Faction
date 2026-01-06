@@ -104,6 +104,28 @@
       ]
     },
     {
+      "name": "Exiles - Probe - Other planet",
+      "to_build": "OrbitalProbe",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 200,
+      "builders": ["ExilesOrbitalLauncher", "ExilesOrbitalFactory"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "CanAffordPotentialDrain", "string0": "OrbitalProbe" },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          { "test_type": "OtherPlanetNeedsReconAssistance", "boolean": true }
+        ]
+      ]
+    },
+    {
       "name": "Exiles - Basic Radar Sattelite",
       "to_build": "ExilesBasicRadarSatellite",
       "instance_count": 1,
@@ -294,6 +316,108 @@
         [
           { "test_type": "DesireEnergy" },
           { "test_type": "CanAffordBuildDemand" }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Orbital Railgun",
+      "to_build": "OrbitalRailgun",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": ["ExilesOrbitalFactory"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 15
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Orbital Railgun - Threat",
+      "to_build": "OrbitalRailgun",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 205,
+      "builders": ["ExilesOrbitalFactory"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Orbital Battleship",
+      "to_build": "OrbitalBattleShip",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": ["ExilesOrbitalFactory"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "unit_type_string1": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 0.2
+          }
         ]
       ]
     },
