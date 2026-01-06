@@ -442,7 +442,7 @@
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicVehicleFactory"],
+      "builders": ["ExilesBasicVehicleFactory"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
