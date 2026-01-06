@@ -17,7 +17,7 @@
         "walk_speed": 3.5
     },
   "ai_metal_extractor_names": {
-    "basic": "ExilesIntermediateMetalExtractor",
+    "basic": "ExilesBasicMetalExtractor",
     "advanced": "ExilesAdvancedMetalExtractor"
   },
     "strategic_icon_priority": 0,
