@@ -235,7 +235,7 @@
       "spec_id": "/pa/units/land/t_chimera/t_chimera.json"
     },
     "ExilesFabberTower": {
-      "spec_id": "/pa/units/structures/fab_complex/fab_complex.json"
+      "spec_id": "/pa/units/structures/fab_complex/adv_fab_turret.json"
     }
   }
 }
