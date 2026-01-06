@@ -29,7 +29,10 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ],
         [
           {
@@ -55,7 +58,10 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ],
         [
           {
@@ -78,7 +84,10 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ],
         [
           {
@@ -105,7 +114,10 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ]
       ],
       "placement_rules": {
@@ -136,8 +148,8 @@
       }
     },
     {
-      "name": "Basic Land Defense Single - Mex",
-      "to_build": "BasicLandDefenseSingle",
+      "name": "Basic Land Defense - Mex",
+      "to_build": "ExilesBasicLandDefense",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
       "priority": 261,
@@ -254,7 +266,10 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ],
         [
           {
@@ -275,7 +290,10 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ],
         [
           {
@@ -285,7 +303,10 @@
           },
           { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ]
       ],
       "placement_rules": {
@@ -344,7 +365,10 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicAirDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicAirDefense"
+          }
         ]
       ],
       "placement_rules": {
@@ -360,162 +384,6 @@
           },
           {
             "unit_type_string": "Structure & Basic & AirDefense",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 75,
-            "count": 2
-          }
-        ]
-      }
-    },
-    {
-      "name": "Basic Land Defense Single",
-      "to_build": "BasicLandDefenseSingle",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "priority": 85,
-      "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesBasicFabber"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced",
-            "boolean": false
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
-          }
-        ],
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced",
-            "boolean": false
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & Basic & SurfaceDefense",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 50,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Basic Land Defense Single - Threat",
-      "to_build": "BasicLandDefenseSingle",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "priority": 262,
-      "base_sort": "FromPerimeter",
-      "builders": ["ExilesCommander"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1.0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced",
-            "boolean": false
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & Basic & SurfaceDefense",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -551,7 +419,10 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicLandDefense"
+          }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -572,7 +443,10 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicLandDefense"
+          }
         ]
       ],
       "placement_rules": {
@@ -602,7 +476,7 @@
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesBasicFabber"],
+      "builders": ["ExilesCommander", "AnyExilesBasicFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -630,7 +504,10 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicLandDefense" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicLandDefense"
+          }
         ]
       ],
       "placement_rules": {
@@ -690,7 +567,10 @@
             "compare0": ">=",
             "value1": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicArtillery" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicArtillery"
+          }
         ]
       ],
       "placement_rules": {
@@ -1233,7 +1113,10 @@
       "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1247,10 +1130,16 @@
             "compare0": ">=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1264,10 +1153,16 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1281,7 +1176,10 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ]
       ],
       "placement_rules": {
@@ -1316,7 +1214,10 @@
       "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1336,10 +1237,16 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           { "test_type": "HaveHadANukeEvent", "boolean": true },
           {
             "test_type": "UnitCountInBase",
@@ -1353,10 +1260,16 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -1376,10 +1289,16 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ],
         [
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
           { "test_type": "HaveHadANukeEvent", "boolean": true },
           {
             "test_type": "UnitCountInBase",
@@ -1393,7 +1312,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAntiNukeSilo" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
         ]
       ],
       "placement_rules": {
