@@ -258,7 +258,7 @@
       "name": "Land Scout - Intel",
       "to_build": "ExilesLandScout",
       "instance_count": 1,
-      "shared_instance_count": "ExilesLandScout",
+      "shared_instance_count": "LandScout",
       "priority": 98,
       "builders": ["ExilesBasicVehicleFactory"],
       "build_conditions": [
@@ -302,7 +302,7 @@
       "name": "Land Scout",
       "to_build": "ExilesLandScout",
       "instance_count": 1,
-      "shared_instance_count": "ExilesLandScout",
+      "shared_instance_count": "LandScout",
       "priority": 97,
       "builders": ["ExilesBasicVehicleFactory"],
       "build_conditions": [
@@ -345,7 +345,7 @@
       "name": "Point Defence Vehicle",
       "to_build": "ExilesBasicPointDefenceVehicle",
       "instance_count": 1,
-      "shared_instance_count": "ExilesLandScout",
+      "shared_instance_count": "LandScout",
       "priority": 97,
       "builders": ["ExilesBasicVehicleFactory"],
       "build_conditions": [

@@ -4,7 +4,7 @@
       "name": "Orbital Launcher",
       "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "ExilesOrbitalLauncher",
+      "shared_instance_count": "OrbitalLauncher",
       "priority": 485,
       "max_num_assisters": 3,
       "builders": [
@@ -62,7 +62,7 @@
       "name": "Orbital Launcher - Rush",
       "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "ExilesOrbitalLauncher",
+      "shared_instance_count": "OrbitalLauncher",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "priority": 486,
