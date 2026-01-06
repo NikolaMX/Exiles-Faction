@@ -244,13 +244,13 @@
     "ExilesSolarArray": {
       "spec_id": "/pa/units/orbital/solar_array/solar_array.json"
     },
-    "ExilesBasicRadarSattelite": {
+    "ExilesBasicRadarSatellite": {
       "spec_id": "/pa/units/orbital/radar_satellite/radar_satellite.json"
     },
     "ExilesOrbitalLander": {
       "spec_id": "/pa/units/orbital/orbital_lander/orbital_lander.json"
     },
-    "ExilesAdvancedRadarSattelite": {
+    "ExilesAdvancedRadarSatellite": {
       "spec_id": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json"
     },
     "ExilesNukeMissile": {
