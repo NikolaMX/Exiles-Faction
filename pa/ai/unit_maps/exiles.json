@@ -112,7 +112,7 @@
     "ExilesAdvancedOrbitalDefenceVehicle": {
       "spec_id": "/pa/units/land/shah/shah.json"
     },
-    "ExilesAirScout": { "spec_id": "/pa/units/air/scout/scout.json" },
+    "ExilesAirScout": { "spec_id": "/pa/units/air/scout/dragonfly.json" },
     "ExilesBasicFighter": {
       "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth.json"
     },
