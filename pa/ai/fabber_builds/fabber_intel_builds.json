@@ -136,7 +136,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 91,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -177,7 +177,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 247,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -224,7 +224,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 265,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -257,7 +257,7 @@
       "instance_count": 1,
       "shared_instance_count": "RadarJammer",
       "priority": 91,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -295,7 +295,7 @@
       "instance_count": 1,
       "shared_instance_count": "RadarJammer",
       "priority": 265,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },

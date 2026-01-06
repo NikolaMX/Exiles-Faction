@@ -7,7 +7,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 350,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -52,7 +52,7 @@
       "instance_count": 1,
       "shared_instance_count": "ExilesNukeSilo",
       "priority": 360,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -88,7 +88,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 505,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -130,7 +130,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 478,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -175,7 +175,7 @@
       "instance_count": 1,
       "shared_instance_count": "UnitCannon",
       "priority": 360,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -211,7 +211,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 505,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -252,7 +252,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 6,
       "priority": 360,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
@@ -306,7 +306,7 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 612,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "PlanetHasUseablePlanetWeapon", "boolean": true },

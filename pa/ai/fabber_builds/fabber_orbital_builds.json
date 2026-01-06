@@ -285,7 +285,7 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 612,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "EnemyPresenceOnPlanet", "boolean": false },
@@ -363,7 +363,6 @@
         "ExilesBasicVehicleFabber",
         "ExilesBasicAirFabber",
         "ExilesAdvancedBotFabber",
-        "SupportCommander",
         "ExilesAdvancedVehicleFabber",
         "ExilesAdvancedAirFabber"
       ],

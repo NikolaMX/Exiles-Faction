@@ -112,30 +112,6 @@
       ]
     },
     {
-      "name": "Support Commander",
-      "to_build": "SupportCommander",
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "priority": 199,
-      "builders": ["ExilesAdvancedBotFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "BaseThreatened", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "SupportCommander"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "SupportCommander",
-            "compare0": "<",
-            "value0": 5
-          }
-        ]
-      ]
-    },
-    {
       "name": "Nano Swarm",
       "to_build": "NanoSwarm",
       "instance_count": -1,

@@ -719,7 +719,7 @@
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -802,7 +802,7 @@
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -868,7 +868,7 @@
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -946,7 +946,7 @@
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -1230,7 +1230,7 @@
       "instance_count": 1,
       "shared_instance_count": "ExilesAntiNukeSilo",
       "priority": 380,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },
@@ -1313,7 +1313,7 @@
       "priority": 386,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordPotentialDrain", "string0": "ExilesAntiNukeSilo" },

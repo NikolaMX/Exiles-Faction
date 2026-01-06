@@ -11,8 +11,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -84,8 +83,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -169,8 +167,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -247,8 +244,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -330,8 +326,7 @@
       "max_num_assisters": 5,
       "builders": [
         "ExilesBasicBotFabber",
-        "ExilesAdvancedBotFabber",
-        "SupportCommander"
+        "ExilesAdvancedBotFabber"
       ],
       "build_conditions": [
         [
@@ -475,8 +470,7 @@
       "max_num_assisters": 5,
       "builders": [
         "ExilesBasicBotFabber",
-        "ExilesAdvancedBotFabber",
-        "SupportCommander"
+        "ExilesAdvancedBotFabber"
       ],
       "build_conditions": [
         [

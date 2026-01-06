@@ -383,7 +383,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 610,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "DesireMetal" },
@@ -414,7 +414,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 609,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -451,7 +451,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 609,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -490,7 +490,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 614,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "DesireMetal" },
@@ -514,7 +514,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 609,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -543,7 +543,7 @@
       "shared_instance_count": "AdvancedMetal",
       "priority": 2,
       "base_sort": "FromBuilder",
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -574,7 +574,7 @@
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
       "priority": 615,
-      "builders": ["AnyExilesAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "DesireEnergy" },
@@ -602,8 +602,7 @@
       "priority": 140,
       "builders": [
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -634,8 +633,7 @@
       "priority": 140,
       "builders": [
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [

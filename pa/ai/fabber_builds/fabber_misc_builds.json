@@ -8,7 +8,6 @@
         "ExilesCommander",
         "AnyExilesBasicFabber",
         "AnyExilesAdvancedFabber",
-        "SupportCommander",
         "ExilesOrbitalFabber"
       ],
       "build_conditions": [
@@ -40,8 +39,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander",
+        "AnyExilesAdvancedFabber"
         "ExilesOrbitalFabber"
       ],
       "build_conditions": [
@@ -150,8 +148,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander",
+        "AnyExilesAdvancedFabber"
         "ExilesOrbitalFabber"
       ],
       "build_conditions": [
@@ -192,8 +189,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander",
+        "AnyExilesAdvancedFabber"
         "ExilesOrbitalFabber"
       ],
       "build_conditions": [
@@ -228,8 +224,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander",
+        "AnyExilesAdvancedFabber"
         "ExilesOrbitalFabber"
       ],
       "build_conditions": [
@@ -263,8 +258,7 @@
       "builders": [
         "ExilesBasicBotFabber",
         "ExilesBasicVehicleFabber",
-        "ExilesAdvancedBotFabber",
-        "SupportCommander",
+        "ExilesAdvancedBotFabber"
         "ExilesAdvancedVehicleFabber"
       ],
       "build_conditions": [
