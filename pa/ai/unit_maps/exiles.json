@@ -6,10 +6,10 @@
       "unit_types": "Factory & Advanced & Custom6"
     },
     "AnyExilesBasicFabber": {
-      "unit_types": "(Fabber & (Basic | Debug)) & Custom6 - Orbital"
+      "unit_types": "(Fabber & (Basic | Debug)) & Custom6 - Orbital - Structure"
     },
     "AnyExilesAdvancedFabber": {
-      "unit_types": "(Fabber & (Advanced | Debug)) & Custom6 - Orbital"
+      "unit_types": "(Fabber & (Advanced | Debug)) & Custom6 - Orbital - Structure"
     },
     "ExilesBasicBotFabber": {
       "spec_id": "/pa/units/land/t_bot_fab/t_bot_fab.json"
