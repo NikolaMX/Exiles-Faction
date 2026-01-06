@@ -165,7 +165,7 @@
       "spec_id": "/pa/units/air/t_air_fac/t_air_fac.json"
     },
     "ExilesAdvancedAirFactory": {
-      "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json"
+      "spec_id": "/pa/units/air/t_air_fac_adv/t_air_fac_adv.json"
     },
     "ExilesBasicNavalFactory": {
       "spec_id": "/pa/units/sea/t_naval_fac/t_naval_fac.json"
