@@ -1,0 +1,462 @@
+{
+  "build_list": [
+    {
+      "name": "Exiles - Anti Ballistics Tower",
+      "to_build": "ExilesAntiBallistics",
+      "instance_count": 1,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyMLAAdvancedFabber", "MLASupportCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "((Mobile & (Tactical | Artillery)) | (Structure & Artillery)) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiBallistics"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "((Mobile & (Tactical | Artillery)) | (Structure & Artillery)) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiBallistics"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exiles - Anti Ballistics Tower - Threat",
+      "to_build": "ExilesAntiBallistics",
+      "instance_count": 1,
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyMLAAdvancedFabber", "MLASupportCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "((Mobile & (Tactical | Artillery)) | (Structure & Artillery)) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiBallistics"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Advanced & Air & Tactical",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiBallistics"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Wall",
+      "to_build": "ExilesWall",
+      "instance_count": 1,
+      "priority": 0,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesWall" }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Defense - AirDefense",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 8,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Wall",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 20,
+            "count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exiles - Anti Nuke Silo",
+      "to_build": "ExilesAntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 380,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 150,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exiles - Anti Nuke Silo - Rush",
+      "to_build": "ExilesAntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 386,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          { "test_type": "HaveHadANukeEvent", "boolean": true },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAntiNukeSilo"
+          },
+          { "test_type": "HaveHadANukeEvent", "boolean": true },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 150,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}
