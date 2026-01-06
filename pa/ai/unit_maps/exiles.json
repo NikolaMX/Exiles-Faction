@@ -204,7 +204,7 @@
       "spec_id": "/pa/units/land/anti_ballistics/anti_ballistics.json"
     },
     "ExilesLongRangeArtillery": {
-      "spec_id": "/pa/units/addons/r_artillery/r_artillery.json"
+      "spec_id": "/pa/units/addon/r_artillery/r_artillery.json"
     },
     "ExilesNukeSilo": {
       "spec_id": "/pa/units/land/missile_facility/missile_facility.json"
@@ -213,16 +213,16 @@
       "spec_id": "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json"
     },
     "ExilesPlanetEngine": {
-      "spec_id": "/pa/units/addons/t_delta_v_engine/t_delta_v_engine.json"
+      "spec_id": "/pa/units/addon/t_delta_v_engine/t_delta_v_engine.json"
     },
     "ExilesControlModule": {
-      "spec_id": "/pa/units/addons/t_control_module/t_control_module.json"
+      "spec_id": "/pa/units/addon/t_control_module/t_control_module.json"
     },
     "ExilesTeleporter": {
-      "spec_id": "/pa/units/addons/r_teleporter/r_teleporter.json"
+      "spec_id": "/pa/units/addon/r_teleporter/r_teleporter.json"
     },
     "ExilesWall": { "spec_id": "/pa/units/land/t_wall/t_wall.json" },
-    "ExilesBasicRadar": { "spec_id": "/pa/units/addons/r_radar/r_radar.json" },
+    "ExilesBasicRadar": { "spec_id": "/pa/units/addon/r_radar/r_radar.json" },
     "ExilesAdvancedRadar": { "spec_id": "/pa/units/land/seizmic/seizmic.json" },
     "ExilesNukeMissile": {
       "spec_id": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
