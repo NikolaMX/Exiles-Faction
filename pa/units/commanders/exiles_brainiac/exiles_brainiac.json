@@ -81,6 +81,14 @@
             "cost": 20,
             "type_data": [
                 {
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "simple"
+                },
+                {
                     "move_type": "hover",
                     "stamp_type": "simple"
                 }

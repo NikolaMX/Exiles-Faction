@@ -124,7 +124,7 @@
   },
   "tools": [
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv_build_arm.json"
     }
   ],
