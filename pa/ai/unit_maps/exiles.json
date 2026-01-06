@@ -41,11 +41,14 @@
     "ExilesBasicMetalExtractor": {
       "spec_id": "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json"
     },
+    "ExilesTweakedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_01/t_metal_extractor_01.json"
+    },
+    "ExilesImprovedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
+    },
     "ExilesBasicEnergyGenerator": {
       "spec_id": "/pa/units/land/pylon/pylon.json"
-    },
-    "ExilesIntermediateMetalExtractor": {
-      "spec_id": "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
     },
     "ExilesAdvancedMetalExtractor": {
       "spec_id": "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json"
