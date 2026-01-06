@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Orbital Radar",
+      "name": "Exiles - Orbital Radar",
       "to_build": "Orbital_Radar",
       "instance_count": -1,
       "priority": 100,
@@ -19,7 +19,7 @@
       "task_type": "OrbitalRecon"
     },
     {
-      "name": "Orbital Radar Transfer To Planet",
+      "name": "Exiles - Orbital Radar Transfer To Planet",
       "to_build": "Orbital_Radar",
       "instance_count": -1,
       "priority": 101,
@@ -38,7 +38,7 @@
       "task_type": "TransferReconToPlanet"
     },
     {
-      "name": "Orbital Fighter Attack Platoon",
+      "name": "Exiles - Orbital Fighter Attack Platoon",
       "to_build": "Orbital_Fighter_Attack",
       "instance_count": -1,
       "priority": 100,
@@ -57,7 +57,7 @@
       "task_type": "OrbitalFighterAttack"
     },
     {
-      "name": "Orbital Titan Attack",
+      "name": "Exiles - Orbital Titan Attack",
       "to_build": "Orbital_Titan_Attack",
       "instance_count": -1,
       "priority": 101,
@@ -86,7 +86,7 @@
       "task_type": "OrbitalLaserAttack"
     },
     {
-      "name": "Orbital Death Laser Attack Platoon",
+      "name": "Exiles - Orbital Death Laser Attack Platoon",
       "to_build": "Orbital_Laser_Attack",
       "instance_count": -1,
       "priority": 100,
@@ -105,7 +105,7 @@
       "task_type": "OrbitalLaserAttack"
     },
     {
-      "name": "Orbital Transfer To Planet",
+      "name": "Exiles - Orbital Transfer To Planet",
       "to_build": "Orbital_Offense_Transfer",
       "instance_count": 1,
       "priority": 99,

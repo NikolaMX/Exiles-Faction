@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Bot Factory",
+      "name": "Exiles - Basic Bot Factory",
       "to_build": "ExilesBasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -22,7 +22,10 @@
             "string0": "ExilesBasicBotFactory"
           },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ],
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -32,7 +35,10 @@
             "string0": "ExilesBasicBotFactory"
           },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ],
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -48,7 +54,10 @@
             "string0": "ExilesBasicBotFactory"
           },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ],
         [
           { "test_type": "UnableToExpand", "boolean": true },
@@ -59,7 +68,10 @@
             "compare0": "<=",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ]
       ],
       "placement_rules": {
@@ -73,7 +85,7 @@
       }
     },
     {
-      "name": "Basic Vehicle Factory",
+      "name": "Exiles - Basic Vehicle Factory",
       "to_build": "ExilesBasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -157,7 +169,7 @@
       }
     },
     {
-      "name": "Basic Bot Factory - Wasting",
+      "name": "Exiles - Basic Bot Factory - Wasting",
       "to_build": "ExilesBasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -194,7 +206,10 @@
             "string0": "ExilesBasicBotFactory"
           },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ],
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -220,7 +235,10 @@
             "string0": "ExilesBasicBotFactory"
           },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicBotFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
         ]
       ],
       "placement_rules": {
@@ -234,7 +252,7 @@
       }
     },
     {
-      "name": "Basic Vehicle Factory - Wasting",
+      "name": "Exiles - Basic Vehicle Factory - Wasting",
       "to_build": "ExilesBasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -317,17 +335,14 @@
       }
     },
     {
-      "name": "Advanced Bot Factory",
+      "name": "Exiles - Advanced Bot Factory",
       "to_build": "ExilesAdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": [
-        "ExilesBasicBotFabber",
-        "ExilesAdvancedBotFabber"
-      ],
+      "builders": ["ExilesBasicBotFabber", "ExilesAdvancedBotFabber"],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -390,7 +405,7 @@
       }
     },
     {
-      "name": "Advanced Vehicle Factory",
+      "name": "Exiles - Advanced Vehicle Factory",
       "to_build": "ExilesAdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -461,17 +476,14 @@
       }
     },
     {
-      "name": "Advanced Bot Factory - Wasting",
+      "name": "Exiles - Advanced Bot Factory - Wasting",
       "to_build": "ExilesAdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 525,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": [
-        "ExilesBasicBotFabber",
-        "ExilesAdvancedBotFabber"
-      ],
+      "builders": ["ExilesBasicBotFabber", "ExilesAdvancedBotFabber"],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -525,7 +537,7 @@
       }
     },
     {
-      "name": "Advanced Vehicle Factory - Wasting",
+      "name": "Exiles - Advanced Vehicle Factory - Wasting",
       "to_build": "ExilesAdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",

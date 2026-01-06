@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Vehicle Scout Platoon",
+      "name": "Exiles - Vehicle Scout Platoon",
       "to_build": "Vehicle_Scout",
       "instance_count": 5,
       "shared_instance_count": "VehicleScout",
@@ -25,7 +25,7 @@
       "task_type": "Scout"
     },
     {
-      "name": "Bot Scout Platoon",
+      "name": "Exiles - Bot Scout Platoon",
       "to_build": "Bot_Scout",
       "instance_count": 5,
       "shared_instance_count": "BotScout",
@@ -49,7 +49,7 @@
       "task_type": "Scout"
     },
     {
-      "name": "Land Transfer To Planet - Alone",
+      "name": "Exiles - Land Transfer To Planet - Alone",
       "to_build": "Land_Attack_Max_Transfer",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
@@ -78,7 +78,7 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "Land Transfer To Planet",
+      "name": "Exiles - Land Transfer To Planet",
       "to_build": "Land_Attack_XLarge_Transfer",
       "instance_count": 1,
       "shared_instance_count": "LandTransferToPlanet",
@@ -107,7 +107,7 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "Land Raid Platoon Small",
+      "name": "Exiles - Land Raid Platoon Small",
       "to_build": "Land_Raid_Small",
       "instance_count": 1,
       "priority": 109,
@@ -131,7 +131,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Raid Platoon Medium",
+      "name": "Exiles - Land Raid Platoon Medium",
       "to_build": "Land_Raid_Medium",
       "instance_count": 1,
       "priority": 108,
@@ -160,7 +160,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Raid Platoon Large",
+      "name": "Exiles - Land Raid Platoon Large",
       "to_build": "Land_Raid_Large",
       "instance_count": 1,
       "priority": 107,
@@ -189,7 +189,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Raid Platoon XLarge",
+      "name": "Exiles - Land Raid Platoon XLarge",
       "to_build": "Land_Raid_XLarge",
       "instance_count": 1,
       "priority": 106,
@@ -218,7 +218,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Raid Platoon Max",
+      "name": "Exiles - Land Raid Platoon Max",
       "to_build": "Land_Raid_Max",
       "instance_count": 1,
       "priority": 105,
@@ -247,7 +247,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Swarm Raid Platoon Small",
+      "name": "Exiles - Swarm Raid Platoon Small",
       "to_build": "Swarm_Raid_Small",
       "instance_count": 1,
       "priority": 109,
@@ -276,7 +276,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Swarm Raid Platoon Medium",
+      "name": "Exiles - Swarm Raid Platoon Medium",
       "to_build": "Swarm_Raid_Medium",
       "instance_count": 1,
       "priority": 108,
@@ -305,7 +305,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Swarm Raid Platoon Large",
+      "name": "Exiles - Swarm Raid Platoon Large",
       "to_build": "Swarm_Raid_Large",
       "instance_count": 1,
       "priority": 107,
@@ -334,7 +334,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Swarm Raid Platoon XLarge",
+      "name": "Exiles - Swarm Raid Platoon XLarge",
       "to_build": "Swarm_Raid_XLarge",
       "instance_count": 1,
       "priority": 106,
@@ -363,7 +363,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Swarm Raid Platoon Max",
+      "name": "Exiles - Swarm Raid Platoon Max",
       "to_build": "Swarm_Raid_Max",
       "instance_count": 1,
       "priority": 105,
@@ -392,7 +392,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Boom Raid Platoon Small",
+      "name": "Exiles - Boom Raid Platoon Small",
       "to_build": "Boom_Raid_Small",
       "instance_count": 1,
       "priority": 109,
@@ -421,7 +421,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Boom Raid Platoon Medium",
+      "name": "Exiles - Boom Raid Platoon Medium",
       "to_build": "Boom_Raid_Medium",
       "instance_count": 1,
       "priority": 108,
@@ -450,7 +450,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Boom Raid Platoon Large",
+      "name": "Exiles - Boom Raid Platoon Large",
       "to_build": "Boom_Raid_Large",
       "instance_count": 1,
       "priority": 107,
@@ -479,7 +479,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Boom Raid Platoon XLarge",
+      "name": "Exiles - Boom Raid Platoon XLarge",
       "to_build": "Boom_Raid_XLarge",
       "instance_count": 1,
       "priority": 106,
@@ -508,7 +508,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Boom Raid Platoon Max",
+      "name": "Exiles - Boom Raid Platoon Max",
       "to_build": "Boom_Raid_Max",
       "instance_count": 1,
       "priority": 105,
@@ -537,7 +537,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Platoon Small",
+      "name": "Exiles - Land Attack Platoon Small",
       "to_build": "Land_Attack_Small",
       "instance_count": -1,
       "priority": 104,
@@ -561,7 +561,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Platoon Medium",
+      "name": "Exiles - Land Attack Platoon Medium",
       "to_build": "Land_Attack_Medium",
       "instance_count": -1,
       "priority": 103,
@@ -590,7 +590,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Platoon Large",
+      "name": "Exiles - Land Attack Platoon Large",
       "to_build": "Land_Attack_Large",
       "instance_count": -1,
       "priority": 102,
@@ -619,7 +619,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Platoon XLarge",
+      "name": "Exiles - Land Attack Platoon XLarge",
       "to_build": "Land_Attack_XLarge",
       "instance_count": -1,
       "priority": 101,
@@ -648,7 +648,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Platoon Max",
+      "name": "Exiles - Land Attack Platoon Max",
       "to_build": "Land_Attack_Max",
       "instance_count": -1,
       "priority": 100,
@@ -677,7 +677,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Land Attack Titan",
+      "name": "Exiles - Land Attack Titan",
       "to_build": "Land_Attack_Titan",
       "instance_count": -1,
       "priority": 110,

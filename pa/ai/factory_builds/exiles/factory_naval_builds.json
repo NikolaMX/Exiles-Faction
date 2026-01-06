@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Naval Fabber",
+      "name": "Exiles - Basic Naval Fabber",
       "to_build": "ExilesBasicNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "ExilesDestroyer",
+      "name": "Exiles - Destroyer",
       "to_build": "ExilesDestroyer",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "name": "Attack Sub",
+      "name": "Exiles - Attack Sub",
       "to_build": "ExilesMeleeSub",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "name": "ExilesFrigate",
+      "name": "Exiles - Frigate",
       "to_build": "ExilesFrigate",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "name": "Advanced Naval Fabber",
+      "name": "Exiles - Advanced Naval Fabber",
       "to_build": "ExilesAdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "name": "ExilesBattleship",
+      "name": "Exiles - Battleship",
       "to_build": "ExilesBattleship",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "name": "ExilesCruiser",
+      "name": "Exiles - Cruiser",
       "to_build": "ExilesCruiser",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "name": "Missile Sub",
+      "name": "Exiles - Missile Sub",
       "to_build": "ExilesTorpedoSub",
       "instance_count": -1,
       "max_num_assisters": 15,

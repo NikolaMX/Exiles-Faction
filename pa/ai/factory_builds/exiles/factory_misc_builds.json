@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Nuke Missile",
+      "name": "Exiles - Nuke Missile",
       "to_build": "ExilesNukeMissile",
       "instance_count": -1,
       "priority": 151,
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "name": "Nuke Missile - No Antis",
+      "name": "Exiles - Nuke Missile - No Antis",
       "to_build": "ExilesNukeMissile",
       "instance_count": 2,
       "min_num_assisters": 3,
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "name": "Anti Nuke Missile",
+      "name": "Exiles - Anti Nuke Missile",
       "to_build": "ExilesAntiNukeMissile",
       "instance_count": -1,
       "priority": 151,
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "name": "Anti Nuke Missile - Rush",
+      "name": "Exiles - Anti Nuke Missile - Rush",
       "to_build": "ExilesAntiNukeMissile",
       "instance_count": -1,
       "min_num_assisters": 5,

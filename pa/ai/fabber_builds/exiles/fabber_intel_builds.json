@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Radar",
+      "name": "Exiles - Basic Radar",
       "to_build": "ExilesBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
@@ -22,7 +22,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesBasicRadar" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicRadar"
+          },
           {
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Basic - RadarJammer",
@@ -45,7 +48,7 @@
       }
     },
     {
-      "name": "Basic Radar - Need for Ranged",
+      "name": "Exiles - Basic Radar - Need for Ranged",
       "to_build": "ExilesBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
@@ -72,7 +75,10 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesBasicRadar" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicRadar"
+          },
           {
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Basic - RadarJammer",
@@ -95,7 +101,7 @@
       }
     },
     {
-      "name": "Basic Radar - Have none",
+      "name": "Exiles - Basic Radar - Have none",
       "to_build": "ExilesBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
@@ -116,7 +122,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesBasicRadar" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicRadar"
+          },
           { "test_type": "CanFindPlaceToBuild", "string0": "ExilesBasicRadar" }
         ]
       ],
@@ -131,7 +140,7 @@
       }
     },
     {
-      "name": "Advanced Radar",
+      "name": "Exiles - Advanced Radar",
       "to_build": "ExilesAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
@@ -158,7 +167,10 @@
             "compare0": "<",
             "value1": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAdvancedRadar" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedRadar"
+          }
         ]
       ],
       "placement_rules": {
@@ -172,7 +184,7 @@
       }
     },
     {
-      "name": "Advanced Radar - Need for Ranged",
+      "name": "Exiles - Advanced Radar - Need for Ranged",
       "to_build": "ExilesAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
@@ -205,7 +217,10 @@
             "compare0": "<",
             "value1": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAdvancedRadar" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedRadar"
+          }
         ]
       ],
       "placement_rules": {
@@ -219,7 +234,7 @@
       }
     },
     {
-      "name": "Advanced Radar - Have none",
+      "name": "Exiles - Advanced Radar - Have none",
       "to_build": "ExilesAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
@@ -238,7 +253,10 @@
             "test_type": "CanAffordPotentialDrain",
             "string0": "ExilesAdvancedRadar"
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesAdvancedRadar" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedRadar"
+          }
         ]
       ],
       "placement_rules": {
@@ -252,7 +270,7 @@
       }
     },
     {
-      "name": "Radar Jammer",
+      "name": "Exiles - Radar Jammer",
       "to_build": "RadarJammer",
       "instance_count": 1,
       "shared_instance_count": "RadarJammer",
@@ -290,7 +308,7 @@
       }
     },
     {
-      "name": "Radar Jammer - Have none",
+      "name": "Exiles - Radar Jammer - Have none",
       "to_build": "RadarJammer",
       "instance_count": 1,
       "shared_instance_count": "RadarJammer",

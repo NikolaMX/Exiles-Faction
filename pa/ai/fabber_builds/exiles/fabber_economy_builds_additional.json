@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Metal Extractor - Desire - Area - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Desire - Area - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -33,7 +33,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area 1 - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Expand - Area 1 - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -98,7 +98,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area Alone - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Expand - Area Alone - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
@@ -165,7 +165,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri - Area - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Expand Low Pri - Area - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
@@ -202,7 +202,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Desire - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Desire - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -227,7 +227,7 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand 1 - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Expand 1 - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -289,7 +289,7 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri - Orbital",
+      "name": "Exiles - Basic Metal Extractor - Expand Low Pri - Orbital",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",

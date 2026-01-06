@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Tesla Bot",
+      "name": "Exiles - Tesla Bot",
       "to_build": "ExilesTeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "name": "Hover Tank",
+      "name": "Exiles - Hover Tank",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -112,7 +112,7 @@
       ]
     },
     {
-      "name": "Nano Swarm",
+      "name": "Exiles - Nano Swarm",
       "to_build": "NanoSwarm",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "Advanced AA Bot",
+      "name": "Exiles - Advanced AA Bot",
       "to_build": "ExilesAdvancedAABot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -242,7 +242,7 @@
       ]
     },
     {
-      "name": "Advanced AA Vehicle",
+      "name": "Exiles - Advanced AA Vehicle",
       "to_build": "ExilesAdvancedAAVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,

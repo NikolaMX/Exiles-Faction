@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "TML",
+      "name": "Exiles - TML",
       "to_build": "TML",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -47,7 +47,7 @@
       }
     },
     {
-      "name": "Nuke Silo",
+      "name": "Exiles - Nuke Silo",
       "to_build": "ExilesNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -62,7 +62,10 @@
             "string0": "Tutorial",
             "boolean": false
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Nuke",
@@ -81,7 +84,7 @@
       "placement_rules": { "buffer": 2 }
     },
     {
-      "name": "Nuke Silo - Alone",
+      "name": "Exiles - Nuke Silo - Alone",
       "to_build": "ExilesNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -98,7 +101,10 @@
             "string0": "Tutorial",
             "boolean": false
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Nuke",
@@ -123,7 +129,7 @@
       "placement_rules": { "buffer": 2 }
     },
     {
-      "name": "Nuke Silo - No Antis",
+      "name": "Exiles - Nuke Silo - No Antis",
       "to_build": "ExilesNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -151,7 +157,10 @@
             "boolean": false
           },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanAffordPotentialDrain", "string0": "ExilesNukeSilo" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Economy",
@@ -170,7 +179,7 @@
       "placement_rules": { "buffer": 2 }
     },
     {
-      "name": "Unit Cannon",
+      "name": "Exiles - Unit Cannon",
       "to_build": "UnitCannon",
       "instance_count": 1,
       "shared_instance_count": "UnitCannon",
@@ -204,7 +213,7 @@
       "placement_rules": { "buffer": 2 }
     },
     {
-      "name": "Unit Cannon - Alone",
+      "name": "Exiles - Unit Cannon - Alone",
       "to_build": "UnitCannon",
       "instance_count": 1,
       "shared_instance_count": "UnitCannon",
@@ -246,7 +255,7 @@
       "placement_rules": { "buffer": 2 }
     },
     {
-      "name": "Long Range Artillery",
+      "name": "Exiles - Long Range Artillery",
       "to_build": "ExilesLongRangeArtillery",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -300,7 +309,7 @@
       }
     },
     {
-      "name": "Control Module",
+      "name": "Exiles - Control Module",
       "to_build": "ExilesControlModule",
       "instance_count": 1,
       "min_num_assisters": 8,

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Metal Extractor - Desire - Area",
+      "name": "Exiles - Basic Metal Extractor - Desire - Area",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -32,7 +32,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area 1",
+      "name": "Exiles - Basic Metal Extractor - Expand - Area 1",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -95,7 +95,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area Alone",
+      "name": "Exiles - Basic Metal Extractor - Expand - Area Alone",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
@@ -160,7 +160,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri - Area",
+      "name": "Exiles - Basic Metal Extractor - Expand Low Pri - Area",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
@@ -196,7 +196,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Desire",
+      "name": "Exiles - Basic Metal Extractor - Desire",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -220,7 +220,7 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand 1",
+      "name": "Exiles - Basic Metal Extractor - Expand 1",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
@@ -280,7 +280,7 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri",
+      "name": "Exiles - Basic Metal Extractor - Expand Low Pri",
       "to_build": "ExilesBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
@@ -309,7 +309,7 @@
       }
     },
     {
-      "name": "Basic Energy Generator - Desire",
+      "name": "Exiles - Basic Energy Generator - Desire",
       "to_build": "ExilesBasicEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -375,7 +375,7 @@
       }
     },
     {
-      "name": "Advanced Metal Extractor - Desire - Area",
+      "name": "Exiles - Advanced Metal Extractor - Desire - Area",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -408,7 +408,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Advanced Metal Extractor - Expand - Area",
+      "name": "Exiles - Advanced Metal Extractor - Expand - Area",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
@@ -445,7 +445,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Advanced Metal Extractor - Expand - Area Alone",
+      "name": "Exiles - Advanced Metal Extractor - Expand - Area Alone",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "AdvancedMetal",
@@ -482,7 +482,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Advanced Metal Extractor - Desire",
+      "name": "Exiles - Advanced Metal Extractor - Desire",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -508,7 +508,7 @@
       }
     },
     {
-      "name": "Advanced Metal Extractor - Expand",
+      "name": "Exiles - Advanced Metal Extractor - Expand",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
@@ -537,7 +537,7 @@
       }
     },
     {
-      "name": "Advanced Metal Extractor - Expand 2",
+      "name": "Exiles - Advanced Metal Extractor - Expand 2",
       "to_build": "ExilesAdvancedMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "AdvancedMetal",
@@ -566,7 +566,7 @@
       }
     },
     {
-      "name": "Advanced Energy Generator - Desire",
+      "name": "Exiles - Advanced Energy Generator - Desire",
       "to_build": "ExilesAdvancedEnergyGenerator",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -596,14 +596,11 @@
       }
     },
     {
-      "name": "Energy Storage",
+      "name": "Exiles - Energy Storage",
       "to_build": "ExilesEnergyStorage",
       "instance_count": 1,
       "priority": 140,
-      "builders": [
-        "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber"
-      ],
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -612,7 +609,10 @@
             "value0": 5
           },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesEnergyStorage" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesEnergyStorage"
+          }
         ]
       ],
       "placement_rules": {
@@ -627,14 +627,11 @@
       }
     },
     {
-      "name": "Metal Storage",
+      "name": "Exiles - Metal Storage",
       "to_build": "ExilesMetalStorage",
       "instance_count": 1,
       "priority": 140,
-      "builders": [
-        "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber"
-      ],
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -643,7 +640,10 @@
             "value0": 6
           },
           { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesMetalStorage" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesMetalStorage"
+          }
         ]
       ],
       "placement_rules": {

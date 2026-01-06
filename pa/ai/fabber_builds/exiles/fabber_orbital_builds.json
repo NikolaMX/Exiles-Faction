@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Orbital Launcher",
+      "name": "Exiles - Orbital Launcher",
       "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -32,7 +32,10 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalLauncher"
+          }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -53,13 +56,16 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalLauncher"
+          }
         ]
       ],
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Orbital Launcher - Rush",
+      "name": "Exiles - Orbital Launcher - Rush",
       "to_build": "ExilesOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -98,7 +104,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalLauncher"
+          }
         ],
         [
           { "test_type": "UnableToExpand", "boolean": true },
@@ -127,7 +136,10 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalLauncher"
+          }
         ],
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
@@ -156,13 +168,16 @@
             "compare0": "<",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalLauncher" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalLauncher"
+          }
         ]
       ],
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Orbital Factory",
+      "name": "Exiles - Orbital Factory",
       "to_build": "ExilesOrbitalFactory",
       "instance_count": 1,
       "priority": 485,
@@ -187,13 +202,16 @@
             "compare0": "<=",
             "value0": 3
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalFactory" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalFactory"
+          }
         ]
       ],
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Defense Satellite",
+      "name": "Exiles - Defense Satellite",
       "to_build": "ExilesDefenseSatellite",
       "instance_count": 1,
       "priority": 379,
@@ -218,7 +236,10 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesDefenseSatellite" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesDefenseSatellite"
+          }
         ],
         [
           { "test_type": "PlanetIsGasGiant", "boolean": true },
@@ -240,7 +261,10 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesDefenseSatellite" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesDefenseSatellite"
+          }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -261,7 +285,10 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesDefenseSatellite" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesDefenseSatellite"
+          }
         ]
       ],
       "placement_rules": {
@@ -279,7 +306,7 @@
       }
     },
     {
-      "name": "Delta V Engine",
+      "name": "Exiles - Delta V Engine",
       "to_build": "ExilesPlanetEngine",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -313,13 +340,16 @@
             "boolean": true,
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesPlanetEngine" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesPlanetEngine"
+          }
         ]
       ],
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Orbital Mining Platform",
+      "name": "Exiles - Orbital Mining Platform",
       "to_build": "ExilesOrbitalExtractor",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -333,11 +363,17 @@
             "compare0": "<",
             "value0": 1.0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalExtractor" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalExtractor"
+          }
         ],
         [
           { "test_type": "DesireMetal" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalExtractor" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalExtractor"
+          }
         ],
         [
           {
@@ -345,17 +381,23 @@
             "compare0": "<",
             "value0": 1.0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalExtractor" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalExtractor"
+          }
         ],
         [
           { "test_type": "DesireEnergy" },
-          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalExtractor" }
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesOrbitalExtractor"
+          }
         ]
       ],
       "placement_rules": { "buffer": 15 }
     },
     {
-      "name": "Move Fabber To Planet",
+      "name": "Exiles - Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": [
@@ -386,7 +428,7 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Move Orbital Fabber To Planet",
+      "name": "Exiles - Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": ["ExilesOrbitalFabber"],
@@ -404,7 +446,7 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Move Orbital Fabber To Safe Planet",
+      "name": "Exiles - Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": ["ExilesOrbitalFabber"],

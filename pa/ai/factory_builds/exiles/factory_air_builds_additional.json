@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Advanced Air Fighter",
+      "name": "Exiles - Advanced Air Fighter",
       "to_build": "ExilesAdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "name": "Advanced Strafer",
+      "name": "Exiles - Advanced Strafer",
       "to_build": "Strafer",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "name": "Solar Drone",
+      "name": "Exiles - Solar Drone",
       "to_build": "SolarDrone",
       "instance_count": 1,
       "max_num_assisters": 15,

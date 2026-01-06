@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Advanced Air Bomber",
+      "name": "Exiles - Advanced Air Bomber",
       "to_build": "ExilesHeavyBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "Support Platform",
+      "name": "Exiles - Support Platform",
       "to_build": "SupportPlatform",
       "instance_count": 1,
       "max_num_assisters": 10,

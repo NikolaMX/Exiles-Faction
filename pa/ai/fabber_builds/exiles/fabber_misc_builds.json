@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Fabber Assist",
+      "name": "Exiles - Fabber Assist",
       "instance_count": -1,
       "priority": 1,
       "builders": [
@@ -29,7 +29,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Teleporter - Need Land",
+      "name": "Exiles - Teleporter - Need Land",
       "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "name": "Teleporter - Need Fabber",
+      "name": "Exiles - Teleporter - Need Fabber",
       "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
@@ -138,7 +138,7 @@
       }
     },
     {
-      "name": "Teleporter - Other Planet Needs Fabber",
+      "name": "Exiles - Teleporter - Other Planet Needs Fabber",
       "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
@@ -181,7 +181,7 @@
       }
     },
     {
-      "name": "ExilesTeleporter",
+      "name": "Exiles - Teleporter",
       "to_build": "Teleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
@@ -216,7 +216,7 @@
       }
     },
     {
-      "name": "Teleporter - Not Alone",
+      "name": "Exiles - Teleporter - Not Alone",
       "to_build": "ExilesTeleporter",
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
@@ -252,7 +252,7 @@
       }
     },
     {
-      "name": "Teleport Fabber To Planet",
+      "name": "Exiles - Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
       "builders": [

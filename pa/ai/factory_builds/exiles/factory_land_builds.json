@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Bot Fabber",
+      "name": "Exiles - Basic Bot Fabber",
       "to_build": "ExilesBasicBotFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "name": "Basic Vehicle Fabber",
+      "name": "Exiles - Basic Vehicle Fabber",
       "to_build": "ExilesBasicVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "name": "Basic Assault Bot",
+      "name": "Exiles - Basic Assault Bot",
       "to_build": "ExilesBasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "name": "Basic Artillery Bot",
+      "name": "Exiles - Basic Artillery Bot",
       "to_build": "ExilesBasicArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "name": "Boom Bot",
+      "name": "Exiles - Boom Bot",
       "to_build": "BoomBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "name": "Basic Combat Fabber Bot",
+      "name": "Exiles - Basic Combat Fabber Bot",
       "to_build": "ExilesBasicBotCombatFabber",
       "instance_count": 1,
       "priority": 97,
@@ -255,7 +255,7 @@
       ]
     },
     {
-      "name": "Land Scout - Intel",
+      "name": "Exiles - Land Scout - Intel",
       "to_build": "ExilesLandScout",
       "instance_count": 1,
       "shared_instance_count": "LandScout",
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "name": "Land Scout",
+      "name": "Exiles - Land Scout",
       "to_build": "ExilesLandScout",
       "instance_count": 1,
       "shared_instance_count": "LandScout",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "name": "Point Defence Vehicle",
+      "name": "Exiles - Point Defence Vehicle",
       "to_build": "ExilesBasicPointDefenceVehicle",
       "instance_count": 1,
       "shared_instance_count": "LandScout",
@@ -385,7 +385,7 @@
       ]
     },
     {
-      "name": "Light Laser Tank",
+      "name": "Exiles - Light Laser Tank",
       "to_build": "ExilesLightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -414,7 +414,7 @@
       ]
     },
     {
-      "name": "Basic Armor Tank",
+      "name": "Exiles - Basic Armor Tank",
       "to_build": "ExilesBasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "name": "Basic AA Vehicle",
+      "name": "Exiles - Basic AA Vehicle",
       "to_build": "ExilesBasicAAVehicle",
       "instance_count": 1,
       "priority": 97,
@@ -538,7 +538,7 @@
       ]
     },
     {
-      "name": "Advanced Bot Fabber",
+      "name": "Exiles - Advanced Bot Fabber",
       "to_build": "ExilesAdvancedBotFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -566,7 +566,7 @@
       ]
     },
     {
-      "name": "Advanced Vehicle Fabber",
+      "name": "Exiles - Advanced Vehicle Fabber",
       "to_build": "ExilesAdvancedVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -594,7 +594,7 @@
       ]
     },
     {
-      "name": "T3 Assault Bot",
+      "name": "Exiles - T3 Assault Bot",
       "to_build": "ExilesT3AssaultBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "name": "Advanced Assault Bot",
+      "name": "Exiles - Advanced Assault Bot",
       "to_build": "ExilesAdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -650,7 +650,7 @@
       ]
     },
     {
-      "name": "Advanced Combat Fabber Bot",
+      "name": "Exiles - Advanced Combat Fabber Bot",
       "to_build": "AdvancedBotCombatFabber",
       "instance_count": 1,
       "priority": 199,
@@ -692,7 +692,7 @@
       ]
     },
     {
-      "name": "Advanced Artillery Bot",
+      "name": "Exiles - Advanced Artillery Bot",
       "to_build": "ExilesAdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -735,7 +735,7 @@
       ]
     },
     {
-      "name": "T3 Artillery Bot",
+      "name": "Exiles - T3 Artillery Bot",
       "to_build": "ExilesT3ArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -778,7 +778,7 @@
       ]
     },
     {
-      "name": "Advanced Tactical Bot",
+      "name": "Exiles - Advanced Tactical Bot",
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -821,7 +821,7 @@
       ]
     },
     {
-      "name": "Advanced Laser Tank",
+      "name": "Exiles - Advanced Laser Tank",
       "to_build": "ExilesAdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -850,7 +850,7 @@
       ]
     },
     {
-      "name": "Advanced Armor Tank",
+      "name": "Exiles - Advanced Armor Tank",
       "to_build": "ExilesAdvancedArmorTank",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -893,7 +893,7 @@
       ]
     },
     {
-      "name": "Advanced Artillery Vehicle",
+      "name": "Exiles - Advanced Artillery Vehicle",
       "to_build": "ExilesAdvancedArtilleryVehicle",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -936,7 +936,7 @@
       ]
     },
     {
-      "name": "Advanced Orbital Defence Vehicle",
+      "name": "Exiles - Advanced Orbital Defence Vehicle",
       "to_build": "ExilesAdvancedOrbitalDefenceVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
