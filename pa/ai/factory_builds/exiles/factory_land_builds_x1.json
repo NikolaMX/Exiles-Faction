@@ -11,11 +11,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -27,11 +22,6 @@
         ],
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -63,11 +53,6 @@
       "build_conditions": [
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
           {
@@ -80,11 +65,6 @@
         ],
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": false }
         ],
@@ -120,11 +100,6 @@
       "builders": ["ExilesAdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
@@ -137,11 +112,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
           {

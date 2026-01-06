@@ -56,11 +56,6 @@
       "priority": 117,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "EnemyPresenceOnPlanet", "boolean": false },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
@@ -85,11 +80,6 @@
       "priority": 116,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "EnemyPresenceOnPlanet", "boolean": true },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
@@ -139,11 +129,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
@@ -167,11 +152,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
@@ -197,11 +177,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
@@ -225,11 +200,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
@@ -255,11 +225,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
@@ -283,11 +248,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
@@ -313,11 +273,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
@@ -341,11 +296,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
@@ -371,11 +321,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
@@ -399,11 +344,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
@@ -429,11 +369,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
@@ -457,11 +392,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
@@ -487,11 +417,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
@@ -515,11 +440,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
@@ -569,11 +489,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Deconstruction - NukeDefense - Titan",
             "compare0": ">=",
@@ -597,11 +512,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Deconstruction - NukeDefense - Titan",
@@ -627,11 +537,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Deconstruction - NukeDefense - Titan",
             "compare0": ">=",
@@ -656,11 +561,6 @@
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Deconstruction - NukeDefense - Titan",
             "compare0": ">=",
@@ -684,11 +584,6 @@
       "build_conditions": [
         [
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Tank | Bot) & Mobile & Titan",

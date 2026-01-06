@@ -119,11 +119,6 @@
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
@@ -134,11 +129,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
@@ -214,11 +204,6 @@
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
@@ -229,11 +214,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
@@ -425,11 +405,6 @@
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanDeployLandFromBase", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & Heavy",

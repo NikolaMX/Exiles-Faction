@@ -160,11 +160,6 @@
           { "test_type": "CanAffordBuildDemand" },
           { "test_type": "DistFromMainBase", "compare0": ">=", "value0": 150 },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
             "compare0": "<",
@@ -187,11 +182,6 @@
             "test_type": "DistFromNearestEnemyThreat",
             "compare0": "<=",
             "value0": 200
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -348,11 +338,6 @@
             "value0": 4
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -409,11 +394,6 @@
             "value0": 2
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
@@ -426,11 +406,6 @@
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
@@ -487,11 +462,6 @@
             "value0": 4
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
@@ -542,11 +512,6 @@
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Artillery",
@@ -603,11 +568,6 @@
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
@@ -693,11 +653,6 @@
             "value0": 4
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -752,11 +707,6 @@
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
@@ -840,11 +790,6 @@
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
             "value0": 4
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

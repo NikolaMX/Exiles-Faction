@@ -58,11 +58,6 @@
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "ExilesNukeSilo"
           },
@@ -96,11 +91,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "ExilesNukeSilo"
@@ -151,11 +141,6 @@
             "compare0": ">=",
             "value0": 3
           },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -189,11 +174,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordPotentialDrain", "string0": "UnitCannon" },
           {
             "test_type": "UnitCountOnPlanet",
@@ -225,11 +205,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "CanAffordPotentialDrain", "string0": "UnitCannon" },
           {
             "test_type": "UnitCountOnPlanet",
@@ -266,11 +241,6 @@
         [
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
@@ -319,11 +289,6 @@
       "build_conditions": [
         [
           { "test_type": "PlanetHasUseablePlanetWeapon", "boolean": true },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
           { "test_type": "EnemyPresenceOnPlanet", "boolean": false },
           {
             "test_type": "HasPersonalityTag",
