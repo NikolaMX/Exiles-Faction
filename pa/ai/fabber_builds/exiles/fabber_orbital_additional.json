@@ -155,7 +155,7 @@
     },
     {
       "name": "Orbital Mine",
-      "to_build": "OrbitalMine",
+      "to_build": "ExilesOrbitalMine",
       "instance_count": 1,
       "priority": 379,
       "builders": ["ExilesOrbitalFabber"],
@@ -185,7 +185,7 @@
             "compare0": ">=",
             "value0": 2
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalMine" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalMine" }
         ],
         [
           { "test_type": "PlanetIsGasGiant", "boolean": true },
@@ -213,7 +213,7 @@
             "compare0": ">=",
             "value0": 1
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalMine" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalMine" }
         ],
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -240,7 +240,7 @@
             "compare0": ">",
             "value0": 0
           },
-          { "test_type": "CanFindPlaceToBuild", "string0": "OrbitalMine" }
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesOrbitalMine" }
         ]
       ],
       "placement_rules": {

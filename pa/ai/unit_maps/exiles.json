@@ -265,6 +265,9 @@
     },
     "ExilesFabberTower": {
       "spec_id": "/pa/units/structures/fab_complex/fab_complex.json"
+    },
+    "ExilesOrbitalMine": {
+      "spec_id": "/pa/units/orbital/orbital_mine/orbital_mine.json"
     }
   }
 }
