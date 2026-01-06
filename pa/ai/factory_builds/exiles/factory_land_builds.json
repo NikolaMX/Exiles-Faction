@@ -342,6 +342,49 @@
       ]
     },
     {
+      "name": "Point Defence Vehicle",
+      "to_build": "ExilesBasicPointDefenceVehicle",
+      "instance_count": 1,
+      "shared_instance_count": "ExilesLandScout",
+      "priority": 97,
+      "builders": ["ExilesBasicVehicleFactory"],
+      "build_conditions": [
+        [
+          { "test_type": "AloneOnPlanet", "boolean": false },
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Scout | Radar)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ],
+        [
+          { "test_type": "AloneOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Scout | Radar)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Light Laser Tank",
       "to_build": "ExilesLightLaserTank",
       "instance_count": -1,
