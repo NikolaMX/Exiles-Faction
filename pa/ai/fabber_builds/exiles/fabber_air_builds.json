@@ -182,7 +182,7 @@
       "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["ExilesBasicAirFabber", "ExilesAdvancedAirFabber"],
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -264,7 +264,7 @@
       "priority": 525,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["ExilesBasicAirFabber", "ExilesAdvancedAirFabber"],
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },

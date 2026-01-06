@@ -174,7 +174,12 @@
       "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["ExilesBasicNavalFabber", "ExilesAdvancedNavalFabber"],
+      "builders": [
+        "ExilesBasicAirFabber",
+        "ExilesAdvancedAirFabber",
+        "ExilesBasicNavalFabber",
+        "ExilesAdvancedNavalFabber"
+      ],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
@@ -221,7 +226,12 @@
       "priority": 525,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["ExilesBasicNavalFabber", "ExilesAdvancedNavalFabber"],
+      "builders": [
+        "ExilesBasicAirFabber",
+        "ExilesAdvancedAirFabber",
+        "ExilesBasicNavalFabber",
+        "ExilesAdvancedNavalFabber"
+      ],
       "build_conditions": [
         [
           { "test_type": "HaveEcoForAdvanced", "boolean": true },
