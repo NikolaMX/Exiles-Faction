@@ -1,26 +1,39 @@
-{
-    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+
+   {
     "ammo_id": "/pa/units/land/tripod/tripod_ammo.json",
-    "rate_of_fire": 1.333,
-    "max_range": 140,
-    "yaw_rate": 90,
-    "pitch_rate": 80,
-    "yaw_range": 180,
-    "pitch_range": 180,
-    "firing_arc_yaw": 1,
-    "firing_arc_pitch": 1,
-    "idle_aim_delay": 3,
     "auto_attack": true,
-    "spread_fire": true,
+    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+    "max_range": 140,
+    "pitch_range": 45,
+    "pitch_rate": 180,
+    
     "target_layers": [
         "WL_LandHorizontal",
+        "WL_Seafloor",
         "WL_WaterSurface"
     ],
+    "yaw_range": 180,
+    "yaw_rate": 45,
+     "idle_aim_delay": 5,
+
+
     "target_priorities": [
         "Mobile & Advanced",
         "Commander",
         "Mobile - Air",
         "Structure - Wall",
         "Wall"
-    ]
+    ],
+    "force_fire_from_muzzle":true,
+    "spread_fire": true,
+
+    "ammo_capacity": 10,
+    "ammo_demand": 1,
+    "rate_of_fire": 10,
+    "ammo_per_shot": 0.2,
+    "ammo_source": "time",
+
+
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true
 }

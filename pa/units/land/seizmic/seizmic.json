@@ -12,6 +12,10 @@
     "area_build_separation": 300,
     "area_build_type": "Sphere",
     "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Recon",
+        "UNITTYPE_Radar",
+        "UNITTYPE_RadarJammer",
         "UNITTYPE_Structure",
         "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",

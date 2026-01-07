@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/base/mobile_structure_base.json",
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Reactor",
     "si_name": "reactor",
     "display_name": "!LOC:Reactor",
@@ -27,13 +27,6 @@
         "UNITTYPE_Custom6",
         "UNITTYPE_Custom7"
     ],
-    "navigation": {
-        "type": "amphibious",
-        "acceleration": 100,
-        "brake": -1,
-        "move_speed": 6,
-        "turn_speed": 100
-    },
     "fx_offsets": [
 		{
 			"type": "idle",

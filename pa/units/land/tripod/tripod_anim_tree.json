@@ -86,7 +86,7 @@
                                     "parameters": {
                                         "bone": "control2.r",
                                         "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx",
-                                        "effect_scale": 0.4,
+                                        "effect_scale": 0.6,
                                         "bone_offset": []
                                     }
                                 },
@@ -103,7 +103,7 @@
                                     "parameters": {
                                         "bone": "control1",
                                         "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx",
-                                        "effect_scale": 0.4,
+                                        "effect_scale": 0.6,
                                         "bone_offset": []
                                     }
                                 },
@@ -120,7 +120,7 @@
                                     "parameters": {
                                         "bone": "control2.l",
                                         "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx",
-                                        "effect_scale": 0.4,
+                                        "effect_scale": 0.6,
                                         "bone_offset": []
                                     }
                                 }
