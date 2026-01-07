@@ -41,7 +41,7 @@
 		"com.pa.nik.exiles_client"
 	],
 	"companions": [
-		"com.pa.nik.exiles_client"
+		"com.pa.nik.exiles_client",
 		"com.pa.ferretmaster.build-bar-tabs"
 	]
 }
