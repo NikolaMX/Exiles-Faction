@@ -247,7 +247,7 @@
       "spec_id": "/pa/units/structures/fab_complex/adv_fab_turret.json"
     },
     "ExilesHoverTank": {
-      "spec_id": "/pa/units/structures/roamer/roamer.json"
+      "spec_id": "/pa/units/land/roamer/roamer.json"
     }
   }
 }
