@@ -16,6 +16,7 @@
         "animtree": "/pa/units/commanders/exiles_brainiac/brainiac_anim_tree.json",
         "walk_speed": 9
     },
+    "has_death_effects": true,
     "strategic_icon_priority": 0,
     "max_health": 10500,
     "build_metal_cost": 8000,

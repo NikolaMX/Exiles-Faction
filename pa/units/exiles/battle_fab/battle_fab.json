@@ -6,7 +6,7 @@
   "strategic_icon_priority": 0,
   "max_health": 250,
   "build_metal_cost": 400,
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Land & Bot | Factory & Advanced & Land & Tank | FabBuild & Basic) & Custom6",
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & (Bot | Air | Naval | Tank) | FabBuild) & Custom6 - Custom7",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
   "attachable": {

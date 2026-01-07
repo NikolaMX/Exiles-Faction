@@ -126,6 +126,7 @@
         },
         "animtree": "/pa/units/air/t_transport_adv/transport_anim_tree.json"
     },
+    "has_death_effects": true,
     "TEMP_texelinfo": 10.4837,
     "fx_offsets": [
         {

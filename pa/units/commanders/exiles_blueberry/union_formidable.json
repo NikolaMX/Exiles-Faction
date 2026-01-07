@@ -16,6 +16,7 @@
         "animtree": "/pa/units/commanders/exiles_blueberry/union_formidable_comm_anim_tree.json",
         "walk_speed": 3.5
     },
+    "has_death_effects": true,
     "strategic_icon_priority": 0,
     "max_health": 10500,
     "build_metal_cost": 8000,
