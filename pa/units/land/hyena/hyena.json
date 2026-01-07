@@ -42,7 +42,6 @@
         "ORDER_Move",
         "ORDER_Patrol",
         "ORDER_Build",
-        "ORDER_Attack",
         "ORDER_Reclaim",
         "ORDER_Repair",
         "ORDER_Assist",
