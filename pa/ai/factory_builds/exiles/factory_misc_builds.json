@@ -1,8 +1,42 @@
 {
   "build_list": [
     {
-      "name": "Exiles - Nuke Missile",
-      "to_build": "ExilesNukeMissile",
+      "name": "Exiles - Nuke Missile - N2",
+      "to_build": "ExilesNukeMissileN1",
+      "instance_count": -1,
+      "priority": 0,
+      "builders": ["ExilesNukeSilo"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "FactoryHasOpenSlot" }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Nuke Missile - N2 - No Antis",
+      "to_build": "ExilesNukeMissileN1",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 0,
+      "builders": ["ExilesNukeSilo"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          { "test_type": "FactoryHasOpenSlot" }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Nuke Missile - N2",
+      "to_build": "ExilesNukeMissileN2",
       "instance_count": -1,
       "priority": 151,
       "builders": ["ExilesNukeSilo"],
@@ -14,13 +48,47 @@
       ]
     },
     {
-      "name": "Exiles - Nuke Missile - No Antis",
-      "to_build": "ExilesNukeMissile",
+      "name": "Exiles - Nuke Missile - N2 - No Antis",
+      "to_build": "ExilesNukeMissileN2",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 387,
       "builders": ["ExilesNukeSilo"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          { "test_type": "FactoryHasOpenSlot" }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Nuke Missile - N3",
+      "to_build": "ExilesNukeMissileN2",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": ["ExilesNukeMissileN3"],
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "FactoryHasOpenSlot" }
+        ]
+      ]
+    },
+    {
+      "name": "Exiles - Nuke Missile - N3 - No Antis",
+      "to_build": "ExilesNukeMissileN2",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 387,
+      "builders": ["ExilesNukeMissileN3"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
