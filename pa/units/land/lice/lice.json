@@ -2,7 +2,7 @@
     "si_name": "lice",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Lice",
-    "description": "!LOC:Survailance Crawler. Invisible but unarmed.",
+    "description": "!LOC:Surveillance Crawler. Invisible but unarmed. Can be spotted by mine detectors",
     "max_health": 10,
     "build_metal_cost": 110,
     "wreckage_health_frac": 0,
@@ -23,7 +23,7 @@
     "unit_types": [
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
-        "UNITTYPE_Recon",
+        "UNITTYPE_Scout",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",

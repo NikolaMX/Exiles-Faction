@@ -141,7 +141,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Structure",
     "UNITTYPE_Defense",
-    "UNITTYPE_NukeDefense",
+    "UNITTYPE_AirDefense",
     "UNITTYPE_Advanced",
     "UNITTYPE_Factory",
     "UNITTYPE_FabAdvBuild",

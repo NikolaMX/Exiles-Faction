@@ -75,7 +75,7 @@
         "move_speed": 12,
         "turn_speed": 180,
         "turn_in_place": true,
-        "park_stamp": {
+       "park_stamp": {
             "shape": "sphere",
             "cost": 20,
             "type_data": [
@@ -85,6 +85,10 @@
                 },
                 {
                     "move_type": "amphibious",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "hover",
                     "stamp_type": "simple"
                 }
             ]
