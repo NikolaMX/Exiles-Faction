@@ -227,8 +227,14 @@
     "ExilesWall": { "spec_id": "/pa/units/land/t_wall/t_wall.json" },
     "ExilesBasicRadar": { "spec_id": "/pa/units/addon/r_radar/r_radar.json" },
     "ExilesAdvancedRadar": { "spec_id": "/pa/units/land/seizmic/seizmic.json" },
-    "ExilesNukeMissile": {
-      "spec_id": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+    "ExilesNukeMissileN1": {
+      "spec_id": "/pa/units/land/missile_facility/large_stun_ammo.json"
+    },
+    "ExilesNukeMissileN2": {
+      "spec_id": "/pa/units/land/missile_facility/large_DOT_ammo.json"
+    },
+    "ExilesNukeMissileN3": {
+      "spec_id": "/pa/units/land/missile_facility/precision_strike_ammo.json"
     },
     "ExilesAntiNukeMissile": {
       "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
