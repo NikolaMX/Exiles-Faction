@@ -1,0 +1,689 @@
+{
+  "build_list": [
+    {
+      "name": "Exiles - Basic Bot Factory",
+      "to_build": "ExilesBasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": false },
+          { "test_type": "NeedBasicBotFactory", "boolean": false },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          { "test_type": "NeedBasicBotFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          { "test_type": "NeedAdvancedBotFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ],
+        [
+          { "test_type": "UnableToExpand", "boolean": true },
+          { "test_type": "NeedBasicBotFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Basic Vehicle Factory",
+      "to_build": "ExilesBasicVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": false },
+          { "test_type": "NeedBasicVehicleFactory", "boolean": false },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          { "test_type": "NeedBasicVehicleFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          { "test_type": "NeedAdvancedVehicleFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Tank & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ],
+        [
+          { "test_type": "UnableToExpand", "boolean": true },
+          { "test_type": "NeedBasicVehicleFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Basic Bot Factory - Wasting",
+      "to_build": "ExilesBasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 515,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": false },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "NeedBasicBotFactory", "boolean": false },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "NeedBasicBotFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Basic Vehicle Factory - Wasting",
+      "to_build": "ExilesBasicVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 515,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": [
+        "ExilesCommander",
+        "AnyExilesBasicFabber",
+        "AnyExilesAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": false },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "NeedBasicVehicleFactory", "boolean": false },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ],
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "NeedBasicVehicleFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesBasicVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesBasicVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Fabber Tower",
+      "to_build": "ExilesFabberTower",
+      "instance_count": 1,
+      "priority": 0,
+      "builders": ["AnyExilesBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesFabberTower"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Fabber",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesFabberTower"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Fabber",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exiles - Fabber Tower - Wasting",
+      "to_build": "ExilesFabberTower",
+      "instance_count": 1,
+      "priority": 0,
+      "builders": ["AnyExilesBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesFabberTower"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Fabber",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesFabberTower"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Fabber",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exiles - Advanced Bot Factory",
+      "to_build": "ExilesAdvancedBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedBotFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAdvancedBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedBotFactory"
+          }
+        ],
+        [
+          { "test_type": "UnableToExpand", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedBotFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Advanced Vehicle Factory",
+      "to_build": "ExilesAdvancedVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedVehicleFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAdvancedVehicleFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedVehicleFactory"
+          }
+        ],
+        [
+          { "test_type": "UnableToExpand", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedVehicleFactory", "boolean": true },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Advanced Bot Factory - Wasting",
+      "to_build": "ExilesAdvancedBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 525,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedBotFactory", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAdvancedBotFactory"
+          },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Advanced Vehicle Factory - Wasting",
+      "to_build": "ExilesAdvancedVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 525,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": ["AnyExilesBasicFabber", "AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "HaveEcoForAdvanced", "boolean": true },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          { "test_type": "MetalStorageFrac", "compare0": ">", "value0": 0.2 },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "NeedAdvancedVehicleFactory", "boolean": true },
+          { "test_type": "CanDeployLandFromBase", "boolean": true },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesAdvancedVehicleFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesAdvancedVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

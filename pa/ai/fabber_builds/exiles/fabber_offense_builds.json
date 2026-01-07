@@ -1,0 +1,206 @@
+{
+  "build_list": [
+    {
+      "name": "Exiles - Nuke Silo",
+      "to_build": "ExilesNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "priority": 360,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "AloneOnPlanet", "boolean": false },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
+        ]
+      ],
+      "placement_rules": { "buffer": 2 }
+    },
+    {
+      "name": "Exiles - Nuke Silo - Alone",
+      "to_build": "ExilesNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 505,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "AloneOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
+        ]
+      ],
+      "placement_rules": { "buffer": 2 }
+    },
+    {
+      "name": "Exiles - Nuke Silo - No Antis",
+      "to_build": "ExilesNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 478,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Advanced",
+            "compare0": ">=",
+            "value0": 3
+          },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "ExilesNukeSilo"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "ExilesNukeSilo" }
+        ]
+      ],
+      "placement_rules": { "buffer": 2 }
+    },
+    {
+      "name": "Exiles - Long Range Artillery",
+      "to_build": "ExilesLongRangeArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
+      "priority": 360,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "AloneOnPlanet", "boolean": false },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 600,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "ExilesLongRangeArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Exiles - Control Module",
+      "to_build": "ExilesControlModule",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 612,
+      "builders": ["AnyExilesAdvancedFabber"],
+      "build_conditions": [
+        [
+          { "test_type": "PlanetHasUseablePlanetWeapon", "boolean": true },
+          { "test_type": "EnemyPresenceOnPlanet", "boolean": false },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GWAlly",
+            "boolean": false
+          },
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "PlanetCount", "compare0": ">", "value0": 1 },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<=",
+            "boolean": true,
+            "value0": 0
+          },
+          { "test_type": "CanFindControlPointToBuild", "boolean": true }
+        ]
+      ]
+    }
+  ]
+}

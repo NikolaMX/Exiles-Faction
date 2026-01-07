@@ -1,0 +1,253 @@
+{
+  "unit_map": {
+    "ExilesCommander": { "unit_types": "Commander & Custom6" },
+    "AnyExilesBasicFactory": { "unit_types": "Factory & Basic & Custom6" },
+    "AnyExilesAdvancedFactory": {
+      "unit_types": "Factory & Advanced & Custom6"
+    },
+    "AnyExilesBasicFabber": {
+      "unit_types": "(Fabber & (Basic | Debug)) & Custom6 - Orbital - Structure"
+    },
+    "AnyExilesAdvancedFabber": {
+      "unit_types": "(Fabber & (Advanced | Debug)) & Custom6 - Orbital - Structure"
+    },
+    "ExilesBasicBotFabber": {
+      "spec_id": "/pa/units/land/t_bot_fab/t_bot_fab.json"
+    },
+    "ExilesAdvancedBotFabber": {
+      "spec_id": "/pa/units/land/t_bot_fab_adv/t_bot_fab_adv.json"
+    },
+    "ExilesBasicBotCombatFabber": {
+      "spec_id": "/pa/units/land/hyena/hyena.json"
+    },
+    "ExilesBasicVehicleFabber": {
+      "spec_id": "/pa/units/land/t_tank_fab/t_tank_fab.json"
+    },
+    "ExilesAdvancedVehicleFabber": {
+      "spec_id": "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json"
+    },
+    "ExilesBasicAirFabber": {
+      "spec_id": "/pa/units/air/t_air_fab/t_air_fab.json"
+    },
+    "ExilesAdvancedAirFabber": {
+      "spec_id": "/pa/units/air/t_air_fab_adv/t_air_fab_adv.json"
+    },
+    "ExilesBasicNavalFabber": {
+      "spec_id": "/pa/units/sea/t_naval_fab/t_naval_fab.json"
+    },
+    "ExilesAdvancedNavalFabber": {
+      "spec_id": "/pa/units/sea/t_naval_fab_adv/t_naval_fab_adv.json"
+    },
+    "ExilesBasicMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json"
+    },
+    "ExilesTweakedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_01/t_metal_extractor_01.json"
+    },
+    "ExilesImprovedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
+    },
+    "ExilesBasicEnergyGenerator": {
+      "spec_id": "/pa/units/land/pylon/pylon.json"
+    },
+    "ExilesAdvancedMetalExtractor": {
+      "spec_id": "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json"
+    },
+    "ExilesAdvancedEnergyGenerator": {
+      "spec_id": "/pa/units/land/adv_pylon/adv_pylon.json"
+    },
+    "ExilesEnergyStorage": {
+      "spec_id": "/pa/units/land/t_power_storage/t_power_storage.json"
+    },
+    "ExilesMetalStorage": {
+      "spec_id": "/pa/units/land/t_storage/t_storage.json"
+    },
+    "ExilesLandScout": { "spec_id": "/pa/units/land/lice/lice.json" },
+    "ExilesBasicAssaultBot": {
+      "spec_id": "/pa/units/land/can/can.json"
+    },
+    "ExilesBasicArtilleryBot": {
+      "spec_id": "/pa/units/land/hunter/hunter.json"
+    },
+    "ExilesTeslaBot": { "spec_id": "/pa/units/land/tin/tin.json" },
+    "ExilesAdvancedAssaultBot": {
+      "spec_id": "/pa/units/land/luddite/luddite.json"
+    },
+    "ExilesAdvancedArtilleryBot": {
+      "spec_id": "/pa/units/land/torch/torch.json"
+    },
+    "ExilesAdvancedAABot": {
+      "spec_id": "/pa/units/land/t_bot_aa/t_bot_aa.json"
+    },
+    "ExilesRadarJammerBot": {
+      "spec_id": "/pa/units/land/gale/gale.json"
+    },
+    "ExilesT3AssaultBot": {
+      "spec_id": "/pa/units/commanders/ft_commander/ft_commander.json"
+    },
+    "ExilesT3ArtilleryBot": {
+      "spec_id": "/pa/units/land/tripod/tripod.json"
+    },
+    "ExilesLightLaserTank": {
+      "spec_id": "/pa/units/land/lightning/lightning.json"
+    },
+    "ExilesBasicArmorTank": {
+      "spec_id": "/pa/units/land/tank_wheel/tank_wheel.json"
+    },
+    "ExilesBasicAAVehicle": {
+      "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak.json"
+    },
+    "ExilesBasicPointDefenceVehicle": {
+      "spec_id": "/pa/units/land/meerkat/meerkat.json"
+    },
+    "ExilesAdvancedLaserTank": {
+      "spec_id": "/pa/units/land/stalker/stalker.json"
+    },
+    "ExilesAdvancedHoverTank": {
+      "spec_id": "/pa/units/land/adv_tank_hover/adv_tank_hover.json"
+    },
+    "ExilesAdvancedArtilleryVehicle": {
+      "spec_id": "/pa/units/land/hail/hail.json"
+    },
+    "ExilesAdvancedAAVehicle": {
+      "spec_id": "/pa/units/land/tank_gattling/tank_gattling.json"
+    },
+    "ExilesAdvancedOrbitalDefenceVehicle": {
+      "spec_id": "/pa/units/land/shah/shah.json"
+    },
+    "ExilesAirScout": { "spec_id": "/pa/units/air/scout/dragonfly.json" },
+    "ExilesBasicFighter": {
+      "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth.json"
+    },
+    "ExilesBasicBomber": { "spec_id": "/pa/units/air/t_bomber/t_bomber.json" },
+    "ExilesAdvancedFighter": {
+      "spec_id": "/pa/units/air/t_int/t_int.json"
+    },
+    "ExilesAdvancedBomber": {
+      "spec_id": "/pa/units/air/swordfish/swordfish.json"
+    },
+    "ExilesAdvancedGunship": {
+      "spec_id": "/pa/units/air/t_gunship/t_gunship.json"
+    },
+    "ExilesHeavyBomber": {
+      "spec_id": "/pa/units/air/strat_bomber/strat_bomber.json"
+    },
+    "ExilesGunboat": {
+      "spec_id": "/pa/units/sea/t_hover_skiff/t_hover_skiff.json"
+    },
+    "ExilesMeleeSub": { "spec_id": "/pa/units/sea/scilla/scilla.json" },
+    "ExilesFrigate": { "spec_id": "/pa/units/sea/hardtack/hardtack.json" },
+    "ExilesDestroyer": { "spec_id": "/pa/units/sea/a_croc/a_croc.json" },
+    "ExilesCruiser": {
+      "spec_id": "/pa/units/sea/a_mortar/a_mortar.json"
+    },
+    "ExilesBattleship": {
+      "spec_id": "/pa/units/sea/t_battleship/t_battleship.json"
+    },
+    "ExilesDroneCarrier": {
+      "spec_id": "/pa/units/sea/drone_aa/drone_aa.json"
+    },
+    "ExilesTorpedoSub": { "spec_id": "/pa/units/sea/cruiser/cruiser.json" },
+
+    "ExilesBasicBotFactory": {
+      "spec_id": "/pa/units/land/t_bot_fac/t_bot_fac.json"
+    },
+    "ExilesAdvancedBotFactory": {
+      "spec_id": "/pa/units/land/t_bot_fac_adv/t_bot_fac_adv.json"
+    },
+    "ExilesBasicVehicleFactory": {
+      "spec_id": "/pa/units/land/t_tank_fac/t_tank_fac.json"
+    },
+    "ExilesAdvancedVehicleFactory": {
+      "spec_id": "/pa/units/land/t_tank_fac_adv/t_tank_fac_adv.json"
+    },
+    "ExilesBasicAirFactory": {
+      "spec_id": "/pa/units/air/t_air_fac/t_air_fac.json"
+    },
+    "ExilesAdvancedAirFactory": {
+      "spec_id": "/pa/units/air/t_air_fac_adv/t_air_fac_adv.json"
+    },
+    "ExilesBasicNavalFactory": {
+      "spec_id": "/pa/units/sea/t_naval_fac/t_naval_fac.json"
+    },
+    "ExilesAdvancedNavalFactory": {
+      "spec_id": "/pa/units/sea/t_naval_fac_adv/t_naval_fac_adv.json"
+    },
+    "ExilesOrbitalLauncher": {
+      "spec_id": "/pa/units/orbital/t_orbital_launcher/t_orbital_launcher.json"
+    },
+    "ExilesBasicAirDefense": {
+      "spec_id": "/pa/units/land/t_aa_twr/t_aa_twr.json"
+    },
+    "ExilesBasicLandDefense": {
+      "spec_id": "/pa/units/land/ambush_twr/hid/ambush_twr_hid.json"
+    },
+    "ExilesBasicNavalDefense": {
+      "spec_id": "/pa/units/sea/t_torp_launcher/t_torp_launcher.json"
+    },
+    "ExilesUmbrella": {
+      "spec_id": "/pa/units/addon/r_umbrella/r_umbrella.json"
+    },
+    "ExilesBasicArtillery": {
+      "spec_id": "/pa/units/land/t_arta/t_arta.json"
+    },
+    "ExilesIntermediateAirDefense": {
+      "spec_id": "/pa/units/land/t_aa_twr_adv/t_aa_twr_adv.json"
+    },
+    "ExilesAdvancedAirDefense": {
+      "spec_id": "/pa/units/land/aa_missile_launcher/aa_missile_launcher.json"
+    },
+    "ExilesAdvancedLandDefense": {
+      "spec_id": "/pa/units/land/quad_turret/quad_turret.json"
+    },
+    "ExilesAdvancedNavalDefense": {
+      "spec_id": "/pa/units/sea/t_torp_launcher_adv/t_torp_launcher_adv.json"
+    },
+    "ExilesAntiBallistics": {
+      "spec_id": "/pa/units/land/anti_ballistics/anti_ballistics.json"
+    },
+    "ExilesLongRangeArtillery": {
+      "spec_id": "/pa/units/addon/r_artillery/r_artillery.json"
+    },
+    "ExilesNukeSilo": {
+      "spec_id": "/pa/units/land/missile_facility/missile_facility.json"
+    },
+    "ExilesAntiNukeSilo": {
+      "spec_id": "/pa/units/land/t_anti_nuke_launcher/t_anti_nuke_launcher.json"
+    },
+    "ExilesPlanetEngine": {
+      "spec_id": "/pa/units/addon/t_delta_v_engine/t_delta_v_engine.json"
+    },
+    "ExilesControlModule": {
+      "spec_id": "/pa/units/addon/t_control_module/t_control_module.json"
+    },
+    "ExilesTeleporter": {
+      "spec_id": "/pa/units/addon/r_teleporter/r_teleporter.json"
+    },
+    "ExilesWall": { "spec_id": "/pa/units/land/t_wall/t_wall.json" },
+    "ExilesBasicRadar": { "spec_id": "/pa/units/addon/r_radar/r_radar.json" },
+    "ExilesAdvancedRadar": { "spec_id": "/pa/units/land/seizmic/seizmic.json" },
+    "ExilesNukeMissileN1": {
+      "spec_id": "/pa/units/land/missile_facility/large_stun_ammo.json"
+    },
+    "ExilesNukeMissileN2": {
+      "spec_id": "/pa/units/land/missile_facility/large_DOT_ammo.json"
+    },
+    "ExilesNukeMissileN3": {
+      "spec_id": "/pa/units/land/missile_facility/precision_strike_ammo.json"
+    },
+    "ExilesAntiNukeMissile": {
+      "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
+    },
+    "ExilesHoverTitan": { "spec_id": "/pa/units/land/cyclone/cyclone.json" },
+    "ExilesDemitTitan": {
+      "spec_id": "/pa/units/land/t_chimera/t_chimera.json"
+    },
+    "ExilesFabberTower": {
+      "spec_id": "/pa/units/structures/fab_complex/adv_fab_turret.json"
+    },
+    "ExilesHoverTank": {
+      "spec_id": "/pa/units/land/roamer/roamer.json"
+    }
+  }
+}
