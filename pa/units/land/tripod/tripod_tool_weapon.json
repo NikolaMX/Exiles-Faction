@@ -27,7 +27,7 @@
     "force_fire_from_muzzle":true,
     "spread_fire": true,
 
-    "ammo_capacity": 10,
+    "ammo_capacity": 10.1,
     "ammo_demand": 1,
     "rate_of_fire": 10,
     "ammo_per_shot": 0.2,
