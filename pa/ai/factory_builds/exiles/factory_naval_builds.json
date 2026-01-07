@@ -248,8 +248,8 @@
           { "test_type": "CanDeployNavalFromBase", "boolean": true },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "unit_type_string0": "Mobile & Naval & AirDefense",
+            "unit_type_string1": "Mobile & Naval - Fabber",
             "compare0": "<",
             "value0": 0.1
           }
@@ -267,8 +267,8 @@
           { "test_type": "CanDeployNavalFromBase", "boolean": true },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "unit_type_string0": "Mobile & Naval & AirDefense",
+            "unit_type_string1": "Mobile & Naval - Fabber",
             "compare0": "<",
             "value0": 0.25
           }
