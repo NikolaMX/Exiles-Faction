@@ -16,7 +16,7 @@ var paeiouIcons = [
 
    
     "t_arta",
-    "r_artillery",
+    "t_arta_long",
     "r_artillery_big",
 
 
@@ -49,11 +49,14 @@ var paeiouIcons = [
     "large_DOT_ammo",
     "precision_strike_ammo",
 
-
+    "airburst_ammo",
+    "stun_ammo",
+    "recon_ammo",
 
     //Special Factory
     "battle_fab",
-    "ft_assault_walker",
+    "battle_fab_adv",
+    
 
 
     //Tanks

@@ -234,6 +234,7 @@
 
     "/pa/units/land/factory_1/factory_1.json",
     "/pa/units/exiles/battle_fab/battle_fab.json",
+    "/pa/units/exiles/battle_fab_adv/battle_fab_adv.json",
     "/pa/units/commanders/ft_commander/ft_commander.json",
 
 
@@ -246,6 +247,8 @@
     "/pa/units/land/quad_turret/quad_turret.json",
     "/pa/units/land/t_aa_twr/t_aa_twr.json",
     "/pa/units/land/t_arta/t_arta.json",
+    "/pa/units/land/t_arta_long/t_arta_long.json",
+
     "/pa/units/land/t_aa_twr_adv/t_aa_twr_adv.json",
     "/pa/units/land/anti_ballistics/anti_ballistics.json",
     "/pa/units/sea/t_torp_launcher/t_torp_launcher.json",
@@ -397,7 +400,8 @@
 "/pa/units/base/stun_huge/stun_huge.json",
 "/pa/units/base/dot_1/dot_1.json",
 "/pa/units/base/dot_huge/dot_huge.json",
-"/pa/units/base/flare/flare.json"
+"/pa/units/base/flare/flare.json",
+"/pa/units/base/shrapnel/shrapnel.json"
 
 
   ]

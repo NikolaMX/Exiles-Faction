@@ -1,12 +1,12 @@
 {
-  "si_name": "battle_fab",
+  "si_name": "battle_fab_adv",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "Battle Fabricator",
-  "description": "!LOC:Armed with weak AA and anti-ground weapons. Can not assist or repair.",
+  "display_name": "Advanced Hover Fabricator",
+  "description": "!LOC:Constructs Advanced Structures. Can travel over lava and water. Can assist factories.",
   "strategic_icon_priority": 0,
-  "max_health": 250,
-  "build_metal_cost": 400,
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & (Bot | Air | Naval | Tank) | FabBuild) & Custom6",
+  "max_health": 400,
+  "build_metal_cost": 2500,
+  "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
   "attachable": {
@@ -41,7 +41,6 @@
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Build",
-    "ORDER_Attack",
     "ORDER_Reclaim",
     "ORDER_Repair",
     "ORDER_Assist",
@@ -74,45 +73,40 @@
     }
   },
   "model": {
-    "filename": "/pa/units/exiles/battle_fab/battle_fab.papa",
-    "animtree": "/pa/units/exiles/battle_fab/battle_fab_anim_tree.json",
+    "filename": "/pa/units/exiles/battle_fab_adv/battle_fab_adv.papa",
+    "animtree": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_anim_tree.json",
     "animations": {
-      "hover": "/pa/units/exiles/battle_fab/battle_fab_anim_hover.papa"
+      "hover": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_anim_hover.papa",
+      "aim_up": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_anim_aim_up.papa",
+      "aim_down": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_anim_aim_down.papa"
     },
     "walk_speed": 4.0
   },
   "teleportable": {},
   "tools": [
+    
     {
-      "spec_id": "/pa/units/exiles/battle_fab/battle_fab_tool_weapon.json",
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "bone_muzzle",
-      "record_index": 1,
-      "primary_weapon": true
-    },
-    {
-      "spec_id": "/pa/units/exiles/battle_fab/battle_fab_tool_build_arm.json",
-      "aim_bone": "muzzle_fab",
-      "record_index": 2,
-      "primary_weapon": false
+      "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_build_arm.json",
+      "aim_bone": "bone_turret_fab"
     }
   ],
   "events": {
-    "fired": {
-      "audio_cue": "/SE/Weapons/veh/tank_light_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle"
-    },
     "died": {
       "audio_cue": "/SE/Death/Bot",
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-      "effect_scale": 1.7
+      "effect_scale": 2
     }
   },
   "fx_offsets": [
     {
       "type": "build",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab"
+      "bone": "muzzle_fab.r"
+    },
+    {
+      "type": "build",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "bone": "muzzle_fab.l"
     }
   ],
   "audio": {
@@ -135,11 +129,11 @@
     }
   },
   "selection_icon": {
-    "diameter": 11
+    "diameter": 14
   },
   "mesh_bounds": [
+    6,
     4,
-    2,
-    4
+    6
   ]
 }

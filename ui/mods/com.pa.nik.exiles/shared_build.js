@@ -59,8 +59,9 @@ var newBuild = {
 
     // Special Factory
     "/pa/units/exiles/battle_fab/battle_fab.json": ["t_foundry", 0, { row: 2, column: 0 }],
+    "/pa/units/exiles/battle_fab_adv/battle_fab_adv.json": ["t_foundry", 0, { row: 1, column: 0 }],
     "/pa/units/land/sword_dox/sword_dox.json": ["t_foundry", 0, { row: 2, column: 1 }],
-    // "/pa/units/land/ft_assault_walker/ft_assault_walker.json": ["t_foundry", 0, { row: 2, column: 1 }],
+   
 
     //Tank Factory
     "/pa/units/land/t_tank_fac/t_tank_fac.json": ["t_factory", 0, { row: 2, column: 3 }],
@@ -149,7 +150,7 @@ var newBuild = {
     "/pa/units/land/t_aa_twr_adv/t_aa_twr_adv.json": ["t_combat", 0, { row: 1, column: 1 }],
     "/pa/units/land/aa_missile_launcher/aa_missile_launcher.json": ["t_combat", 4, {row: 0, column: 1}],
 
-    "/pa/units/addon/r_artillery/r_artillery.json": ["t_combat", 0, { row: 0, column: 2 }],
+    "/pa/units/land/t_arta_long/t_arta_long.json": ["t_combat", 0, { row: 0, column: 2 }],
     "/pa/units/land/factory_1/factory_1.json": ["t_combat", 0, { row: 1, column: 2 }],
     "/pa/units/land/t_arta/t_arta.json": ["t_combat", 0, { row: 2, column: 2 }],
 
@@ -174,6 +175,9 @@ var newBuild = {
     "/pa/units/land/missile_facility/large_DOT_ammo.json": ["t_ammo", 4, {row: 2, column: 4}],
     "/pa/units/land/missile_facility/precision_strike_ammo.json": ["t_ammo", 4, {row: 2, column: 5}],
 
+    "/pa/units/land/t_arta_long/airburst_ammo.json": ["t_ammo", 4, {row: 2, column: 6}],
+    "/pa/units/land/t_arta_long/recon_ammo.json": ["t_ammo", 4, {row: 2, column: 7}],
+    "/pa/units/land/t_arta_long/stun_ammo.json": ["t_ammo", 4, {row: 2, column: 8}],
 
     //Misk
     //"/pa/units/land/shield/shield.json": ["build", 0, { row: 1, column: 3 }],     // DISABLED FOR NOW

@@ -1,0 +1,130 @@
+{
+    "si_name": "airburst_ammo",
+    "display_name": "Shrapnel",
+    "description": "!LOC:Shrapnel.",
+    "TEMP_texelinfo": 5.39039,
+    
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 30,
+    "command_caps": [],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
+        },
+        "died": {
+            "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+            "effect_scale": 1
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/sea/drone_carrier/drone/drone_jets.pfx",
+            "offset": [
+                0,
+                0.727,
+                0.42
+            ]
+        }
+    ],
+    "guard_layer": "WL_AnyLayer",
+    "guard_radius": 100,
+    "max_health": 5,
+    "passive_health_regen": -2.5,
+    "mesh_bounds": [
+        1,
+        1,
+        1
+    ],
+   "model": [
+    {
+      "filename": "/pa/units/base/shrapnel/bomb.papa",
+        "arrows": 5
+    }
+  ],
+    "navigation": {
+        "type": "air",
+        "acceleration": 80,
+        "brake": 30,
+        "move_speed": 80,
+        "turn_speed": 7200  ,
+        "aggressive_distance": 100.0,
+        "aggressive_height": 40.0,
+        "bank_factor": 10,
+        "vertical_speed": 200
+    },
+    "nearby_target_tick_update_interval": 1,
+    
+    "physics": {
+        "radius": 6,
+        "gravity_scalar": 10
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 11.0
+    },
+     "tools": [
+         {
+            "spec_id": "/pa/units/base/shrapnel/shrapnel_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "projectiles_per_fire": 25,
+            "muzzle_bone": [
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret",
+                "bone_turret"
+
+            ]
+        }
+    ],
+
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Air",
+        "UNITTYPE_Basic"
+    ]
+}

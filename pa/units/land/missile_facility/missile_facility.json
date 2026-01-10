@@ -22,6 +22,15 @@
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 10000,
+    "factory": {
+        "store_units": true,
+        "spawn_points": [
+            "bone_missile01"
+        ],
+        "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
+        "default_build_stance": "Continuous"
+    },
+
     "buildable_projectiles": [
         "/pa/units/land/missile_facility/large_DOT_ammo.json",
         "/pa/units/land/missile_facility/large_stun_ammo.json",
@@ -43,14 +52,7 @@
             "audio_cue": "/SE/Death/Factory"
         }
     },
-    "factory": {
-        "store_units": true,
-        "spawn_points": [
-            "bone_missile01"
-        ],
-        "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
-        "default_build_stance": "Continuous"
-    },
+    
     "fx_offsets": [
         {
             "type": "build",

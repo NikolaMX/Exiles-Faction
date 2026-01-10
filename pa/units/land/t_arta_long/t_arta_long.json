@@ -1,0 +1,170 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Lamya",
+    "display_name": "!LOC:Lamya",
+    "description": "!LOC:Advanced Artillery - Builds and launches up to 6 specialised shells. Very long range.",
+    "max_health": 5000,
+    "build_metal_cost": 8000,
+    "atrophy_rate": 140.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "factory_cooldown_time": 1.0,
+    "wait_to_rolloff_time": 1.0,
+    
+
+
+    "buildable_projectiles": [
+    "/pa/units/land/t_arta_long/airburst_ammo.json",
+    "/pa/units/land/t_arta_long/recon_ammo.json",
+    "/pa/units/land/t_arta_long/stun_ammo.json"
+
+],
+
+ "factory": {
+         
+        
+        
+
+        "initial_build_spec": "/pa/units/land/t_arta_long/airburst_ammo.json",
+        "default_build_stance": "Continuous",
+        "store_units": true,
+        "spawn_points": [
+            "socket_build1",
+            "socket_build2",
+            "socket_build3",
+            "socket_build4",
+            "socket_build5",
+            "socket_build6"
+        ]
+        
+    },
+   
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Important"
+    ],
+    "command_caps": [
+        "ORDER_FactoryBuild",
+        "ORDER_Attack"
+    ],
+    "model": {
+        "filename": "/pa/units/land/t_arta_long/t_arta_long.papa",
+        "skirt_decal": "/pa/effects/specs/skirt_antinuke.json",
+        "animations": {
+            "aim_up": "/pa/units/land/t_arta_long/t_arta_long_anim_aim_up.papa",
+
+            "start_left": "/pa/units/land/t_arta_long/t_arta_long_anim_start_left.papa",
+            "build_left": "/pa/units/land/t_arta_long/t_arta_long_anim_build_left.papa",
+            "end_left": "/pa/units/land/t_arta_long/t_arta_long_anim_end_left.papa",
+            
+            "start_mid": "/pa/units/land/t_arta_long/t_arta_long_anim_start_mid.papa",
+            "build_mid": "/pa/units/land/t_arta_long/t_arta_long_anim_build_mid.papa",
+            "end_mid": "/pa/units/land/t_arta_long/t_arta_long_anim_end_mid.papa",
+            
+            "start_right": "/pa/units/land/t_arta_long/t_arta_long_anim_start_right.papa",
+            "build_right": "/pa/units/land/t_arta_long/t_arta_long_anim_build_right.papa",
+            "end_right": "/pa/units/land/t_arta_long/t_arta_long_anim_end_right.papa"
+        },
+        "animtree": "/pa/units/land/t_arta_long/t_arta_long_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/t_arta_long/t_arta_long_tool_weapon.json",
+            "record_index": 0,
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": "bone_muzzle"
+        },
+        {
+            "spec_id": "/pa/units/land/t_arta_long/t_arta_long_build_arm.json",
+            "record_index": 1,
+            "aim_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/unit_cannon "
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
+            "effect_spec": "/pa/units/land/unit_cannon/unit_cannon_fire.pfx bone_recoil"
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_unit_cannon",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/structure/unit_cannon"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "drone.l",
+            "offset": [
+                0.25,
+                0,
+                1.25
+            ],
+            "orientation": [
+                0,
+                90,
+                90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "drone.r",
+            "offset": [
+                0.25,
+                0,
+                1.25
+            ],
+            "orientation": [
+                0,
+                90,
+                90
+            ]
+        },
+        {
+            "type": "energy",
+            "filename": "/pa/units/land/lightning/arcc.pfx",
+            "bone": "bone_recoil",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 36.0
+    },
+    "mesh_bounds": [
+        15,
+        25,
+        15
+    ],
+    "wreckage_mesh_bounds": [
+        15,
+        25,
+        15
+    ],
+    "placement_size": [
+        30,
+        30
+    ],
+    "TEMP_texelinfo": 62.1789
+}
