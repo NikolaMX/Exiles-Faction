@@ -105,7 +105,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/tripod/tripod_laser.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/tripod/tripod_laser_dark.pfx socket_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",

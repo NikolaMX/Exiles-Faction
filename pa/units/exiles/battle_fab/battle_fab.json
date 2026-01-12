@@ -28,7 +28,8 @@
   },
   "unit_types": [
     "UNITTYPE_Custom6",
-    "UNITTYPE_Bot",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
