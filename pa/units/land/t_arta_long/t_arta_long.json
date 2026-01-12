@@ -8,8 +8,8 @@
     "atrophy_rate": 140.0,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "factory_cooldown_time": 1.0,
-    "wait_to_rolloff_time": 1.0,
+    "factory_cooldown_time": 6.0,
+
     
 
 
@@ -22,11 +22,10 @@
 
  "factory": {
          
-        
-        
-
         "initial_build_spec": "/pa/units/land/t_arta_long/airburst_ammo.json",
         "default_build_stance": "Continuous",
+        
+
         "store_units": true,
         "spawn_points": [
             "socket_build1",
@@ -92,6 +91,11 @@
         "fired": {
             "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
             "effect_spec": "/pa/units/land/unit_cannon/unit_cannon_fire.pfx bone_recoil"
+        },
+        "fired": {
+            
+            "effect_spec": "/pa/effects/specs/artillery_muzzle_ground.pfx",
+            "effect_scale": 2
         }
     },
     "audio": {
@@ -110,32 +114,32 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/land/t_arta_long/legion_factory_spray_short.pfx",
             "bone": "drone.l",
             "offset": [
-                0.25,
                 0,
-                1.25
+                0,
+                0
             ],
             "orientation": [
                 0,
-                90,
-                90
+                0,
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/land/t_arta_long/legion_factory_spray_short.pfx",
             "bone": "drone.r",
             "offset": [
-                0.25,
                 0,
-                1.25
+                0,
+                0
             ],
             "orientation": [
                 0,
-                90,
-                90
+                0,
+                0
             ]
         },
         {

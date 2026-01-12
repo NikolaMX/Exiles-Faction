@@ -29,7 +29,9 @@
 
 		"/pa/units/land/hail/hail_ammo.json",
 		"/pa/units/land/t_arta/t_arta_ammo.json",
-
+		"/pa/units/land/t_arta_long/airburst_ammo.json",
+		"/pa/units/land/t_arta_long/recon_ammo.json",
+		"/pa/units/land/t_arta_long/stun_ammo.json",
 
 		"pa/units/land/bug_hydra/bug_hydra_ammo.json",
 		"pa/units/structure/bug_arty_large/bug_arty_large_ammo.json",

@@ -1,7 +1,7 @@
 {
-    "si_name": "airburst_ammo",
-    "display_name": "Shrapnel",
-    "description": "!LOC:Shrapnel.",
+    "si_name": "recon_ammo",
+    "display_name": "Recon Ammo",
+    "description": "!LOC:Provides vision.",
     "TEMP_texelinfo": 5.39039,
     
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
@@ -12,8 +12,7 @@
             "audio_cue": "/SE/Build_Complete/air"
         },
         "fired": {
-            "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-            "effect_spec": "/pa/units/base/shrapnel/airburst.pfx bone_turret"
+            "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
         },
         "died": {
             "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
@@ -34,8 +33,8 @@
     ],
     "guard_layer": "WL_AnyLayer",
     "guard_radius": 100,
-    "max_health": 5,
-    "passive_health_regen": -2.5,
+    "max_health": 5000,
+    "passive_health_regen": -500,
     "mesh_bounds": [
         1,
         1,
@@ -48,13 +47,14 @@
     }
   ],
     "navigation": {
+        "air_friction": 0.01,
         "type": "air",
         "acceleration": 80,
-        "brake": 30,
-        "move_speed": 80,
-        "turn_speed": 7200  ,
-        "aggressive_distance": 100.0,
-        "aggressive_height": 40.0,
+        "brake": 0.0001,
+        "move_speed": 500,
+        "turn_speed": 0  ,
+        "aggressive_distance": 10.0,
+        "aggressive_height": 80.0,
         "bank_factor": 10,
         "vertical_speed": 200
     },
@@ -62,7 +62,7 @@
     
     "physics": {
         "radius": 6,
-        "gravity_scalar": 5
+        "gravity_scalar": 1
     },
     "recon": {
         "observer": {
@@ -71,13 +71,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 50
+                    "radius": 150
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 50
+                    "radius": 150
                 }
             ]
         }
@@ -86,39 +86,7 @@
         "diameter": 11.0
     },
      "tools": [
-         {
-            "spec_id": "/pa/units/base/shrapnel/shrapnel_tool_weapon.json",
-            "aim_bone": "bone_turret",
-            "projectiles_per_fire": 25,
-            "muzzle_bone": [
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret",
-                "bone_turret"
-
-            ]
-        }
+        
     ],
 
     "unit_types": [

@@ -53,7 +53,7 @@
 
 
 
-    "cruise_height": 30,
+    "cruise_height": 80,
 
     
     "flight_type": "Staged",
@@ -61,10 +61,10 @@
     "gravwell_velocity_multiplier": 10.0,
     "ground_target_area_spread": 0,
     "influence_radius": 400,
-    "initial_velocity": 100.0,
+    "initial_velocity": 300.0,
 
     "lifetime": 90,
-    "max_velocity": 100.0,
+    "max_velocity": 300.0,
 
     "physics": {
         "radius": 10,
@@ -106,25 +106,27 @@
             "ignores_LOS": true,
             "stage_duration": 0,
             "stage_turn_rate": 0,
-            "stage_change_height": 30,
-            "rotates_to_velocity": true
-        },
-        {
-            "ignores_gravity": true,
-            "ignores_LOS": true,
-            "stage_duration": 0,
-            "stage_turn_rate": 270,
-            "stage_change_range": 50,
+            "stage_change_height": 80,
             "rotates_to_velocity": true
         },
         {
             "ignores_gravity": false,
-            "ignores_LOS": false,
+            "ignores_LOS": true,
+            "stage_duration": 600,
             "stage_turn_rate": 270,
+            
             "rotates_to_velocity": true
+        },
+        {
+            
+            "die_here": true,
+            "stage_duration": 0,
+            "rotates_to_velocity": false
+    
         }
     ],
-
+ "spawn_unit_on_death": "/pa/units/base/recon/recon.json",
+"spawn_unit_on_death_with_velocity": true,
 
     "turn_rate": 90
 

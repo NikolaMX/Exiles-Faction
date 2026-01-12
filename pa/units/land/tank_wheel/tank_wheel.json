@@ -38,7 +38,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 115,
   "description": "Melee Brawler. Fast and durable, equipped with two short range flamethrowers",
-  "display_name": "Hellball",
+  "display_name": "Hellnew/ball",
   "headlights": [
     {
       "color": [
@@ -117,7 +117,8 @@
       "idle": "/pa/units/land/tank_wheel/ball_anim_idle.papa"
     },
     "animtree": "/pa/units/land/tank_wheel/tank_wheel_animtree.json",
-    "filename": "/pa/units/land/tank_wheel/ball.papa"
+    "filename": "/pa/units/land/tank_wheel/ball.papa",
+    "walk_speed": 0.5
   },
   "navigation": {
     "type": "land-small",

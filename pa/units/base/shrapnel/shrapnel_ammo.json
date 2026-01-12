@@ -4,6 +4,7 @@
     "splash_damage":120,
     "splash_radius":3,
     "splash_damage_full_radius":1,
+    "splash_damages_allies": true,
     "events": {
         "died": {
             "audio_cue": "/SE/Impacts/shell_bullet",
