@@ -2,7 +2,7 @@
     "si_name": "drone_aa",
     "base_spec": "/pa/units/sea/base_ship/base_ship.json",
     "display_name": "Ulua",
-    "description": "!LOC:Anti-Air Cruiser - Deploys suicide drones that hunt down enemy air. High damage anti-air missiles. Attacks A.",
+    "description": "!LOC:Anti-Air Cruiser - Deploys suicide drones that hunt down enemy air. High damage anti-air missiles. Attacks Air.",
     "max_health": 3000,
     "build_metal_cost": 3200,
     "spawn_layers": "WL_WaterSurface",

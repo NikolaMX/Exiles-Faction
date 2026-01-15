@@ -1,7 +1,7 @@
 {
     "si_name": "cruiser",
     "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-    "display_name": "Morray",
+    "display_name": "Moray",
     "description": "!LOC:Submarine - Fires volleys of unguided torpedoes. Cannot be targeted by cannons. Attacks sea and undersea targets.",
     "max_health": 760,
     "build_metal_cost": 700,

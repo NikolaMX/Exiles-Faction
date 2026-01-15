@@ -54,9 +54,9 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/adv_pylon/adv_reactor.papa",
+            "filename": "/pa/units/land/adv_pylon/adv_pylon.papa",
             "animations": {
-                "idle": "/pa/units/land/adv_pylon/adv_reactor_idle.papa"
+                "idle": "/pa/units/land/adv_pylon/adv_pylon_idle.papa"
             },
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
         }

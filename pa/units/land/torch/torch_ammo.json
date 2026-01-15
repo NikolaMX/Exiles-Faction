@@ -5,8 +5,9 @@
         "splash_radius": 0,
         "full_damage_splash_radius": 0,
         "splash_damages_allies": false,
-        "initial_velocity": 200.0,
-        "max_velocity": 200.0,
+        "initial_velocity": 30.0,
+        "max_velocity": 300.0,
+        "min_velocity": 30,
         "lifetime": 10,
         "fx_trail": {
             "filename": "/pa/units/base/stun/bot_freeze_ammo_trail.pfx",
@@ -19,7 +20,7 @@
         "spawn_unit_on_death": "/pa/units/base/stun_small/stun_small.json",
             "physics": {
                 "radius": 1,
-                "gravity_scalar": 20,
+                "gravity_scalar": 15,
                 "add_to_spatial_db": true,
                 "allow_underground": true
             },
