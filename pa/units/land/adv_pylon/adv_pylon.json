@@ -76,7 +76,18 @@
             "cue": "/SE/Selection/structure/energy"
         }
     },
-    "fx_offsets": [],
+    "fx_offsets": [
+        {
+			"type": "idle",
+			"filename": "/pa/units/land/adv_pylon/generator.pfx",
+            "bone": "bone_core",
+			"offset": [
+				0,
+				0,
+				-2
+			]
+		}
+    ],
     "headlights": [],
     "lamps": [],
     "selection_icon": {
