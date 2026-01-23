@@ -1,0 +1,12 @@
+{
+    "base_spec": "/pa/terrain/generic/base_metal.json",
+    "display_name": "!LOC:Energy Spot",
+    "show_strategic_icon": true,
+    "model": {
+        "filename": "/pa/effects/fbx/metal_splat_02.papa"
+    },
+    "feature_types": [
+        "Reclaimable",
+        "Energy_Spot"
+    ]
+}

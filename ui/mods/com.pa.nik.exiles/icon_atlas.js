@@ -1,5 +1,11 @@
 var paeiouIcons = [
     
+
+
+    //ENERGY SPOT
+    "energy_spot_01",
+
+
     // COMMANDERS
     "replicate_commander_1",
     "union_formidable",
