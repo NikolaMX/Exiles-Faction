@@ -4,7 +4,7 @@
 	"display_name": "!LOC:Hyper Tide Assembly",
 	"description": "!LOC:Enhanced Manufacturing - Builds Advanced naval units at higher speed, but lesser efficiency.",
 	"max_health": 6000,
-	"build_metal_cost": 700,
+	"build_metal_cost": 3600,
 	"atrophy_rate": 10.0,
 	"atrophy_cool_down": 15.0,
 	"spawn_layers": "WL_DeepWater",
