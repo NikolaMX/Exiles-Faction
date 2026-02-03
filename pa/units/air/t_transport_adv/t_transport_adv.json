@@ -56,8 +56,7 @@
         "ORDER_Patrol",
         "ORDER_Assist",
         "ORDER_Load",
-        "ORDER_Unload",
-        "ORDER_Attack"
+        "ORDER_Unload"
     ],
     "useable": {
         "type": "transport",
@@ -66,20 +65,8 @@
     "transporter": {
         "capacity": 24,
         "transportable_unit_types": "Mobile & Land - Titan",
-
-        "transporter_attach_bone": [
-            "attach1.r",
-            "attach2.r",
-            "attach3.r",
-            "attach4.r",
-            "attach5.r",
-            "attach1.l",
-            "attach2.l",
-            "attach3.l",
-            "attach4.l",
-            "attach5.l"
-        ],
-        "transportable_attach_offset": "head",
+        "transporter_attach_bone": "bone_root",
+        "transportable_attach_offset": "root",
         "load_range": 50,
         "chase_range": 20
     },
@@ -298,7 +285,7 @@
     "selection_icon": {
         "diameter": 33.0
     },
-    "strategic_icon_priority": 1,
+     "strategic_icon_priority": 1,
     "mesh_bounds": [
         10,
         26,

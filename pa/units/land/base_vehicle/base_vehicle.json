@@ -84,21 +84,6 @@
     "teleportable": {},
     "fx_offsets": [
         {
-            "type": "emp_disabled",
-            "filename": "/pa/effects/stun.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
             "type": "phasing",
             "filename": "/pa/effects/mini_tp.pfx",
             "bone": "bone_root",
@@ -149,9 +134,5 @@
             "/pa/effects/specs/scorch_a_01.json"
         ]
     },
-    "TEMP_texelinfo": 1.0,
-
-    
-    "emp_max_multiplier": 4,
-    "emp_decay_frac": 0.1
+    "TEMP_texelinfo": 1.0
 }

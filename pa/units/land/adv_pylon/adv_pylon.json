@@ -9,19 +9,10 @@
     "atrophy_rate": 45.0,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-      "area_build_type": "Sphere",
+    "area_build_type": "Line",
     "production": {
         "energy": 4350
     },
-
-
-"feature_requirements": [
-        "Energy_Spot"
-    ],
-    "force_snap_to_feature_orientation": true,
-
-
-
     "unit_types": [
         "UNITTYPE_Structure",
         "UNITTYPE_EnergyProduction",

@@ -44,15 +44,9 @@
     "physics": {
         "radius": 5
     },
-    "consumption": {
-        "energy": 2000
-    },
-    "energy_efficiency_requirement": 0.9,
     "recon": {
         "observable": {
-            "layer": "surface_and_air",
-            "cloaked": true,
-            "cloak_uses_energy": true
+            "layer": "mine"
         },
         "observer": {
             "items": [

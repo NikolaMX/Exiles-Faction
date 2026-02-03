@@ -15,10 +15,6 @@
         "died": {
             "audio_cue": "",
             "effect_spec": "/pa/units/land/roamer/roamer_ammo_hit.pfx"
-        },
-        "pierced": {
-            "audio_cue": "",
-            "effect_spec": "/pa/units/land/roamer/roamer_ammo_hit.pfx"
         }
     },
     "damage": 150,
@@ -26,6 +22,5 @@
     "splash_radius": 0,
     "initial_velocity": 200.0,
     "max_velocity": 200.0,
-    "lifetime": 1,
-    "pierce_count": 1
+    "lifetime": 1
 }

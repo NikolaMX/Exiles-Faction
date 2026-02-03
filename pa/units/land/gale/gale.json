@@ -19,14 +19,14 @@
             ]
         }
     },
-    "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_Attack",
-        "ORDER_Assist",
-        "ORDER_Use",
-        "ORDER_FireSecondaryWeapon"
-    ],
+     "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
     "unit_types": [
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
@@ -52,33 +52,27 @@
     "physics": {
         "radius": 3.5
     },
-    "consumption": {
-        "energy": 1500
-    },
-    "energy_efficiency_requirement": 0.9,
     "recon": {
-        "observable": {
-            "layer": "surface_and_air",
-            "sphere_radius": 8.0,
-            "ignore_cloak": true,
-            "ignore_jamming": true
-        },
         "observer": {
             "items": [
                 {
+                    "layer": "surface_and_air",
                     "channel": "sight",
-                    "radius": 150.0
+                    "shape": "capsule",
+                    "radius": 100
                 },
                 {
-                    "channel": "area_cloaker",
-                    "radius": 100.0,
-                    "uses_energy": true
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
                 },
                 {
+                    "layer": "surface_and_air",
                     "channel": "radar_jammer",
-                    "radius": 120.0,
-                    "uses_energy": true
-                }
+                    "shape": "capsule",
+                    "radius": 100
+                  }
             ]
         }
     },
@@ -87,7 +81,7 @@
             "spec_id": "/pa/units/land/gale/tool_deploy.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root",
-            "primary_weapon": true,
+            "secondary_weapon": true,
             "show_range": false
         }
     ],
@@ -182,6 +176,5 @@
         6.4,
         2.6835
     ],
-    "TEMP_texelinfo": 5.84968,
-    "transformation_unit": "/pa/units/land/tank_armor/tank_armor.json"
+    "TEMP_texelinfo": 5.84968
 }

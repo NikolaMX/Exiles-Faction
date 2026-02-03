@@ -20,7 +20,5 @@
     "Mobile - Air",
     "Structure - Wall",
     "Wall"
-  ],
-    "disable_cloak_on_fire": true,
-    "cloak_disable_duration": 5
+  ]
 }

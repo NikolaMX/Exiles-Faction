@@ -137,13 +137,13 @@
             ]
         },
         {
-            "type": "build_beam",
-            "filename": "/pa/effects/build_beam_inverted.pfx",
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
             "bone": "socket_right_muzzle"
         },
         {
-            "type": "build_beam",
-            "filename": "/pa/effects/build_beam.pfx",
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
             "bone": "socket_left_muzzle"
         }
     ],
