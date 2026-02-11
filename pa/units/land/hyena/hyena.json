@@ -42,10 +42,11 @@
         "ORDER_Move",
         "ORDER_Patrol",
         "ORDER_Build",
-        "ORDER_Reclaim",
         "ORDER_Repair",
+        "ORDER_Reclaim",
         "ORDER_Assist",
-        "ORDER_Use"
+        "ORDER_Use",
+        "ORDER_Resurrect"
     ],
     "events": {
         "build_complete": {

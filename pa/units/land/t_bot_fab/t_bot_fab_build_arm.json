@@ -5,5 +5,6 @@
       "metal": 6
     },
     "pitch_rate": 180,
-    "yaw_rate": 180
+    "yaw_rate": 180,
+    "auto_repair":true
   }
