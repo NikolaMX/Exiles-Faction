@@ -60,9 +60,9 @@
         },
         {
           "layer": "surface_and_air",
-          "channel": "radar",
+          "channel": "cloak_detector",
           "shape": "capsule",
-          "radius": 300,
+          "radius": 150,
           "uses_energy": true
         },
         {
@@ -70,13 +70,6 @@
           "channel": "sight",
           "shape": "capsule",
           "radius": 150,
-          "uses_energy": true
-        },
-        {
-          "layer": "underwater",
-          "channel": "radar",
-          "shape": "capsule",
-          "radius": 300,
           "uses_energy": true
         },
         {
