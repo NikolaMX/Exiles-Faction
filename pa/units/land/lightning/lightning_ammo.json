@@ -3,7 +3,14 @@
   "burn_duration": 1,
   "burn_radius": 1,
   "collision_check": "target",
-  "damage": 240,
+  "damage": 50,
+
+
+  "emp_damage": 250,
+  "emp_splash_damage": 20,
+  "emp_splash_radius": 12.5,
+  "emp_full_damage_splash_radius":12.5,
+
   "events": {
     "spawned": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire"
