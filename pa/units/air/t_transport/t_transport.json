@@ -3,8 +3,8 @@
     "display_name": "Stork",
     "si_name": "t_transport",
     "description": "!LOC:Sturdy Air Transport - Load up to 3 land units to transport for snipes or expansions. Moves slower than most air, but can brake quickly and has more health.",
-    "max_health": 180,
-    "build_metal_cost": 100,
+    "max_health": 200,
+    "build_metal_cost": 500,
     "attachable": {
         "offsets": {
             "root": [
@@ -55,9 +55,15 @@
         "ORDER_Unload"
     ],
     "transporter": {
-        "capacity": 3,
+        "capacity": 4,
         "transportable_unit_types": "Mobile & Land - Commander",
-        "transporter_attach_bone": "bone_payload",
+        "transporter_attach_bone": [
+            "bone_attachment_1.r",
+            "bone_attachment_2.r",
+            "bone_attachment_1.l",
+            "bone_attachment_2.l"
+        
+        ],
         "transportable_attach_offset": "head"
     },
     "usable": true,
@@ -91,81 +97,66 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/t_transport/horseshoe.papa",
+        "filename": "/pa/units/air/t_transport/t_transport.papa",
         "animations": {
-            "fly": "/pa/units/air/t_transport/horseshoe_anim_fly.papa"
+            "fly": "/pa/units/air/t_transport/t_transport_anim_fly.papa"
         },
         "animtree": "/pa/anim/anim_trees/transport_anim_tree.json"
     },
     "TEMP_texelinfo": 10.4837,
     "fx_offsets": [
         {
-            "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_leftWing",
+            "type": "moving",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_thruster_rear",
             "offset": [
                 0,
-                -0.7,
-                -2.5
+                0,
+                0
             ],
             "orientation": [
                 0,
-                90,
+                0,
                 0
             ]
         },
         {
             "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_rightWing",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_thruster.l",
             "offset": [
                 0,
-                -0.7,
-                -2.5
+                0,
+                0
             ],
             "orientation": [
                 0,
-                90,
+                0,
                 0
             ]
         },
         {
             "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_leftWing",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "bone_thruster.r",
             "offset": [
                 0,
-                0.7,
-                -2.5
-            ],
-            "orientation": [
                 0,
-                90,
                 0
-            ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_rightWing",
-            "offset": [
-                0,
-                0.7,
-                -2.5
             ],
             "orientation": [
                 0,
-                90,
+                0,
                 0
             ]
         }
     ],
     "selection_icon": {
-        "diameter": 20.0
+        "diameter": 24.0
     },
     "mesh_bounds": [
-        11,
-        15,
+        11.5,
+        17,
         4
     ]
 }

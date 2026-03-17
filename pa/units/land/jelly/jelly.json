@@ -3,7 +3,7 @@
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name": "Jelly",
     "description": "!LOC: Teleportation bot. Can transport itself and up to 32 units anywhere on any planet. Units are vulnerable for a while after teleporting and can't fight back.",
-    "max_health": 750,
+    "max_health": 1500,
     "build_metal_cost": 6000,
     "armor_type": "AT_Bot",
     "attachable": {
@@ -181,12 +181,13 @@
     "TEMP_texelinfo": 5.84968,
     "mass_teleporter": {
         "radius": 75,
-        "phasing_duration": 10,
+        "phasing_duration": 6,
         "phasing_health_frac": 0.15,
         "fixup_radius": 75,
-        "energy_drain": 1000,
+        "energy_drain": 5000,
         "energy_cost": 10000,
         "unit_cap": 32,
-        "target_types": "Mobile & Land - Commander - Titan - (Tank & Advanced & Amphibious & Heavy)"
+        "target_types": "Mobile & Land - Commander - Titan - (Tank & Advanced & Amphibious & Heavy)",
+        "max_range": 400
     }
 }

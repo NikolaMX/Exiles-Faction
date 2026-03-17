@@ -65,8 +65,30 @@
     "transporter": {
         "capacity": 24,
         "transportable_unit_types": "Mobile & Land - Titan",
-        "transporter_attach_bone": "bone_root",
-        "transportable_attach_offset": "root",
+
+        "transporter_attach_bone": [
+            "attach1.r",
+            "attach2.r",
+            "attach3.r",
+            "attach4.r",
+            "attach5.r",
+            "attach6.r",
+            "attach7.r",
+            "attach8.r",
+            "attach9.r",
+            "attach10.r",
+            "attach1.l",
+            "attach2.l",
+            "attach3.l",
+            "attach4.l",
+            "attach5.l",
+            "attach6.l",
+            "attach7.l",
+            "attach8.l",
+            "attach9.l",
+            "attach10.l"
+        ],
+        "transportable_attach_offset": "head",
         "load_range": 50,
         "chase_range": 20
     },
@@ -285,7 +307,7 @@
     "selection_icon": {
         "diameter": 33.0
     },
-     "strategic_icon_priority": 1,
+    "strategic_icon_priority": 1,
     "mesh_bounds": [
         10,
         26,

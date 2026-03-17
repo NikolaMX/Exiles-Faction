@@ -1,27 +1,6 @@
 var newBuild = {
 
 
-
-   
-
-    
-
-
-    // "/pa/units/addon/r_artillery/r_artillery.json": ["build", 0, { row: 1, column: 0 }],
-    
-    //full:
-
- 
-    // "/pa/units/addon/r_radar/r_radar.json": ["build", 0, { row: 2, column: 1 }],
-    // "/pa/units/addon/r_teleporter/r_teleporter.json": ["build", 0, { row: 2, column: 2 }],
-
-
-
-
-
-
-
-
     //Special Factory
     "/pa/units/structures/fab_complex/adv_fab_turret.json": ["t_factory", 0, { row: 2, column: 6 }],       
 
@@ -179,28 +158,32 @@ var newBuild = {
     "/pa/units/land/t_arta_long/recon_ammo.json": ["t_ammo", 4, {row: 2, column: 7}],
     "/pa/units/land/t_arta_long/stun_ammo.json": ["t_ammo", 4, {row: 2, column: 8}],
 
+
+    //Util and Economy Tabs:
+
     //Misk
     //"/pa/units/land/shield/shield.json": ["build", 0, { row: 1, column: 3 }],     // DISABLED FOR NOW
     //  "/pa/units/land/bug_gas_turret/bug_gas_turret.json": ["t_combat", 0, { row: 1, column: 3 }],
 
-    //Utility
-    "/pa/units/land/seizmic/seizmic.json": ["t_economy", 4, { row: 0, column: 1 }],
-    "/pa/units/addon/r_radar/r_radar.json": ["t_economy", 4, { row: 1, column: 1 }],
-    "/pa/units/addon/r_teleporter/r_teleporter.json": ["t_economy", 4, { row: 2, column: 1 }],
-    
-
-    "/pa/units/addon/t_control_module/t_control_module.json": ["t_economy", 4, { row: 0, column: 0 }],
-    "/pa/units/addon/t_delta_v_engine/t_delta_v_engine.json": ["t_economy", 4, { row: 1, column: 0 }],
-    "/pa/units/land/t_wall/t_wall.json": ["t_economy", 4, { row: 2, column: 0 }],
-    
-    //Economic
     //"/pa/units/land/reactor/reactor.json": ["t_economy", 4, { row: 0, column: 2 }],
     
+    //Walls and Titan
+    "/pa/units/exiles/mass_tele_titan/mass_tele_titan.json": ["t_economy", 4, { row: 0, column: 0 }],
+    "/pa/units/land/t_wall/t_wall.json": ["t_economy", 4, { row: 2, column: 0 }],
+
+    //Superweapons and Teleporter
+    "/pa/units/addon/t_control_module/t_control_module.json": ["t_economy", 4, { row: 0, column: 1 }],
+    "/pa/units/addon/t_delta_v_engine/t_delta_v_engine.json": ["t_economy", 4, { row: 1, column: 1 }],
+    "/pa/units/addon/r_teleporter/r_teleporter.json": ["t_economy", 4, { row: 2, column: 1 }],
     
+    //Utility
+    "/pa/units/land/seizmic/seizmic.json": ["t_economy", 4, { row: 1, column: 2 }],
+    "/pa/units/addon/r_radar/r_radar.json": ["t_economy", 4, { row: 2, column: 2 }],
+
+    //Economy
     "/pa/units/land/adv_pylon/adv_pylon.json": ["t_economy", 4, { row: 0, column: 3 }],
     "/pa/units/land/pylon/pylon.json": ["t_economy", 4, { row: 1, column: 3 }],
     "/pa/units/land/t_power_storage/t_power_storage.json": ["t_economy", 4, { row: 2, column: 3 }],
-
 
     "/pa/units/land/t_metal_extractor_2/t_metal_extractor_2.json": ["t_economy", 4, { row: 0, column: 4 }],
     "/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json": ["t_economy", 4, { row: 1, column: 4 }],

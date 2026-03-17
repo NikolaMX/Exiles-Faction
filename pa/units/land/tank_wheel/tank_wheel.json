@@ -10,7 +10,7 @@
             "head": [
                 0,
                 0,
-                2.7
+                5
             ]
         }
     },
@@ -118,7 +118,7 @@
     },
     "animtree": "/pa/units/land/tank_wheel/tank_wheel_animtree.json",
     "filename": "/pa/units/land/tank_wheel/ball.papa",
-    "walk_speed": 0.5
+    "walk_speed": 15
   },
   "navigation": {
     "type": "land-small",

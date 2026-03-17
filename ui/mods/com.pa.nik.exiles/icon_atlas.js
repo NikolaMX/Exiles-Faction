@@ -120,9 +120,10 @@ var paeiouIcons = [
     //Titans
     "t_chimera",
     "cyclone",
+    "mass_tele_titan",
 
     //Factories
-    "fab_complex",      //NEW!! ATTENTION!!
+    "fab_complex",
 
 
     "t_naval_fac",

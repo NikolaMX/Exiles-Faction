@@ -1,0 +1,155 @@
+{
+    "display_name": "Aether Engine",
+    "description": "!LOC:Mass Teleportation Titan. Will teleport itself any any nearby units to any location anywhere in the system.",
+    "TEMP_texelinfo": 32.0,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 650,
+    "audio": {
+        "loops": {
+            "enabled": {
+                "cue": "/SE/Celestial/Ragnarock_charge_loop",
+                "flag": "weapon_current_ammo_changed",
+                "should_start_func": "is_charging",
+                "should_stop_func": "is_not_charging",
+                "interplanetary": true
+            }
+        }
+    },
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "build_metal_cost": 60000,
+    "max_health": 15000,
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_titan_01.json"
+        ]
+    },
+    "events": {
+        "fired": {
+            "audio_cue": ""
+        },
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/delta_v"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/delta_v",
+            "effect_spec": ""
+        }
+    },
+    "has_death_effects": true,
+    "mesh_bounds": [
+        50.0454,
+        50.0306,
+        43
+    ],
+    "navigation": {
+        "type": "hover-large",
+        "acceleration": 140,
+        "brake": 140,
+        "move_speed": 14,
+        "turn_speed": 90,
+        "group_preference": "back"
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "strategic_icon_priority": 4,
+    "structure": {
+        "cost_stamp": {
+            "shape": "box",
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious-large",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "hover",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "water-hover",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "hover-large",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "deepwater",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "underwater",
+                    "stamp_type": "structure"
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/exiles/mass_tele_titan/mass_tele_titan.papa",
+        "animations": {},
+        "animtree": "",
+        "skirt_decal": "/pa/effects/specs/skirt_titan_structure.json"
+    },
+    "physics": {
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "recon": {
+        "observable": {
+            "always_visible": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 80.0
+    },
+    "unit_types": [
+        "UNITTYPE_Custom6",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Teleporter",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Important",
+        "UNITTYPE_Titan"
+    ],
+    "command_caps": [
+        "ORDER_MassTeleport"
+    ],
+    "wreckage_mesh_bounds": [
+        50.0454,
+        50.0306,
+        43
+    ],
+    "mass_teleporter": {
+        "radius": 150,
+        "phasing_duration": 10,
+        "phasing_health_frac": 0.5,
+        "fixup_radius": 150,
+        "energy_drain": 50000,
+        "energy_cost": 3000000,
+        "unit_cap": 1000,
+        "target_types": "Mobile & Land - Commander - Titan - (Tank & Advanced & Amphibious & Heavy)",
+        "max_range": -1
+    }
+}
