@@ -82,8 +82,7 @@
       "death01": "/pa/units/land/assault_bot_adv/assault_bot_adv_anim_death01.papa",
       "walk": "/pa/units/land/tripod/tripod_anim_walk.papa",
       "idle": "/pa/units/land/tripod/tripod_anim_idle.papa",
-      "death": "/pa/units/land/tripod/tripod_anim_death.papa",
-      "dead": "/pa/units/land/tripod/tripod_anim_dead.papa"
+      "death": "/pa/units/land/tripod/tripod_anim_death.papa"
     },
     "animtree": "/pa/units/land/tripod/tripod_anim_tree.json",
     "walk_speed": 5
@@ -159,21 +158,6 @@
       "type": "idle",
       "filename": "/pa/units/land/tripod/tripod_effect_1.pfx",
       "bone": "bone_reactor_right"
-    },
-    {
-      "type": "idle",
-      "filename": "/pa/units/land/tripod/tripod_door_still.pfx",
-      "bone": "bone_door_left"
-    },
-    {
-      "type": "idle",
-      "filename": "/pa/units/land/tripod/tripod_door_still.pfx",
-      "bone": "bone_door_right"
-    },
-    {
-      "type": "idle",
-      "filename": "/pa/units/land/tripod/cubes.pfx",
-      "bone": "socket_tactical"
     }
   ],
   "audio": {
