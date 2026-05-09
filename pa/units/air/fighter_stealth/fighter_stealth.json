@@ -73,7 +73,8 @@
         0,
         90,
         0
-      ]
+      ],
+      "type": "moving_forward"
     },
     {
       "bone": "bone_fire2",
@@ -87,7 +88,8 @@
         0,
         -30,
         90
-      ]
+      ],
+      "type": "moving_forward"
     },
     {
       "bone": "bone_fire3",
@@ -101,7 +103,8 @@
         0,
         -30,
         -90
-      ]
+      ],
+      "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_Air",
@@ -125,7 +128,7 @@
   "navigation": {
     "acceleration": 130,
     "brake": 130,
-    "move_speed": 65,
+    "move_speed": 70,
     "turn_speed": 120,
     "dodge_radius": 30,
     "dodge_multiplier": 2,
