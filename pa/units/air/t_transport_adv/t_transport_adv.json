@@ -63,31 +63,10 @@
         "range": 4048
     },
     "transporter": {
-        "capacity": 24,
+        "capacity": 20,
         "transportable_unit_types": "Mobile & Land - Titan",
 
-        "transporter_attach_bone": [
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root",
-            "bone_root"
-        ],
+        "transporter_attach_bone": "bone_root",
         "transportable_attach_offset": "head",
         "load_range": 50,
         "chase_range": 20
