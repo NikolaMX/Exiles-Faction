@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
     "display_name": "Brainiac Commander",
     "si_name": "exiles_brainiac",
-    "description": "Hover Exile Commander. Slow, Low HP but armed with devastating long-range laser.",
+    "description": "Hover Exiles Commander. Slow. Fragile. Can teleport at medium range. Armed with devastating long-range laser.",
     "model": {
         "filename": "/pa/units/commanders/exiles_brainiac/brainiac.papa",
         "animations": {
@@ -319,10 +319,10 @@
     "mass_teleporter": {
         "radius": 20,
         "phasing_duration": 6,
-        "phasing_health_frac": 0.9,
+        "phasing_health_frac": 0.5,
         "fixup_radius": 20,
         "energy_drain": 5000,
-        "energy_cost": 10000,
+        "energy_cost": 15000,
         "unit_cap": 5,
         "target_types": "Mobile & Land - Titan - (Tank & Advanced & Amphibious & Heavy)",
         "max_range": 200
