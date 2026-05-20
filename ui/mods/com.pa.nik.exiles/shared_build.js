@@ -57,7 +57,7 @@ var newBuild = {
     //"/pa/units/land/minigun_vehicle/minigun_vehicle.json": ["t_tank", 0, { row: 2, column: 6 }],   //Temporarily disabled
 
     "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json": ["t_tank", 0, { row: 1, column: 0 }],
-    "/pa/units/land/adv_tank_hover/adv_tank_hover.json": ["t_tank", 0, { row: 1, column: 1 }],
+    "/pa/units/land/tank_heavy_adv/tank_heavy_adv.json": ["t_tank", 0, { row: 1, column: 1 }],
     "/pa/units/land/stalker/stalker.json": ["t_tank", 0, { row: 1, column: 2 }],
     "/pa/units/land/hail/hail.json": ["t_tank", 0, { row: 1, column: 3 }],
     "/pa/units/land/tank_gattling/tank_gattling.json": ["t_tank", 0, { row: 1, column: 4 }],

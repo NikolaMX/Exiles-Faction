@@ -70,7 +70,7 @@ var paeiouIcons = [
 
     "shah",
     "tank_gattling",
-    "hippo",
+    "jaguar",
     "stalker",
     "hail",
     "hail_mine",
