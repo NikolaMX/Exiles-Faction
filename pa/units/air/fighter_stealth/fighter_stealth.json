@@ -10,6 +10,10 @@
       "audio_cue": "/SE/Build_Complete/orbital",
       "effect_scale": 1.75
     },
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/solar_drone_fire",
+      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx bone_muzzle"
+    },
     "died": {
       "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.75
@@ -17,8 +21,8 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_fire4",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "bone": "thruster.l",
+      "filename": "/pa/units/air/fighter_stealth/fighter_stealth_jets.pfx",
       "offset": [
         0,
         0,
@@ -26,14 +30,14 @@
       ],
       "orientation": [
         0,
-        -45,
+        0,
         0
       ],
       "type": "moving_forward"
     },
     {
-      "bone": "bone_fire5",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "bone": "thruster.r",
+      "filename": "/pa/units/air/fighter_stealth/fighter_stealth_jets.pfx",
       "offset": [
         0,
         0,
@@ -41,68 +45,8 @@
       ],
       "orientation": [
         0,
-        25,
-        45
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire6",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
-      "offset": [
-        0,
         0,
         0
-      ],
-      "orientation": [
-        0,
-        25,
-        -45
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire1",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire2",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        -30,
-        90
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire3",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        -30,
-        -90
       ],
       "type": "moving_forward"
     }
@@ -120,7 +64,12 @@
   },
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/air/fighter_stealth/orbital_missileX.papa"
+    "filename": "/pa/units/air/fighter_stealth/kikimora2.papa",
+    "animtree": "/pa/units/air/fighter_stealth/fighter_stealth_anim_tree.json",
+    "animations": {
+      "idle": "/pa/units/air/fighter_stealth/kikimora2_anim_idle.papa",
+      "fly": "/pa/units/air/fighter_stealth/kikimora2_anim_fly.papa"
+    }
   },
   "selection_response": {
     "cue": "/SE/Selection/air/fighter"
@@ -161,7 +110,8 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "bone_muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth_tool_weapon.json"
     }
