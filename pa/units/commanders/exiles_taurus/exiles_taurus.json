@@ -1,24 +1,32 @@
 {
-     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
-    "display_name": "Maxim Commander",
-    "si_name": "exiles_maxim",
-    "description": "Armored Exile Commander. More HP and better guns but slower and worse at building",
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "display_name": "Taurus Commander",
+    "si_name": "exiles_taurus",
+    "description": "Shielded Exile Commander. Significantly less HP but half of it in a rechargable shield. Armed with a gauss rifle.",
     "model": {
-        "filename": "/pa/units/commanders/exiles_maxim/maxim.papa",
+        "filename": "/pa/units/commanders/exiles_taurus/taurus.papa",
         "animations": {
-            "death01": "/pa/units/commanders/exiles_maxim/maxim_anim_dead.papa",
-            "walk": "/pa/units/commanders/exiles_maxim/maxim_anim_run.papa",
-            "idle": "/pa/units/commanders/exiles_maxim/maxim_anim_idle.papa",
+            "death01": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_dead.papa",
+            "walk": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_walk.papa",
+            "idle": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_idle.papa",
             "walk_stop": "",
-            "aim_up": "/pa/units/commanders/exiles_maxim/maxim_anim_aim_up.papa",
-            "aim_down": "/pa/units/commanders/exiles_maxim/maxim_anim_aim_down.papa"
+            "aim_up": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_aimUp.papa",
+            "aim_down": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_aimDown.papa"
         },
-        "animtree": "/pa/units/commanders/exiles_maxim/maxim_anim_tree.json",
-        "walk_speed": 9
+        "animtree": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_tree.json",
+        "walk_speed": 10
     },
-    "has_death_effects":true,
+    "has_death_effects": true,
     "strategic_icon_priority": 0,
-    "max_health": 17500,
+    "max_health": 5000,
+    "shield": {
+        "radius": 10,
+        "max_health": 5000,
+        "recharge_rate": 100,
+        "energy_demand": 1000,
+        "cooldown_time": 20,
+        "recharge_requires_efficiency": true
+    },
     "build_metal_cost": 8000,
     "buildable_types": "CmdBuild & Custom6",
     "show_in_orbital_layer": true,
@@ -122,51 +130,38 @@
     "teleportable": {},
     "tools": [
         {
-            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_build_arm.json",
-            "aim_bone": "fab_turret",
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_build_arm.json",
+            "aim_bone": "socket_leftMuzzle",
             "record_index": 2,
             "primary_weapon": false
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_weapon.json",
-            "aim_bone": "bone_turret_right",
-            "muzzle_bone": "muzzle_right",
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
             "primary_weapon": true,
-            "record_index": 1,
             "fire_event": "fired1"
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_maxim/uber_cannon.json",
-            "aim_bone": "muzzleAA2",
-            "muzzle_bone": "muzzleAA2",
-            "secondary_weapon": true
+            "spec_id": "/pa/units/commanders/exiles_taurus/uber_cannon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_leftMuzzle",
+            "secondary_weapon": true,
+            "fire_event": "fired3"
         },
         {
-            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_aa_weapon.json",
-            "aim_bone": "bone_pitch_aa",
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
             "muzzle_bone": [
-                "muzzleAA1",
-                "muzzleAA2",
-                "muzzleAA3"
+                "socket_leftMuzzle"
             ],
             "fire_event": "fired2",
             "primary_weapon": false,
-            "show_range": false
-        },
-        {
-            "spec_id": "/pa/units/commanders/exiles_maxim/exiles_maxim_tool_intercept.json",
-            "aim_bone": "bone_pitch_aa",
-            "muzzle_bone": [
-                "muzzleAA1",
-                "muzzleAA2",
-                "muzzleAA3"
-            ],
-            "primary_weapon": false,
-            "show_range": false
+            "show_range": true
         },
         {
             "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
-            "aim_bone": "bone_root",
+            "aim_bone": "bone_turret",
             "muzzle_bone": "bone_root",
             "primary_weapon": false,
             "show_range": false
@@ -174,110 +169,50 @@
     ],
     "events": {
         "fired1": {
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle_right"
+            "effect_spec": "/pa/units/commanders/exiles_taurus/proj_lightning.pfx socket_rightMuzzle"
         },
-        "fired0": {
-            "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
-            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA2"
-        },"fired2": {
+        "fired2": {
             "audio_cue": "",
-            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA1 /pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx muzzleAA2"
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_leftMuzzle"
+        },
+        "fired3": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/commanders/exiles_taurus/lightning_muzzle_shotgun.pfx socket_leftMuzzle"
         }
     },
     "fx_offsets": [
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "fab_muzzle"
-        }
-    ],
-    "headlights": [
+            "bone": "socket_leftMuzzle"
+        },
         {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "type": "Idle",
+            "filename": "/pa/units/commanders/exiles_taurus/rail_arcs.pfx",
+            "bone": "socket_rightMuzzle",
             "offset": [
-                0,
-                -5,
-                1.2
+                0,-1.5,0
             ],
             "orientation": [
-                0.0,
-                45.0,
-                0.0
-            ],
-            "near_width": 5.0,
-            "near_height": 5.0,
-            "near_distance": 3.0,
-            "far_distance": 30.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 5.0,
-            "bone": "bone_turret",
-            "shadow_resolution": 128
-        }
-    ],
-    "lamps": [
+                90,
+                0,
+                0
+            ]
+        },
         {
+            "bone": "bone_root",
+            "filename": "/pa/units/commanders/exiles_taurus/shield.pfx",
             "offset": [
                 0,
-                -5,
-                1.2
+                -0.5,
+                10
             ],
-            "radius": 2.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 5.0,
-            "bone": "bone_turret"
-        },
-        {
-            "offset": [
+            "orientation": [
                 0,
-                -2,
-                5
-            ],
-            "radius": 3.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 2.0,
-            "bone": "bone_turret"
-        },
-        {
-            "offset": [
-                2.2,
-                -3,
-                5
-            ],
-            "radius": 2.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 5.0,
-            "bone": "bone_turret"
-        },
-        {
-            "offset": [
-                5,
-                -7,
+                0,
                 0
             ],
-            "radius": 6.0,
-            "color": [
-                0.4,
-                1.0,
-                0.01
-            ],
-            "intensity": 2.0,
-            "bone": "bone_pitch"
+            "type": "shield"
         }
     ],
     "audio": {
@@ -313,9 +248,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_maxim/untitled6.png",
-            "thumb_image": "/pa/units/commanders/exiles_maxim/untitled7.png",
-            "profile_image": "/pa/units/commanders/exiles_maxim/thumb.png"
+            "image": "/pa/units/commanders/exiles_taurus/exiles_taurus_image.png",
+            "thumb_image": "/pa/units/commanders/exiles_taurus/untitled7.png",
+            "profile_image": "/pa/units/commanders/exiles_maxim/profile_exiles_maxim1.png"
         }
     }
 }

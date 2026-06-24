@@ -62,9 +62,12 @@
     "maintain_priority_target": false,
     "stop_clears_nearby_targets": true,
     "model": {
-        "filename": "/pa/units/air/swordfish/swordfish.papa",
+        "filename": "/pa/units/air/swordfish/shrike.papa",
         "arrows": 5,
-        "animtree": "/pa/units/air/swordfish/swordfish_anim_tree.json"
+        "animtree": "/pa/units/air/swordfish/swordfish_anim_tree.json",
+        "animations": {
+            "idle": "/pa/units/air/swordfish/shrike_anim_idle.papa"
+        }
     },
     "tools": [
         {
@@ -79,7 +82,7 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/air/gunship_fire",
-            "effect_spec": "/pa/units/air/strafer/strafer_muzzle_flash.pfx socket_left"
+            "effect_spec": "/pa/units/air/strafer/strafer_muzzle_flash.pfx bone_root"
         },
         "fired3": {
             "audio_cue": "/SE/Weapons/air/bomber_fire"
@@ -91,9 +94,9 @@
     },
     "fx_offsets": [
         {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "socket_thruster",
+            "type": "idle",
+            "filename": "/pa/units/air/swordfish/shrike_stun_charged.pfx",
+            "bone": "bone_root",
             "offset": [
                 0,
                 0,
@@ -102,12 +105,62 @@
         },
         {
             "type": "moving_forward",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "socket_thruster.001",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster.l",
             "offset": [
                 0,
                 0,
-                0
+                -0.25
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster.r",
+            "offset": [
+                0,
+                0,
+                -0.25
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster2.r",
+            "offset": [
+                0,
+                0,
+                -0.25
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster3.r",
+            "offset": [
+                0,
+                0,
+                -0.25
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster2.l",
+            "offset": [
+                0,
+                0,
+                -0.25
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
+            "bone": "bone_thruster3.l",
+            "offset": [
+                0,
+                0,
+                -0.25
             ]
         }
     ],
@@ -125,7 +178,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 15.0
+        "diameter": 30.0
     },
     "TEMP_texelinfo": 10.4258,
     "mesh_bounds": [
