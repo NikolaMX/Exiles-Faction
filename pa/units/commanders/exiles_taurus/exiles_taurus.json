@@ -249,8 +249,8 @@
     "client": {
         "ui": {
             "image": "/pa/units/commanders/exiles_taurus/exiles_taurus_image.png",
-            "thumb_image": "/pa/units/commanders/exiles_taurus/untitled7.png",
-            "profile_image": "/pa/units/commanders/exiles_maxim/profile_exiles_maxim1.png"
+            "thumb_image": "/pa/units/commanders/exiles_taurus/exiles_taurus_image.png",
+            "profile_image": "/pa/units/commanders/exiles_taurus/profile_exiles_maxim1.png"
         }
     }
 }
