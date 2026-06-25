@@ -2,7 +2,7 @@
   "burn_damage": 24,
   "burn_duration": 1,
   "burn_radius": 1,
-  "collision_check": "target",
+  "collision_check": "Enemies",
   "damage": 180,
 
 
