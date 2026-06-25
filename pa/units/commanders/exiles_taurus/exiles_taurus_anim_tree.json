@@ -177,7 +177,8 @@
                 }
             },
             "dead": {
-                "type": "bind_pose"
+                "type": "playback",
+                "anim_name": "death01"
             },
             "ghost": {
                 "type": "bind_pose"
