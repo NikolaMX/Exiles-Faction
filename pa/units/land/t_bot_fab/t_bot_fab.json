@@ -74,14 +74,14 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/t_bot_fab/crawler_fabber.papa",
+        "filename": "/pa/units/land/t_bot_fab/t_bot_fab.papa",
         "animations": {
-            "death01": "/pa/units/land/t_bot_fab/crawler_fabber.papa",
-            "idle": "/pa/units/land/t_bot_fab/crawler_fabber_anim_idle.papa",
-            "walk": "/pa/units/land/t_bot_fab/crawler_fabber_anim_run.papa"
+            "death01": "/pa/units/land/t_bot_fab/t_bot_fab_anim_idle.papa",
+            "idle": "/pa/units/land/t_bot_fab/t_bot_fab_anim_idle.papa",
+            "walk": "/pa/units/land/t_bot_fab/t_bot_fab_anim_walk.papa"
         },
         "animtree": "/pa/units/land/t_bot_fab/anim_tree.json",
-        "walk_speed": 5.5
+        "walk_speed": 1
     },
     "tools": [
         {
@@ -139,12 +139,12 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_right_muzzle"
+            "bone": "bone_muzzle.l"
         },
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_left_muzzle"
+            "bone": "bone_muzzle.r"
         }
     ],
     "selection_icon": {
