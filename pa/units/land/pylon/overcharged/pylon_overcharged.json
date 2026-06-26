@@ -15,9 +15,9 @@
 
 	"model": [
 		{
-			"filename": "/pa/units/land/pylon/a_energy_plant.papa",
+			"filename": "/pa/units/land/pylon/overcharged/prylon.papa",
 			"animations": {
-				"idle": "/pa/units/land/pylon/overcharged/a_energy_plant_overcharged_anim_work.papa"
+				"idle": "/pa/units/land/pylon/prylon_anim_work.papa"
 			},
 			"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
 			"skirt_decal": "/pa/effects/specs/skirt_energy.json"
@@ -55,7 +55,7 @@
 		{
 			"type": "idle",
             "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
-            "bone": "socket_ring_center",
+            "bone": "bone_wheel",
             "offset": [
                 0,
                 0,
@@ -65,7 +65,7 @@
 		{
 			"type": "idle",
             "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
-            "bone": "socket_ring_center",
+            "bone": "bone_wheel",
             "offset": [
                 0,
                 0,
@@ -75,12 +75,22 @@
 		{
 			"type": "idle",
             "filename": "/pa/units/land/pylon/a_energy_plant_idle.pfx",
-            "bone": "socket_ring_center",
+            "bone": "bone_wheel",
             "offset": [
                 0,
                 0,
                 0
             ]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/land/pylon/pylon_smoke_idle.pfx",
+			"bone": "bone_smoke",
+			"offset": [
+				0,
+				0,
+				0
+			]
 		}
 	]
 }
