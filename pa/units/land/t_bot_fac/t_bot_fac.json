@@ -12,18 +12,24 @@
     "buildable_types": "(Bot & Mobile & Basic | Bot & Fabber & Basic & Mobile) & FactoryBuild & Custom6 - Custom7",
     "rolloff_dirs": [
         [
-            0,
             1,
+            0,
             0
         ],
         [
-            0,
             -1,
+            0,
             0
         ]
     ],
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 3,
+    "factory": {
+        
+        "spawn_points": [
+            "bone_platform"
+        ]
+        },
     "unit_types": [
         "UNITTYPE_Custom6",
         "UNITTYPE_Factory",
@@ -65,12 +71,12 @@
     },
     "model": {
         "animations": {
-            "build_end": "/pa/units/land/t_bot_fac/Vfac22_anim_end.papa",
-            "build_loop": "/pa/units/land/t_bot_fac/Vfac22_anim_build.papa",
-            "build_start": "/pa/units/land/t_bot_fac/Vfac22_anim_start.papa"
+            
+            "build_loop": "/pa/units/land/t_bot_fac/t_bot_factory_anim_loop.papa",
+            "idle": "/pa/units/land/t_bot_fac/t_bot_factory_anim_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-        "filename": "/pa/units/land/t_bot_fac/Vfac22.papa",
+        "filename": "/pa/units/land/t_bot_fac/t_bot_factory.papa",
         "skirt_decal": "/pa/effects/specs/skirt_air.json"
     },
     "tools": [
@@ -96,32 +102,47 @@
     },
     "fx_offsets": [
         {
-            "bone": "bone_armNozzle01",
+            "bone": "bone_arm_muzzle.c",
             "filename": "/pa/effects/specs/fab_spray.pfx",
             "offset": [
-                1.43,
                 0,
-                -0.453
+                0,
+                0
             ],
             "orientation": [
                 0,
                 0,
-                180
+                0
             ],
             "type": "build"
         },
         {
-            "bone": "bone_armNozzle02",
+            "bone": "bone_arm_muzzle.r",
             "filename": "/pa/effects/specs/fab_spray.pfx",
             "offset": [
-                1.43,
                 0,
-                -0.453
+                0,
+                0
             ],
             "orientation": [
                 0,
                 0,
-                180
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "bone_arm_muzzle.l",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
             ],
             "type": "build"
         }
@@ -204,8 +225,8 @@
         15
     ],
     "placement_size": [
-        40,
-        55
+        45,
+        50
     ],
     "area_build_separation": 2,
     "TEMP_texelinfo": 37.6046,
