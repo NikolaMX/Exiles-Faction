@@ -131,8 +131,8 @@
     "tools": [
         {
             "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_build_arm.json",
-            "aim_bone": "socket_leftMuzzle",
-            "record_index": 2,
+            "aim_bone": "bone_turret",
+            "record_index": 0,
             "primary_weapon": false
         },
         {
