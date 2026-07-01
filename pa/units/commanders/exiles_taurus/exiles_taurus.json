@@ -248,9 +248,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_taurus/exiles_taurus_image.png",
-            "thumb_image": "/pa/units/commanders/exiles_taurus/exiles_taurus_image.png",
-            "profile_image": "/pa/units/commanders/exiles_taurus/profile_exiles_maxim1.png"
+            "image": "/pa/units/commanders/exiles_taurus/img_exiles_taurus.png",
+            "thumb_image": "/pa/units/commanders/exiles_taurus/img_exiles_taurus_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_taurus/profile_exiles_taurus.png"
         }
     }
 }

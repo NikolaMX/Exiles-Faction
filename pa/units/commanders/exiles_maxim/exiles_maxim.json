@@ -313,9 +313,9 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_maxim/untitled6.png",
-            "thumb_image": "/pa/units/commanders/exiles_maxim/untitled7.png",
-            "profile_image": "/pa/units/commanders/exiles_maxim/thumb.png"
+            "image": "/pa/units/commanders/exiles_maxim/img_exiles_maxim.png",
+            "thumb_image": "/pa/units/commanders/exiles_maxim/img_exiles_maxim_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_maxim/profile_exiles_maxim.png"
         }
     }
 }
