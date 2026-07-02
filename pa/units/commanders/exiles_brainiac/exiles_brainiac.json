@@ -1,5 +1,9 @@
 {
     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "ai_metal_extractor_names": {
+        "basic": "ExilesBasicMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
+    },
     "display_name": "Brainiac Commander",
     "si_name": "exiles_brainiac",
     "description": "Hover Exiles Commander. Slow. Fragile. Can teleport at medium range. Armed with devastating long-range laser.",

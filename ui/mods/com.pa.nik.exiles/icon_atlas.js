@@ -1,8 +1,7 @@
 var paeiouIcons = [
     
     // COMMANDERS
-    "replicate_commander_1",
-    "union_formidable",
+    "exiles_blueberry",
     "exiles_maxim",
     "exiles_brainiac",
     "exiles_taurus",

@@ -2,7 +2,7 @@
     "ammo_id": [
       {
         "layer": "WL_AnyLand",
-        "id": "/pa/units/commanders/exiles_blueberry/union_formidable_ammo.json"
+        "id": "/pa/units/commanders/exiles_blueberry/exiles_blueberry_ammo.json"
       }
     ],
     "auto_attack": true,

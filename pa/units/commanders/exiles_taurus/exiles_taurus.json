@@ -1,5 +1,9 @@
 {
     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "ai_metal_extractor_names": {
+        "basic": "ExilesBasicMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
+    },
     "display_name": "Taurus Commander",
     "si_name": "exiles_taurus",
     "description": "Shielded Exile Commander. Significantly less HP but half of it in a rechargable shield. Armed with a gauss rifle.",
