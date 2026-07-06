@@ -57,8 +57,13 @@
     "transporter": {
         "capacity": 4,
         "transportable_unit_types": "Mobile & Land - Commander",
-        "transporter_attach_bone": 
-            "bone_root",
+        "transporter_attach_bone": [
+            "bone_attachment_1.r",
+            "bone_attachment_2.r",
+            "bone_attachment_1.l",
+            "bone_attachment_2.l"
+        
+        ],
         "transportable_attach_offset": "head"
     },
     "usable": true,
