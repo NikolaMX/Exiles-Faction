@@ -67,18 +67,6 @@
         "transportable_unit_types": "Mobile & Land - Titan",
 
         "transporter_attach_bone": [
-            "attach1.r",
-            "attach2.r",
-            "attach3.r",
-            "attach4.r",
-            "attach5.r",
-
-            "attach1.l",
-            "attach2.l",
-            "attach3.l",
-            "attach4.l",
-            "attach5.l",
-
             "attach6.r",
             "attach7.r",
             "attach8.r",
@@ -89,7 +77,19 @@
             "attach7.l",
             "attach8.l",
             "attach9.l",
-            "attach10.l"
+            "attach10.l",
+
+            "attach1.r",
+            "attach2.r",
+            "attach3.r",
+            "attach4.r",
+            "attach5.r",
+
+            "attach1.l",
+            "attach2.l",
+            "attach3.l",
+            "attach4.l",
+            "attach5.l"            
         ],
         "transportable_attach_offset": "head",
         "load_range": 50,
