@@ -168,12 +168,12 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam.pfx",
             "bone": "fab.l"
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
             "bone": "fab.r"
         },
         {

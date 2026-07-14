@@ -176,7 +176,7 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_blueberry/blueberry_build_beam.pfx",
             "bone": "socket_left"
         }
     ],

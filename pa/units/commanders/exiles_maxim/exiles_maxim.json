@@ -191,7 +191,7 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_maxim/maxim_build_beam.pfx",
             "bone": "fab_muzzle"
         }
     ],
