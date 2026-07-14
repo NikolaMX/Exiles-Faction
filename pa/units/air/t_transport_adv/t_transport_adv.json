@@ -56,7 +56,8 @@
         "ORDER_Patrol",
         "ORDER_Assist",
         "ORDER_Load",
-        "ORDER_Unload"
+        "ORDER_Unload",
+        "ORDER_Attack"
     ],
     "useable": {
         "type": "transport",
@@ -93,7 +94,11 @@
         ],
         "transportable_attach_offset": "head",
         "load_range": 50,
-        "chase_range": 20
+        "chase_range": 20,
+        "fire_while_loaded": {
+            "enabled": true,
+            "unit_types": "Bot & Basic & Offense - Heavy - Artillery"
+        }
     },
     "planetary_arrival_cooldown_time": 10.0,
     "system_velocity_multiplier": 30.0,
