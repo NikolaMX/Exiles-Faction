@@ -102,49 +102,19 @@
     },
     "fx_offsets": [
         {
-            "bone": "bone_arm_muzzle.c",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
+            "type": "build",
+            "filename": "/pa/units/land/t_bot_fac/build_beam.pfx",
+            "bone": "bone_arm_muzzle.c"
         },
         {
-            "bone": "bone_arm_muzzle.r",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
+            "type": "build",
+            "filename": "/pa/units/land/t_bot_fac/build_beam.pfx",
+            "bone": "bone_arm_muzzle.r"
         },
         {
-            "bone": "bone_arm_muzzle.l",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
+            "type": "build",
+            "filename": "/pa/units/land/t_bot_fac/build_beam_inverted.pfx",
+            "bone": "bone_arm_muzzle.l"
         }
     ],
     "headlights": [

@@ -57,7 +57,52 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_muzzle01",
+            "bone": "laser_b.r",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "laser_t.r",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "laser_b.l",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "laser_t.l",
             "offset": [
                 0,
                 0,
@@ -84,7 +129,7 @@
                 0.1
             ],
             "intensity": 2.0,
-            "bone": "bone_armBase"
+            "bone": "bone_arm.l"
         },
         {
             "offset": [
@@ -99,7 +144,7 @@
                 0.1
             ],
             "intensity": 2.0,
-            "bone": "bone_armElbow"
+            "bone": "bone_arm.r"
         },
         {
             "offset": [
@@ -167,28 +212,28 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/nuke_launcher/nuke_launcher.papa",
+            "filename": "/pa/units/land/missile_facility/t_nuke_launcher.papa",
             "animations": {
-                "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-                "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-                "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-                "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa",
-                "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-                "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa"
+                "build_start": "/pa/units/land/missile_facility/t_nuke_launcher_anim_start.papa",
+                "build_loop": "/pa/units/land/missile_facility/t_nuke_launcher_anim_loop.papa",
+                "build_end": "/pa/units/land/missile_facility/t_nuke_launcher_anim_end.papa",
+                "fire_start": "/pa/units/land/missile_facility/t_nuke_launcher_anim_start.papa",
+                "fire_loop": "/pa/units/land/missile_facility/t_nuke_launcher_anim_loop.papa",
+                "fire_end": "/pa/units/land/missile_facility/t_nuke_launcher_anim_end.papa"
             },
             "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_nuke.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/nuke_launcher/nuke_launcher.papa",
+            "filename": "/pa/units/land/missile_facility/t_nuke_launcher.papa",
             "animations": {
-                "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-                "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-                "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-                "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa",
-                "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-                "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa"
+                "build_start": "/pa/units/land/missile_facility/t_nuke_launcher_anim_start.papa",
+                "build_loop": "/pa/units/land/missile_facility/t_nuke_launcher_anim_loop.papa",
+                "build_end": "/pa/units/land/missile_facility/t_nuke_launcher_anim_end.papa",
+                "fire_start": "/pa/units/land/missile_facility/t_nuke_launcher_anim_start.papa",
+                "fire_loop": "/pa/units/land/missile_facility/t_nuke_launcher_anim_loop.papa",
+                "fire_end": "/pa/units/land/missile_facility/t_nuke_launcher_anim_end.papa"
             },
             "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json"
         }
@@ -216,7 +261,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 25.0
+        "diameter": 30.0
     },
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "tools": [
