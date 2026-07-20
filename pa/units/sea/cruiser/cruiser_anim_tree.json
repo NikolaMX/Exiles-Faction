@@ -10,7 +10,7 @@
                 "node_idle": {
                     "type": "bind_pose"
                 },
-                "node_fly": {
+                "node_walk": {
                     "type": "playback",
                     "anim_name": "move"
                 }
