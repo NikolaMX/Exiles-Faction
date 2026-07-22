@@ -5,6 +5,8 @@
   "description": "!LOC: Can hover over water and lava. Can build basic structures. Can not assist or repair.",
   "strategic_icon_priority": 0,
   "max_health": 200,
+  "build_metal_cost": 175,
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & (Bot | Air | Naval | Tank) | FabBuild) & Custom6 - Custom7",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
   "attachable": {
@@ -25,16 +27,15 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_NoBuild",
     "UNITTYPE_Custom6",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Tank",
     "UNITTYPE_Vehicle",
-    "UNITTYPE_Offense",
+    "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
-    
     "UNITTYPE_Hover"
   ],
   "command_caps": [
@@ -42,7 +43,6 @@
     "ORDER_Patrol",
     "ORDER_Build",
     "ORDER_Reclaim",
-    "ORDER_Repair",
     "ORDER_Assist",
     "ORDER_Use"
   ],
@@ -82,8 +82,6 @@
   },
   "teleportable": {},
   "tools": [
-      "primary_weapon": true
-    },
     {
       "spec_id": "/pa/units/exiles/battle_fab/battle_fab_tool_build_arm.json",
       "aim_bone": "muzzle_fab",
@@ -93,6 +91,8 @@
   ],
   "events": {
     "fired": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx bone_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",
@@ -103,7 +103,7 @@
   "fx_offsets": [
     {
       "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "filename": "/pa/units/commanders/exiles_taurus/taurus_build_beam.pfx",
       "bone": "muzzle_fab"
     }
   ],

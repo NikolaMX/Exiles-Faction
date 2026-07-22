@@ -28,14 +28,14 @@
   },
   "unit_types": [
     "UNITTYPE_Custom6",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Tank",
     "UNITTYPE_Vehicle",
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_NoBuild",
+    "UNITTYPE_Advanced",
     "UNITTYPE_Hover"
   ],
   "command_caps": [
