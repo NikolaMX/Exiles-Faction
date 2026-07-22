@@ -37,8 +37,8 @@ var newBuild = {
 
 
     // Special Factory
-    "/pa/units/exiles/battle_fab/battle_fab.json": ["t_foundry", 0, { row: 2, column: 0 }],
-    "/pa/units/exiles/battle_fab_adv/battle_fab_adv.json": ["t_foundry", 0, { row: 1, column: 0 }],
+    "/pa/units/land/t_tank_fab/t_tank_fab.json": ["t_foundry", 0, { row: 2, column: 0 }],
+    "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json": ["t_foundry", 0, { row: 1, column: 0 }],
     "/pa/units/land/sword_dox/sword_dox.json": ["t_foundry", 0, { row: 2, column: 1 }],
    
 
@@ -46,7 +46,8 @@ var newBuild = {
     "/pa/units/land/t_tank_fac/t_tank_fac.json": ["t_factory", 0, { row: 2, column: 3 }],
     "/pa/units/land/t_tank_fac_adv/t_tank_fac_adv.json": ["t_factory", 0, { row: 1, column: 3 }],
 
-    "/pa/units/land/t_tank_fab/t_tank_fab.json": ["t_tank", 0, { row: 2, column: 0 }],
+    
+    "/pa/units/exiles/battle_fab/battle_fab.json": ["t_tank", 0, { row: 2, column: 0 }],
     "/pa/units/land/tank_wheel/tank_wheel.json": ["t_tank", 0, { row: 2, column: 1 }],
     "/pa/units/land/lightning/lightning.json": ["t_tank", 0, { row: 2, column: 2 }],
     "/pa/units/land/roamer/roamer.json": ["t_tank", 0, { row: 2, column: 3 }],
@@ -56,14 +57,14 @@ var newBuild = {
     
     //"/pa/units/land/minigun_vehicle/minigun_vehicle.json": ["t_tank", 0, { row: 2, column: 6 }],   //Temporarily disabled
 
-    "/pa/units/land/t_tank_fab_adv/t_tank_fab_adv.json": ["t_tank", 0, { row: 1, column: 0 }],
+
+    "/pa/units/exiles/battle_fab_adv/battle_fab_adv.json": ["t_tank", 0, { row: 1, column: 0 }],
     "/pa/units/land/tank_heavy_adv/tank_heavy_adv.json": ["t_tank", 0, { row: 1, column: 1 }],
     "/pa/units/land/stalker/stalker.json": ["t_tank", 0, { row: 1, column: 2 }],
     "/pa/units/land/hail/hail.json": ["t_tank", 0, { row: 1, column: 3 }],
     "/pa/units/land/tank_gattling/tank_gattling.json": ["t_tank", 0, { row: 1, column: 4 }],
     "/pa/units/land/shah/shah.json": ["t_tank", 0, { row: 1, column: 5 }],
 
-   
 
 
     //Air Factory

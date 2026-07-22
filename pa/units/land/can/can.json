@@ -62,10 +62,10 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/can/can.papa",
+        "filename": "/pa/units/land/can/can1.papa",
         "animations": {
-            "idle": "/pa/units/land/can/anim_idle.papa",
-            "walk": "/pa/units/land/can/anim_run.papa"
+            "idle": "/pa/units/land/can/anim_idle1.papa",
+            "walk": "/pa/units/land/can/anim_run1.papa"
         },
         "animtree": "/pa/units/land/can/anim_tree.json",
         "walk_speed": 5

@@ -4,8 +4,8 @@
   "display_name": "Advanced Hover Fabricator",
   "description": "!LOC:Constructs Advanced Structures. Can travel over lava and water. Can assist factories.",
   "strategic_icon_priority": 0,
-  "max_health": 400,
-  "build_metal_cost": 2500,
+  "max_health": 500,
+  "build_metal_cost": 2250,
   "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
@@ -85,7 +85,6 @@
   },
   "teleportable": {},
   "tools": [
-    
     {
       "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_build_arm.json",
       "aim_bone": "bone_turret_fab"
@@ -101,13 +100,13 @@
   "fx_offsets": [
     {
       "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab.r"
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam.pfx",
+      "bone": "muzzle_fab.l"
     },
     {
       "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab.l"
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
+      "bone": "muzzle_fab.r"
     }
   ],
   "audio": {
