@@ -12,6 +12,7 @@ var exileCommanders = [
   "/pa/units/commanders/exiles_blueberry/exiles_blueberry.json",
   "/pa/units/commanders/exiles_maxim/exiles_maxim.json",
   "/pa/units/commanders/exiles_brainiac/exiles_brainiac.json",
+  "/pa/units/commanders/exiles_taurus/exiles_taurus.json",
 ]
 
 if (!bugsLiveGamePlayersLoaded) {
