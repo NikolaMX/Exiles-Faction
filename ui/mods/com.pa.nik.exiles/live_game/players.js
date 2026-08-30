@@ -19,6 +19,7 @@ if (!bugsLiveGamePlayersLoaded) {
   function bugsLiveGamePlayers() {
     try {
       loadCSS("coui://ui/mods/com.pa.nik.exiles/css/exiles_players.css");
+      loadScript("coui://ui/mods/com.pa.nik.exiles/spec_path.js");
       var checkCommanders = function (commanders) {
         var exilesCount = 0;
         var legionCount = 0;
@@ -29,16 +30,17 @@ if (!bugsLiveGamePlayersLoaded) {
           var factionArray = [];
           _.forOwn(commanders, function (value) {
             var mlaFound = true;
+            var spec = exilesSpecPath(value);
             // eslint-disable-next-line no-undef
-            if (_.includes(legionCommanders, value)) {
+            if (_.includes(legionCommanders, spec)) {
               legionCount++
               mlaFound = false;
             }
-            if (_.includes(exileCommanders, value)) {
+            if (_.includes(exileCommanders, spec)) {
               exilesCount++
               mlaFound = false;
             }
-            if (_.includes(bugCommanders, value)) {
+            if (_.includes(bugCommanders, spec)) {
               bugsCount++;
               mlaFound = false;
             }
