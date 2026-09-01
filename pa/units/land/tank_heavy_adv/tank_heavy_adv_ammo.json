@@ -3,14 +3,6 @@
 	"model": {
 		"filename": "/pa/units/air/shell/shell.papa"
 	},
-	"fx_trail": {
-		"filename": "/pa/units/land/adv_tank_hover/shell_proj_trail.json",
-		"offset": [
-			0.0,
-			0.8,
-			0.0
-		]
-	},
 	"damage": 800,
 	"splash_damage": 400,
 	"splash_radius": 3,
