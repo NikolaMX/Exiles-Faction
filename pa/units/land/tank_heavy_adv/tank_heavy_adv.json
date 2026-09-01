@@ -26,6 +26,7 @@
 		"UNITTYPE_Offense",
 		"UNITTYPE_Land",
 		"UNITTYPE_Advanced",
+		"UNITTYPE_Heavy",
 		"UNITTYPE_FactoryBuild",
 		"UNITTYPE_Custom6"
 	],
