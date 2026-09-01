@@ -25,31 +25,6 @@
     ],
     "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
     "guard_radius": 80,
-    "navigation": {
-        "type": "land-small",
-        "acceleration": 0,
-        "brake": 0,
-        "move_speed": 0,
-        "turn_speed": 0,
-        "dodge_radius": 0,
-        "dodge_multiplier": 0,
-        "wobble_factor": 0,
-        "wobble_speed": 0,
-        "park_stamp": {
-            "shape": "sphere",
-            "cost": 10,
-            "type_data": [
-                {
-                    "move_type": "land-small",
-                    "stamp_type": "simple"
-                },
-                {
-                    "move_type": "amphibious",
-                    "stamp_type": "simple"
-                }
-            ]
-        }
-    },
     "physics": {
         "type": "structure",
         "shape": "Box",

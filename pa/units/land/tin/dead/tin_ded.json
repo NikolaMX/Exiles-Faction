@@ -22,8 +22,6 @@
     },
     "unit_types": [
         "UNITTYPE_Bot",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_Custom6",
@@ -33,12 +31,6 @@
         "size": 1
     },
     "guard_layer": "WL_AnySurface",
-    "navigation": {
-        "acceleration": 50,
-        "brake": -1,
-        "move_speed": 0,
-        "turn_speed": 720
-    },
     "physics": {
         "type": "Structure",
         "radius": 0,
