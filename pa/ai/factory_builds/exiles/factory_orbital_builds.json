@@ -127,7 +127,7 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "priority": 100,
       "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
@@ -137,7 +137,7 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -156,7 +156,7 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite - Pri",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "priority": 102,
       "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
@@ -166,7 +166,7 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -179,7 +179,7 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite - Other planet",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
@@ -190,7 +190,7 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -443,7 +443,7 @@
     },
     {
       "name": "Exiles - Advanced Radar Sattelite",
-      "to_build": "AdvancedRadarSatellite",
+      "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
@@ -455,7 +455,7 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSatellite"
+            "string0": "AdvancedRadarSattelite"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -469,7 +469,7 @@
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSatellite"
+            "string0": "AdvancedRadarSattelite"
           },
           {
             "test_type": "UnitCountOnPlanet",
