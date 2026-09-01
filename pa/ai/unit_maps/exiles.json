@@ -207,7 +207,7 @@
       "spec_id": "/pa/units/land/anti_ballistics/anti_ballistics.json"
     },
     "ExilesLongRangeArtillery": {
-      "spec_id": "/pa/units/addon/r_artillery/r_artillery.json"
+      "spec_id": "/pa/units/land/t_arta_long/t_arta_long.json"
     },
     "ExilesNukeSilo": {
       "spec_id": "/pa/units/land/missile_facility/missile_facility.json"
