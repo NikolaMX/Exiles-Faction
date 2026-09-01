@@ -931,7 +931,7 @@
     "UnitCannon": {
       "units": [
         {
-          "unit_types": "Structure & Artillery & Factory",
+          "unit_types": "Structure & Artillery & Factory - Custom6",
           "min_count": 1,
           "max_count": -1
         }
