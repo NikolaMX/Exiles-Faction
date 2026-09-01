@@ -10,8 +10,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -66,8 +65,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
