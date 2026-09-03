@@ -10,8 +10,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -24,7 +23,7 @@
           { "test_type": "NeedOrbitalLauncher" },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - Orbital - Nuke - NukeDefense - SelfDestruct",
+            "unit_type_string0": "(Factory & Advanced) - Orbital - Nuke - NukeDefense - SelfDestruct - Artillery",
             "compare0": ">=",
             "value0": 1
           },
@@ -66,8 +65,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "SupportCommander"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -154,35 +152,6 @@
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Exiles - Orbital Factory",
-      "to_build": "ExilesOrbitalFactory",
-      "instance_count": 1,
-      "priority": 485,
-      "max_num_assisters": 3,
-      "builders": ["ExilesOrbitalFabber"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "ExilesOrbitalFactory"
-          },
-          { "test_type": "NeedOrbitalFactory" },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory - Land",
-            "compare0": "<=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "ExilesOrbitalFactory"
-          }
-        ]
-      ],
-      "placement_rules": { "buffer": 5 }
-    },
-    {
       "name": "Exiles - Delta V Engine",
       "to_build": "ExilesPlanetEngine",
       "instance_count": 1,
@@ -221,54 +190,6 @@
       "placement_rules": { "buffer": 5 }
     },
     {
-      "name": "Exiles - Orbital Mining Platform",
-      "to_build": "ExilesOrbitalExtractor",
-      "instance_count": 1,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "priority": 360,
-      "builders": ["ExilesOrbitalFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1.0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "ExilesOrbitalExtractor"
-          }
-        ],
-        [
-          { "test_type": "DesireMetal" },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "ExilesOrbitalExtractor"
-          }
-        ],
-        [
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1.0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "ExilesOrbitalExtractor"
-          }
-        ],
-        [
-          { "test_type": "DesireEnergy" },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "ExilesOrbitalExtractor"
-          }
-        ]
-      ],
-      "placement_rules": { "buffer": 15 }
-    },
-    {
       "name": "Exiles - Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
@@ -298,45 +219,6 @@
         ]
       ],
       "task_type": "TransportToPlanet"
-    },
-    {
-      "name": "Exiles - Move Orbital Fabber To Planet",
-      "instance_count": 1,
-      "priority": 800,
-      "builders": ["ExilesOrbitalFabber"],
-      "build_conditions": [
-        [
-          { "test_type": "PlanetOrGasGiantWithoutPresence", "boolean": true },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fabber",
-            "compare0": ">=",
-            "value0": 2
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToPlanet"
-    },
-    {
-      "name": "Exiles - Move Orbital Fabber To Safe Planet",
-      "instance_count": 1,
-      "priority": 800,
-      "builders": ["ExilesOrbitalFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "SafePlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToSafePlanet"
     }
   ]
 }

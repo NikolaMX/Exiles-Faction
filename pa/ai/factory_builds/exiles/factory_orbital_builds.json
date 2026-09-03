@@ -6,7 +6,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 199,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -110,7 +110,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "priority": 200,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -127,17 +127,17 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "priority": 100,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           { "test_type": "PlanetIsGasGiant", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -156,17 +156,17 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite - Pri",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "priority": 102,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           { "test_type": "PlanetIsGasGiant", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -179,18 +179,18 @@
     },
     {
       "name": "Exiles - Basic Radar Sattelite - Other planet",
-      "to_build": "BasicRadarSatellite",
+      "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "priority": 199,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSatellite"
+            "string0": "BasicRadarSattelite"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -208,7 +208,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 100,
-      "builders": ["ExilesOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["ExilesOrbitalLauncher"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -295,189 +295,6 @@
             "compare0": "<",
             "value0": 1
           }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Solar Array",
-      "to_build": "SolarArray",
-      "instance_count": 1,
-      "priority": 195,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1.0
-          },
-          { "test_type": "CanAffordBuildDemand" }
-        ],
-        [
-          { "test_type": "DesireEnergy" },
-          { "test_type": "CanAffordBuildDemand" }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Orbital Railgun",
-      "to_build": "OrbitalRailgun",
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "priority": 195,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Orbital & Fighter & Advanced",
-            "compare0": "<",
-            "value0": 15
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Orbital Railgun - Threat",
-      "to_build": "OrbitalRailgun",
-      "instance_count": 1,
-      "min_num_assisters": 2,
-      "max_num_assisters": 5,
-      "priority": 205,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fighter & Advanced",
-            "compare0": "<",
-            "value0": 3
-          }
-        ],
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Orbital & Fighter & Advanced",
-            "compare0": "<",
-            "value0": 3
-          }
-        ],
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">",
-            "value0": 1.0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Orbital Battleship",
-      "to_build": "OrbitalBattleShip",
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "priority": 195,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "unit_type_string1": "Orbital & Fighter",
-            "compare0": "<",
-            "value0": 0.2
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Orbital Death Laser",
-      "to_build": "OrbitalDeathLaser",
-      "instance_count": 1,
-      "priority": 195,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "AloneOnPlanet", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & LaserPlatform",
-            "compare0": "<",
-            "value0": 4
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Exiles - Advanced Radar Sattelite",
-      "to_build": "AdvancedRadarSatellite",
-      "instance_count": 1,
-      "shared_instance_count": "ReconAssistance",
-      "cross_planet_shared_count": true,
-      "priority": 196,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSatellite"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Orbital & (Recon | Scout) & Advanced - Structure",
-            "compare0": "<",
-            "value0": 250
-          }
-        ],
-        [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSatellite"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fighter",
-            "compare0": ">",
-            "value0": 2
-          },
-          { "test_type": "OtherPlanetNeedsReconAssistance", "boolean": true }
         ]
       ]
     }
