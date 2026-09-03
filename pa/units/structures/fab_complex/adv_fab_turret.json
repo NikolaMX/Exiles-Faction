@@ -90,13 +90,6 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "navigation": {
-    "type": "hover",
-    "acceleration": 0,
-    "brake": 0,
-    "move_speed": 0,
-    "turn_speed": 0
-  },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
   "physics": {
     "allow_pushing": false,
