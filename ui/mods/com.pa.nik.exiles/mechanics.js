@@ -1,3 +1,5 @@
+loadScript("coui://ui/mods/com.pa.nik.exiles/spec_path.js");
+
 // Configuration for units that should automatically fire weapons
 var unitsToCommand = [["/pa/units/land/t_metal_extractor_0/t_metal_extractor_0.json", "altFireSelf"],["/pa/units/land/t_metal_extractor_01/t_metal_extractor_01.json", "altFireSelf"]];
 
@@ -95,7 +97,11 @@ var automation = function () {
                     chosenPlanet = planet.index;
                     
                     worldView.getArmyUnits(armyindex, chosenPlanet).then(function (ready) {
-                        var army = this.result;
+                        var army = {};
+                        _.forOwn(this.result, function (unitIds, specId) {
+                            var spec = exilesSpecPath(specId);
+                            army[spec] = (army[spec] || []).concat(unitIds);
+                        });
                         
                         // Process weapon units first
                         processWeaponUnits(worldView, army, chosenPlanet);
