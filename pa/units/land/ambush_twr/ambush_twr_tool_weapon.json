@@ -8,7 +8,6 @@
     "max_range": 95,
     "pitch_range": 90,
     "pitch_rate": 360,
-    "rate_of_fire": 4,
     "spread_fire": true,
     "target_layers": [
       "WL_LandHorizontal",
@@ -16,5 +15,12 @@
       "WL_Seafloor"
     ],
     "yaw_range": 180,
-    "yaw_rate": 360
+    "yaw_rate": 360,
+    "rate_of_fire": 10.0,
+    "ammo_source": "energy",
+    "ammo_capacity": 900,
+    "ammo_demand": 300,
+    "ammo_per_shot": 450,
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true
   }

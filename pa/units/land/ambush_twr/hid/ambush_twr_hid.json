@@ -3,7 +3,7 @@
     "unit_name": "Ambush Turret",
     "si_name": "ambush_twr_hid",
     "display_name": "!LOC:Ambush Turret",
-    "description": "!LOC:Basic Turret - Remains hidden until an enemy walks in range.",
+    "description": "!LOC:Basic Turret - Remains hidden until an enemy walks in range. Deals chaining damage to multiple targets.",
     "max_health": 350,
     "build_metal_cost": 225,
     "atrophy_rate": 5.0,

@@ -6,7 +6,7 @@
             "effect_spec": "/pa/effects/new_legion_fx/legion_explosion_blue.pfx"
         }
     },
-    "display_name": "Jelly",
+    "display_name": "Navigator",
     "description": "!LOC: Teleportation bot. Can transport itself and up to 32 units anywhere on any planet. Units are vulnerable for a while after teleporting and can't fight back.",
     "max_health": 1500,
     "build_metal_cost": 6000,
