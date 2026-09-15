@@ -41,6 +41,12 @@
             "Projectile"
         ]
     },
+        "navigation": {
+        "acceleration": 50,
+        "brake": -1,
+        "move_speed": 0,
+        "turn_speed": 720
+    },
     "recon": {
         "observable": {
             "layer": "mine"

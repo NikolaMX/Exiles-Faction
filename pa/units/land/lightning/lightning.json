@@ -9,6 +9,11 @@
         0,
         0,
         2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
       ]
     }
   },
@@ -31,7 +36,11 @@
     "diameter": 12.0
   },
   "strategic_icon_priority": 3,
-  "base_spec": "/pa/units/generic/veh.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
+  "guard_layer": "WL_LandHorizontal",
+  "transportable": {
+    "size": 1
+  },
   "navigation": {
     "type": "land-small",
     "acceleration": 100,
@@ -41,12 +50,16 @@
   },
   "guard_radius": 50,
   "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
     "died": {
       "audio_cue": "/SE/Death/Veh",
       "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
       "effect_scale": 1.2
     },
     "fired": {
+      "audio_cue": "",
       "effect_spec": "/pa/units/air/solar_drone/solar_drone_muzzle_flash.pfx muzzle00",
       "effect_scale": 5
     }
@@ -160,6 +173,7 @@
     "walk_speed": 5
   },
   "physics": {
+    "push_class": 5,
     "radius": 4
   },
   "scrolling_uv": {
