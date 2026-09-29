@@ -1,6 +1,6 @@
 {
     "si_name": "scilla",
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "Scilla",
     "description": "!LOC:Mele Submarine Beast - Close range. Attacks sea and undersea targets.",
     "max_health": 760,

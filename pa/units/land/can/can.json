@@ -1,6 +1,6 @@
 {
     "si_name": "can",
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "display_name": "Cub",
     "description": "!LOC:Crowd Control Bot - Counters swarms of weak units.",
     "max_health": 110,
@@ -62,10 +62,10 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/can/can.papa",
+        "filename": "/pa/units/land/can/can1.papa",
         "animations": {
-            "idle": "/pa/units/land/can/anim_idle.papa",
-            "walk": "/pa/units/land/can/anim_run.papa"
+            "idle": "/pa/units/land/can/anim_idle1.papa",
+            "walk": "/pa/units/land/can/anim_run1.papa"
         },
         "animtree": "/pa/units/land/can/anim_tree.json",
         "walk_speed": 5
@@ -77,18 +77,9 @@
             "aim_bone": "bone_turret",
             "projectiles_per_fire": 1,
             "muzzle_bone": [
-                "socket_left_muzzle1"
-            ],
-            "record_index": 0
-        },
-        {
-            "spec_id": "/pa/units/land/can/can_tool_weapon.json",
-            "aim_bone": "bone_turret",
-            "projectiles_per_fire": 1,
-            "muzzle_bone": [
+                "socket_left_muzzle1",
                 "socket_right_muzzle1"
-            ],
-            "record_index": 1
+            ]
         }
     ],
     "events": {

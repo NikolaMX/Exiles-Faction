@@ -103,8 +103,8 @@
     "ExilesAdvancedLaserTank": {
       "spec_id": "/pa/units/land/stalker/stalker.json"
     },
-    "ExilesAdvancedHoverTank": {
-      "spec_id": "/pa/units/land/adv_tank_hover/adv_tank_hover.json"
+    "ExilesAdvancedArmorTank": {
+      "spec_id": "/pa/units/land/tank_heavy_adv/tank_heavy_adv.json"
     },
     "ExilesAdvancedArtilleryVehicle": {
       "spec_id": "/pa/units/land/hail/hail.json"
@@ -207,7 +207,7 @@
       "spec_id": "/pa/units/land/anti_ballistics/anti_ballistics.json"
     },
     "ExilesLongRangeArtillery": {
-      "spec_id": "/pa/units/addon/r_artillery/r_artillery.json"
+      "spec_id": "/pa/units/land/t_arta_long/t_arta_long.json"
     },
     "ExilesNukeSilo": {
       "spec_id": "/pa/units/land/missile_facility/missile_facility.json"

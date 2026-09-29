@@ -1,0 +1,199 @@
+{
+	"base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
+	"display_name": "!LOC:Jaguar",
+	"si_name": "jaguar",
+	"description": "!LOC:Adv Heavy Tank - Slow. Armed with a heavy cannon and anti-ship missiles. Vulnerable to flanking. Attacks land and sea targets.",
+	"max_health": 1700,
+	"build_metal_cost": 1000,
+	"armor_type": "AT_Vehicle",
+	"attachable": {
+		"offsets": {
+			"root": [
+				0,
+				0,
+				0
+			],
+			"head": [
+				0,
+				0,
+				2.7
+			]
+		}
+	},
+	"unit_types": [
+		"UNITTYPE_Tank",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Land",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Heavy",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom6"
+	],
+	"transportable": {
+		"size": 1
+	},
+	"guard_layer": "WL_LandHorizontal",
+	"navigation": {
+		"type": "land-small",
+		"acceleration": 80,
+		"brake": 80,
+		"move_speed": 10,
+		"turn_speed": 45
+	},
+	"physics": {
+		"radius": 4,
+		"air_friction": 0.5
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 120
+				},
+				{
+                    "layer": "underwater",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/land/tank_heavy_adv/tank_heavy_adv.papa",
+		"animations": {
+			"hover": "/pa/units/land/tank_heavy_adv/tank_heavy_adv_anim_idle.papa"
+		},
+		"animtree": "/pa/units/land/tank_heavy_adv/tank_heavy_adv_anim_tree.json"
+	},
+	"maintain_priority_target": false,
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/tank_heavy_adv/tank_heavy_adv_tool_weapon.json",
+			"aim_bone": "bone_pitch",
+			"muzzle_bone": "bone_muzzle",
+			"record_index": 0,
+			"primary_weapon": true
+		},
+		{
+			"spec_id": "/pa/units/land/tank_heavy_adv/tank_heavy_adv_tool_missile.json",
+			"aim_bone": "bone_pitch",
+			"muzzle_bone": "bone_muzzle_missile",
+			"record_index": 0,
+			"secondary_weapon": true,
+			"fire_event": "fired1",
+			"show_range": false
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/veh"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle"
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/tank_heavy_adv/tactical_missile_launcher_launch.pfx bone_muzzle_missile",
+			"effect_scale": 0.25
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Veh"
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "phasing",
+			"filename": "/pa/effects/mini_tp.pfx",
+			"bone": "bone_root",
+			"offset": [
+				0,
+				0,
+				5
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		}
+	],
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/veh/tank_hover_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/veh/tank_hover"
+		}
+	},
+	"headlights": [
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [
+				2.15,
+				-3.843,
+				2.18
+			],
+			"orientation": [
+				0.0,
+				65.0,
+				0.0
+			],
+			"near_width": 2.0,
+			"near_height": 2.0,
+			"near_distance": 1.2,
+			"far_distance": 30.0,
+			"color": [
+				0.9,
+				0.92,
+				1.0
+			],
+			"intensity": 2
+		},
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [
+				-2.15,
+				-3.843,
+				2.18
+			],
+			"orientation": [
+				0.0,
+				65.0,
+				0.0
+			],
+			"near_width": 2.0,
+			"near_height": 2.0,
+			"near_distance": 1.2,
+			"far_distance": 30.0,
+			"color": [
+				0.9,
+				0.92,
+				1.0
+			],
+			"intensity": 2
+		}
+	],
+	"selection_icon": {
+		"diameter": 14.0
+	},
+	"mesh_bounds": [
+		6.5,
+		7.5,
+		4
+	],
+	"scrolling_uv": {
+        "scroll_rate": -0.21,
+        "uv_split": 0.9
+    }
+}

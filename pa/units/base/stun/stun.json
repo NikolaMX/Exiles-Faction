@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "stun",
     "description": "!LOC: minion",
     "si_name": "empty",

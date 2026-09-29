@@ -1,5 +1,5 @@
 {
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
   "unit_name": "Fabrication Complex",
   "si_name": "fab_complex",
   "display_name": "!LOC:Fabrication Complex",
@@ -90,7 +90,7 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "navigation": {
+    "navigation": {
     "type": "hover",
     "acceleration": 0,
     "brake": 0,

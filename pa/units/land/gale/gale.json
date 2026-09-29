@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "display_name": "Cape",
     "description": "!LOC: Mobile Radar Jammer and maybe more soon",
     "max_health": 400,

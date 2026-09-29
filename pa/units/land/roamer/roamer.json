@@ -1,6 +1,6 @@
 {
     "si_name": "roamer",
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Crocodile",
     "description": "!LOC:Hover Tank Destroyer - Fast. Fragile. Can cross water and lava. Only shoots forward. Attacks land and sea targets.",
     "max_health": 125,

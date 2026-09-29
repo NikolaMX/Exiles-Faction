@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "si_name": "adv_pylon",
     "unit_name": "Advanced Reactor",
     "display_name": "!LOC:Advanced Reactor",
@@ -67,7 +67,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Factory",
-            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_building_explosion_large.pfx",
             "effect_scale": 1.0
         }
     },

@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "si_name": "adv_pylon_overcharged",
     "unit_name": "Overcharged Advanced Reactor",
     "display_name": "!LOC:Overcharged Advanced Reactor",

@@ -10,7 +10,7 @@
             "head": [
                 0,
                 0,
-                2.7
+                5
             ]
         }
     },
@@ -35,7 +35,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "si_name": "tank_wheel",
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
   "build_metal_cost": 115,
   "description": "Melee Brawler. Fast and durable, equipped with two short range flamethrowers",
   "display_name": "Hellnew/ball",
@@ -118,7 +118,7 @@
     },
     "animtree": "/pa/units/land/tank_wheel/tank_wheel_animtree.json",
     "filename": "/pa/units/land/tank_wheel/ball.papa",
-    "walk_speed": 0.05
+    "walk_speed": 15
   },
   "navigation": {
     "type": "land-small",

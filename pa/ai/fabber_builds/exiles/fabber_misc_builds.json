@@ -7,8 +7,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "ExilesOrbitalFabber"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [{ "test_type": "CanAffordBuildDemand" }],
@@ -39,8 +38,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "ExilesOrbitalFabber"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -108,7 +106,7 @@
       "priority": 615,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["ExilesOrbitalFabber"],
+      "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -148,8 +146,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "ExilesOrbitalFabber"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -189,8 +186,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "ExilesOrbitalFabber"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -224,8 +220,7 @@
       "builders": [
         "ExilesCommander",
         "AnyExilesBasicFabber",
-        "AnyExilesAdvancedFabber",
-        "ExilesOrbitalFabber"
+        "AnyExilesAdvancedFabber"
       ],
       "build_conditions": [
         [

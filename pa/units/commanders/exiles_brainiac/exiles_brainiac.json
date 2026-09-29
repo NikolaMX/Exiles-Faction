@@ -1,8 +1,12 @@
 {
-    "base_spec": "/pa/units/commanders/base_exiles_commander/base_exiles_commander.json",
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "ai_metal_extractor_names": {
+        "basic": "ExilesBasicMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
+    },
     "display_name": "Brainiac Commander",
     "si_name": "exiles_brainiac",
-    "description": "Hover Exile Commander. Slow, Low HP but armed with devastating long-range laser.",
+    "description": "Hover Exiles Commander. Slow. Fragile. Can teleport at medium range. Armed with devastating long-range laser.",
     "model": {
         "filename": "/pa/units/commanders/exiles_brainiac/brainiac.papa",
         "animations": {
@@ -65,7 +69,7 @@
         "ORDER_Repair",
         "ORDER_Assist",
         "ORDER_Use",
-        "ORDER_FireSecondaryWeapon"
+        "ORDER_MassTeleport"
     ],
     "transportable": {
         "size": 1
@@ -146,17 +150,6 @@
             "muzzle_bone": "bone_head",
             "record_index": 3,
             "fire_event": "fired2"
-        },
-        {
-            "spec_id": "/pa/units/commanders/exiles_brainiac/exiles_brainiac_tool_spawn.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": [
-                "ring1.r",
-                "ring1.l"
-            ],
-            "secondary_weapon": true,
-            "record_index": 4,
-            "fire_event": "fired3"
         }
     ],
     "events": {
@@ -175,12 +168,12 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam.pfx",
             "bone": "fab.l"
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
             "bone": "fab.r"
         },
         {
@@ -209,6 +202,22 @@
             ],
             "orientation": [
                 -150,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "phasing",
+            "filename": "/pa/units/commanders/exiles_maxim/scalpel_hit_black.pfx",
+            "bone": "bone_turret",
+            "effect_scale": 2,
+            "offset": [
+                0,
+                0,
+                -5
+            ],
+            "orientation": [
+                0,
                 0,
                 0
             ]
@@ -306,9 +315,20 @@
     "catalog_object_name": "TankAeson",
     "client": {
         "ui": {
-            "image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
-            "thumb_image": "/pa/units/commanders/exiles_brainiac/untitled6.png",
-            "profile_image": "/pa/units/commanders/exiles_brainiac/profile_exiles_brainiac1.png"
+            "image": "/pa/units/commanders/exiles_brainiac/img_exiles_brainiac.png",
+            "thumb_image": "/pa/units/commanders/exiles_brainiac/img_exiles_brainiac_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_brainiac/profile_exiles_brainiac.png"
         }
+    },
+    "mass_teleporter": {
+        "radius": 20,
+        "phasing_duration": 6,
+        "phasing_health_frac": 0.5,
+        "fixup_radius": 20,
+        "energy_drain": 5000,
+        "energy_cost": 15000,
+        "unit_cap": 5,
+        "target_types": "Mobile & Land - Titan - (Tank & Advanced & Amphibious & Heavy)",
+        "max_range": 200
     }
 }

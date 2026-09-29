@@ -36,7 +36,7 @@
             "cue": "/SE/Selection/bot/fab_combat"
         }
     },
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "build_metal_cost": 200,
     "command_caps": [
         "ORDER_Move",

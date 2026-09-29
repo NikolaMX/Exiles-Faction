@@ -1,6 +1,6 @@
 {
     "si_name": "tin_ded",
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "display_name": "Tin but dead",
     "description": "!LOC:What is dead may never die",
     "max_health": 10,
@@ -22,8 +22,6 @@
     },
     "unit_types": [
         "UNITTYPE_Bot",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_Custom6",
@@ -33,12 +31,6 @@
         "size": 1
     },
     "guard_layer": "WL_AnySurface",
-    "navigation": {
-        "acceleration": 50,
-        "brake": -1,
-        "move_speed": 0,
-        "turn_speed": 720
-    },
     "physics": {
         "type": "Structure",
         "radius": 0,
@@ -48,6 +40,12 @@
         "collide_with_types": [
             "Projectile"
         ]
+    },
+        "navigation": {
+        "acceleration": 50,
+        "brake": -1,
+        "move_speed": 0,
+        "turn_speed": 720
     },
     "recon": {
         "observable": {
@@ -99,7 +97,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
-            "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
             "effect_scale": 0.2
         }
     },

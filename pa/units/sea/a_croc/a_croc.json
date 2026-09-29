@@ -1,6 +1,6 @@
 {
     "si_name": "a_croc",
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "Fiend",
     "description": "!LOC:Laser Frigate - Durable. Rapid-fire. Attacks land and sea targets.",
     "max_health": 800,

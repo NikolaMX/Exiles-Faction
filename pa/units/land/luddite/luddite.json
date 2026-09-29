@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "display_name": "Rhino",
     "description": "!LOC:Advanced frontline Bot - Fast. Very durable. Weak attack.",
     "max_health": 1600,
@@ -90,7 +90,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
-            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
             "effect_scale": 1.0
         }
     },

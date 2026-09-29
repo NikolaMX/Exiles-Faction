@@ -1,0 +1,44 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+
+            "living": {
+                "type": "fly",
+
+                "node_idle": {
+                    "type": "playback",
+                    "anim_name": "idle"
+                },
+                "node_fly": {
+                    "type": "playback",
+                    "anim_name": "fly"
+                }
+            },
+
+            "dead": {
+                "type": "bind_pose"
+            },
+
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "not_being_built",
+
+            "child": {
+                "type": "procedural_aim_yaw_pitch",
+                "rotation_bone": "bone_turret"
+            }
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "si_name": "hardtack",
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "Hardtack",
     "description": "!LOC:Support AA Craft - Water hover. Attacks Air units and intercepts torpedoes. Detects Mines.",
     "max_health": 600,

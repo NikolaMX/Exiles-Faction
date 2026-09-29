@@ -1,6 +1,6 @@
 {
 	"si_name":"tank_gattling",
-	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+	"base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
 	"display_name": "Cougar",
 	"description": "Multi-Purpose AA Tank: Very durable. Attacks Ground and Air targets.",
 	"max_health": 1000,
@@ -58,6 +58,7 @@
 			]
 		}
 	},
+	"has_death_effects": true,
 	"model": {
 		"filename": "/pa/units/land/tank_gattling/gattling.papa",
 		"animtree": "/pa/units/land/tank_gattling/tank_gattling_anim_tree.json",

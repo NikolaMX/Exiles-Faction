@@ -1,6 +1,6 @@
 {
     "si_name": "cruiser",
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "Moray",
     "description": "!LOC:Submarine - Fires volleys of unguided torpedoes. Cannot be targeted by cannons. Attacks sea and undersea targets.",
     "max_health": 760,

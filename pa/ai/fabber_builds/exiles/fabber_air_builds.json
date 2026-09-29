@@ -213,7 +213,7 @@
           { "test_type": "NeedAdvancedAirFactory", "boolean": true },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct - Artillery",
             "compare0": "<",
             "value0": 1
           },

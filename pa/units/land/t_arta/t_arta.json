@@ -1,6 +1,6 @@
 {
     "si_name": "t_arta",
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "display_name": "Folga",
     "description": "!LOC:Siege artillery - Hold LeftClick when placing to rotate. Medium range. Can shoot only forward. Attacks land and sea targets.",
     "max_health": 800,

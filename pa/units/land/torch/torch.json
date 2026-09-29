@@ -30,7 +30,7 @@
             "cue": "/SE/Selection/veh/attack_vehicle"
         }
     },
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "build_metal_cost": 500,
     "events": {
         "fired": {

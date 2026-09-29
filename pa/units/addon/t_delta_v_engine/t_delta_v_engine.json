@@ -1,6 +1,6 @@
 {
     "si_name": "t_delta_v_engine",
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "display_name": "Halley",
     "description": "!LOC:Delta V Engine - Used to move small to medium celestial bodies.",
     "max_health": 20000,
@@ -353,7 +353,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/delta_v",
-            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_building_explosion_large.pfx",
             "effect_scale": 1.0
         }
     },

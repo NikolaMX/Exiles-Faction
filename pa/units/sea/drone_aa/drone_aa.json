@@ -1,6 +1,6 @@
 {
     "si_name": "drone_aa",
-    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_ship.json",
     "display_name": "Ulua",
     "description": "!LOC:Anti-Air Cruiser - Deploys suicide drones that hunt down enemy air. High damage anti-air missiles. Attacks Air.",
     "max_health": 3000,
@@ -52,7 +52,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/sea/drone_aa/drone_AA.papa",
+        "filename": "/pa/units/sea/drone_carrier/drone/drone.papa",
         "animations": {
             "idle": "/pa/units/sea/drone_aa/drone_aa_anim_idle.papa",
             "start": "/pa/units/sea/drone_aa/drone_aa_anim_start.papa",
@@ -114,7 +114,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Sea",
-            "effect_spec": "/pa/effects/specs/default_explosion_naval_t2.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/legion_explosion_blue.pfx",
             "effect_scale": 1.0
         }
     },

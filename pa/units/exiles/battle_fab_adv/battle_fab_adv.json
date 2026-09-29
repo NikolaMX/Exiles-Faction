@@ -1,11 +1,11 @@
 {
   "si_name": "battle_fab_adv",
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
   "display_name": "Advanced Hover Fabricator",
   "description": "!LOC:Constructs Advanced Structures. Can travel over lava and water. Can assist factories.",
   "strategic_icon_priority": 0,
-  "max_health": 400,
-  "build_metal_cost": 2500,
+  "max_health": 500,
+  "build_metal_cost": 2250,
   "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
   "show_in_orbital_layer": true,
   "wreckage_health_frac": 1.0,
@@ -28,14 +28,14 @@
   },
   "unit_types": [
     "UNITTYPE_Custom6",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Tank",
     "UNITTYPE_Vehicle",
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Advanced",
     "UNITTYPE_Hover"
   ],
   "command_caps": [
@@ -85,7 +85,6 @@
   },
   "teleportable": {},
   "tools": [
-    
     {
       "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_build_arm.json",
       "aim_bone": "bone_turret_fab"
@@ -94,20 +93,20 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Death/Bot",
-      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
       "effect_scale": 2
     }
   },
   "fx_offsets": [
     {
       "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab.r"
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam.pfx",
+      "bone": "muzzle_fab.l"
     },
     {
       "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab.l"
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
+      "bone": "muzzle_fab.r"
     }
   ],
   "audio": {

@@ -1,6 +1,6 @@
 {
 	"si_name": "t_naval_fac",
-	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
 	"display_name": "!LOC:Tide Assembly",
 	"description": "!LOC:Basic Manufacturing - Builds basic naval units.",
 	"max_health": 6000,

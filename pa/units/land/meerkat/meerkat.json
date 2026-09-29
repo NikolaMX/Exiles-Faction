@@ -30,7 +30,7 @@
       "cue": "/SE/Selection/veh/tank_light_laser"
     }
   },
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
   "build_metal_cost": 100,
   "max_health": 125,
   "command_caps": [

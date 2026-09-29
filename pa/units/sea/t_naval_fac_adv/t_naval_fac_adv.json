@@ -1,10 +1,10 @@
 {
 	"si_name":"t_naval_fac_adv",
-	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
 	"display_name": "!LOC:Hyper Tide Assembly",
 	"description": "!LOC:Enhanced Manufacturing - Builds Advanced naval units at higher speed, but lesser efficiency.",
 	"max_health": 6000,
-	"build_metal_cost": 700,
+	"build_metal_cost": 3600,
 	"atrophy_rate": 10.0,
 	"atrophy_cool_down": 15.0,
 	"spawn_layers": "WL_DeepWater",

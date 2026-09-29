@@ -1,5 +1,5 @@
 {
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
   "display_name": "Ocelot",
   "description": "Anti-air Tank: Durable tank armed with 4 flak cannons. Medium range. Low AOE",
   "max_health": 250,

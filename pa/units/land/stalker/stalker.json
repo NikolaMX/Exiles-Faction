@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "!LOC:Cobra",
     "si_name": "stalker",
     "description": "!LOC:Cloaked Assassin Vehicle - Invisible short-range tank. Low Damage.",

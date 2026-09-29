@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "display_name": "Harper Turret",
     "si_name": "t_aa_twr",
     "description": "!LOC:Anti-Air Defense - High Damage. Low Rate of Fire. Only attacks Air.",

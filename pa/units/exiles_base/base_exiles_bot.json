@@ -1,0 +1,8 @@
+{
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "events": {
+        "died": {
+            "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx"
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "unit_name": "Reactor",
     "si_name": "reactor",
     "display_name": "!LOC:Reactor",
