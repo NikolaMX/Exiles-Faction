@@ -105,7 +105,6 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_NoBuild",
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Land",

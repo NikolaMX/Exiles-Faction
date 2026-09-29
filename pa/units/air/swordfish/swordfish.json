@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/exiles_base/base_exiles_flyer.json",
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
     "si_name": "swordfish",
     "display_name": "!LOC:Shrike",
     "description": "!LOC:Advanced Stun Bomber. Disables enemy weapons in a small area. Does not do damage. Attacks land, sea, and undersea targets.",
@@ -62,12 +62,9 @@
     "maintain_priority_target": false,
     "stop_clears_nearby_targets": true,
     "model": {
-        "filename": "/pa/units/air/swordfish/shrike.papa",
+        "filename": "/pa/units/air/swordfish/swordfish.papa",
         "arrows": 5,
-        "animtree": "/pa/units/air/swordfish/swordfish_anim_tree.json",
-        "animations": {
-            "idle": "/pa/units/air/swordfish/shrike_anim_idle.papa"
-        }
+        "animtree": "/pa/units/air/swordfish/swordfish_anim_tree.json"
     },
     "tools": [
         {
@@ -82,7 +79,7 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/air/gunship_fire",
-            "effect_spec": "/pa/units/air/strafer/strafer_muzzle_flash.pfx bone_root"
+            "effect_spec": "/pa/units/air/strafer/strafer_muzzle_flash.pfx socket_left"
         },
         "fired3": {
             "audio_cue": "/SE/Weapons/air/bomber_fire"
@@ -94,9 +91,9 @@
     },
     "fx_offsets": [
         {
-            "type": "idle",
-            "filename": "/pa/units/air/swordfish/shrike_stun_charged.pfx",
-            "bone": "bone_root",
+            "type": "moving_forward",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "socket_thruster",
             "offset": [
                 0,
                 0,
@@ -105,62 +102,12 @@
         },
         {
             "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster.l",
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "socket_thruster.001",
             "offset": [
                 0,
                 0,
-                -0.25
-            ]
-        },
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster.r",
-            "offset": [
-                0,
-                0,
-                -0.25
-            ]
-        },
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster2.r",
-            "offset": [
-                0,
-                0,
-                -0.25
-            ]
-        },
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster3.r",
-            "offset": [
-                0,
-                0,
-                -0.25
-            ]
-        },
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster2.l",
-            "offset": [
-                0,
-                0,
-                -0.25
-            ]
-        },
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/t_bomber/t_bomber_jets.pfx",
-            "bone": "bone_thruster3.l",
-            "offset": [
-                0,
-                0,
-                -0.25
+                0
             ]
         }
     ],
@@ -178,7 +125,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 30.0
+        "diameter": 15.0
     },
     "TEMP_texelinfo": 10.4258,
     "mesh_bounds": [

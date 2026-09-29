@@ -1,0 +1,38 @@
+{
+  "base_spec": "/pa/units/generic/str_.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_spec": "/pa/effects/specs/exp_turret.pfx"
+    }
+  },
+  "guard_radius": 150,
+  "nearby_target_tick_update_interval": 3,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 140,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 28,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 28,
+          "shape": "capsule"
+        }
+      ]
+    }
+  }
+}

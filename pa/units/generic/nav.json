@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/units/generic/nav_.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large",
+      "effect_spec": "/pa/effects/specs/exp_size3.pfx"
+    }
+  },
+  "guard_radius": 150,
+  "navigation": {
+    "acceleration": 4,
+    "brake": 4,
+    "move_speed": 8,
+    "park_stamp_cost": 30,
+    "park_stamp_type": "box",
+    "turn_speed": 30,
+    "type": "deepwater"
+  },
+  "physics": {
+    "push_class": 10
+  }
+}

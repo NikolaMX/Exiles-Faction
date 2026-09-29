@@ -1,0 +1,41 @@
+{
+  "atrophy_cool_down": 15,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/factory",
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 100,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 20,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 20,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "strategic_icon_priority": 4
+}

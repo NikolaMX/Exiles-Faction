@@ -1,6 +1,6 @@
 {
     "si_name": "tin",
-    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Tin",
     "description": "!LOC:Lazarus Bot. Can be resurected with Alt-Fire 30s after being destroyed. Resurection costs metal. Short range high damage.",
     "max_health": 90,
@@ -24,7 +24,6 @@
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
-        "UNITTYPE_Heavy",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",

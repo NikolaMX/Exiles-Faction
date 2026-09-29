@@ -1,8 +1,8 @@
 {
     "si_name": "t_transport_adv",
-    "base_spec": "/pa/units/exiles_base/base_exiles_flyer.json",
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
     "display_name": "Heron",
-    "description": "!LOC:Advanced Interplanetary Carrier - Can load up to 20 land units and fly to other planets.",
+    "description": "!LOC:Advanced Interplanetary Carrier - Can load up to 24 land units and fly to other planets.",
     "max_health": 900,
     "build_metal_cost": 1200,
     "usable": true,
@@ -56,49 +56,19 @@
         "ORDER_Patrol",
         "ORDER_Assist",
         "ORDER_Load",
-        "ORDER_Unload",
-        "ORDER_Attack"
+        "ORDER_Unload"
     ],
     "useable": {
         "type": "transport",
         "range": 4048
     },
     "transporter": {
-        "capacity": 20,
+        "capacity": 24,
         "transportable_unit_types": "Mobile & Land - Titan",
-
-        "transporter_attach_bone": [
-            "attach6.r",
-            "attach7.r",
-            "attach8.r",
-            "attach9.r",
-            "attach10.r",
-
-            "attach6.l",
-            "attach7.l",
-            "attach8.l",
-            "attach9.l",
-            "attach10.l",
-
-            "attach1.r",
-            "attach2.r",
-            "attach3.r",
-            "attach4.r",
-            "attach5.r",
-
-            "attach1.l",
-            "attach2.l",
-            "attach3.l",
-            "attach4.l",
-            "attach5.l"            
-        ],
-        "transportable_attach_offset": "head",
+        "transporter_attach_bone": "bone_root",
+        "transportable_attach_offset": "root",
         "load_range": 50,
-        "chase_range": 20,
-        "fire_while_loaded": {
-            "enabled": true,
-            "unit_types": "Bot & Basic & Offense - Heavy - Artillery"
-        }
+        "chase_range": 20
     },
     "planetary_arrival_cooldown_time": 10.0,
     "system_velocity_multiplier": 30.0,
@@ -315,7 +285,7 @@
     "selection_icon": {
         "diameter": 33.0
     },
-    "strategic_icon_priority": 1,
+     "strategic_icon_priority": 1,
     "mesh_bounds": [
         10,
         26,

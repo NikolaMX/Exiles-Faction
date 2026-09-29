@@ -1,0 +1,24 @@
+{
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_fighter_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fighter"
+    }
+  },
+  "base_spec": "/pa/units/generic/air_.json",
+  "navigation": {
+    "acceleration": 100,
+    "aggressive_distance": 50,
+    "bank_factor": 10,
+    "brake": 100,
+    "move_speed": 100,
+    "turn_speed": 60
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_gunship_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/gunship"
+    }
+  },
+  "base_spec": "/pa/units/generic/air_.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "navigation": {
+    "acceleration": 20,
+    "aggressive_behavior": "circle",
+    "aggressive_distance": 75,
+    "bank_factor": 1,
+    "brake": 20,
+    "circle_max_time": 2,
+    "circle_min_time": 1,
+    "hover_time": -1,
+    "move_speed": 60,
+    "turn_speed": 90,
+    "type": "air",
+    "vertical_speed": 50
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/units/generic/str_.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    }
+  }
+}

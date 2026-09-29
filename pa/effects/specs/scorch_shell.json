@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/effects/specs/dynamic_decal_base.json",
+  "bias": 200,
+  "count": 1,
+  "layer": 1,
+  "lifetime": 200,
+  "material_spec": "/pa/effects/decals/scorch_a_decal_01.json",
+  "pos_range": [
+    0,
+    0
+  ],
+  "scale": [
+    10,
+    19,
+    1
+  ],
+  "scale_range": 0,
+  "simplex_range": [
+    0.0,
+    1
+  ]
+}

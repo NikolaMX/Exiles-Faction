@@ -1,6 +1,6 @@
 {
     "si_name": "t_bot_fac",
-    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Robotics Factory",
     "display_name": "!LOC:Bot Factory",
     "description": "!LOC:Basic Manufacturing - Builds basic Bots.",
@@ -12,24 +12,18 @@
     "buildable_types": "(Bot & Mobile & Basic | Bot & Fabber & Basic & Mobile) & FactoryBuild & Custom6 - Custom7",
     "rolloff_dirs": [
         [
-            1,
             0,
+            1,
             0
         ],
         [
-            -1,
             0,
+            -1,
             0
         ]
     ],
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 3,
-    "factory": {
-        
-        "spawn_points": [
-            "bone_platform"
-        ]
-        },
     "unit_types": [
         "UNITTYPE_Custom6",
         "UNITTYPE_Factory",
@@ -71,12 +65,12 @@
     },
     "model": {
         "animations": {
-            
-            "build_loop": "/pa/units/land/t_bot_fac/t_bot_factory_anim_loop.papa",
-            "idle": "/pa/units/land/t_bot_fac/t_bot_factory_anim_idle.papa"
+            "build_end": "/pa/units/land/t_bot_fac/Vfac22_anim_end.papa",
+            "build_loop": "/pa/units/land/t_bot_fac/Vfac22_anim_build.papa",
+            "build_start": "/pa/units/land/t_bot_fac/Vfac22_anim_start.papa"
         },
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-        "filename": "/pa/units/land/t_bot_fac/t_bot_factory.papa",
+        "filename": "/pa/units/land/t_bot_fac/Vfac22.papa",
         "skirt_decal": "/pa/effects/specs/skirt_air.json"
     },
     "tools": [
@@ -102,19 +96,34 @@
     },
     "fx_offsets": [
         {
-            "type": "build",
-            "filename": "/pa/units/land/t_bot_fac/build_beam.pfx",
-            "bone": "bone_arm_muzzle.c"
+            "bone": "bone_armNozzle01",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                1.43,
+                0,
+                -0.453
+            ],
+            "orientation": [
+                0,
+                0,
+                180
+            ],
+            "type": "build"
         },
         {
-            "type": "build",
-            "filename": "/pa/units/land/t_bot_fac/build_beam.pfx",
-            "bone": "bone_arm_muzzle.r"
-        },
-        {
-            "type": "build",
-            "filename": "/pa/units/land/t_bot_fac/build_beam_inverted.pfx",
-            "bone": "bone_arm_muzzle.l"
+            "bone": "bone_armNozzle02",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                1.43,
+                0,
+                -0.453
+            ],
+            "orientation": [
+                0,
+                0,
+                180
+            ],
+            "type": "build"
         }
     ],
     "headlights": [
@@ -195,8 +204,8 @@
         15
     ],
     "placement_size": [
-        45,
-        50
+        40,
+        55
     ],
     "area_build_separation": 2,
     "TEMP_texelinfo": 37.6046,

@@ -1,0 +1,45 @@
+{
+  "armor_type": "AT_Vehicle",
+  "base_spec": "/pa/units/generic/bot_.json",
+  "events": {
+    "died": {
+      "effect_scale": 1.5
+    }
+  },
+  "guard_radius": 150,
+  "max_health": 200,
+  "navigation": {
+    "acceleration": 150,
+    "brake": 150,
+    "move_speed": 15,
+    "turn_speed": 720
+  },
+  "physics": {
+    "push_class": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 120,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 24,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 24,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "strategic_icon_priority": 6
+}

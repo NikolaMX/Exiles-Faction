@@ -1,6 +1,6 @@
 {
     "si_name": "lice",
-    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Lice",
     "description": "!LOC:Surveillance Crawler. Invisible but unarmed. Can be spotted by mine detectors",
     "max_health": 10,
@@ -66,7 +66,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/lice/lice.papa",
+        "filename": "/pa/units/land/lice/model.papa",
         "animations": {
             "idle": "/pa/units/land/lice/anim_idle.papa",
             "walk": "/pa/units/land/lice/anim_run.papa"
@@ -126,9 +126,9 @@
         "diameter": 10.0
     },
     "mesh_bounds": [
-        4,
-        4,
-        4
+        8,
+        8,
+        6
     ],
     "TEMP_texelinfo": 4.07719,
     "command_caps": [

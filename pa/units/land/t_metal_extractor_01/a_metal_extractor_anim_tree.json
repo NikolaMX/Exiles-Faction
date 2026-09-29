@@ -1,0 +1,50 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "playback",
+                "anim_name": "idle",
+				"events": [
+					{
+						"time": 2.28333,
+						"type": "effect",
+						"parameters": {
+							"bone": "bone_root",
+							"spec": "/pa/units/land/t_metal_extractor_0/a_metal_extractor_effect_in.pfx",
+							"effect_scale": 1.0,
+							"bone_offset": [
+								0.0,
+								0.0,
+								0.0
+							]
+						}
+					},
+					{
+						"time": 0.0,
+						"type": "effect",
+						"parameters": {
+							"bone": "bone_root",
+							"spec": "/pa/units/land/t_metal_extractor_0/a_metal_extractor_effect_out.pfx",
+							"effect_scale": 1.0,
+							"bone_offset": [
+								0.0,
+								0.0,
+								0.0
+							]
+						}
+					}
+				]
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    }
+}

@@ -6,9 +6,7 @@
                 "type": "bind_pose"
             },
             "living": {
-                "type": "playback",
-                "anim_name": "idle",
-                "looping": true
+                "type": "bind_pose"
             },
             "dead": {
                 "type": "bind_pose"
@@ -17,5 +15,21 @@
                 "type": "bind_pose"
             }
         }
-    }
+    },
+    "skeleton_controls": [
+        {
+            "type": "recoil",
+            "bone": "bone_left_recoil",
+            "recoil_dist": 0.55,
+            "restore_time": 0.25,
+            "unit_event": "fired0"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_right_recoil",
+            "recoil_dist": 0.55,
+            "restore_time": 0.25,
+            "unit_event": "fired1"
+        }
+    ]
 }

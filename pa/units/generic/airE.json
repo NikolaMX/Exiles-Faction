@@ -1,0 +1,37 @@
+{
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/fab_air_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fabber"
+    }
+  },
+  "base_spec": "/pa/units/generic/air_.json",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "navigation": {
+    "acceleration": 20,
+    "aggressive_behavior": "circle",
+    "brake": 20,
+    "circle_max_time": 3,
+    "circle_min_time": 1,
+    "move_speed": 40,
+    "turn_speed": 90
+  }
+}

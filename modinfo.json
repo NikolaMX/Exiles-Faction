@@ -1,12 +1,12 @@
 {
 	"context": "server",
-	"identifier": "com.pa.nik.exiles_dev",
-	"display_name": "Exiles Faction [WIP] (S)",
+	"identifier": "com.pa.nik.exiles",
+	"display_name": "Exiles Server WIP",
 	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
 	"author": "NikolaMX, BOIYOUSAYWHAT",
-	"date": "2026-09-17",
-	"build": "124674",
-	"version": "0.8.4",
+	"date": "2026-01-16",
+	"build": "124610",
+	"version": "0.7.2",
 	"signature": "not yet implemented",
 	"forum": "https://steamcommunity.com/app/386070/discussions/0/599650671167384160/",
 	"icon": "https://raw.githubusercontent.com/NikolaMX/Exiles-Faction/refs/heads/main/icon.png",
@@ -39,7 +39,6 @@
 		"com.pa.ferretmaster.commander-merge",
 		"com.pa.ferretmaster.build-bar-tabs",
 		"com.pa.nik.exiles_client"
-		,"com.pa.nikmx.rating"
 	],
 	"companions": [
 		"com.pa.nik.exiles_client",

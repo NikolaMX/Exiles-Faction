@@ -1,0 +1,37 @@
+{
+  "base_spec": "/pa/units/generic/veh_.json",
+  "events": {
+    "died": {
+      "effect_scale": 1.5
+    }
+  },
+  "max_health": 300,
+  "physics": {
+    "push_class": 7
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 120,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 24,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 24,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "strategic_icon_priority": 6
+}

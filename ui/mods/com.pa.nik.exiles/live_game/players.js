@@ -9,10 +9,9 @@ var legionCommanders = [  "/pa/units/commanders/l_overwatch/l_overwatch.json",
 "/pa/units/commanders/l_tank/l_tank.json"]
 var bugCommanders = ["/pa/units/commanders/bug_commander/bug_commander.json","/pa/units/commanders/scenario_ai_invincible_com/scenario_ai_invincible_com.json"]
 var exileCommanders = [
-  "/pa/units/commanders/exiles_blueberry/exiles_blueberry.json",
+  "/pa/units/commanders/exiles_blueberry/union_formidable.json",
   "/pa/units/commanders/exiles_maxim/exiles_maxim.json",
   "/pa/units/commanders/exiles_brainiac/exiles_brainiac.json",
-  "/pa/units/commanders/exiles_taurus/exiles_taurus.json",
 ]
 
 if (!bugsLiveGamePlayersLoaded) {
@@ -20,7 +19,6 @@ if (!bugsLiveGamePlayersLoaded) {
   function bugsLiveGamePlayers() {
     try {
       loadCSS("coui://ui/mods/com.pa.nik.exiles/css/exiles_players.css");
-      loadScript("coui://ui/mods/com.pa.nik.exiles/spec_path.js");
       var checkCommanders = function (commanders) {
         var exilesCount = 0;
         var legionCount = 0;
@@ -31,17 +29,16 @@ if (!bugsLiveGamePlayersLoaded) {
           var factionArray = [];
           _.forOwn(commanders, function (value) {
             var mlaFound = true;
-            var spec = exilesSpecPath(value);
             // eslint-disable-next-line no-undef
-            if (_.includes(legionCommanders, spec)) {
+            if (_.includes(legionCommanders, value)) {
               legionCount++
               mlaFound = false;
             }
-            if (_.includes(exileCommanders, spec)) {
+            if (_.includes(exileCommanders, value)) {
               exilesCount++
               mlaFound = false;
             }
-            if (_.includes(bugCommanders, spec)) {
+            if (_.includes(bugCommanders, value)) {
               bugsCount++;
               mlaFound = false;
             }

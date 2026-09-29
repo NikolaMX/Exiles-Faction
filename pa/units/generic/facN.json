@@ -1,0 +1,44 @@
+{
+  "area_build_separation": 1,
+  "atrophy_rate": 5,
+  "base_spec": "/pa/units/generic/fac_.json",
+  "build_metal_cost": 500,
+  "events": {
+    "died": {
+      "effect_scale": 1.5,
+      "effect_spec": "/pa/effects/specs/exp_size2.pfx"
+    }
+  },
+  "factory": {
+    "default_build_stance": "Continuous"
+  },
+  "factory_cooldown_time": 2,
+  "fx_offsets": [
+    {
+      "bone": "muzzle00",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "max_health": 1000,
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "spawn_layers": "WL_LandHorizontal",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/tools/build_arm/tx_factoryN.json"
+    }
+  ],
+  "wait_to_rolloff_time": 0
+}

@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "unit_name": "Ambush Turret (Deployed)",
     "si_name": "ambush_twr",
     "display_name": "!LOC:Ambush Turret (Deployed)",
@@ -25,7 +25,7 @@
     ],
     "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
     "guard_radius": 80,
-        "navigation": {
+    "navigation": {
         "type": "land-small",
         "acceleration": 0,
         "brake": 0,
@@ -108,11 +108,11 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/veh/tank_flame",
-            "effect_spec": ""
+            "effect_spec": "/pa/units/land/ambush_twr/green_muzzle.pfx socket_muzzle"
         },
         "died": {
             "audio_cue": "/SE/Death/structure_small",
-            "effect_scale": 1
+            "effect_scale": 0.55
         }
     },
     "selection_icon": {
