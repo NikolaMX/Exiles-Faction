@@ -1,10 +1,11 @@
 {
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "!LOC:Cobra",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
+    "display_name": "!LOC:Gremlin",
     "si_name": "stalker",
-    "description": "!LOC:Cloaked Assassin Hover Tank - Invisible short-range hover tank. Fires two shots at once. Low Damage.",
+    "description": "!LOC:Cloaked Assassin Vehicle - Invisible short-range tank. Low Damage.",
     "max_health": 400,
     "build_metal_cost": 1000,
+    "armor_type": "AT_Hover",
     "attachable": {
         "offsets": {
             "root": [
@@ -24,6 +25,7 @@
         "UNITTYPE_Vehicle",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
+        "UNITTYPE_Hover",
         "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_CannonBuildable",
@@ -35,20 +37,19 @@
     },
     "guard_layer": "WL_AnySurface",
     "navigation": {
-        "type": "land-small",
+        "type": "hover",
         "acceleration": 150,
         "brake": 150,
         "move_speed": 13,
         "turn_speed": 200
     },
     "physics": {
-        "radius": 5
+        "radius": 5,
+        "air_friction": 0.5
     },
     "recon": {
         "observable": {
-            "layer": "surface_and_air",
-            "cloaked": true,
-            "ignore_radar": true
+            "layer": "mine"
         },
         "observer": {
             "items": [
@@ -68,20 +69,20 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/stalker/stalker.papa",
+        "filename": "/pa/units/land/stalker/cobra.papa",
         "animations": {
-            "run": "/pa/units/land/stalker/stalker_anim_drive.papa"
+            "hover": "/pa/units/land/stalker/cobra_anim_hover.papa"
         },
-        "walk_speed": 4.5,
         "animtree": "/pa/units/land/stalker/stalker_anim_tree.json"
     },
     "tools": [
         {
             "spec_id": "/pa/units/land/stalker/stalker_weapon.json",
             "aim_bone": "bone_pitch",
-            "projectiles_per_fire": 1,
+            "projectiles_per_fire": 2,
             "muzzle_bone": [
-                "socket_muzzle"
+                "bone_muzzle.l",
+                "bone_muzzle.r"
             ]
         }
     ],
@@ -91,14 +92,75 @@
         },
         "fired": {
             "audio_cue": "",
-            "effect_spec": "/pa/units/land/stalker/muzzle_flash.pfx socket_muzzle",
-            "effect_scale": 2
+            "effect_spec": "/pa/units/land/stalker/muzzle_flash.pfx bone_muzzle.l /pa/units/land/stalker/muzzle_flash.pfx bone_muzzle.r"
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",
             "effect_scale": 1.0
         }
     },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                -2.13,
+                -1.65,
+                -1.636
+            ],
+            "orientation": [
+                0,
+                0,
+                -195
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                2.13,
+                -1.65,
+                -1.636
+            ],
+            "orientation": [
+                0,
+                0,
+                22.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                2.13,
+                1.65,
+                -1.636
+            ],
+            "orientation": [
+                0,
+                0,
+                -22.5
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                -2.13,
+                1.65,
+                -1.636
+            ],
+            "orientation": [
+                0,
+                0,
+                195
+            ]
+        }
+    ],
     "audio": {
         "loops": {
             "move": {
