@@ -79,12 +79,6 @@
         }
     },
     "fx_offsets": [
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
         {
             "type": "phasing",
             "filename": "/pa/effects/mini_tp.pfx",
