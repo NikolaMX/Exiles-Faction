@@ -113,6 +113,13 @@
     
     "fx_offsets": [
         {
+            "type": "EMP",
+            "filename": "/pa/effects/stun.pfx",
+            "bone": "bone_root",
+            "offset": [0, 0, 0],
+            "orientation": [0, 0, 0]
+        },
+        {
             "type": "phasing",
             "filename": "/pa/effects/mini_tp.pfx",
             "bone": "bone_root",
@@ -120,4 +127,7 @@
             "orientation": [0, 0, 0]
         }
     ]
+    ,
+    "emp_max_multiplier": 7,
+    "emp_decay_rate": 0.1
 }
