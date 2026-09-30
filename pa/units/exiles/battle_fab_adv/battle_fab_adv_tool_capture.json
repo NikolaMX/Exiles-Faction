@@ -1,0 +1,19 @@
+{
+    "tool_type": "TOOL_CaptureArm",
+    "capture_type": "Proximity",
+    "capture_target_type": "NeutralOrHostile",
+    "capture_rate": 15,
+    "capture_lock_time": 0,
+    "capture_radius": 0,
+    "auto_capture": false,
+    "capture_demand":
+    {
+        "energy": 0,
+        "metal": 0
+    },
+    "max_range": 20,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface"
+    ]
+}

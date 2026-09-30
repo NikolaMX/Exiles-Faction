@@ -1,0 +1,24 @@
+{
+    "tool_type": "TOOL_CaptureArm",
+    "capture_type": "Targeted",
+    "capture_target_type": "All",
+    "capture_rate": 100,
+    "capture_lock_time": 0,
+    "capture_radius": 0,
+    "auto_capture": true,
+    "capture_demand":
+    {
+        "energy": 0,
+        "metal": 0
+    },
+    "max_range": 100,
+    "yaw_rate": 180,
+    "pitch_rate": 180,
+    "yaw_range": 180,
+    "pitch_range": 180,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ]
+}

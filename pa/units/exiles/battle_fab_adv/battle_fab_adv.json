@@ -87,6 +87,9 @@
   "tools": [
     
     {
+      "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_capture.json"
+    },
+    {
       "spec_id": "/pa/units/exiles/battle_fab_adv/battle_fab_adv_tool_build_arm.json",
       "aim_bone": "bone_turret_fab"
     }
@@ -106,8 +109,13 @@
     },
     {
       "type": "build",
+      "filename": "/pa/units/commanders/exiles_brainiac/brainiac_build_beam_mirror.pfx",
+      "bone": "muzzle_fab.r"
+    },
+    {
+      "type": "capture",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "bone": "muzzle_fab.l"
+      "bone": "bone_turret"
     }
   ],
   "audio": {

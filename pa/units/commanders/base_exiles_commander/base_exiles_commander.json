@@ -1,5 +1,9 @@
 {
-    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_commander.json",
+    "ai_metal_extractor_names": {
+        "basic": "ExilesBasicMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
+    },
     "display_name": "Blueberry Commander",
     "si_name": "replicate_commander_1",
     "description": "Basic Tiha Commander.",
@@ -16,10 +20,6 @@
         "animtree": "/pa/units/commanders/exiles_blueberry/union_formidable_comm_anim_tree.json",
         "walk_speed": 3.5
     },
-  "ai_metal_extractor_names": {
-    "basic": "ExilesBasicMetalExtractor",
-    "advanced": "ExilesAdvancedMetalExtractor"
-  },
     "strategic_icon_priority": 0,
     "max_health": 10500,
     "build_metal_cost": 8000,

@@ -1,0 +1,260 @@
+{
+    "base_spec": "/pa/units/exiles_base/base_exiles_commander.json",
+    "ai_metal_extractor_names": {
+        "basic": "ExilesBasicMetalExtractor",
+        "advanced": "ExilesAdvancedMetalExtractor"
+    },
+    "display_name": "Taurus Commander",
+    "si_name": "exiles_taurus",
+    "description": "Shielded Exile Commander. Significantly less HP but half of it in a rechargable shield. Armed with a gauss rifle.",
+    "model": {
+        "filename": "/pa/units/commanders/exiles_taurus/taurus.papa",
+        "animations": {
+            "death01": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_dead.papa",
+            "walk": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_walk.papa",
+            "idle": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_idle.papa",
+            "walk_stop": "",
+            "aim_up": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_aimUp.papa",
+            "aim_down": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_aimDown.papa"
+        },
+        "animtree": "/pa/units/commanders/exiles_taurus/exiles_taurus_anim_tree.json",
+        "walk_speed": 10
+    },
+    "has_death_effects": true,
+    "strategic_icon_priority": 0,
+    "max_health": 5000,
+    "shield": {
+        "radius": 10,
+        "max_health": 5000,
+        "recharge_rate": 100,
+        "energy_demand": 1000,
+        "cooldown_time": 20,
+        "recharge_requires_efficiency": true
+    },
+    "build_metal_cost": 8000,
+    "buildable_types": "CmdBuild & Custom6",
+    "show_in_orbital_layer": true,
+    "armor_type": "AT_Commander",
+    "wreckage_health_frac": 1,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                10
+            ]
+        }
+    },
+    "production": {
+        "energy": 2000,
+        "metal": 20
+    },
+    "storage": {
+        "energy": 45000,
+        "metal": 1750
+    },
+    "unit_types": [
+        "UNITTYPE_Commander",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom6"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Attack",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "navigation": {
+        "type": "amphibious",
+        "acceleration": 60,
+        "brake": -1,
+        "move_speed": 9,
+        "turn_speed": 180,
+        "turn_in_place": false,
+        "park_stamp": {
+            "shape": "sphere",
+            "cost": 20,
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "simple"
+                }
+            ]
+        }
+    },
+    "physics": {
+        "radius": 9,
+        "sync_radius_to_extents": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "celestial",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 1
+                }
+            ]
+        }
+    },
+    "teleportable": {},
+    "tools": [
+        {
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_build_arm.json",
+            "aim_bone": "bone_turret",
+            "record_index": 0,
+            "primary_weapon": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": true,
+            "fire_event": "fired1"
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_taurus/uber_cannon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_leftMuzzle",
+            "secondary_weapon": true,
+            "fire_event": "fired3"
+        },
+        {
+            "spec_id": "/pa/units/commanders/exiles_taurus/exiles_taurus_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "socket_leftMuzzle"
+            ],
+            "fire_event": "fired2",
+            "primary_weapon": false,
+            "show_range": true
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "bone_root",
+            "primary_weapon": false,
+            "show_range": false
+        }
+    ],
+    "events": {
+        "fired1": {
+            "effect_spec": "/pa/units/commanders/exiles_taurus/proj_lightning.pfx socket_rightMuzzle"
+        },
+        "fired2": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_leftMuzzle"
+        },
+        "fired3": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/commanders/exiles_taurus/lightning_muzzle_shotgun.pfx socket_leftMuzzle"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/units/commanders/exiles_taurus/taurus_build_beam.pfx",
+            "bone": "socket_leftMuzzle"
+        },
+        {
+            "type": "Idle",
+            "filename": "/pa/units/commanders/exiles_taurus/rail_arcs.pfx",
+            "bone": "socket_rightMuzzle",
+            "offset": [
+                0,-1.5,0
+            ],
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/commanders/exiles_taurus/shield.pfx",
+            "offset": [
+                0,
+                -0.5,
+                10
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "shield"
+        }
+    ],
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Commander_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/commander/Commander_move_loop_tank",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            },
+            "selection_response": {
+                "cue": "/SE/Selection/commander"
+            },
+            "sing_selection_response": {
+                "cue": "/SE/UI/plus/sing"
+            }
+        },
+        "selection_icon": {
+            "diameter": 6
+        },
+        "mesh_bounds": [
+            12,
+            12,
+            12
+        ]
+    },
+    "catalog_object_name": "TankAeson",
+    "client": {
+        "ui": {
+            "image": "/pa/units/commanders/exiles_taurus/img_exiles_taurus.png",
+            "thumb_image": "/pa/units/commanders/exiles_taurus/img_exiles_taurus_thumb.png",
+            "profile_image": "/pa/units/commanders/exiles_taurus/profile_exiles_taurus.png"
+        }
+    }
+}

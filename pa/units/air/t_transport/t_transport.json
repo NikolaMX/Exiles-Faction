@@ -55,10 +55,48 @@
         "ORDER_Unload"
     ],
     "transporter": {
-        "capacity": 3,
+        "capacity": 25,
         "transportable_unit_types": "Mobile & Land - Commander",
-        "transporter_attach_bone": "bone_payload",
-        "transportable_attach_offset": "head"
+        "transporter_attach_bone": [
+
+            "wing.t.001",
+            "wing.t.002",
+            "wing.t.003",
+            "wing.t.004",
+            "wing.t.005",
+
+            "wing.l.001",
+            "wing.l.002",
+            "wing.l.003",
+            "wing.l.004",
+            "wing.l.005",
+
+            "wing.r.001",
+            "wing.r.002",
+            "wing.r.003",
+            "wing.r.004",
+            "wing.r.005",
+
+            "wing.l.009",
+            "wing.l.007",
+            "wing.l.008",
+            "wing.l.010",
+            "wing.l.011",
+
+            "wing.r.007",
+            "wing.r.008",
+            "wing.r.009",
+            "wing.r.010",
+            "wing.r.011"
+
+        ],
+        "transportable_attach_offset": "head",
+        "load_range": 50,
+        "chase_range": 20,
+        "fire_while_loaded": {
+            "enabled": true,
+            "unit_types": "Bot & Basic & Amphibious"
+        }
     },
     "usable": true,
     "useable": {
@@ -91,18 +129,18 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/t_transport/horseshoe.papa",
+        "filename": "/pa/units/air/t_transport/t_transport_new.papa",
         "animations": {
-            "fly": "/pa/units/air/t_transport/horseshoe_anim_fly.papa"
+            "fly": "/pa/units/air/t_transport/t_transport_new_anim_fly.papa"
         },
         "animtree": "/pa/anim/anim_trees/transport_anim_tree.json"
     },
     "TEMP_texelinfo": 10.4837,
     "fx_offsets": [
         {
-            "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_leftWing",
+            "type": "moving",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thruster.l",
             "offset": [
                 0,
                 -0.7,
@@ -116,8 +154,8 @@
         },
         {
             "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_rightWing",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thruster.b",
             "offset": [
                 0,
                 -0.7,
@@ -131,8 +169,8 @@
         },
         {
             "type": "idle",
-            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-            "bone": "bone_leftWing",
+            "filename": "/pa/units/air/t_air_fab/jet_aircraftH.pfx",
+            "bone": "thruster.r",
             "offset": [
                 0,
                 0.7,

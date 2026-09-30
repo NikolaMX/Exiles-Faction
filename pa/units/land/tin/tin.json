@@ -45,6 +45,16 @@
     },
     "maintain_priority_target": false,
     "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "cloaked": true,
+            "cloak_uses_energy": false,
+            "ignore_radar": true,
+            "ignore_radar_uses_energy": false,
+            "disable_cloak_on_move": true,
+            "disable_ignore_radar_on_move": true,
+            "disable_duration": 4.0
+        },
         "observer": {
             "items": [
                 {
