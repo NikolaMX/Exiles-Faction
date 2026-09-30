@@ -1,0 +1,22 @@
+{
+  "burn_damage": 24,
+  "burn_duration": 1,
+  "burn_radius": 1,
+  "collision_check": "target",
+  "damage": 180,
+
+
+  "events": {
+    "spawned": {
+      "audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
+    }
+  },
+  "fx_beam_spec": "/pa/units/commanders/exiles_taurus/lightning_beam.pfx",
+  "fx_collision_spec": "/pa/units/commanders/exiles_taurus/lightning_hit.pfx",
+  "ammo_type": "AMMO_Beam",
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  }
+}
