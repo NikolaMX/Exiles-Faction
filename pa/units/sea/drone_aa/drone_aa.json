@@ -52,7 +52,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/sea/drone_carrier/drone/drone.papa",
+        "filename": "/pa/units/sea/drone_aa/drone_aa.papa",
         "animations": {
             "idle": "/pa/units/sea/drone_aa/drone_aa_anim_idle.papa",
             "start": "/pa/units/sea/drone_aa/drone_aa_anim_start.papa",

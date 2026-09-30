@@ -1,5 +1,5 @@
 {
-     "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+     "base_spec": "/pa/units/exiles_base/base_exiles_commander.json",
      "ai_metal_extractor_names": {
          "basic": "ExilesBasicMetalExtractor",
          "advanced": "ExilesAdvancedMetalExtractor"

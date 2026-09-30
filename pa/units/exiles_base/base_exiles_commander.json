@@ -1,0 +1,12 @@
+{
+    "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+    "fx_offsets": [
+        {
+            "type": "phasing",
+            "filename": "/pa/effects/mini_tp.pfx",
+            "bone": "bone_root",
+            "offset": [0, 0, 5],
+            "orientation": [0, 0, 0]
+        }
+    ]
+}

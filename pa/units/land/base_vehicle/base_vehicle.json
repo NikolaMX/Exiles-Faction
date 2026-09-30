@@ -19,7 +19,7 @@
         "ORDER_Assist",
         "ORDER_Use"
     ],
-    "wreckage_health_frac": 0.7,
+    "wreckage_health_frac": 1.0,
     "wreckage": {
         "remove_ground_cost_stamp": true,
         "collision": [
