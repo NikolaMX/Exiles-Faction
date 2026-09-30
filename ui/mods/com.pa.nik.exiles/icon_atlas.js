@@ -1,16 +1,10 @@
 var paeiouIcons = [
     
-
-
-    //ENERGY SPOT
-    "energy_spot_01",
-
-
     // COMMANDERS
-    "replicate_commander_1",
-    "union_formidable",
+    "exiles_blueberry",
     "exiles_maxim",
     "exiles_brainiac",
+    "exiles_taurus",
 
 
     "r_umbrella",
@@ -76,7 +70,7 @@ var paeiouIcons = [
 
     "shah",
     "tank_gattling",
-    "hippo",
+    "jaguar",
     "stalker",
     "hail",
     "hail_mine",
@@ -126,9 +120,10 @@ var paeiouIcons = [
     //Titans
     "t_chimera",
     "cyclone",
+    "mass_tele_titan",
 
     //Factories
-    "fab_complex",      //NEW!! ATTENTION!!
+    "fab_complex",
 
 
     "t_naval_fac",

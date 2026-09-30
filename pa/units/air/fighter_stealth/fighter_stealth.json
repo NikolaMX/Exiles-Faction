@@ -1,6 +1,6 @@
 {
   "TEMP_texelinfo": 6.1803,
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_flyer.json",
   "description": "!LOC:Stealth Fighter - Slow. Radar stealthy. Can only shoot forwards. Only attacks air targets",
   "display_name": "Kikimora",
   "build_metal_cost": 275,
@@ -10,6 +10,10 @@
       "audio_cue": "/SE/Build_Complete/orbital",
       "effect_scale": 1.75
     },
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/solar_drone_fire",
+      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx bone_muzzle"
+    },
     "died": {
       "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.75
@@ -17,8 +21,8 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_fire4",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "bone": "thruster.l",
+      "filename": "/pa/units/air/fighter_stealth/fighter_stealth_jets.pfx",
       "offset": [
         0,
         0,
@@ -26,14 +30,14 @@
       ],
       "orientation": [
         0,
-        -45,
+        0,
         0
       ],
       "type": "moving_forward"
     },
     {
-      "bone": "bone_fire5",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
+      "bone": "thruster.r",
+      "filename": "/pa/units/air/fighter_stealth/fighter_stealth_jets.pfx",
       "offset": [
         0,
         0,
@@ -41,67 +45,10 @@
       ],
       "orientation": [
         0,
-        25,
-        45
+        0,
+        0
       ],
       "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire6",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        25,
-        -45
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "bone": "bone_fire1",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ]
-    },
-    {
-      "bone": "bone_fire2",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        -30,
-        90
-      ]
-    },
-    {
-      "bone": "bone_fire3",
-      "filename": "/pa/units/air/fighter_stealth/mkv_jets_small.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        -30,
-        -90
-      ]
     }
   ],
   "guard_layer": "WL_Air",
@@ -117,7 +64,12 @@
   },
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/air/fighter_stealth/orbital_missileX.papa"
+    "filename": "/pa/units/air/fighter_stealth/kikimora2.papa",
+    "animtree": "/pa/units/air/fighter_stealth/fighter_stealth_anim_tree.json",
+    "animations": {
+      "idle": "/pa/units/air/fighter_stealth/kikimora2_anim_idle.papa",
+      "fly": "/pa/units/air/fighter_stealth/kikimora2_anim_fly.papa"
+    }
   },
   "selection_response": {
     "cue": "/SE/Selection/air/fighter"
@@ -125,7 +77,7 @@
   "navigation": {
     "acceleration": 130,
     "brake": 130,
-    "move_speed": 65,
+    "move_speed": 70,
     "turn_speed": 120,
     "dodge_radius": 30,
     "dodge_multiplier": 2,
@@ -158,7 +110,8 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "bone_muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/air/fighter_stealth/fighter_stealth_tool_weapon.json"
     }

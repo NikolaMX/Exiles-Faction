@@ -9,7 +9,6 @@
     "carpet_wait_for_full_ammo": true,
     "firing_standard_deviation": 4.0,
     "auto_attack": true,
-    "emp_avoid_disabled_targets": true,
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
     "idle_aim_delay": 1.0,
     "max_firing_velocity": 500,

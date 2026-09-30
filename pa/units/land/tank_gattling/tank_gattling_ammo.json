@@ -21,7 +21,7 @@
     "events": {
         "died": {
             "audio_cue": "/SE/Impacts/laser_blast",
-            "effect_specs": "/pa/effects/specs/default_proj_explosion.pfx"
+            "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
         }
     },
     "physics": {

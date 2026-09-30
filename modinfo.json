@@ -6,7 +6,7 @@
 	"author": "NikolaMX, BOIYOUSAYWHAT",
 	"date": "2026-09-30",
 	"build": "124683",
-	"version": "0.8.5.1",
+	"version": "0.8.5.2",
 	"signature": "not yet implemented",
 	"forum": "https://steamcommunity.com/app/386070/discussions/0/599650671167384160/",
 	"icon": "https://raw.githubusercontent.com/NikolaMX/Exiles-Faction/refs/heads/main/icon.png",
@@ -39,13 +39,9 @@
 		"com.pa.ferretmaster.commander-merge",
 		"com.pa.ferretmaster.build-bar-tabs",
 		"com.pa.nik.exiles_client"
-		,"com.pa.nikmx.rating"
 	],
 	"companions": [
 		"com.pa.nik.exiles_client",
 		"com.pa.ferretmaster.build-bar-tabs"
 	]
 }
-
-
-

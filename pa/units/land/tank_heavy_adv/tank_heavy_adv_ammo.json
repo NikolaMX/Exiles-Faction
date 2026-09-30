@@ -1,0 +1,15 @@
+{
+	"base_spec": "/pa/ammo/base_shell/base_shell.json",
+	"model": {
+		"filename": "/pa/units/air/shell/shell.papa"
+	},
+	"damage": 800,
+	"splash_damage": 400,
+	"splash_radius": 3,
+	"initial_velocity": 180.0,
+	"max_velocity": 180.0,
+	"lifetime": 1.25,
+	"physics": {
+		"add_to_spatial_db": true
+	}
+}

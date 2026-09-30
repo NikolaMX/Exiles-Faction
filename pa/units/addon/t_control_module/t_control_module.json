@@ -1,6 +1,6 @@
 {
     "si_icon": "t_control_module",
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "display_name": "Catalyst",
     "description": "!LOC:Super Weapon - Build five on a metal planet to activate the Annihilazer.",
     "max_health": 20000,
@@ -60,7 +60,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/control_point",
-            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_building_explosion_large.pfx",
             "effect_scale": 3.0
         }
     },

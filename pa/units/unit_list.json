@@ -213,9 +213,10 @@
 
 
 
-    "/pa/units/commanders/exiles_blueberry/union_formidable.json",
+    "/pa/units/commanders/exiles_blueberry/exiles_blueberry.json",
     "/pa/units/commanders/exiles_maxim/exiles_maxim.json",
     "/pa/units/commanders/exiles_brainiac/exiles_brainiac.json",
+    "/pa/units/commanders/exiles_taurus/exiles_taurus.json",
 
 
 
@@ -327,13 +328,10 @@
 
 "/pa/units/land/tank_wheel/tank_wheel.json",
 "/pa/units/land/tank_heavy_adv/tank_heavy_adv.json",
-"/pa/units/land/tank_heavy_adv_cloak/tank_heavy_adv_cloak.json",
 "/pa/units/land/roamer/roamer.json",
 "/pa/units/land/lightning/lightning.json",
 "/pa/units/land/t_tank_flak/t_tank_flak.json",
 "/pa/units/land/meerkat/meerkat.json",
-
-"/pa/units/land/minigun_vehicle/minigun_vehicle.json",
 
 "/pa/units/land/tank_gattling/tank_gattling.json",
 "/pa/units/land/stalker/stalker.json",
@@ -343,6 +341,7 @@
 
 "/pa/units/land/t_chimera/t_chimera.json",
 "/pa/units/land/cyclone/cyclone.json",
+"/pa/units/exiles/mass_tele_titan/mass_tele_titan.json",
 
 
 

@@ -1,30 +1,22 @@
 {
-  "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+    "auto_reclaim": true,
+    "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+    "can_only_assist_with_buildable_items": true,
     "construction_demand": {
-        "energy": 700,
-        "metal": 10
+        "energy": 400,
+        "metal": 20
     },
-    "pitch_range": 180,
+    "max_range": 75,
+    "pitch_rate": 1440,
+    "yaw_rate": 1440,
     "yaw_range": 180,
-    "max_range": 35,
+    "pitch_range": 45,
     "reclaim_layers": [
-        "WL_AnyHorizontalGroundOrWaterSurface",
-        "WL_Air",
-        "WL_Seafloor",
-        "WL_LandVertical",
-        "WL_Underwater"
+        "WL_AnyLayer"
     ],
-    "can_only_assist_with_buildable_items": false,
     "reclaim_types": [
-        "Unit",
         "Wreckage",
+        "Unit",
         "Feature"
-    ],
-    "resurrect_types_blacklist": [
-        "UNITTYPE_Fabber",
-        "UNITTYPE_Naval"
-    ],
-    "can_resurrect": true,
-    "auto_resurrect": true,
-    "auto_repair": true
+    ]
 }

@@ -27,7 +27,7 @@
       "cue": "/SE/Selection/air/fabber"
     }
   },
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_flyer.json",
   "build_metal_cost": 2000,
   "buildable_types": "(Land & Structure & Advanced | Factory & Advanced & (Bot | Air | Naval | Tank) | FabAdvBuild | FabBuild | Titan & Bot) & Custom6",
   "command_caps": [

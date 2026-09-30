@@ -47,7 +47,6 @@
 		"child": {
 			"type": "giblet",
 			"bone": "bone_turret",
-			"chance": 0.25,
 			"velocity": [0,
 			5,
 			15],

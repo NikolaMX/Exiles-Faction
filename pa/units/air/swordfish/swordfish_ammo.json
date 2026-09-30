@@ -9,7 +9,7 @@
     "lifetime": 3,
     "spawn_unit_on_death": "/pa/units/base/stun/stun.json",
     "fx_trail": {
-      "filename": "/pa/units/base/stun/bot_freeze_ammo_trail.pfx"
+      "filename": "/pa/units/land/torch/yellow_stun_trail.pfx"
     },
     "events": {
       "died": {

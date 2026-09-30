@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "unit_name": "Anti-Nuke Launcher",
     "display_name": "!LOC:Anti-Nuke Launcher",
     "description": "!LOC:Anti-Nuke - Builds advanced anti-nuclear missiles.",
@@ -67,7 +67,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Factory",
-            "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+            "effect_spec": "/pa/effects/new_legion_fx/blue_building_explosion.pfx"
         }
     },
     "audio": {

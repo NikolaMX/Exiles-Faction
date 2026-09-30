@@ -30,7 +30,7 @@
       "cue": "/SE/Selection/veh/tank_light_laser"
     }
   },
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
   "build_metal_cost": 100,
   "max_health": 125,
   "command_caps": [
@@ -60,9 +60,9 @@
         },
         {
           "layer": "surface_and_air",
-          "channel": "cloak_detector",
+          "channel": "radar",
           "shape": "capsule",
-          "radius": 150,
+          "radius": 300,
           "uses_energy": true
         },
         {
@@ -70,6 +70,13 @@
           "channel": "sight",
           "shape": "capsule",
           "radius": 150,
+          "uses_energy": true
+        },
+        {
+          "layer": "underwater",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
           "uses_energy": true
         },
         {

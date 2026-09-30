@@ -1,6 +1,6 @@
 {
   "si_name":"sword_dox",
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
   "display_name": "Lance Dox",
   "description": "!LOC:A Dox who left behind its guns and took up a spear and shield. Cheap. Durable. Very Fast.",
   "max_health": 85,

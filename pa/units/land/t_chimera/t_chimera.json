@@ -1,6 +1,6 @@
 {
     "si_name": "t_chimera",
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Chimera",
     "description": "!LOC:DemiTitan - long range beam weapon.",
     "max_health": 40000,

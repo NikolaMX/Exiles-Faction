@@ -1,6 +1,6 @@
 {
     "si_name": "t_torp_launcher",
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "unit_name": "Torpedo Launcher",
     "display_name": "!LOC:Torpedo Launcher",
     "description": "!LOC:Torpedo Launcher - Basic anti-ship defense.",

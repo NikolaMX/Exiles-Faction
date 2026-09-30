@@ -1,6 +1,6 @@
 {
   "si_name": "r_radar",
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
   "unit_name": "Radar",
   "display_name": "!LOC:Radar",
   "description": "!LOC:Basic radar - Detects nearby enemy land, sea, and air units.",

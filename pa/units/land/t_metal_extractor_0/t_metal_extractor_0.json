@@ -1,5 +1,5 @@
 {
-	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
 	"display_name": "Basic Metal Extractor",
 	"si_name": "t_metal_extractor_0",
 	"description": "!LOC:Produces small amounts of metal. Income will increase significantly after 150 seconds.",

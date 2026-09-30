@@ -17,7 +17,6 @@
     "Wall"
   ],
   "auto_attack": true,
-  "emp_avoid_disabled_targets": true,
   "firing_arc_pitch": 15,
   "firing_arc_yaw": 15,
   "pitch_range": 89.9,

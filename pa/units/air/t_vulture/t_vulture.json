@@ -1,6 +1,6 @@
 {
   "si_icon":"t_vulture",
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_flyer.json",
   "description": "!LOC:Stealth Fighter - Slow. Radar stealthy. Can only shoot forwards. Only attacks air targets",
   "display_name": "Kikimora",
   "audio": {

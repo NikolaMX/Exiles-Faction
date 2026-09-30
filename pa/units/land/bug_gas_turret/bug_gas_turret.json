@@ -1,5 +1,5 @@
 {
-	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
 	"display_name": "Toxic Gas Turret",
 	"description": "!LOC:Toxic Gas Turret - emits a field of toxic gas which slowly damages all enemy units in area.",
 	"max_health": 2000,

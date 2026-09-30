@@ -1,7 +1,0 @@
-{
-  "base_spec": "/pa/units/generic/veh_.json",
-  "max_health": 200,
-  "physics": {
-    "push_class": 5
-  }
-}

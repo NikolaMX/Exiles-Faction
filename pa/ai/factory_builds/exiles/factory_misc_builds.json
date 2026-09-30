@@ -70,10 +70,10 @@
     },
     {
       "name": "Exiles - Nuke Missile - N3",
-      "to_build": "ExilesNukeMissileN2",
+      "to_build": "ExilesNukeMissileN3",
       "instance_count": -1,
       "priority": 151,
-      "builders": ["ExilesNukeMissileN3"],
+      "builders": ["ExilesNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },
@@ -83,12 +83,12 @@
     },
     {
       "name": "Exiles - Nuke Missile - N3 - No Antis",
-      "to_build": "ExilesNukeMissileN2",
+      "to_build": "ExilesNukeMissileN3",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 387,
-      "builders": ["ExilesNukeMissileN3"],
+      "builders": ["ExilesNukeSilo"],
       "build_conditions": [
         [
           { "test_type": "CanAffordBuildDemand" },

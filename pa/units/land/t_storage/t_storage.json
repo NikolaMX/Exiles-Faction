@@ -9,7 +9,7 @@
       "cue": "/SE/Selection/structure/energy"
     }
   },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
   "build_metal_cost": 900,
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/t_storage/t_storage_death_weapon.json"

@@ -1,7 +1,7 @@
 {
     "si_name": "hyena",
     "display_name": "!LOC:Hyena",
-    "description": "!LOC: Salvage Crawler. Detects Mines. Can revive and rebuild dead units. Does not repair automatcally.",
+    "description": "!LOC: Salvage Crawler. Detects Mines. Can block enemy mex. Automatic reclaim. Does not repair automatcally.",
     "TEMP_texelinfo": 5.11028,
     "attachable": {
         "offsets": {
@@ -36,15 +36,14 @@
             "cue": "/SE/Selection/bot/fab_combat"
         }
     },
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_bot.json",
     "build_metal_cost": 200,
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
         "ORDER_Build",
-        "ORDER_Repair",
         "ORDER_Reclaim",
-        "ORDER_Resurrect",
+        "ORDER_Repair",
         "ORDER_Assist",
         "ORDER_Use"
     ],
@@ -124,6 +123,7 @@
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
+        "UNITTYPE_Construction",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom6"
     ],
@@ -153,13 +153,33 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/build_beam_inverted.pfx",
-            "bone": "socket_lower_muzzle"
+            "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+            "bone": "socket_lower_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/build_beam.pfx",
-            "bone": "socket_lower_muzzle"
+            "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+            "bone": "socket_upper_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         }
     ]
 }

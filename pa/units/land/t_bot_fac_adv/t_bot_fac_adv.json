@@ -1,6 +1,6 @@
 {
     "si_name": "t_bot_fac_adv",
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "unit_name": "Advanced Robotics Factory",
     "display_name": "!LOC:Advanced Bot Factory",
     "description": "!LOC:Advanced Manufacturing - Builds basic and advanced Crawlers.",
@@ -79,7 +79,7 @@
     ],
     "events": {
         "died": {
-            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_building_explosion_large.pfx",
             "effect_scale": 1.0
         }
     },

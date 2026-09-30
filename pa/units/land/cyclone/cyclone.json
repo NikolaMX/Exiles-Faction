@@ -1,6 +1,6 @@
 {
     "si_name": "cyclone",
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Cyclone",
     "description": "!LOC:Hover Titan. Lingering damage over a large area. Very fast. Fragile. Can hover over water and lava",
     "max_health": 20000,

@@ -20,7 +20,7 @@
       "cue": "/SE/Selection/structure/anti_nuke"
     }
   },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
   "build_metal_cost": 3500,
   "buildable_projectiles": [
         "/pa/units/land/aa_missile_launcher/air_defense_complex_adv_ammo.json"

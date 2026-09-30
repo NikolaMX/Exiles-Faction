@@ -9,7 +9,6 @@
     ],
     "anti_entity_targets_units": false,
     "auto_attack": true,
-    "emp_avoid_disabled_targets": true,
     "auto_task_type": "anti_entity",
     "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
     "idle_aim_delay": 0,

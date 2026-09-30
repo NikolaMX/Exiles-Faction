@@ -1,6 +1,6 @@
 {
     "si_name": "hail",
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Hail",
     "description": "!LOC:Minelaying Artillery - Deploys mines over long range.",
     "max_health": 200,
@@ -84,7 +84,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",
-            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+            "effect_spec": "/pa/effects/new_legion_fx/blue_default_explosion.pfx",
             "effect_scale": 1.0
         }
     },

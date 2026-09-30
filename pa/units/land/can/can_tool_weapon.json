@@ -6,9 +6,9 @@
             "id": "/pa/units/land/can/can_ammo.json"
         }
     ],
-    "rate_of_fire": 10,
+    "rate_of_fire": 0.4,
     "idle_aim_delay": 1,
-    "max_range": 72.5,
+    "max_range": 75,
     "yaw_rate": 360,
     "pitch_rate": 360,
     "yaw_range": 180,
@@ -18,10 +18,5 @@
         "WL_LandHorizontal",
         "WL_Seafloor",
         "WL_WaterSurface"
-    ],
-    "ammo_capacity": 2.25,
-    "ammo_per_shot": 0.75,
-    "carpet_fire": true,
-    "carpet_wait_for_full_ammo": true,
-    "ammo_source": "time"
+    ]
 }

@@ -1,5 +1,5 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/exiles_base/base_exiles_structure.json",
     "unit_name": "!Metal Extractor",
     "si_name": "t_metal_extractor_1",
     "display_name": "!LOC:Improved Metal Extractor",
