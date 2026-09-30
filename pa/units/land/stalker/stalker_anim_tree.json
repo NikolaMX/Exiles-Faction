@@ -6,14 +6,8 @@
                 "type": "bind_pose"
             },
             "living": {
-                "type": "walk",
-                "node_idle": {
-                    "type": "bind_pose"
-                },
-                "node_walk": {
-                    "type": "playback",
-                    "anim_name": "run"
-                }
+                "type": "playback",
+                "anim_name": "hover"
             },
             "dead": {
                 "type": "bind_pose"
