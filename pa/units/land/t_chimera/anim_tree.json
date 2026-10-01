@@ -28,9 +28,9 @@
                 }
             },
             "dead": {
-                "type": "bind_pose",
+                "type": "playback",
                 "looping": false,
-                "anim_name": "death01"
+                "anim_name": "death"
             },
             "ghost": {
                 "type": "bind_pose"
@@ -43,8 +43,9 @@
             "lerp_func": "is_active",
             "child": {
                 "type": "procedural_aim",
-                "rotation_bone": "bone_turret",
-                "rotation_axis": "z"
+                "rotation_bone": "bone_turret_f.l",
+                "rotation_axis": "z",
+                "weapon_index": 0
             }
         },
         {
@@ -52,21 +53,70 @@
             "lerp_func": "is_active",
             "child": {
                 "type": "procedural_aim",
-                "rotation_bone": "bone_pitch",
-                "rotation_axis": "x"
+                "rotation_bone": "bone_pitch_f.l",
+                "rotation_axis": "x",
+                "weapon_index": 0
             }
         },
         {
-            "type": "recoil",
-            "bone": "bone_recoil",
-            "recoil_dist": 0.75,
-            "restore_time": 0.5
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret_f.r",
+                "rotation_axis": "z",
+                "weapon_index": 1
+            }
         },
         {
-            "type": "recoil",
-            "bone": "bone_recoil",
-            "recoil_dist": 0.75,
-            "restore_time": 0.5
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch_f.r",
+                "rotation_axis": "x",
+                "weapon_index": 1
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret_b.l",
+                "rotation_axis": "z",
+                "weapon_index": 2
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch_b.l",
+                "rotation_axis": "x",
+                "weapon_index": 2
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret_b.r",
+                "rotation_axis": "z",
+                "weapon_index": 3
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch_b.r",
+                "rotation_axis": "x",
+                "weapon_index": 3
+            }
         }
     ]
 }
