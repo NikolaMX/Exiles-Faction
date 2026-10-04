@@ -4,7 +4,7 @@
   "description": "damage over time unit",
   "TEMP_texelinfo": 2.37699,
   "si_name": "empty",
-  "build_metal_cost": 0.01,
+  "build_metal_cost": 10000,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
@@ -13,7 +13,7 @@
       "audio_cue": "/SE/Death/barrier"
     }
   },
-  "max_health": 30000,
+  "max_health": 60000,
   "mesh_bounds": [
     0.1,
     0.1,
