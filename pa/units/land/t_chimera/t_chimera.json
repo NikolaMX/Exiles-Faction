@@ -2,8 +2,8 @@
     "si_name": "t_chimera",
     "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Chimera",
-    "description": "!LOC:DemiTitan - long ramge anit-surface and anti-air lasers.",
-    "max_health": 25000,
+    "description": "!LOC:Ship-Hunter Demi-Titan - long rane anit-surface and anti-air lasers. When underwater will fire torpedoes instead. Amphibious. Durable.",
+    "max_health": 20000,
     "build_metal_cost": 15000,
     "influence_radius": 400,
     "attachable": {
@@ -36,7 +36,7 @@
     },
     "guard_layer": "WL_LandHorizontal",
     "navigation": {
-        "type": "land-small",
+        "type": "amphibious",
         "acceleration": 100,
         "brake": 100,
         "move_speed": 12,
@@ -105,6 +105,34 @@
         },
         {
             "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
+            "aim_bone": "bone_pitch_b.r",
+            "muzzle_bone": "socket_muzzle_b.r",
+            "record_index": 3,
+            "fire_event": "fired3"
+        },
+        {
+            "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+            "aim_bone": "bone_pitch_f.l",
+            "muzzle_bone": "socket_muzzle_f.l",
+            "record_index": 0,
+            "fire_event": "fired0"
+        },
+        {
+            "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+            "aim_bone": "bone_pitch_f.r",
+            "muzzle_bone": "socket_muzzle_f.r",
+            "record_index": 1,
+            "fire_event": "fired1"
+        },
+        {
+            "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
+            "aim_bone": "bone_pitch_b.l",
+            "muzzle_bone": "socket_muzzle_b.l",
+            "record_index": 2,
+            "fire_event": "fired2"
+        },
+        {
+            "spec_id": "/pa/units/land/t_chimera/chimera_tool_torp.json",
             "aim_bone": "bone_pitch_b.r",
             "muzzle_bone": "socket_muzzle_b.r",
             "record_index": 3,

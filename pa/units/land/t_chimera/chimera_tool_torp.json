@@ -1,0 +1,23 @@
+{
+    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+    
+        "ammo_id": [
+        {
+            "layer": "WL_Seafloor",
+            "id": "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_ammo_water.json"
+        }
+    ],
+    "rate_of_fire": 1,
+    "idle_aim_delay": 3.0,
+    "max_range": 210,
+    "yaw_rate": 60,
+    "pitch_rate": 60,
+    "yaw_range": 135,
+    "pitch_range": 90,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_Seafloor",
+        "WL_WaterSurface",
+        "WL_Underwater"
+    ]
+}
