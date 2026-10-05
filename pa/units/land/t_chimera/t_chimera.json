@@ -76,6 +76,11 @@
         "arrows": 5,
         "walk_speed": 4
     },
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_titan_01.json"
+        ]
+    },
     "tools": [
         {
             "spec_id": "/pa/units/land/t_chimera/t_chimera_weapon.json",
@@ -150,8 +155,8 @@
     },
     "TEMP_texelinfo": 9.31488,
     "mesh_bounds": [
-        45,
-        45,
+        27,
+        30,
         20
     ],
     "headlights": [],

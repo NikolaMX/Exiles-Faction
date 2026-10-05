@@ -5,6 +5,7 @@
   "TEMP_texelinfo": 2.37699,
   "si_name": "empty",
   "build_metal_cost": 10000,
+  "wreckage_health_frac": 0.1,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
@@ -87,6 +88,5 @@
     "UNITTYPE_Naval",
     "UNITTYPE_Defense",
     "UNITTYPE_NoBuild"
-  ],
-  "wreckage_health_frac": 1.0
+  ]
 }

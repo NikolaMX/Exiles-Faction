@@ -30,7 +30,89 @@
             "dead": {
                 "type": "playback",
                 "looping": false,
-                "anim_name": "death"
+                "anim_name": "death",
+                "events": [
+                    {
+                        "time": 0,
+                        "type": "effect",
+                        "parameters": {
+                            "bone": "bone_root",
+                            "spec": "/pa/units/air/titan_air/titan_air_death.pfx",
+                            "effect_scale": 1.0,
+                            "attached": true,
+                            "death_effect": true,
+                            "bone_offset": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "time": 1,
+                        "type": "effect",
+                        "parameters": {
+                            "bone": "bone_root",
+                            "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+                            "effect_scale": 0.8,
+                            "attached": true,
+                            "death_effect": true,
+                            "bone_offset": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "time": 1.2,
+                        "type": "effect",
+                        "parameters": {
+                            "bone": "bone_root",
+                            "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+                            "effect_scale": 1.2,
+                            "attached": true,
+                            "death_effect": true,
+                            "bone_offset": [
+                                -13.235,
+                                6.328,
+                                1.456
+                            ]
+                        }
+                    },
+                    {
+                        "time": 1.4,
+                        "type": "effect",
+                        "parameters": {
+                            "bone": "core",
+                            "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+                            "effect_scale": 1.4,
+                            "attached": true,
+                            "death_effect": true,
+                            "bone_offset": [
+                               0,
+                               0,
+                               0
+                            ]
+                        }
+                    },
+                    {
+                        "time": 1.6,
+                        "type": "effect",
+                        "parameters": {
+                            "bone": "bone_root",
+                            "spec": "/pa/effects/specs/titan_smoke_01.pfx",
+                            "effect_scale": 1.6,
+                            "attached": true,
+                            "death_effect": true,
+                            "bone_offset": [
+                                0,
+                                5,
+                                9.6
+                            ]
+                        }
+                    }
+                ]
             },
             "ghost": {
                 "type": "bind_pose"

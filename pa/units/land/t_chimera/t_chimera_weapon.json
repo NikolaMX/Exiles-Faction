@@ -6,7 +6,7 @@
     "max_range": 240,
     "yaw_rate": 60,
     "pitch_rate": 60,
-    "yaw_range": 180,
+    "yaw_range": 120,
     "pitch_range": 90,
     "auto_attack": true,
     "target_layers": [

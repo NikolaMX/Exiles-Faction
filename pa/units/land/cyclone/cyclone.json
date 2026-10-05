@@ -95,7 +95,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",
-            "effect_scale": 5
+            "effect_scale": 3
         }
     },
     "fx_offsets": [
