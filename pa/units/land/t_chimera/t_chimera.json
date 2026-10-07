@@ -2,7 +2,7 @@
     "si_name": "t_chimera",
     "base_spec": "/pa/units/exiles_base/base_exiles_vehicle.json",
     "display_name": "Chimera",
-    "description": "!LOC:Ship-Hunter Demi-Titan - long rane anit-surface and anti-air lasers. When underwater will fire torpedoes instead. Amphibious. Durable.",
+    "description": "!LOC:Support Demi-Titan: Armed with long-range anti-surface and anti-air lasers. It will fire torpedoes instead when underwater. Durable. Amphibious.",
     "max_health": 20000,
     "build_metal_cost": 15000,
     "influence_radius": 400,
